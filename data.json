@@ -1,0 +1,155 @@
+{
+  "meta": {
+    "title": "Iran Missile & Drone Tracker",
+    "warStart": "2026-02-28",
+    "lastUpdated": "2026-04-07T04:30:00Z",
+    "lastDay": 39,
+    "methodology": "UAE MoD figures are official cumulative intercepts (highest confidence). Other Gulf state figures are working estimates from official MoD reports, ISW, and Wikipedia cross-referencing. Best-estimate totals include underreporting adjustments for Israel theater and other targets. Launcher estimates derived from IDF/ISW structured reporting. Pre-war stockpile estimates from Atlantic, NYT, IDF, and former US/Israeli officials.",
+    "caveats": [
+      "Pre-Mar 19 data uses a different methodology (less structured, wider ranges)",
+      "Kuwait and Qatar cumulatives were significantly revised upward on Mar 23 after Wikipedia cross-reference",
+      "Saudi data is methodologically noisy; BM/CM split only available from Mar 20",
+      "Drone pre-war estimates range 30K-80K — extremely wide uncertainty",
+      "Launcher estimates are judgmental, combining hardware kills with C2/morale degradation",
+      "Production was ongoing early in the war but is assessed as halted for BMs since ~Mar 29"
+    ]
+  },
+  "preWar": {
+    "mrbm": [2000, 3000],
+    "srbm": [6000, 8000],
+    "totalBM": [8000, 11000],
+    "drones": [30000, 80000],
+    "cruiseMissiles": [200, 500],
+    "launchers": [410, 440]
+  },
+  "currentSnapshot": {
+    "date": "2026-04-07",
+    "day": 39,
+    "categories": [
+      {
+        "name": "MRBMs (Israel-range)",
+        "preWar": [2000, 3000],
+        "fired": [780, 950],
+        "remaining": [550, 1920],
+        "status": "4 production facilities halted; 29+ launch bases struck; morale collapse",
+        "confidence": "Medium"
+      },
+      {
+        "name": "SRBMs (Gulf-range)",
+        "preWar": [6000, 8000],
+        "fired": [1950, 2250],
+        "remaining": [3750, 6050],
+        "status": "Large paper inventory; production halted; UAE surge +60 BMs in 3 days",
+        "confidence": "Medium-Low"
+      },
+      {
+        "name": "Total Ballistic Missiles",
+        "preWar": [8000, 11000],
+        "fired": [2800, 3200],
+        "remaining": [4300, 7900],
+        "status": "Production halted; launcher/C2/morale triple squeeze",
+        "confidence": "Medium-Low"
+      },
+      {
+        "name": "Drones",
+        "preWar": [35000, 55000],
+        "fired": [7800, 8800],
+        "remaining": [26200, 47200],
+        "status": "Most durable threat; China fuel chemicals sustaining some production",
+        "confidence": "Low"
+      },
+      {
+        "name": "Cruise Missiles",
+        "preWar": [200, 500],
+        "fired": [90, 130],
+        "remaining": [70, 410],
+        "status": "CM usage accelerating; 45+ in Gulf theater total",
+        "confidence": "Low"
+      },
+      {
+        "name": "Launchers",
+        "preWar": [410, 440],
+        "destroyed": [300, 340],
+        "remaining": [68, 135],
+        "midpoint": 102,
+        "daysToZero": 41,
+        "status": "Binding constraint; losing ~1.5-2.5/day",
+        "confidence": "High"
+      }
+    ]
+  },
+  "uaeCumulative": [
+    {"date": "2026-03-03", "day": 4, "bm": 174, "cm": 8, "drones": 689},
+    {"date": "2026-03-04", "day": 5, "bm": 192, "cm": 8, "drones": 1070},
+    {"date": "2026-03-05", "day": 6, "bm": 196, "cm": 8, "drones": 1070},
+    {"date": "2026-03-06", "day": 7, "bm": 189, "cm": 8, "drones": 1000, "note": "Revised methodology"},
+    {"date": "2026-03-17", "day": 18, "bm": 314, "cm": 15, "drones": 1672},
+    {"date": "2026-03-18", "day": 19, "bm": 327, "cm": 15, "drones": 1699},
+    {"date": "2026-03-19", "day": 20, "bm": 334, "cm": 15, "drones": 1714},
+    {"date": "2026-03-20", "day": 21, "bm": 338, "cm": 15, "drones": 1740},
+    {"date": "2026-03-21", "day": 22, "bm": 341, "cm": 15, "drones": 1748},
+    {"date": "2026-03-23", "day": 24, "bm": 352, "cm": 15, "drones": 1789},
+    {"date": "2026-03-24", "day": 25, "bm": 357, "cm": 15, "drones": 1806},
+    {"date": "2026-03-25", "day": 26, "bm": 357, "cm": 15, "drones": 1815},
+    {"date": "2026-03-27", "day": 28, "bm": 378, "cm": 15, "drones": 1835},
+    {"date": "2026-03-28", "day": 29, "bm": 398, "cm": 15, "drones": 1872},
+    {"date": "2026-03-31", "day": 32, "bm": 433, "cm": 19, "drones": 1977},
+    {"date": "2026-04-01", "day": 33, "bm": 438, "cm": 19, "drones": 2012},
+    {"date": "2026-04-04", "day": 36, "bm": 498, "cm": 23, "drones": 2141}
+  ],
+  "totalEstimates": [
+    {"date": "2026-03-04", "day": 5, "bmFloor": 940, "bmBest": [1000, 1200], "droneFloor": 1670, "droneBest": [2000, 2500], "cmFloor": 26, "cmBest": [30, 60]},
+    {"date": "2026-03-05", "day": 6, "bmFloor": 1015, "bmBest": [1050, 1300], "droneFloor": 1793, "droneBest": [2000, 2800], "cmFloor": 30, "cmBest": [30, 60]},
+    {"date": "2026-03-06", "day": 7, "bmFloor": 1093, "bmBest": [1200, 1500], "droneFloor": 2100, "droneBest": [2500, 3200], "cmFloor": 35, "cmBest": [40, 75]},
+    {"date": "2026-03-19", "day": 20, "bmFloor": 1100, "bmBest": [1300, 1550], "droneFloor": 3200, "droneBest": [4200, 5000], "cmFloor": 25, "cmBest": [35, 60]},
+    {"date": "2026-03-20", "day": 21, "bmFloor": 1100, "bmBest": [1300, 1550], "droneFloor": 3400, "droneBest": [4200, 5000], "cmFloor": 37, "cmBest": [37, 60]},
+    {"date": "2026-03-21", "day": 22, "bmFloor": 1150, "bmBest": [1350, 1600], "droneFloor": 3600, "droneBest": [4400, 5200], "cmFloor": 37, "cmBest": [37, 60]},
+    {"date": "2026-03-22", "day": 23, "bmFloor": 1250, "bmBest": [1450, 1700], "droneFloor": 3900, "droneBest": [4700, 5500], "cmFloor": 37, "cmBest": [50, 75]},
+    {"date": "2026-03-23", "day": 24, "bmFloor": 1400, "bmBest": [1650, 1950], "droneFloor": 4200, "droneBest": [5000, 5800], "cmFloor": 37, "cmBest": [50, 75]},
+    {"date": "2026-03-24", "day": 25, "bmFloor": 1450, "bmBest": [1700, 2000], "droneFloor": 4400, "droneBest": [5200, 6000], "cmFloor": 45, "cmBest": [55, 85]},
+    {"date": "2026-03-25", "day": 26, "bmFloor": 1500, "bmBest": [1750, 2050], "droneFloor": 4450, "droneBest": [5250, 6050], "cmFloor": 45, "cmBest": [55, 85]},
+    {"date": "2026-03-28", "day": 29, "bmFloor": 1500, "bmBest": [1750, 2050], "droneFloor": 4450, "droneBest": [5250, 6050], "cmFloor": 45, "cmBest": [55, 85]},
+    {"date": "2026-03-29", "day": 30, "bmFloor": 1700, "bmBest": [1800, 2100], "droneFloor": 5000, "droneBest": [5500, 6200], "cmFloor": 45, "cmBest": [55, 85]},
+    {"date": "2026-04-01", "day": 33, "bmFloor": 1850, "bmBest": [2300, 2700], "droneFloor": 5500, "droneBest": [6600, 7600], "cmFloor": 55, "cmBest": [70, 110]},
+    {"date": "2026-04-05", "day": 37, "bmFloor": 2200, "bmBest": [2800, 3200], "droneFloor": 6400, "droneBest": [7800, 8800], "cmFloor": 68, "cmBest": [90, 130]},
+    {"date": "2026-04-07", "day": 39, "bmFloor": 2200, "bmBest": [2800, 3200], "droneFloor": 6400, "droneBest": [7800, 8800], "cmFloor": 68, "cmBest": [90, 130]}
+  ],
+  "launcherHistory": [
+    {"date": "2026-03-04", "day": 5, "remaining": [110, 140], "midpoint": 125, "destroyed": [300, 300], "note": "300+ MRBM launchers destroyed (IDF)"},
+    {"date": "2026-03-18", "day": 19, "remaining": [120, 180], "midpoint": 150, "destroyed": [260, 290]},
+    {"date": "2026-03-20", "day": 21, "remaining": [110, 170], "midpoint": 140, "destroyed": [270, 300], "note": "Nudged down after largest strike package + DIB hits"},
+    {"date": "2026-03-21", "day": 22, "remaining": [100, 160], "midpoint": 130, "destroyed": [280, 310], "note": "IRGC Aerospace Force Cmdr killed — C2 degradation"},
+    {"date": "2026-03-22", "day": 23, "remaining": [100, 160], "midpoint": 130, "destroyed": [280, 310], "note": "Aghajani (drone unit cmdr) killed — 2nd C2 kill in 48h"},
+    {"date": "2026-03-25", "day": 26, "remaining": [100, 160], "midpoint": 120, "destroyed": [280, 340], "note": "600+ IDF BM-site strikes; morale collapse reports"},
+    {"date": "2026-03-28", "day": 29, "remaining": [110, 130], "midpoint": 120, "destroyed": [310, 330], "note": "Tightened range; DIB blitz"},
+    {"date": "2026-04-01", "day": 33, "remaining": [100, 135], "midpoint": 117, "destroyed": [305, 340], "note": "29 launch bases struck (WaPo); BM production halted"},
+    {"date": "2026-04-05", "day": 37, "remaining": [68, 135], "midpoint": 102, "destroyed": [300, 340]},
+    {"date": "2026-04-07", "day": 39, "remaining": [68, 135], "midpoint": 99, "destroyed": [300, 340], "note": "~40 days to functional zero"}
+  ],
+  "gulfBreakdown": {
+    "asOf": "2026-04-07",
+    "countries": [
+      {"name": "UAE", "bm": 498, "cm": 23, "drones": 2141, "quality": "High", "asOf": "Apr 4"},
+      {"name": "Kuwait", "bm": 352, "cm": 0, "drones": 630, "quality": "Medium", "asOf": "Apr 5 (working)"},
+      {"name": "Qatar", "bm": 225, "cm": 8, "drones": 105, "quality": "Medium", "asOf": "Mar 23 (working)"},
+      {"name": "Bahrain", "bm": 154, "cm": 0, "drones": 274, "quality": "High", "asOf": "Apr 2 (working)"},
+      {"name": "Saudi Arabia", "bm": 60, "cm": 7, "drones": 660, "quality": "Medium-Low", "asOf": "Apr 2 (working)"},
+      {"name": "Israel", "bm": 400, "cm": 0, "drones": 0, "quality": "Medium", "asOf": "Apr 4 (NBC est)", "note": "Drone/CM counts toward Israel not separately tracked"}
+    ]
+  },
+  "keyEvents": [
+    {"date": "2026-02-28", "day": 1, "text": "War begins — Iran launches massive opening salvos"},
+    {"date": "2026-03-04", "day": 5, "text": "SRBM revelation: pre-war BM stockpile revised to 8K-11K (was 2.5-3K)"},
+    {"date": "2026-03-05", "day": 6, "text": "BM fire rate down 86% from Day 1; interceptor crisis emerging"},
+    {"date": "2026-03-06", "day": 7, "text": "BM fire rate down 90%; IRGC naval fleet effectively destroyed"},
+    {"date": "2026-03-19", "day": 20, "text": "Tracker restructured — methodology shift to floor/best-estimate model"},
+    {"date": "2026-03-21", "day": 22, "text": "IRGC Aerospace Force Commander killed in Esfahan"},
+    {"date": "2026-03-22", "day": 23, "text": "IRGC drone unit commander killed — 2nd C2 kill in 48h; IRBMs at Diego Garcia"},
+    {"date": "2026-03-23", "day": 24, "text": "Kuwait/Qatar cumulatives revised sharply upward after cross-reference"},
+    {"date": "2026-03-25", "day": 26, "text": "Strait of Hormuz mined; IDF 600+ strikes on BM sites; morale collapse"},
+    {"date": "2026-03-29", "day": 30, "text": "WaPo: 4 key BM production facilities destroyed; production 'most likely halted'"},
+    {"date": "2026-04-04", "day": 36, "text": "UAE surge: +60 BMs in 3 days; CM usage accelerating; China fuel chemicals"},
+    {"date": "2026-04-05", "day": 37, "text": "Iran targeting civilian infrastructure — desalination, refineries, ports"},
+    {"date": "2026-04-07", "day": 39, "text": "Trump ultimatum on Strait of Hormuz; Al Jubail industrial hub struck"}
+  ]
+}

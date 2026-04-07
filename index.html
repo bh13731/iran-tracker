@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iran Missile & Drone Tracker</title>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<style>
+:root {
+  --bg: #0d1117;
+  --surface: #161b22;
+  --border: #30363d;
+  --text: #c9d1d9;
+  --text-muted: #8b949e;
+  --accent: #58a6ff;
+  --red: #f85149;
+  --orange: #d29922;
+  --green: #3fb950;
+  --purple: #bc8cff;
+  --cyan: #39d2c0;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+  padding: 0 16px 64px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+h1 { font-size: 1.5rem; font-weight: 700; margin: 24px 0 4px; }
+h2 { font-size: 1.15rem; font-weight: 600; margin: 32px 0 12px; color: var(--accent); }
+h3 { font-size: 0.95rem; font-weight: 600; margin: 20px 0 8px; color: var(--text-muted); }
+.subtitle { color: var(--text-muted); font-size: 0.85rem; margin-bottom: 16px; }
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+.ceo-line {
+  background: var(--surface);
+  border-left: 3px solid var(--accent);
+  padding: 12px 16px;
+  margin: 16px 0;
+  font-size: 0.9rem;
+}
+.chart-container { width: 100%; overflow-x: auto; }
+svg { display: block; }
+.axis text { fill: var(--text-muted); font-size: 11px; }
+.axis line, .axis path { stroke: var(--border); }
+.grid line { stroke: var(--border); stroke-opacity: 0.3; }
+.grid path { display: none; }
+.tooltip {
+  position: absolute;
+  background: #1c2128;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 12px;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 10;
+  max-width: 280px;
+  line-height: 1.4;
+}
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 8px 0;
+  font-size: 0.8rem;
+}
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.legend-swatch {
+  width: 12px;
+  height: 3px;
+  border-radius: 1px;
+}
+.bar-legend .legend-swatch {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+  margin: 8px 0;
+}
+th, td {
+  padding: 6px 8px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+th { color: var(--text-muted); font-weight: 500; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px; }
+td.num { text-align: right; font-variant-numeric: tabular-nums; }
+.confidence-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  padding: 1px 6px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+.conf-high { background: rgba(63, 185, 80, 0.15); color: var(--green); }
+.conf-medium { background: rgba(210, 153, 34, 0.15); color: var(--orange); }
+.conf-low { background: rgba(248, 81, 73, 0.15); color: var(--red); }
+.event-list { list-style: none; }
+.event-list li {
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.82rem;
+}
+.event-list li:last-child { border-bottom: none; }
+.event-date { color: var(--text-muted); font-size: 0.75rem; margin-right: 8px; }
+.event-day { color: var(--accent); font-size: 0.72rem; }
+.caveat-list { list-style: disc; padding-left: 20px; }
+.caveat-list li { font-size: 0.8rem; color: var(--text-muted); margin: 4px 0; }
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+  margin: 12px 0;
+}
+.stat-box {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 12px;
+  text-align: center;
+}
+.stat-value { font-size: 1.3rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+.stat-label { font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; }
+.range-bar {
+  height: 6px;
+  border-radius: 3px;
+  background: var(--border);
+  position: relative;
+  margin: 4px 0;
+}
+.range-fill {
+  height: 100%;
+  border-radius: 3px;
+  position: absolute;
+  left: 0;
+}
+@media (max-width: 600px) {
+  body { padding: 0 10px 48px; }
+  h1 { font-size: 1.2rem; }
+  .stat-grid { grid-template-columns: repeat(2, 1fr); }
+  table { font-size: 0.75rem; }
+  th, td { padding: 4px 4px; }
+}
+</style>
+</head>
+<body>
+
+<h1>Iran Missile & Drone Tracker</h1>
+<p class="subtitle">Depletion analysis — <span id="last-updated"></span></p>
+
+<div class="ceo-line" id="ceo-summary"></div>
+
+<div class="stat-grid" id="stat-grid"></div>
+
+<h2>UAE Official Cumulative Intercepts</h2>
+<p class="subtitle">UAE MoD data — highest confidence series. Ballistic missiles, cruise missiles, and drones intercepted since Feb 28.</p>
+<div class="card">
+  <div class="legend" id="uae-legend"></div>
+  <div class="chart-container" id="uae-chart"></div>
+</div>
+
+<h2>Total Munitions Fired — All Theaters</h2>
+<p class="subtitle">Confirmed floor (solid) vs best-estimate range (shaded). Methodology shift on Day 20.</p>
+<div class="card">
+  <div class="legend" id="total-legend"></div>
+  <div class="chart-container" id="total-chart"></div>
+</div>
+
+<h2>Launcher Depletion</h2>
+<p class="subtitle">Estimated remaining operational ballistic missile launchers. This is the binding constraint — not missile stocks.</p>
+<div class="card">
+  <div class="legend" id="launcher-legend"></div>
+  <div class="chart-container" id="launcher-chart"></div>
+</div>
+
+<h2>Gulf Breakdown by Country</h2>
+<p class="subtitle">Cumulative intercepts by target country (latest available figures).</p>
+<div class="card">
+  <div class="chart-container" id="gulf-chart"></div>
+</div>
+
+<h2>Current Stockpile Snapshot</h2>
+<div class="card">
+  <table id="snapshot-table">
+    <thead>
+      <tr><th>Category</th><th class="num">Pre-war</th><th class="num">Fired (est)</th><th class="num">Remaining (est)</th><th>Confidence</th></tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</div>
+
+<h2>Key Events</h2>
+<div class="card">
+  <ul class="event-list" id="event-list"></ul>
+</div>
+
+<h2>Methodology & Caveats</h2>
+<div class="card">
+  <p style="font-size: 0.85rem; margin-bottom: 8px;" id="methodology-text"></p>
+  <ul class="caveat-list" id="caveat-list"></ul>
+</div>
+
+<div class="tooltip" id="tooltip"></div>
+
+<script>
+const WIDTH = Math.min(920, window.innerWidth - 40);
+const MOBILE = WIDTH < 500;
+const MARGIN = { top: 20, right: MOBILE ? 10 : 60, bottom: 40, left: MOBILE ? 45 : 55 };
+const H = MOBILE ? 240 : 300;
+
+const colors = {
+  bm: '#f85149',
+  drones: '#58a6ff',
+  cm: '#bc8cff',
+  bmFill: 'rgba(248,81,73,0.15)',
+  droneFill: 'rgba(88,166,255,0.15)',
+  cmFill: 'rgba(188,140,255,0.15)',
+  launcher: '#d29922',
+  launcherFill: 'rgba(210,153,34,0.15)',
+  green: '#3fb950'
+};
+
+const tooltip = d3.select('#tooltip');
+const parseDate = d3.timeParse('%Y-%m-%d');
+const fmtDate = d3.timeFormat('%b %d');
+const fmtNum = d3.format(',');
+
+fetch('data.json').then(r => r.json()).then(data => {
+  // Header
+  d3.select('#last-updated').text(`Day ${data.meta.lastDay} — ${data.meta.lastUpdated.split('T')[0]}`);
+
+  const snap = data.currentSnapshot;
+  const bm = snap.categories.find(c => c.name.startsWith('Total'));
+  const dr = snap.categories.find(c => c.name === 'Drones');
+  const lnch = snap.categories.find(c => c.name === 'Launchers');
+
+  d3.select('#ceo-summary').html(
+    `<strong>Day ${snap.day}:</strong> ~${fmtNum(mid(bm.fired))} ballistic missiles and ~${fmtNum(mid(dr.fired))} drones fired. ` +
+    `~${lnch.midpoint} launchers remaining (~${lnch.daysToZero} days to functional zero). ` +
+    `Launchers — not stocks — are the binding constraint. Drones remain the long-war threat.`
+  );
+
+  // Stat grid
+  const stats = [
+    { label: 'War Day', value: snap.day },
+    { label: 'BMs Fired (est)', value: `~${fmtNum(mid(bm.fired))}` },
+    { label: 'Drones Fired (est)', value: `~${fmtNum(mid(dr.fired))}` },
+    { label: 'Launchers Left', value: `~${lnch.midpoint}` },
+    { label: 'Days to Zero', value: `~${lnch.daysToZero}` },
+    { label: 'UAE BM Total', value: fmtNum(data.uaeCumulative[data.uaeCumulative.length - 1].bm) },
+  ];
+  const grid = d3.select('#stat-grid');
+  stats.forEach(s => {
+    const box = grid.append('div').attr('class', 'stat-box');
+    box.append('div').attr('class', 'stat-value').text(s.value);
+    box.append('div').attr('class', 'stat-label').text(s.label);
+  });
+
+  // UAE chart
+  drawUAEChart(data);
+  // Total chart
+  drawTotalChart(data);
+  // Launcher chart
+  drawLauncherChart(data);
+  // Gulf breakdown
+  drawGulfChart(data);
+  // Snapshot table
+  drawSnapshotTable(data);
+  // Events
+  drawEvents(data);
+  // Methodology
+  d3.select('#methodology-text').text(data.meta.methodology);
+  const cl = d3.select('#caveat-list');
+  data.meta.caveats.forEach(c => cl.append('li').text(c));
+});
+
+function mid(arr) { return Math.round((arr[0] + arr[1]) / 2); }
+
+function makeXScale(dates, w) {
+  return d3.scaleTime().domain(d3.extent(dates)).range([MARGIN.left, w - MARGIN.right]);
+}
+
+function drawUAEChart(data) {
+  const pts = data.uaeCumulative.map(d => ({ ...d, dt: parseDate(d.date) }));
+  const w = WIDTH, h = H;
+  const x = makeXScale(pts.map(d => d.dt), w);
+  const yMax = d3.max(pts, d => d.drones) * 1.1;
+  const y = d3.scaleLinear().domain([0, yMax]).range([h - MARGIN.bottom, MARGIN.top]);
+
+  const svg = d3.select('#uae-chart').append('svg').attr('width', w).attr('height', h).attr('viewBox', `0 0 ${w} ${h}`);
+
+  // Grid
+  svg.append('g').attr('class', 'grid').attr('transform', `translate(${MARGIN.left},0)`)
+    .call(d3.axisLeft(y).ticks(5).tickSize(-(w - MARGIN.left - MARGIN.right)).tickFormat(''));
+
+  // Axes
+  svg.append('g').attr('class', 'axis').attr('transform', `translate(0,${h - MARGIN.bottom})`)
+    .call(d3.axisBottom(x).ticks(MOBILE ? 5 : 8).tickFormat(fmtDate));
+  svg.append('g').attr('class', 'axis').attr('transform', `translate(${MARGIN.left},0)`)
+    .call(d3.axisLeft(y).ticks(5).tickFormat(d3.format('~s')));
+
+  const line = (key) => d3.line().x(d => x(d.dt)).y(d => y(d[key])).curve(d3.curveMonotoneX);
+
+  // Lines
+  [
+    { key: 'drones', color: colors.drones, label: 'Drones' },
+    { key: 'bm', color: colors.bm, label: 'Ballistic' },
+    { key: 'cm', color: colors.cm, label: 'Cruise' },
+  ].forEach(s => {
+    svg.append('path').datum(pts).attr('fill', 'none').attr('stroke', s.color).attr('stroke-width', 2).attr('d', line(s.key));
+    svg.selectAll(`.dot-${s.key}`).data(pts).enter().append('circle')
+      .attr('cx', d => x(d.dt)).attr('cy', d => y(d[s.key])).attr('r', 3).attr('fill', s.color)
+      .on('mouseover', (e, d) => {
+        tooltip.style('opacity', 1).html(
+          `<strong>${fmtDate(d.dt)}</strong> (Day ${d.day})<br>` +
+          `BM: ${fmtNum(d.bm)} | CM: ${fmtNum(d.cm)} | Drones: ${fmtNum(d.drones)}`
+        ).style('left', (e.pageX + 12) + 'px').style('top', (e.pageY - 28) + 'px');
+      })
+      .on('mouseout', () => tooltip.style('opacity', 0));
+
+    // Label at end
+    if (!MOBILE) {
+      const last = pts[pts.length - 1];
+      svg.append('text').attr('x', x(last.dt) + 6).attr('y', y(last[s.key]) + 4)
+        .attr('fill', s.color).attr('font-size', 11).text(`${s.label}: ${fmtNum(last[s.key])}`);
+    }
+  });
+
+  // Legend
+  const leg = d3.select('#uae-legend');
+  [
+    { label: 'Drones', color: colors.drones },
+    { label: 'Ballistic missiles', color: colors.bm },
+    { label: 'Cruise missiles', color: colors.cm },
+  ].forEach(l => {
+    const item = leg.append('div').attr('class', 'legend-item');
+    item.append('div').attr('class', 'legend-swatch').style('background', l.color);
+    item.append('span').text(l.label);
+  });
+}
+
+function drawTotalChart(data) {
+  const pts = data.totalEstimates.map(d => ({ ...d, dt: parseDate(d.date) }));
+  const w = WIDTH, h = H;
+  const x = makeXScale(pts.map(d => d.dt), w);
+  const yMax = d3.max(pts, d => d.droneBest[1]) * 1.1;
+  const y = d3.scaleLinear().domain([0, yMax]).range([h - MARGIN.bottom, MARGIN.top]);
+
+  const svg = d3.select('#total-chart').append('svg').attr('width', w).attr('height', h).attr('viewBox', `0 0 ${w} ${h}`);
+
+  svg.append('g').attr('class', 'grid').attr('transform', `translate(${MARGIN.left},0)`)
+    .call(d3.axisLeft(y).ticks(5).tickSize(-(w - MARGIN.left - MARGIN.right)).tickFormat(''));
+  svg.append('g').attr('class', 'axis').attr('transform', `translate(0,${h - MARGIN.bottom})`)
+    .call(d3.axisBottom(x).ticks(MOBILE ? 5 : 8).tickFormat(fmtDate));
+  svg.append('g').attr('class', 'axis').attr('transform', `translate(${MARGIN.left},0)`)
+    .call(d3.axisLeft(y).ticks(5).tickFormat(d3.format('~s')));
+
+  // Methodology shift line
+  const shiftDate = parseDate('2026-03-19');
+  svg.append('line').attr('x1', x(shiftDate)).attr('x2', x(shiftDate))
+    .attr('y1', MARGIN.top).attr('y2', h - MARGIN.bottom)
+    .attr('stroke', '#484f58').attr('stroke-dasharray', '4,3').attr('stroke-width', 1);
+  svg.append('text').attr('x', x(shiftDate) + 4).attr('y', MARGIN.top + 12)
+    .attr('fill', '#484f58').attr('font-size', 9).text('Methodology shift');
+
+  // Draw each series: area for best-estimate range, line for floor
+  const series = [
+    { floor: 'droneFloor', best: 'droneBest', color: colors.drones, fill: colors.droneFill, label: 'Drones' },
+    { floor: 'bmFloor', best: 'bmBest', color: colors.bm, fill: colors.bmFill, label: 'Ballistic' },
+  ];
+
+  series.forEach(s => {
+    // Best-estimate band
+    const area = d3.area().x(d => x(d.dt))
+      .y0(d => y(d[s.best][0])).y1(d => y(d[s.best][1]))
+      .curve(d3.curveMonotoneX);
+    svg.append('path').datum(pts).attr('fill', s.fill).attr('d', area);
+
+    // Floor line
+    const line = d3.line().x(d => x(d.dt)).y(d => y(d[s.floor])).curve(d3.curveMonotoneX);
+    svg.append('path').datum(pts).attr('fill', 'none').attr('stroke', s.color).attr('stroke-width', 2).attr('d', line);
+
+    // Dots with tooltip
+    svg.selectAll(`.dot-total-${s.floor}`).data(pts).enter().append('circle')
+      .attr('cx', d => x(d.dt)).attr('cy', d => y(d[s.floor])).attr('r', 3).attr('fill', s.color)
+      .on('mouseover', (e, d) => {
+        tooltip.style('opacity', 1).html(
+          `<strong>${fmtDate(d.dt)}</strong> (Day ${d.day})<br>` +
+          `${s.label} floor: ${fmtNum(d[s.floor])}<br>` +
+          `${s.label} best est: ${fmtNum(d[s.best][0])}-${fmtNum(d[s.best][1])}`
+        ).style('left', (e.pageX + 12) + 'px').style('top', (e.pageY - 28) + 'px');
+      })
+      .on('mouseout', () => tooltip.style('opacity', 0));
+
+    if (!MOBILE) {
+      const last = pts[pts.length - 1];
+      svg.append('text').attr('x', x(last.dt) + 6).attr('y', y(last[s.floor]) + 4)
+        .attr('fill', s.color).attr('font-size', 11).text(`${s.label}: ~${fmtNum(last[s.floor])}+`);
+    }
+  });
+
+  const leg = d3.select('#total-legend');
+  [
+    { label: 'Drones (floor / range)', color: colors.drones },
+    { label: 'Ballistic missiles (floor / range)', color: colors.bm },
+  ].forEach(l => {
+    const item = leg.append('div').attr('class', 'legend-item');
+    item.append('div').attr('class', 'legend-swatch').style('background', l.color);
+    item.append('span').text(l.label);
+  });
+}
+
+function drawLauncherChart(data) {
+  const pts = data.launcherHistory.map(d => ({ ...d, dt: parseDate(d.date) }));
+  const w = WIDTH, h = H;
+  const x = makeXScale(pts.map(d => d.dt), w);
+  const y = d3.scaleLinear().domain([0, 460]).range([h - MARGIN.bottom, MARGIN.top]);
+
+  const svg = d3.select('#launcher-chart').append('svg').attr('width', w).attr('height', h).attr('viewBox', `0 0 ${w} ${h}`);
+
+  svg.append('g').attr('class', 'grid').attr('transform', `translate(${MARGIN.left},0)`)
+    .call(d3.axisLeft(y).ticks(5).tickSize(-(w - MARGIN.left - MARGIN.right)).tickFormat(''));
+  svg.append('g').attr('class', 'axis').attr('transform', `translate(0,${h - MARGIN.bottom})`)
+    .call(d3.axisBottom(x).ticks(MOBILE ? 5 : 8).tickFormat(fmtDate));
+  svg.append('g').attr('class', 'axis').attr('transform', `translate(${MARGIN.left},0)`)
+    .call(d3.axisLeft(y).ticks(5));
+
+  // Pre-war band
+  svg.append('rect').attr('x', MARGIN.left).attr('y', y(440)).attr('width', w - MARGIN.left - MARGIN.right)
+    .attr('height', y(410) - y(440)).attr('fill', 'rgba(63,185,80,0.08)');
+  svg.append('text').attr('x', MARGIN.left + 4).attr('y', y(440) + 12)
+    .attr('fill', colors.green).attr('font-size', 9).attr('opacity', 0.6).text('Pre-war: 410-440');
+
+  // Remaining band
+  const area = d3.area().x(d => x(d.dt))
+    .y0(d => y(d.remaining[0])).y1(d => y(d.remaining[1]))
+    .curve(d3.curveMonotoneX);
+  svg.append('path').datum(pts).attr('fill', colors.launcherFill).attr('d', area);
+
+  // Midpoint line
+  const line = d3.line().x(d => x(d.dt)).y(d => y(d.midpoint)).curve(d3.curveMonotoneX);
+  svg.append('path').datum(pts).attr('fill', 'none').attr('stroke', colors.launcher).attr('stroke-width', 2.5).attr('d', line);
+
+  // Zero line projection
+  const lastPt = pts[pts.length - 1];
+  const zeroDate = new Date(lastPt.dt);
+  zeroDate.setDate(zeroDate.getDate() + 41);
+  if (x(zeroDate) <= w - MARGIN.right) {
+    svg.append('line').attr('x1', x(lastPt.dt)).attr('x2', x(zeroDate))
+      .attr('y1', y(lastPt.midpoint)).attr('y2', y(0))
+      .attr('stroke', colors.red).attr('stroke-dasharray', '6,4').attr('stroke-width', 1.5).attr('opacity', 0.6);
+    svg.append('text').attr('x', x(zeroDate) - 4).attr('y', y(0) - 6)
+      .attr('fill', colors.red).attr('font-size', 10).attr('text-anchor', 'end').attr('opacity', 0.7)
+      .text('~0 launchers');
+  }
+
+  // Dots
+  svg.selectAll('.dot-launcher').data(pts).enter().append('circle')
+    .attr('cx', d => x(d.dt)).attr('cy', d => y(d.midpoint)).attr('r', 4).attr('fill', colors.launcher)
+    .on('mouseover', (e, d) => {
+      tooltip.style('opacity', 1).html(
+        `<strong>${fmtDate(d.dt)}</strong> (Day ${d.day})<br>` +
+        `Remaining: ${d.remaining[0]}-${d.remaining[1]} (mid: ${d.midpoint})<br>` +
+        (d.note ? `<em>${d.note}</em>` : '')
+      ).style('left', (e.pageX + 12) + 'px').style('top', (e.pageY - 28) + 'px');
+    })
+    .on('mouseout', () => tooltip.style('opacity', 0));
+
+  if (!MOBILE) {
+    svg.append('text').attr('x', x(lastPt.dt) + 6).attr('y', y(lastPt.midpoint) + 4)
+      .attr('fill', colors.launcher).attr('font-size', 11).text(`~${lastPt.midpoint} remaining`);
+  }
+
+  const leg = d3.select('#launcher-legend');
+  [
+    { label: 'Remaining (midpoint)', color: colors.launcher },
+    { label: 'Range (low-high)', color: colors.launcherFill },
+    { label: 'Projected to zero', color: colors.red },
+  ].forEach(l => {
+    const item = leg.append('div').attr('class', 'legend-item');
+    item.append('div').attr('class', 'legend-swatch').style('background', l.color);
+    item.append('span').text(l.label);
+  });
+}
+
+function drawGulfChart(data) {
+  const countries = data.gulfBreakdown.countries;
+  const w = WIDTH, h = MOBILE ? 220 : 260;
+  const margin = { top: 20, right: 10, bottom: 30, left: MOBILE ? 60 : 80 };
+
+  const svg = d3.select('#gulf-chart').append('svg').attr('width', w).attr('height', h).attr('viewBox', `0 0 ${w} ${h}`);
+
+  const y = d3.scaleBand().domain(countries.map(c => c.name)).range([margin.top, h - margin.bottom]).padding(0.25);
+  const xMax = d3.max(countries, c => c.bm + c.cm + c.drones);
+  const x = d3.scaleLinear().domain([0, xMax * 1.05]).range([margin.left, w - margin.right]);
+
+  svg.append('g').attr('class', 'axis').attr('transform', `translate(0,${h - margin.bottom})`)
+    .call(d3.axisBottom(x).ticks(MOBILE ? 4 : 6).tickFormat(d3.format('~s')));
+  svg.append('g').attr('class', 'axis').attr('transform', `translate(${margin.left},0)`)
+    .call(d3.axisLeft(y));
+
+  const stack = ['drones', 'bm', 'cm'];
+  const stackColors = { drones: colors.drones, bm: colors.bm, cm: colors.cm };
+
+  countries.forEach(c => {
+    let cumX = 0;
+    stack.forEach(key => {
+      const val = c[key];
+      if (val > 0) {
+        svg.append('rect')
+          .attr('x', x(cumX)).attr('y', y(c.name))
+          .attr('width', x(cumX + val) - x(cumX)).attr('height', y.bandwidth())
+          .attr('fill', stackColors[key]).attr('rx', 2)
+          .on('mouseover', (e) => {
+            tooltip.style('opacity', 1).html(
+              `<strong>${c.name}</strong> (as of ${c.asOf})<br>` +
+              `BM: ${fmtNum(c.bm)} | CM: ${fmtNum(c.cm)} | Drones: ${fmtNum(c.drones)}<br>` +
+              `Quality: ${c.quality}` + (c.note ? `<br><em>${c.note}</em>` : '')
+            ).style('left', (e.pageX + 12) + 'px').style('top', (e.pageY - 28) + 'px');
+          })
+          .on('mouseout', () => tooltip.style('opacity', 0));
+        cumX += val;
+      }
+    });
+  });
+
+  // Inline legend
+  const leg = svg.append('g').attr('transform', `translate(${margin.left + 4}, ${margin.top - 6})`);
+  [
+    { label: 'Drones', color: colors.drones },
+    { label: 'Ballistic', color: colors.bm },
+    { label: 'Cruise', color: colors.cm },
+  ].forEach((l, i) => {
+    const g = leg.append('g').attr('transform', `translate(${i * 80}, 0)`);
+    g.append('rect').attr('width', 10).attr('height', 10).attr('fill', l.color).attr('rx', 2);
+    g.append('text').attr('x', 14).attr('y', 9).attr('fill', '#8b949e').attr('font-size', 10).text(l.label);
+  });
+}
+
+function drawSnapshotTable(data) {
+  const tbody = d3.select('#snapshot-table tbody');
+  data.currentSnapshot.categories.filter(c => c.name !== 'Launchers').forEach(c => {
+    const tr = tbody.append('tr');
+    tr.append('td').text(c.name);
+    tr.append('td').attr('class', 'num').text(`${fmtNum(c.preWar[0])}-${fmtNum(c.preWar[1])}`);
+    tr.append('td').attr('class', 'num').text(`${fmtNum(c.fired[0])}-${fmtNum(c.fired[1])}`);
+    tr.append('td').attr('class', 'num').text(`${fmtNum(c.remaining[0])}-${fmtNum(c.remaining[1])}`);
+    const confClass = c.confidence.includes('Low') ? 'conf-low' : c.confidence.includes('High') ? 'conf-high' : 'conf-medium';
+    tr.append('td').append('span').attr('class', `confidence-badge ${confClass}`).text(c.confidence);
+  });
+  // Launchers row
+  const lnch = data.currentSnapshot.categories.find(c => c.name === 'Launchers');
+  const tr = tbody.append('tr');
+  tr.append('td').text(lnch.name);
+  tr.append('td').attr('class', 'num').text(`${fmtNum(lnch.preWar[0])}-${fmtNum(lnch.preWar[1])}`);
+  tr.append('td').attr('class', 'num').text(`${fmtNum(lnch.destroyed[0])}-${fmtNum(lnch.destroyed[1])} destroyed`);
+  tr.append('td').attr('class', 'num').text(`${fmtNum(lnch.remaining[0])}-${fmtNum(lnch.remaining[1])}`);
+  tr.append('td').append('span').attr('class', 'confidence-badge conf-high').text(lnch.confidence);
+}
+
+function drawEvents(data) {
+  const list = d3.select('#event-list');
+  data.keyEvents.slice().reverse().forEach(ev => {
+    const li = list.append('li');
+    li.append('span').attr('class', 'event-date').text(ev.date);
+    li.append('span').attr('class', 'event-day').text(`Day ${ev.day}`);
+    li.append('span').text(` — ${ev.text}`);
+  });
+}
+</script>
+</body>
+</html>
