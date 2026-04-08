@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Cease-Fire Arrived — But the Numbers Were Already Telling the Story</title>
+<meta name="description" content="Iran's ballistic missile rate had collapsed before any deal was signed. Data-driven analysis of what 40 days of tracker data reveal about Iran's military breaking point.">
+<style>
+:root {
+  --bg: #0d1117;
+  --surface: #161b22;
+  --border: #30363d;
+  --text: #c9d1d9;
+  --text-muted: #8b949e;
+  --accent: #58a6ff;
+  --red: #f85149;
+  --orange: #d29922;
+  --green: #3fb950;
+  --purple: #bc8cff;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  padding: 0 16px 64px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+nav { padding: 16px 0 8px; font-size: 0.85rem; }
+nav a { color: var(--accent); text-decoration: none; }
+nav a:hover { text-decoration: underline; }
+h1 { font-size: 1.6rem; font-weight: 700; margin: 20px 0 8px; line-height: 1.3; }
+h2 { font-size: 1.15rem; font-weight: 600; margin: 32px 0 12px; color: var(--accent); }
+.meta { color: var(--text-muted); font-size: 0.82rem; margin-bottom: 24px; }
+p { font-size: 0.92rem; margin-bottom: 14px; }
+.lede {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text);
+  border-left: 3px solid var(--accent);
+  padding-left: 16px;
+  margin: 20px 0 28px;
+}
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin: 16px 0;
+}
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.88rem;
+}
+.stat-row:last-child { border-bottom: none; }
+.stat-label { color: var(--text-muted); }
+.stat-value { font-weight: 600; font-variant-numeric: tabular-nums; }
+.down { color: var(--green); }
+.up { color: var(--red); }
+.callout {
+  background: rgba(88,166,255,0.08);
+  border-left: 3px solid var(--accent);
+  padding: 14px 18px;
+  margin: 20px 0;
+  font-size: 0.9rem;
+}
+.callout strong { color: var(--accent); }
+blockquote {
+  border-left: 3px solid var(--border);
+  padding-left: 16px;
+  color: var(--text-muted);
+  font-style: italic;
+  margin: 16px 0;
+  font-size: 0.88rem;
+}
+.tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  padding: 1px 8px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+.tag-analysis { background: rgba(88,166,255,0.15); color: var(--accent); }
+.tag-ceasefire { background: rgba(63,185,80,0.15); color: var(--green); }
+.footer-note {
+  margin-top: 40px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+@media (max-width: 600px) {
+  body { padding: 0 10px 48px; }
+  h1 { font-size: 1.3rem; }
+}
+</style>
+</head>
+<body>
+
+<nav><a href="../index.html">&larr; Dashboard</a> &middot; <a href="index.html">All stories</a></nav>
+
+<h1>The Cease-Fire Arrived — But the Numbers Were Already Telling the Story</h1>
+<div class="meta">April 8, 2026 &middot; Day 40 &middot; <span class="tag tag-analysis">Analysis</span> <span class="tag tag-ceasefire">Cease-fire</span></div>
+
+<div class="lede">
+On the evening of April 7, Pakistan and China brokered a two-week cease-fire between Iran and the US-led coalition. Markets rallied. Headlines credited diplomacy. But the tracker data tells a different story: Iran's offensive capacity was already breaking down before any deal was signed.
+</div>
+
+<h2>The rate collapse</h2>
+
+<p>The single most revealing number in the tracker isn't a stockpile estimate — it's the <strong>daily ballistic missile rate at UAE</strong>, the highest-confidence series we track.</p>
+
+<div class="card">
+  <div class="stat-row">
+    <span class="stat-label">UAE BM daily rate, Apr 2-4</span>
+    <span class="stat-value">~20/day</span>
+  </div>
+  <div class="stat-row">
+    <span class="stat-label">UAE BM daily rate, Apr 5-7</span>
+    <span class="stat-value down">~7/day</span>
+  </div>
+  <div class="stat-row">
+    <span class="stat-label">Decline</span>
+    <span class="stat-value down">-65%</span>
+  </div>
+</div>
+
+<p>This wasn't a tactical pause or a political signal. The UAE BM rate dropped by two-thirds in the final three days before the cease-fire — a decline consistent with a military running out of operational launchers and trained crews, not one conserving resources for later.</p>
+
+<p>The drone rate tells a similar story, though less dramatically: ~43/day in the Apr 2-4 window fell to ~27/day in the final stretch. Drones are harder to interpret because Iran's reserves are far deeper (our pre-war estimate: 35,000-55,000), but even drone operations were decelerating.</p>
+
+<h2>Three simultaneous squeezes</h2>
+
+<p>The rate collapse wasn't caused by any single factor. It was the convergence of three independent degradation curves:</p>
+
+<div class="card">
+  <div class="stat-row">
+    <span class="stat-label">Launchers remaining (midpoint)</span>
+    <span class="stat-value">~99 <span style="color:var(--text-muted);font-weight:400">of 410-440 pre-war</span></span>
+  </div>
+  <div class="stat-row">
+    <span class="stat-label">Launch bases struck</span>
+    <span class="stat-value up">29+</span>
+  </div>
+  <div class="stat-row">
+    <span class="stat-label">BM production facilities destroyed</span>
+    <span class="stat-value up">4 major (Khojir, Shahroud, Parchin, Hakimiyeh)</span>
+  </div>
+  <div class="stat-row">
+    <span class="stat-label">Senior IRGC Aerospace commanders killed</span>
+    <span class="stat-value up">3+</span>
+  </div>
+</div>
+
+<p><strong>1. Launcher attrition.</strong> Iran started the war with an estimated 410-440 ballistic missile launchers. By Day 40, we estimate 300-340 had been destroyed or rendered combat-ineffective — leaving roughly 68-135 operational. A launcher is not a missile; it's a mobile platform with trained crew, fuel, and logistical support. Each one destroyed permanently removes a slice of daily fire capacity.</p>
+
+<p><strong>2. C2 decapitation.</strong> The IRGC Aerospace Force Commander was killed in Esfahan on Day 22. The drone unit commander, Brig Gen Aghajani, was killed within 48 hours. At least one more senior IRGC commander followed. Multi-theater coordination — essential for saturation attacks — becomes exponentially harder without senior C2 nodes.</p>
+
+<p><strong>3. Production halt.</strong> The Washington Post reported on Mar 29 that four key BM production facilities had been destroyed and production was "most likely halted." Without new missile production and with launcher reload infrastructure under constant attack, Iran's stockpile advantage became increasingly theoretical.</p>
+
+<div class="callout">
+  <strong>Key insight:</strong> Iran still holds an estimated 4,100-7,800 ballistic missiles in warehouses. But with ~99 launchers, degraded C2, and no production replenishment, those paper stocks translate to roughly 50 days of fire at the pre-cease-fire rate. The cease-fire didn't prevent stockpile exhaustion — it prevented visible operational collapse.
+</div>
+
+<h2>What 40 days of data show</h2>
+
+<p>Over the full 40-day war, the tracker recorded:</p>
+
+<div class="card">
+  <div class="stat-row">
+    <span class="stat-label">Total ballistic missiles fired (best est.)</span>
+    <span class="stat-value">~2,900-3,400</span>
+  </div>
+  <div class="stat-row">
+    <span class="stat-label">Total drones fired (best est.)</span>
+    <span class="stat-value">~8,100-9,100</span>
+  </div>
+  <div class="stat-row">
+    <span class="stat-label">Total cruise missiles fired (best est.)</span>
+    <span class="stat-value">~95-140</span>
+  </div>
+  <div class="stat-row">
+    <span class="stat-label">UAE alone intercepted</span>
+    <span class="stat-value">520 BMs / 26 CMs / 2,221 drones</span>
+  </div>
+</div>
+
+<p>The UAE figures — our highest-confidence series — show that a single Gulf state absorbed over 2,700 munitions in 40 days. Scale that across six target countries plus Israel, and the total volume of Iranian fire is historically unprecedented for a modern conflict.</p>
+
+<h2>The drone question remains open</h2>
+
+<p>If ballistic missiles are the acute threat, drones are the chronic one. Iran's drone reserves are assessed at 25,900-46,900 remaining — an order of magnitude larger than any other category. The cease-fire pauses drone attrition, but if hostilities resume, drones remain the long-war threat that can sustain harassment of Gulf energy infrastructure for months.</p>
+
+<p>Reports of Chinese missile fuel chemical deliveries (Telegraph, Apr 3) and the earlier presence of Russian drone components suggest external resupply could extend Iran's drone endurance further. This is the hardest variable to model and the one most likely to matter if the cease-fire collapses.</p>
+
+<h2>What to watch</h2>
+
+<p>The two-week cease-fire window creates a pause in the data. When tracking resumes — whether because the deal holds and terms are verified, or because it collapses — these are the signals that will matter most:</p>
+
+<ul style="padding-left: 20px; font-size: 0.9rem;">
+  <li>Whether Iran uses the pause to <strong>reconstitute launcher capacity</strong> or whether destruction is permanent</li>
+  <li>Whether drone fire rates <strong>recover to pre-cease-fire levels</strong> or continue declining</li>
+  <li>New official <strong>Saudi or Qatari cumulative totals</strong> that would tighten our floor estimates</li>
+  <li>Evidence of <strong>Russian or Chinese hardware resupply</strong> beyond fuel chemicals</li>
+  <li>Whether the Strait of Hormuz actually <strong>reopens to commercial traffic</strong></li>
+</ul>
+
+<div class="footer-note">
+  <p>Data from the <a href="../index.html" style="color:var(--accent)">Iran Missile & Drone Tracker</a>. Source files, methodology, and the full analytical ledger are available in the <a href="https://github.com/bh13731/iran-tracker" style="color:var(--accent)">GitHub repository</a>. This analysis was generated with AI assistance from the tracker's underlying dataset.</p>
+</div>
+
+</body>
+</html>

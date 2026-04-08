@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Methodology — Iran Missile & Drone Tracker</title>
+<style>
+:root {
+  --bg: #0d1117;
+  --surface: #161b22;
+  --border: #30363d;
+  --text: #c9d1d9;
+  --text-muted: #8b949e;
+  --accent: #58a6ff;
+  --red: #f85149;
+  --orange: #d29922;
+  --green: #3fb950;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  padding: 0 16px 64px;
+  max-width: 760px;
+  margin: 0 auto;
+}
+nav { padding: 16px 0 8px; font-size: 0.85rem; }
+nav a { color: var(--accent); text-decoration: none; }
+nav a:hover { text-decoration: underline; }
+h1 { font-size: 1.5rem; font-weight: 700; margin: 16px 0 4px; }
+h2 { font-size: 1.15rem; font-weight: 600; margin: 28px 0 10px; color: var(--accent); }
+h3 { font-size: 0.95rem; font-weight: 600; margin: 20px 0 8px; color: var(--text-muted); }
+p, li { font-size: 0.9rem; margin-bottom: 8px; }
+ul, ol { padding-left: 24px; }
+.subtitle { color: var(--text-muted); font-size: 0.85rem; margin-bottom: 20px; }
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-bottom: 16px;
+}
+table { width: 100%; border-collapse: collapse; font-size: 0.85rem; margin: 12px 0; }
+th, td { padding: 6px 10px; text-align: left; border-bottom: 1px solid var(--border); }
+th { color: var(--text-muted); font-weight: 500; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px; }
+code { background: var(--surface); padding: 2px 6px; border-radius: 4px; font-size: 0.85em; }
+@media (max-width: 600px) {
+  body { padding: 0 10px 48px; }
+  h1 { font-size: 1.2rem; }
+}
+</style>
+</head>
+<body>
+
+<nav><a href="index.html">&larr; Dashboard</a> &middot; <a href="stories/">Stories</a></nav>
+
+<h1>Methodology & Caveats</h1>
+<p class="subtitle">How this tracker works, what it can and cannot tell you, and where the numbers come from.</p>
+
+<h2>Purpose</h2>
+<div class="card">
+<p>This tracker provides a <strong>current operational assessment</strong> of Iran's missile and drone capacity during the 2026 conflict. It is not a raw data dump or a news aggregator. Every number is either a confirmed floor (from official sources) or a best estimate (triangulated from multiple source tiers).</p>
+</div>
+
+<h2>Core Principles</h2>
+<div class="card">
+<ol>
+  <li><strong>Never confuse stockpile with launch capacity.</strong> Stockpile = missiles/drones physically held. Launch capacity = what Iran can actually fire given launchers, crews, logistics, and C2.</li>
+  <li><strong>Launcher count is the primary KPI</strong> for ballistic-missile effectiveness.</li>
+  <li><strong>Official target-country tallies are the floor</strong>, not the full total.</li>
+  <li><strong>Best estimate must be kept separate from confirmed floor.</strong></li>
+  <li><strong>Single-source cumulative tallies never become the baseline on their own.</strong></li>
+  <li><strong>If the model changes materially, say why.</strong> Do not silently overwrite old judgments.</li>
+</ol>
+</div>
+
+<h2>Source Hierarchy</h2>
+<div class="card">
+<table>
+  <thead><tr><th>Tier</th><th>Sources</th><th>Usage</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td>UAE MoD, Bahrain Defence Force, IDF official reporting, ISW/CTP</td><td>Default anchors — cumulative figures used directly</td></tr>
+    <tr><td>2</td><td>Pentagon/CENTCOM/JCS, Saudi/Qatar/Kuwait MoD, Janes/FDD/JINSA/Alma</td><td>Useful but must be triangulated against Tier 1</td></tr>
+    <tr><td>3</td><td>Reuters, NYT, BBC, Guardian, CNN, AP, FT, WSJ</td><td>Event discovery and confirmation only</td></tr>
+    <tr><td>4</td><td>IRGC, Fars, Tasnim, Iranian state media</td><td>Claims / propaganda only — never used as anchors</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2>How Numbers Are Built</h2>
+<div class="card">
+<h3>Confirmed Floor</h3>
+<p>The sum of official cumulative intercept counts from each target country. UAE MoD figures are the highest-confidence anchor. Other Gulf states contribute medium-confidence working tallies built from official daily reports and cumulative snapshots.</p>
+
+<h3>Best Estimate</h3>
+<p>The confirmed floor plus adjustments for:</p>
+<ul>
+  <li>Underreporting in the Israel theater (significant but underpublished in clean cumulative form)</li>
+  <li>Missiles/drones that struck targets without being intercepted</li>
+  <li>Strikes on Jordan, Iraq, Oman, and other non-primary theaters</li>
+  <li>Reporting gaps between Gulf state daily updates</li>
+</ul>
+
+<h3>Launcher Estimates</h3>
+<p>Derived from IDF/ISW structured reporting on pre-war launcher counts, confirmed strikes on launch bases (29+ as of Apr 1), production facility destruction, and qualitative indicators like IRGC morale collapse and C2 decapitation (two senior Aerospace Force commanders killed within 48 hours).</p>
+</div>
+
+<h2>Methodology Shift — Day 20 (Mar 19)</h2>
+<div class="card">
+<p>On Day 20, the tracker was restructured from a narrative log to a structured floor/best-estimate model. Pre-Day 20 data used a different methodology (less structured, wider ranges). The two series are not directly comparable, and charts mark this transition.</p>
+</div>
+
+<h2>Known Caveats</h2>
+<div class="card">
+<ul>
+  <li>Pre-Mar 19 data uses a different methodology (less structured, wider ranges)</li>
+  <li>Kuwait and Qatar cumulatives were significantly revised upward on Mar 23 after Wikipedia cross-reference</li>
+  <li>Saudi data is methodologically noisy; BM/CM split only available from Mar 20</li>
+  <li>Drone pre-war estimates range 30K-80K — extremely wide uncertainty</li>
+  <li>Launcher estimates are judgmental, combining hardware kills with C2/morale degradation</li>
+  <li>Production was ongoing early in the war but is assessed as halted for BMs since ~Mar 29</li>
+</ul>
+</div>
+
+<h2>Output Discipline</h2>
+<div class="card">
+<p>Every update reports:</p>
+<ul>
+  <li><strong>Confirmed floor</strong></li>
+  <li><strong>Best estimate</strong></li>
+  <li><strong>Confidence level</strong></li>
+  <li><strong>What changed in the last 24h</strong></li>
+  <li><strong>What would change the assessment next</strong></li>
+</ul>
+<p>We avoid: pseudo-precise arithmetic unsupported by data, treating destroyed launchers as destroyed missile inventory, large narrative swings from a single source family, and repeating full war history in every update.</p>
+</div>
+
+<h2>Source Files</h2>
+<div class="card">
+<p>The full source material behind this tracker is available in the <a href="https://github.com/bh13731/iran-tracker/tree/master/source" style="color: var(--accent);">source/</a> directory of this repository:</p>
+<ul>
+  <li><code>source/current-state.md</code> — Latest tracker summary</li>
+  <li><code>source/ledger.md</code> — Structured cumulative reference with every official data point</li>
+  <li><code>source/daily-log.md</code> — Dated daily analytical notes</li>
+  <li><code>source/methodology.md</code> — This methodology in plain Markdown</li>
+  <li><code>source/archive/</code> — Pre-restructure historical tracker (2,273 lines)</li>
+</ul>
+</div>
+
+</body>
+</html>

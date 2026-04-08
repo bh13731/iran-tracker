@@ -161,6 +161,12 @@ td.num { text-align: right; font-variant-numeric: tabular-nums; }
 </head>
 <body>
 
+<nav style="display:flex;gap:16px;padding:16px 0 0;font-size:0.85rem;">
+  <a href="methodology.html" style="color:var(--accent);text-decoration:none;">Methodology</a>
+  <a href="stories/" style="color:var(--accent);text-decoration:none;">Stories</a>
+  <a href="https://github.com/bh13731/iran-tracker" style="color:var(--text-muted);text-decoration:none;">GitHub</a>
+</nav>
+
 <h1>Iran Missile & Drone Tracker</h1>
 <p class="subtitle">Depletion analysis — <span id="last-updated"></span></p>
 
@@ -214,6 +220,19 @@ td.num { text-align: right; font-variant-numeric: tabular-nums; }
 <div class="card">
   <p style="font-size: 0.85rem; margin-bottom: 8px;" id="methodology-text"></p>
   <ul class="caveat-list" id="caveat-list"></ul>
+</div>
+
+<h2>Latest Analysis</h2>
+<div class="card" style="cursor:pointer;" onclick="location.href='stories/2026-04-08-cease-fire-what-the-numbers-say.html'">
+  <div style="font-weight:600;margin-bottom:4px;">The Cease-Fire Arrived — But the Numbers Were Already Telling the Story</div>
+  <div style="font-size:0.78rem;color:var(--text-muted);margin-bottom:6px;">April 8, 2026</div>
+  <div style="font-size:0.85rem;color:var(--text-muted);">Iran's BM rate had collapsed from ~20/day to ~7/day at UAE before any deal was signed. The data shows a military whose offensive capacity was breaking down from the inside.</div>
+</div>
+<div style="font-size:0.78rem;color:var(--text-muted);text-align:center;margin:24px 0 0;"><a href="stories/" style="color:var(--accent);text-decoration:none;">All stories &rarr;</a></div>
+
+<div style="margin-top:32px;padding-top:16px;border-top:1px solid var(--border);font-size:0.75rem;color:var(--text-muted);text-align:center;">
+  Source files, methodology, and the full analytical ledger are available on <a href="https://github.com/bh13731/iran-tracker" style="color:var(--accent);">GitHub</a>.<br>
+  Built with D3.js. No build system required.
 </div>
 
 <div class="tooltip" id="tooltip"></div>
