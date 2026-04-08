@@ -250,10 +250,14 @@ fetch('data.json').then(r => r.json()).then(data => {
   const dr = snap.categories.find(c => c.name === 'Drones');
   const lnch = snap.categories.find(c => c.name === 'Launchers');
 
+  const ceasefire = snap.categories[0].status && snap.categories[0].status.includes('CEASE-FIRE');
   d3.select('#ceo-summary').html(
-    `<strong>Day ${snap.day}:</strong> ~${fmtNum(mid(bm.fired))} ballistic missiles and ~${fmtNum(mid(dr.fired))} drones fired. ` +
-    `~${lnch.midpoint} launchers remaining (~${lnch.daysToZero} days to functional zero). ` +
-    `Launchers — not stocks — are the binding constraint. Drones remain the long-war threat.`
+    `<strong>Day ${snap.day}:</strong> ` +
+    (ceasefire ? `<span style="color:var(--green);font-weight:700">CEASE-FIRE</span> announced. ` : '') +
+    `~${fmtNum(mid(bm.fired))} ballistic missiles and ~${fmtNum(mid(dr.fired))} drones fired. ` +
+    `~${lnch.midpoint} launchers remaining (~${lnch.daysToZero} days to zero if hostilities resume). ` +
+    (ceasefire ? `Iran's BM rate was declining sharply before deal. If cease-fire collapses, drones remain the long-war threat.`
+               : `Launchers — not stocks — are the binding constraint. Drones remain the long-war threat.`)
   );
 
   // Stat grid
@@ -460,7 +464,7 @@ function drawLauncherChart(data) {
   // Zero line projection
   const lastPt = pts[pts.length - 1];
   const zeroDate = new Date(lastPt.dt);
-  zeroDate.setDate(zeroDate.getDate() + 41);
+  zeroDate.setDate(zeroDate.getDate() + (data.currentSnapshot.categories.find(c => c.name === 'Launchers').daysToZero || 50));
   if (x(zeroDate) <= w - MARGIN.right) {
     svg.append('line').attr('x1', x(lastPt.dt)).attr('x2', x(zeroDate))
       .attr('y1', y(lastPt.midpoint)).attr('y2', y(0))

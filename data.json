@@ -2,8 +2,8 @@
   "meta": {
     "title": "Iran Missile & Drone Tracker",
     "warStart": "2026-02-28",
-    "lastUpdated": "2026-04-07T04:30:00Z",
-    "lastDay": 39,
+    "lastUpdated": "2026-04-08T04:30:00Z",
+    "lastDay": 40,
     "methodology": "UAE MoD figures are official cumulative intercepts (highest confidence). Other Gulf state figures are working estimates from official MoD reports, ISW, and Wikipedia cross-referencing. Best-estimate totals include underreporting adjustments for Israel theater and other targets. Launcher estimates derived from IDF/ISW structured reporting. Pre-war stockpile estimates from Atlantic, NYT, IDF, and former US/Israeli officials.",
     "caveats": [
       "Pre-Mar 19 data uses a different methodology (less structured, wider ranges)",
@@ -23,47 +23,47 @@
     "launchers": [410, 440]
   },
   "currentSnapshot": {
-    "date": "2026-04-07",
-    "day": 39,
+    "date": "2026-04-08",
+    "day": 40,
     "categories": [
       {
         "name": "MRBMs (Israel-range)",
         "preWar": [2000, 3000],
-        "fired": [780, 950],
-        "remaining": [550, 1920],
-        "status": "4 production facilities halted; 29+ launch bases struck; morale collapse",
+        "fired": [820, 1000],
+        "remaining": [500, 1880],
+        "status": "CEASE-FIRE Apr 7; 4 production facilities halted; 29+ launch bases struck; IRGC morale collapse",
         "confidence": "Medium"
       },
       {
         "name": "SRBMs (Gulf-range)",
         "preWar": [6000, 8000],
-        "fired": [1950, 2250],
-        "remaining": [3750, 6050],
-        "status": "Large paper inventory; production halted; UAE surge +60 BMs in 3 days",
+        "fired": [2050, 2400],
+        "remaining": [3600, 5950],
+        "status": "Large paper inventory; production halted; UAE BM rate dropped to ~7/day last 3 days",
         "confidence": "Medium-Low"
       },
       {
         "name": "Total Ballistic Missiles",
         "preWar": [8000, 11000],
-        "fired": [2800, 3200],
-        "remaining": [4300, 7900],
-        "status": "Production halted; launcher/C2/morale triple squeeze",
+        "fired": [2900, 3400],
+        "remaining": [4100, 7800],
+        "status": "CEASE-FIRE Apr 7. Production halted; launcher/C2/morale triple squeeze. Rate was declining before cease-fire",
         "confidence": "Medium-Low"
       },
       {
         "name": "Drones",
         "preWar": [35000, 55000],
-        "fired": [7800, 8800],
-        "remaining": [26200, 47200],
-        "status": "Most durable threat; China fuel chemicals sustaining some production",
+        "fired": [8100, 9100],
+        "remaining": [25900, 46900],
+        "status": "Most durable threat; UAE 2,221 (Apr 7 official); rate declined to ~27/day at UAE last 3 days",
         "confidence": "Low"
       },
       {
         "name": "Cruise Missiles",
         "preWar": [200, 500],
-        "fired": [90, 130],
-        "remaining": [70, 410],
-        "status": "CM usage accelerating; 45+ in Gulf theater total",
+        "fired": [95, 140],
+        "remaining": [60, 405],
+        "status": "UAE CMs at 26; 50+ CMs in Gulf theater total; CM usage steady",
         "confidence": "Low"
       },
       {
@@ -71,9 +71,9 @@
         "preWar": [410, 440],
         "destroyed": [300, 340],
         "remaining": [68, 135],
-        "midpoint": 102,
-        "daysToZero": 41,
-        "status": "Binding constraint; losing ~1.5-2.5/day",
+        "midpoint": 99,
+        "daysToZero": 50,
+        "status": "CEASE-FIRE pauses attrition; ~50 days to zero if hostilities resume",
         "confidence": "High"
       }
     ]
@@ -95,7 +95,8 @@
     {"date": "2026-03-28", "day": 29, "bm": 398, "cm": 15, "drones": 1872},
     {"date": "2026-03-31", "day": 32, "bm": 433, "cm": 19, "drones": 1977},
     {"date": "2026-04-01", "day": 33, "bm": 438, "cm": 19, "drones": 2012},
-    {"date": "2026-04-04", "day": 36, "bm": 498, "cm": 23, "drones": 2141}
+    {"date": "2026-04-04", "day": 36, "bm": 498, "cm": 23, "drones": 2141},
+    {"date": "2026-04-07", "day": 39, "bm": 520, "cm": 26, "drones": 2221}
   ],
   "totalEstimates": [
     {"date": "2026-03-04", "day": 5, "bmFloor": 940, "bmBest": [1000, 1200], "droneFloor": 1670, "droneBest": [2000, 2500], "cmFloor": 26, "cmBest": [30, 60]},
@@ -112,7 +113,8 @@
     {"date": "2026-03-29", "day": 30, "bmFloor": 1700, "bmBest": [1800, 2100], "droneFloor": 5000, "droneBest": [5500, 6200], "cmFloor": 45, "cmBest": [55, 85]},
     {"date": "2026-04-01", "day": 33, "bmFloor": 1850, "bmBest": [2300, 2700], "droneFloor": 5500, "droneBest": [6600, 7600], "cmFloor": 55, "cmBest": [70, 110]},
     {"date": "2026-04-05", "day": 37, "bmFloor": 2200, "bmBest": [2800, 3200], "droneFloor": 6400, "droneBest": [7800, 8800], "cmFloor": 68, "cmBest": [90, 130]},
-    {"date": "2026-04-07", "day": 39, "bmFloor": 2200, "bmBest": [2800, 3200], "droneFloor": 6400, "droneBest": [7800, 8800], "cmFloor": 68, "cmBest": [90, 130]}
+    {"date": "2026-04-07", "day": 39, "bmFloor": 2200, "bmBest": [2800, 3200], "droneFloor": 6400, "droneBest": [7800, 8800], "cmFloor": 68, "cmBest": [90, 130]},
+    {"date": "2026-04-08", "day": 40, "bmFloor": 2300, "bmBest": [2900, 3400], "droneFloor": 6700, "droneBest": [8100, 9100], "cmFloor": 76, "cmBest": [95, 140]}
   ],
   "launcherHistory": [
     {"date": "2026-03-04", "day": 5, "remaining": [110, 140], "midpoint": 125, "destroyed": [300, 300], "note": "300+ MRBM launchers destroyed (IDF)"},
@@ -124,16 +126,17 @@
     {"date": "2026-03-28", "day": 29, "remaining": [110, 130], "midpoint": 120, "destroyed": [310, 330], "note": "Tightened range; DIB blitz"},
     {"date": "2026-04-01", "day": 33, "remaining": [100, 135], "midpoint": 117, "destroyed": [305, 340], "note": "29 launch bases struck (WaPo); BM production halted"},
     {"date": "2026-04-05", "day": 37, "remaining": [68, 135], "midpoint": 102, "destroyed": [300, 340]},
-    {"date": "2026-04-07", "day": 39, "remaining": [68, 135], "midpoint": 99, "destroyed": [300, 340], "note": "~40 days to functional zero"}
+    {"date": "2026-04-07", "day": 39, "remaining": [68, 135], "midpoint": 99, "destroyed": [300, 340], "note": "~40 days to functional zero"},
+    {"date": "2026-04-08", "day": 40, "remaining": [68, 135], "midpoint": 99, "destroyed": [300, 340], "note": "CEASE-FIRE Apr 7; attrition paused; ~50 days to zero if resumed"}
   ],
   "gulfBreakdown": {
-    "asOf": "2026-04-07",
+    "asOf": "2026-04-08",
     "countries": [
-      {"name": "UAE", "bm": 498, "cm": 23, "drones": 2141, "quality": "High", "asOf": "Apr 4"},
-      {"name": "Kuwait", "bm": 352, "cm": 0, "drones": 630, "quality": "Medium", "asOf": "Apr 5 (working)"},
-      {"name": "Qatar", "bm": 225, "cm": 8, "drones": 105, "quality": "Medium", "asOf": "Mar 23 (working)"},
-      {"name": "Bahrain", "bm": 154, "cm": 0, "drones": 274, "quality": "High", "asOf": "Apr 2 (working)"},
-      {"name": "Saudi Arabia", "bm": 60, "cm": 7, "drones": 660, "quality": "Medium-Low", "asOf": "Apr 2 (working)"},
+      {"name": "UAE", "bm": 520, "cm": 26, "drones": 2221, "quality": "High", "asOf": "Apr 7"},
+      {"name": "Kuwait", "bm": 365, "cm": 0, "drones": 655, "quality": "Medium", "asOf": "Apr 7 (working)"},
+      {"name": "Qatar", "bm": 235, "cm": 8, "drones": 120, "quality": "Medium", "asOf": "Apr 7 (working)"},
+      {"name": "Bahrain", "bm": 180, "cm": 0, "drones": 310, "quality": "Medium", "asOf": "Apr 7 (working)"},
+      {"name": "Saudi Arabia", "bm": 65, "cm": 7, "drones": 680, "quality": "Medium-Low", "asOf": "Apr 7 (working)"},
       {"name": "Israel", "bm": 400, "cm": 0, "drones": 0, "quality": "Medium", "asOf": "Apr 4 (NBC est)", "note": "Drone/CM counts toward Israel not separately tracked"}
     ]
   },
@@ -150,6 +153,7 @@
     {"date": "2026-03-29", "day": 30, "text": "WaPo: 4 key BM production facilities destroyed; production 'most likely halted'"},
     {"date": "2026-04-04", "day": 36, "text": "UAE surge: +60 BMs in 3 days; CM usage accelerating; China fuel chemicals"},
     {"date": "2026-04-05", "day": 37, "text": "Iran targeting civilian infrastructure — desalination, refineries, ports"},
-    {"date": "2026-04-07", "day": 39, "text": "Trump ultimatum on Strait of Hormuz; Al Jubail industrial hub struck"}
+    {"date": "2026-04-07", "day": 39, "text": "Trump ultimatum on Strait of Hormuz; Al Jubail industrial hub struck"},
+    {"date": "2026-04-07", "day": 39, "text": "CEASE-FIRE announced — 2-week deal via Pakistan/China mediation; Strait to reopen; BM rate already declining sharply"}
   ]
 }
