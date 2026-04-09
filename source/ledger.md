@@ -180,3 +180,10 @@ Only add **official or near-official** tally updates here.
 | 2026-04-08 | Wikipedia citing UAE MoD | UAE cumulative (Apr 7) | Drones | 2,221 | High | Official cumulative: +80 vs Apr 4 (2,141). ~27 drones/day — also declined |
 | 2026-04-08 | NYT / multiple | Diplomatic | Cease-fire | n/a | Very High | 2-week cease-fire announced Apr 7 evening. Pakistan mediated, China intervened. Strait of Hormuz to reopen. Israel says Lebanon excluded |
 | 2026-04-08 | NYT | Post-cease-fire | Gulf strikes continued | n/a | Medium | Kuwait, UAE, Qatar, Israel reported incoming after announcement; possibly pipeline delay |
+
+| 2026-04-09 | Wikipedia / Bahrain Defence Force | Bahrain cumulative | Ballistic missiles | 188 | High | Official cumulative; major uplift from prior ~180 |
+| 2026-04-09 | Wikipedia / Bahrain Defence Force | Bahrain cumulative | Drones | 468 | High | Official cumulative; major uplift from prior ~310 (+158) |
+| 2026-04-09 | AJ citing Kuwait Army | Kuwait daily (Apr 8) | Drones | 28 | High | 28 drones intercepted post-ceasefire Apr 8 |
+| 2026-04-09 | AJ citing Qatar MoD | Qatar daily (Apr 8) | Ballistic missiles | 7 | High | 7 BMs intercepted post-ceasefire Apr 8 |
+| 2026-04-09 | AJ citing Saudi MoD | Saudi daily (Apr 8) | Drones | 9 | Medium-High | 9 drones intercepted post-ceasefire Apr 8 |
+| 2026-04-09 | JINSA / NBC | Coalition interceptors | Patriot depletion | ~75% | Medium-High | UAE + Kuwait burned ~75% of Patriot stocks by Mar 29 |

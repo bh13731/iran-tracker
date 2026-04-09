@@ -372,3 +372,14 @@ Kuwait and Qatar theater contributions were significantly underestimated. After 
 - **NYT death tolls as of Apr 7:** Iran 1,665+ civilians (244 children); Lebanon 1,500+; Gulf nations 32; Israel 20; US 13 service members.
 - **Depletion rates → near zero IF cease-fire holds.** All estimates paused pending compliance monitoring.
 - **Launcher estimate:** ~97-100 remaining (midpoint ~99). Attrition paused if cease-fire holds.
+
+## 2026-04-09 — Day 41
+
+### 04:30 UTC update
+- **CEASE-FIRE DAY 2.** No new official UAE cumulative since Apr 7 (520/26/2,221). Post-ceasefire strikes tapered.
+- **Apr 8 post-ceasefire attacks (AJ):** UAE engaged incoming BMs/CMs/drones. Kuwait intercepted 28 drones (army statement). Qatar intercepted 7 BMs + drones. Saudi intercepted 9 drones. Bahrain attacks injured 2. Iran state TV confirmed attacks were retaliation for oil facility bombing — "pipeline delay" or final salvos.
+- **NEW Bahrain cumulative (Wikipedia):** 188 BMs + 468 drones since war start. Major uplift from prior ~180 BMs + ~310 drones. Drones +158 vs last recorded figure.
+- **No reports of strikes on Apr 9 so far.** Cease-fire may be holding as of overnight.
+- **Iran-US talks to begin Friday in Islamabad** (AJ citing Iran).
+- **Depletion clocks remain paused.** If cease-fire collapses, launchers (~99) are binding constraint.
+- **NBCNews analysis:** Gulf states burned through ~75% of Patriot interceptor stocks by Mar 29 (JINSA estimate). Interceptor supply is now a coalition vulnerability if war resumes.
