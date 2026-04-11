@@ -383,3 +383,26 @@ Kuwait and Qatar theater contributions were significantly underestimated. After 
 - **Iran-US talks to begin Friday in Islamabad** (AJ citing Iran).
 - **Depletion clocks remain paused.** If cease-fire collapses, launchers (~99) are binding constraint.
 - **NBCNews analysis:** Gulf states burned through ~75% of Patriot interceptor stocks by Mar 29 (JINSA estimate). Interceptor supply is now a coalition vulnerability if war resumes.
+
+## 2026-04-10 — Day 42
+
+### 04:30 UTC update
+- **CEASE-FIRE DAY 3.** No strikes reported overnight Apr 9-10. Cease-fire appears holding.
+- **Iran-US talks TODAY (Friday) in Islamabad.** Pakistan-mediated. Phase 1 (2-week ceasefire) → Phase 2 (45-day negotiation window) if talks progress. Netanyahu says "finger on the trigger."
+- **No new official cumulative tallies.** UAE last: 520/26/2,221 (Apr 7). Bahrain: 188/468 (Apr 8 update). No new Saudi/Kuwait/Qatar figures.
+- **NBC data analysis published:** Confirms Gulf interceptor depletion as key coalition vulnerability.
+- **CBS report:** US Army survivors dispute Pentagon account of Kuwait drone attack; unit "unprepared" to defend itself.
+- **Wikipedia ceasefire page updated:** Structured negotiations via Pakistan initially, then Islamabad. Phase 2 = 45-day window.
+- **All depletion clocks remain paused.** If-resumed estimates unchanged from Apr 9.
+
+## 2026-04-11 — Day 43
+
+### 04:30 UTC update
+- **CEASE-FIRE DAY 4.** Cease-fire holding for UAE, Saudi, Qatar, Bahrain, Oman — no attacks reported since Apr 8.
+- **EXCEPTION: Kuwait drone attack Apr 10 (Thu night).** Drones struck National Guard site; several personnel injured. Kuwait condemned Iran + proxies. IRGC denied responsibility — "we have not launched any projectiles since ceasefire."
+- **Iran threatens to skip Islamabad talks** if Israel continues Lebanon strikes. Ceasefire fraying over Lebanon/Hormuz disputes.
+- **Trump accuses Iran** of not reopening Strait of Hormuz: "this is not the agreement we have."
+- **US embassy Bahrain** lifted shelter-in-place but warned of continued Iran/proxy targeting risk.
+- **No new official cumulative tallies.** UAE last: 520/26/2,221 (Apr 7). Bahrain: 188/468.
+- **Islamabad talks status uncertain.** Were scheduled for Sat morning (Apr 12) but Iran's participation now in doubt.
+- **All depletion clocks remain paused.** Kuwait incident too small to materially change estimates.

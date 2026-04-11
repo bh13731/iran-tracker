@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Cease-Fire's Fault Lines: Kuwait, Deniability, and the Islamabad Gamble — Iran Tracker</title>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<style>
+:root {
+  --bg: #0d1117;
+  --surface: #161b22;
+  --border: #30363d;
+  --text: #c9d1d9;
+  --text-muted: #8b949e;
+  --accent: #58a6ff;
+  --red: #f85149;
+  --orange: #d29922;
+  --green: #3fb950;
+  --purple: #bc8cff;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  padding: 0 16px 64px;
+  max-width: 760px;
+  margin: 0 auto;
+}
+nav { padding: 16px 0 8px; font-size: 0.85rem; }
+nav a { color: var(--accent); text-decoration: none; }
+nav a:hover { text-decoration: underline; }
+h1 { font-size: 1.5rem; font-weight: 700; margin: 20px 0 6px; line-height: 1.35; }
+h2 { font-size: 1.1rem; font-weight: 600; margin: 32px 0 10px; color: var(--accent); }
+p { font-size: 0.9rem; margin-bottom: 14px; }
+.meta { color: var(--text-muted); font-size: 0.78rem; margin-bottom: 24px; }
+.tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  padding: 1px 8px;
+  border-radius: 10px;
+  font-weight: 500;
+  margin-left: 6px;
+}
+.tag-analysis { background: rgba(88,166,255,0.15); color: var(--accent); }
+.tag-ceasefire { background: rgba(63,185,80,0.15); color: var(--green); }
+.tag-proxies { background: rgba(210,153,34,0.15); color: var(--orange); }
+.lede {
+  font-size: 1.0rem;
+  color: var(--text);
+  border-left: 3px solid var(--accent);
+  padding: 10px 16px;
+  margin: 16px 0 24px;
+  background: rgba(88,166,255,0.06);
+  line-height: 1.6;
+}
+.stat-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+  margin: 20px 0;
+}
+.stat-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px;
+  text-align: center;
+}
+.stat-value { font-size: 1.35rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+.stat-label { font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; margin-top: 2px; }
+.stat-sub { font-size: 0.72rem; color: var(--text-muted); margin-top: 2px; }
+.callout {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 14px 16px;
+  margin: 20px 0;
+  font-size: 0.85rem;
+}
+.callout strong { color: var(--accent); }
+.callout.warn { border-color: var(--orange); }
+.callout.warn strong { color: var(--orange); }
+.callout.red { border-color: var(--red); }
+.callout.red strong { color: var(--red); }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+  margin: 12px 0;
+}
+th, td {
+  padding: 7px 8px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+th { color: var(--text-muted); font-weight: 500; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px; }
+td.num { text-align: right; font-variant-numeric: tabular-nums; }
+td.center { text-align: center; }
+.chart-wrap {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  margin: 20px 0;
+  overflow-x: auto;
+}
+.chart-label { font-size: 0.78rem; color: var(--text-muted); margin-bottom: 8px; }
+svg { display: block; }
+.axis text { fill: var(--text-muted); font-size: 11px; }
+.axis line, .axis path { stroke: var(--border); }
+.grid line { stroke: var(--border); stroke-opacity: 0.3; }
+.grid path { display: none; }
+.tooltip {
+  position: absolute;
+  background: #1c2128;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 12px;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 10;
+  max-width: 260px;
+  line-height: 1.4;
+}
+.source-note { font-size: 0.75rem; color: var(--text-muted); margin-top: 8px; font-style: italic; }
+@media (max-width: 560px) {
+  h1 { font-size: 1.2rem; }
+  .stat-row { grid-template-columns: repeat(2, 1fr); }
+}
+</style>
+</head>
+<body>
+
+<nav><a href="../index.html">&larr; Dashboard</a> &middot; <a href="index.html">Stories</a> &middot; <a href="../methodology.html">Methodology</a></nav>
+
+<h1>The Cease-Fire's Fault Lines: Kuwait, Deniability, and the Islamabad Gamble</h1>
+<div class="meta">April 11, 2026 — Day 43 <span class="tag tag-analysis">Analysis</span> <span class="tag tag-ceasefire">Cease-fire</span> <span class="tag tag-proxies">Proxies</span></div>
+
+<div class="lede">
+Day 4 of the cease-fire and Kuwait's National Guard was struck by drones. The IRGC denied it. That denial is the most analytically significant thing that has happened since the deal was signed on April 7 — not because it proves or disproves Iranian responsibility, but because both possibilities are troubling. If the IRGC ordered it and lied, the cease-fire is already being gamed. If it genuinely did not order it, Iran's proxy network is operating outside central control.
+</div>
+
+<h2>The Kuwait Incident in Numbers</h2>
+
+<p>The April 10 strike on a Kuwait National Guard site was small by the standards of this war. Several personnel were injured; no fatalities reported. The strike did not materially change any of the tracker's aggregate estimates — total drone figures remain ~8,500–9,500 fired, cease-fire Day 4 figures unchanged. But its analytical significance is disproportionate to its size.</p>
+
+<div class="stat-row">
+  <div class="stat-box">
+    <div class="stat-value" style="color:#d29922;">4</div>
+    <div class="stat-label">Cease-fire days elapsed</div>
+    <div class="stat-sub">At time of Kuwait strike</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-value" style="color:#58a6ff;">~0</div>
+    <div class="stat-label">IRGC-claimed launches</div>
+    <div class="stat-sub">Since Apr 7 cease-fire</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-value" style="color:#f85149;">1</div>
+    <div class="stat-label">Attack confirmed</div>
+    <div class="stat-sub">Kuwait, Apr 10 night</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-value" style="color:#d29922;">3</div>
+    <div class="stat-label">Active fault lines</div>
+    <div class="stat-sub">Kuwait · Lebanon · Hormuz</div>
+  </div>
+</div>
+
+<h2>The Deniability Calculation</h2>
+
+<p>The IRGC statement that "we have not launched any projectiles since the ceasefire" creates a binary that matters analytically. There are only two consistent interpretations:</p>
+
+<div class="callout warn">
+  <strong>Scenario A — The denial is false (Iran ordered the strike).</strong> Iran is testing the cease-fire boundary under plausible deniability, using Kuwait's threshold for public condemnation as a gauge. This is a classic coercive signaling technique: impose costs just below the level that forces a military response, maintain cease-fire fiction in diplomatic channels. If true, the 2-week window is already being gamed and the Islamabad talks become a stalling mechanism rather than a genuine negotiation.
+</div>
+
+<div class="callout red">
+  <strong>Scenario B — The denial is true (proxy acted autonomously).</strong> Iran's proxy network in the region — Iraqi militias, Lebanese proxies, Yemeni Houthis — has pre-positioned launch capability and is either acting on pre-delegated authority or genuinely operating outside Tehran's current control. This is analytically worse for the cease-fire's durability. A cease-fire that Iran cannot enforce over its own proxies will leak continuously regardless of IRGC intentions.
+</div>
+
+<p>Either scenario points to the same structural conclusion: the cease-fire's stability depends on assumptions about Iranian C2 that this war has already called into question. Two senior IRGC command kills within 48 hours in late March (Ghoreyshi on Day 22, Aghajani on Day 23) degraded the central nervous system of Iranian aerospace and drone operations. Proxy networks that were already loosely coordinated before those kills are plausibly more autonomous now.</p>
+
+<h2>The Three Fault Lines Threatening the Deal</h2>
+
+<p>The Kuwait incident is not the only structural tension. The 2-week cease-fire (April 7 → April 21) was predicated on three implicit conditions, each of which is now under stress:</p>
+
+<table>
+  <thead>
+    <tr><th>Fault Line</th><th>Status</th><th>Risk Level</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Kuwait / Proxy Control</strong></td>
+      <td>Kuwait National Guard struck Apr 10; IRGC denied. Kuwait condemned Iran and proxies.</td>
+      <td class="center" style="color:#d29922;">Medium</td>
+    </tr>
+    <tr>
+      <td><strong>Lebanon / Hezbollah</strong></td>
+      <td>Israel says cease-fire does NOT include Lebanon. Iran threatening Islamabad walkout over continued Lebanon strikes. Hezbollah claimed 71 attacks on northern Israel in a single 24h window earlier in the war.</td>
+      <td class="center" style="color:#f85149;">High</td>
+    </tr>
+    <tr>
+      <td><strong>Hormuz / US compliance dispute</strong></td>
+      <td>Trump: "Iran not reopening Strait — this is not the agreement we have." Hormuz partially blockaded; $2M transit fees still reportedly charged as of April 7.</td>
+      <td class="center" style="color:#f85149;">High</td>
+    </tr>
+  </tbody>
+</table>
+
+<p class="source-note">Sources: Kuwait MoD, IRGC statement, ISW/CTP, Trump public statements, AJ, Reuters, Lloyd's List.</p>
+
+<p>The Islamabad talks, originally scheduled for Saturday April 12, were designed to bridge Phase 1 (2-week cease-fire) into Phase 2 (45-day negotiation window). If Iran walks, Phase 2 does not begin. If Phase 2 does not begin, the cease-fire expires on approximately April 21 with no successor arrangement.</p>
+
+<h2>The Depletion Math If the Cease-Fire Collapses</h2>
+
+<p>Both sides entered this cease-fire depleted. The asymmetry in <em>what</em> each side has exhausted shapes what a resumed conflict would look like.</p>
+
+<div class="chart-wrap">
+  <div class="chart-label">Remaining operational capacity — both sides of the depletion problem</div>
+  <div id="depletion-chart"></div>
+</div>
+
+<table>
+  <thead>
+    <tr><th>Factor</th><th class="num">Pre-war</th><th class="num">Expended / Degraded</th><th class="num">Remaining</th><th>Confidence</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Iran: BM launchers</td>
+      <td class="num">410–440</td>
+      <td class="num">~300–340</td>
+      <td class="num"><strong>~68–135</strong> (~99 midpoint)</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>Iran: Ballistic missiles</td>
+      <td class="num">~8,000–11,000</td>
+      <td class="num">~2,950–3,500</td>
+      <td class="num"><strong>~4,000–7,750</strong></td>
+      <td>Medium-Low</td>
+    </tr>
+    <tr>
+      <td>Iran: Drones</td>
+      <td class="num">~35,000–55,000</td>
+      <td class="num">~8,500–9,500</td>
+      <td class="num"><strong>~25,500–46,500</strong></td>
+      <td>Low</td>
+    </tr>
+    <tr>
+      <td>Coalition: Patriot interceptors</td>
+      <td class="num">~100% stock</td>
+      <td class="num">~75% depleted (JINSA, Mar 29)</td>
+      <td class="num"><strong>~25% remaining</strong></td>
+      <td>Medium</td>
+    </tr>
+  </tbody>
+</table>
+
+<p class="source-note">Iran figures: tracker estimates; Coalition Patriot depletion: JINSA estimate cited by NBC, as of March 29, 2026.</p>
+
+<div class="callout">
+  <strong>The asymmetric depletion problem:</strong> Iran's launchers (~99 remaining) are the binding constraint on its ballistic missile campaign — at pre-ceasefire rates, that is approximately 50 days to functional zero. But Iran still has substantial drone capacity, deep inventory, and distributed launch infrastructure. Coalition Patriot stocks are ~75% gone. If the cease-fire collapses, Iran has more incentive to resume with drones (preserved capacity) than ballistic missiles (launcher-constrained), and the coalition is most exposed precisely in the category where Iran has the most remaining capability.
+</div>
+
+<h2>What the Tracker Will Watch</h2>
+
+<p>The next 48–72 hours are the most analytically consequential since the cease-fire was signed. Three binary outcomes will determine the tracker's trajectory:</p>
+
+<p><strong>1. Islamabad talks (Saturday Apr 12).</strong> If Iran attends and a Phase 2 framework is agreed, the cease-fire has structural scaffolding and the tracker's depletion clocks remain paused. If Iran walks, expiry on ~April 21 becomes a hard deadline with no successor arrangement.</p>
+
+<p><strong>2. Kuwait escalation or quiet.</strong> If the Kuwait incident is isolated and no further proxy attacks occur in the next 24–48 hours, Scenario A (strategic testing) is more plausible — and the cease-fire may survive. If attacks continue, Scenario B (proxy autonomy) becomes the working assumption, and the cease-fire is already functionally broken.</p>
+
+<p><strong>3. Hormuz compliance signal.</strong> The cease-fire deal explicitly required Iran to allow Strait of Hormuz reopening. If US verification of transit normalisation occurs in the next few days, one of the three fault lines closes. If it does not, Trump's rhetorical pressure will build toward an ultimatum — a pattern this tracker has seen before, on Day 39.</p>
+
+<div class="callout warn">
+  <strong>Watch items for cease-fire durability:</strong><br>
+  Any new proxy attack on any Gulf target, regardless of IRGC attribution · Iran's attendance at Islamabad Apr 12 · Evidence of Hormuz transit normalisation or continued fee-charging · New official cumulative from Kuwait or Qatar (drone totals likely still understated) · Evidence of IRGC control signals (or absence thereof) to Iraqi/Lebanese proxies
+</div>
+
+<p>The cease-fire is four days old and already showing cracks along predictable fault lines. This tracker's core judgment has not changed: if hostilities resume, Iran's operational profile will shift toward drone-heavy pressure (preserved capacity, distributed launch infrastructure, ~25,500–46,500 remaining) rather than the ballistic-heavy opening barrage. The coalition's Patriot depletion makes that the scenario both sides have most reason to fear.</p>
+
+<div style="margin-top:40px;padding-top:16px;border-top:1px solid var(--border);font-size:0.78rem;color:var(--text-muted);">
+  <a href="index.html" style="color:var(--accent);text-decoration:none;">&larr; All stories</a> &middot; <a href="../index.html" style="color:var(--accent);text-decoration:none;">Dashboard</a> &middot; <a href="../methodology.html" style="color:var(--accent);text-decoration:none;">Methodology</a>
+</div>
+
+<div class="tooltip" id="tooltip"></div>
+
+<script>
+// Depletion comparison chart — horizontal diverging bars
+// Left side: Iran expended. Right side: Coalition remaining.
+const tooltip = d3.select('#tooltip');
+const W = Math.min(700, window.innerWidth - 64);
+const MOBILE = W < 480;
+
+// Clustered bar chart: Iran capacity remaining (% of pre-war) vs Coalition interceptor remaining
+const categories = [
+  {
+    label: 'Iran BM\nLaunchers',
+    labelFull: 'Iran: BM Launchers',
+    iranPct: Math.round(99 / 425 * 100),  // ~23%
+    iranColor: '#f85149',
+    note: '~99 of ~425 pre-war remain'
+  },
+  {
+    label: 'Iran\nBallistic Missiles',
+    labelFull: 'Iran: Ballistic Missiles',
+    iranPct: Math.round(((2950+3500)/2) / ((8000+11000)/2) * 100),  // fired ~34%
+    iranRemainPct: 100 - Math.round(((2950+3500)/2) / ((8000+11000)/2) * 100),
+    iranColor: '#f85149',
+    note: '~34% expended; ~66% remaining (wide uncertainty)'
+  },
+  {
+    label: 'Iran\nDrones',
+    labelFull: 'Iran: Drones',
+    iranPct: Math.round(9000 / 45000 * 100),  // fired ~20%
+    iranRemainPct: 100 - Math.round(9000 / 45000 * 100),
+    iranColor: '#58a6ff',
+    note: '~20% expended; ~80% remaining'
+  },
+  {
+    label: 'Coalition\nPatriot Stocks',
+    labelFull: 'Coalition: Patriot Interceptors',
+    iranPct: 75,  // 75% depleted
+    iranRemainPct: 25,
+    iranColor: '#d29922',
+    note: '~75% depleted as of Mar 29 (JINSA)'
+  }
+];
+
+const barH = MOBILE ? 28 : 32;
+const gap = MOBILE ? 6 : 10;
+const ml = MOBILE ? 100 : 130, mr = 80, mt = 10, mb = 30;
+const totalH = categories.length * (barH + gap) + mt + mb + 20;
+const x = d3.scaleLinear().domain([0, 100]).range([ml, W - mr]);
+
+const svg = d3.select('#depletion-chart').append('svg')
+  .attr('width', W).attr('height', totalH).attr('viewBox', `0 0 ${W} ${totalH}`);
+
+// X axis
+svg.append('g').attr('class', 'axis')
+  .attr('transform', `translate(0,${totalH - mb})`)
+  .call(d3.axisBottom(x).ticks(5).tickFormat(d => d + '%'));
+
+// Grid lines
+svg.append('g').attr('class', 'grid')
+  .attr('transform', `translate(0,${totalH - mb})`)
+  .call(d3.axisBottom(x).ticks(5).tickSize(-(totalH - mb - mt)).tickFormat(''))
+  .select('.domain').remove();
+
+categories.forEach((c, i) => {
+  const y = mt + i * (barH + gap);
+  const expiredPct = c.iranPct;
+  const remainPct = c.iranRemainPct !== undefined ? c.iranRemainPct : (100 - expiredPct);
+
+  // Label
+  const lines = c.label.split('\n');
+  lines.forEach((line, li) => {
+    svg.append('text')
+      .attr('x', ml - 6)
+      .attr('y', y + barH / 2 + (li - (lines.length - 1) / 2) * 13)
+      .attr('text-anchor', 'end')
+      .attr('dominant-baseline', 'middle')
+      .attr('fill', '#c9d1d9')
+      .attr('font-size', MOBILE ? 10 : 11)
+      .text(line);
+  });
+
+  // Expended bar (dark, dashed style via opacity)
+  svg.append('rect')
+    .attr('x', ml)
+    .attr('y', y)
+    .attr('height', barH)
+    .attr('width', x(expiredPct) - ml)
+    .attr('fill', c.iranColor)
+    .attr('opacity', 0.3)
+    .attr('rx', 2)
+    .on('mouseover', (e) => {
+      tooltip.style('opacity', 1)
+        .html(`<strong>${c.labelFull}</strong><br>Expended/degraded: ${expiredPct}%<br>${c.note}`)
+        .style('left', (e.pageX + 12) + 'px').style('top', (e.pageY - 28) + 'px');
+    }).on('mouseout', () => tooltip.style('opacity', 0));
+
+  // Remaining bar (bright)
+  const remW = x(remainPct) - ml;
+  svg.append('rect')
+    .attr('x', x(expiredPct))
+    .attr('y', y)
+    .attr('height', barH)
+    .attr('width', remW > 0 ? (W - mr - x(expiredPct)) : 0)
+    .attr('fill', c.iranColor)
+    .attr('opacity', 0.85)
+    .attr('rx', 2)
+    .on('mouseover', (e) => {
+      tooltip.style('opacity', 1)
+        .html(`<strong>${c.labelFull}</strong><br>Remaining: ${remainPct}%<br>${c.note}`)
+        .style('left', (e.pageX + 12) + 'px').style('top', (e.pageY - 28) + 'px');
+    }).on('mouseout', () => tooltip.style('opacity', 0));
+
+  // Remaining % label
+  svg.append('text')
+    .attr('x', W - mr + 4)
+    .attr('y', y + barH / 2)
+    .attr('dominant-baseline', 'middle')
+    .attr('fill', c.iranColor)
+    .attr('font-size', MOBILE ? 9 : 10)
+    .text(remainPct + '% left');
+});
+
+// Legend
+const legItems = [
+  { label: 'Expended / degraded', color: '#8b949e', opacity: 0.5 },
+  { label: 'Remaining capacity', color: '#8b949e', opacity: 0.9 }
+];
+const legY = totalH - mb + 18;
+legItems.forEach((l, i) => {
+  const lx = ml + i * 180;
+  svg.append('rect').attr('x', lx).attr('y', legY - 8).attr('width', 10).attr('height', 10)
+    .attr('fill', l.color).attr('opacity', l.opacity).attr('rx', 1);
+  svg.append('text').attr('x', lx + 14).attr('y', legY).attr('fill', '#8b949e').attr('font-size', 10).text(l.label);
+});
+</script>
+
+</body>
+</html>

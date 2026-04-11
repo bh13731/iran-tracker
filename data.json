@@ -2,8 +2,8 @@
   "meta": {
     "title": "Iran Missile & Drone Tracker",
     "warStart": "2026-02-28",
-    "lastUpdated": "2026-04-09T04:30:00Z",
-    "lastDay": 41,
+    "lastUpdated": "2026-04-11T04:30:00Z",
+    "lastDay": 43,
     "methodology": "UAE MoD figures are official cumulative intercepts (highest confidence). Other Gulf state figures are working estimates from official MoD reports, ISW, and Wikipedia cross-referencing. Best-estimate totals include underreporting adjustments for Israel theater and other targets. Launcher estimates derived from IDF/ISW structured reporting. Pre-war stockpile estimates from Atlantic, NYT, IDF, and former US/Israeli officials.",
     "caveats": [
       "Pre-Mar 19 data uses a different methodology (less structured, wider ranges)",
@@ -23,47 +23,47 @@
     "launchers": [410, 440]
   },
   "currentSnapshot": {
-    "date": "2026-04-09",
-    "day": 41,
+    "date": "2026-04-11",
+    "day": 43,
     "categories": [
       {
         "name": "MRBMs (Israel-range)",
         "preWar": [2000, 3000],
         "fired": [820, 1000],
         "remaining": [500, 1880],
-        "status": "CEASE-FIRE Apr 7; 4 production facilities halted; 29+ launch bases struck; IRGC morale collapse",
+        "status": "CEASE-FIRE Day 4 — mostly holding. 4 production facilities halted; 29+ launch bases struck; IRGC morale collapse. Kuwait drone attack Apr 10 (IRGC denied); Islamabad talks in doubt",
         "confidence": "Medium"
       },
       {
         "name": "SRBMs (Gulf-range)",
         "preWar": [6000, 8000],
-        "fired": [2050, 2400],
-        "remaining": [3600, 5950],
-        "status": "Large paper inventory; production halted; post-ceasefire salvos Apr 8 then quiet overnight Apr 9",
+        "fired": [2100, 2500],
+        "remaining": [3500, 5900],
+        "status": "Large paper inventory; production halted; post-ceasefire salvos Apr 8; quiet Apr 9-11 (exc. Kuwait Apr 10); cease-fire Day 4",
         "confidence": "Medium-Low"
       },
       {
         "name": "Total Ballistic Missiles",
         "preWar": [8000, 11000],
-        "fired": [2900, 3400],
-        "remaining": [4100, 7800],
-        "status": "CEASE-FIRE Day 2. Production halted; post-ceasefire salvos Apr 8 (pipeline delay); overnight Apr 9 quiet. Launcher/C2/morale triple squeeze.",
+        "fired": [2950, 3500],
+        "remaining": [4050, 7750],
+        "status": "CEASE-FIRE Day 4. Kuwait drone attack Apr 10 (IRGC denied); no BM reports since Apr 8. Islamabad talks uncertain; Trump disputes Hormuz compliance.",
         "confidence": "Medium-Low"
       },
       {
         "name": "Drones",
         "preWar": [35000, 55000],
-        "fired": [8100, 9100],
-        "remaining": [25900, 46900],
-        "status": "Most durable threat; UAE 2,221 (Apr 7 official); Bahrain uplift Apr 9: 468 drones (was ~310) confirms systematic underreporting; Kuwait intercepted 28 post-ceasefire",
+        "fired": [8500, 9500],
+        "remaining": [25500, 46500],
+        "status": "Most durable threat. Kuwait National Guard site hit by drones Apr 10 (IRGC denied). Deep reserves intact. If cease-fire collapses, drone-heavy resumption more likely than BM barrage.",
         "confidence": "Low"
       },
       {
         "name": "Cruise Missiles",
         "preWar": [200, 500],
-        "fired": [95, 140],
-        "remaining": [60, 405],
-        "status": "UAE CMs at 26; 50+ CMs in Gulf theater total; CM usage steady",
+        "fired": [100, 150],
+        "remaining": [50, 400],
+        "status": "UAE CMs at 26 (official, Apr 7); 50+ CMs in Gulf theater total. No CM reports since Apr 8.",
         "confidence": "Low"
       },
       {
@@ -73,7 +73,7 @@
         "remaining": [68, 135],
         "midpoint": 99,
         "daysToZero": 50,
-        "status": "CEASE-FIRE pauses attrition; ~50 days to zero if hostilities resume",
+        "status": "CEASE-FIRE Day 4 — attrition paused. ~50 days to zero if hostilities resume. Kuwait incident small; Islamabad talks uncertain. Launchers remain the binding BM constraint.",
         "confidence": "High"
       }
     ]
@@ -115,7 +115,9 @@
     {"date": "2026-04-05", "day": 37, "bmFloor": 2200, "bmBest": [2800, 3200], "droneFloor": 6400, "droneBest": [7800, 8800], "cmFloor": 68, "cmBest": [90, 130]},
     {"date": "2026-04-07", "day": 39, "bmFloor": 2200, "bmBest": [2800, 3200], "droneFloor": 6400, "droneBest": [7800, 8800], "cmFloor": 68, "cmBest": [90, 130]},
     {"date": "2026-04-08", "day": 40, "bmFloor": 2300, "bmBest": [2900, 3400], "droneFloor": 6700, "droneBest": [8100, 9100], "cmFloor": 76, "cmBest": [95, 140]},
-    {"date": "2026-04-09", "day": 41, "bmFloor": 2350, "bmBest": [2950, 3500], "droneFloor": 6770, "droneBest": [8500, 9500], "cmFloor": 80, "cmBest": [100, 150]}
+    {"date": "2026-04-09", "day": 41, "bmFloor": 2350, "bmBest": [2950, 3500], "droneFloor": 6770, "droneBest": [8500, 9500], "cmFloor": 80, "cmBest": [100, 150]},
+    {"date": "2026-04-10", "day": 42, "bmFloor": 2350, "bmBest": [2950, 3500], "droneFloor": 6770, "droneBest": [8500, 9500], "cmFloor": 80, "cmBest": [100, 150], "note": "Cease-fire Day 3 — no strikes reported; figures unchanged"},
+    {"date": "2026-04-11", "day": 43, "bmFloor": 2350, "bmBest": [2950, 3500], "droneFloor": 6770, "droneBest": [8500, 9500], "cmFloor": 80, "cmBest": [100, 150], "note": "Cease-fire Day 4 — Kuwait drone attack Apr 10 (small, not material to totals); IRGC denied; Islamabad talks uncertain"}
   ],
   "launcherHistory": [
     {"date": "2026-03-04", "day": 5, "remaining": [110, 140], "midpoint": 125, "destroyed": [300, 300], "note": "300+ MRBM launchers destroyed (IDF)"},
@@ -129,10 +131,12 @@
     {"date": "2026-04-05", "day": 37, "remaining": [68, 135], "midpoint": 102, "destroyed": [300, 340]},
     {"date": "2026-04-07", "day": 39, "remaining": [68, 135], "midpoint": 99, "destroyed": [300, 340], "note": "~40 days to functional zero"},
     {"date": "2026-04-08", "day": 40, "remaining": [68, 135], "midpoint": 99, "destroyed": [300, 340], "note": "CEASE-FIRE Apr 7; attrition paused; ~50 days to zero if resumed"},
-    {"date": "2026-04-09", "day": 41, "remaining": [68, 135], "midpoint": 99, "destroyed": [300, 340], "note": "CEASE-FIRE Day 2; overnight quiet; attrition remains paused"}
+    {"date": "2026-04-09", "day": 41, "remaining": [68, 135], "midpoint": 99, "destroyed": [300, 340], "note": "CEASE-FIRE Day 2; overnight quiet; attrition remains paused"},
+    {"date": "2026-04-10", "day": 42, "remaining": [68, 135], "midpoint": 99, "destroyed": [300, 340], "note": "CEASE-FIRE Day 3; Iran-US talks Islamabad; ~50 days to zero if hostilities resume"},
+    {"date": "2026-04-11", "day": 43, "remaining": [68, 135], "midpoint": 99, "destroyed": [300, 340], "note": "CEASE-FIRE Day 4; Kuwait drone attack Apr 10 (IRGC denied); Islamabad talks uncertain; attrition paused"}
   ],
   "gulfBreakdown": {
-    "asOf": "2026-04-09",
+    "asOf": "2026-04-11",
     "countries": [
       {"name": "UAE", "bm": 520, "cm": 26, "drones": 2221, "quality": "High", "asOf": "Apr 7"},
       {"name": "Kuwait", "bm": 365, "cm": 0, "drones": 655, "quality": "Medium", "asOf": "Apr 7 (working)"},
@@ -158,6 +162,8 @@
     {"date": "2026-04-07", "day": 39, "text": "Trump ultimatum on Strait of Hormuz; Al Jubail industrial hub struck"},
     {"date": "2026-04-07", "day": 39, "text": "CEASE-FIRE announced — 2-week deal via Pakistan/China mediation; Strait to reopen; BM rate already declining sharply"},
     {"date": "2026-04-08", "day": 40, "text": "Post-ceasefire salvos (pipeline delay): Kuwait 28 drones, Qatar 7 BMs + drones, Saudi 9 drones, UAE engaged incoming; Iran-US talks Friday"},
-    {"date": "2026-04-09", "day": 41, "text": "Bahrain official uplift: 188 BMs / 468 drones (was ~180/~310) — confirms drone threat systematically underreported; overnight quiet"}
+    {"date": "2026-04-09", "day": 41, "text": "Bahrain official uplift: 188 BMs / 468 drones (was ~180/~310) — confirms drone threat systematically underreported; overnight quiet"},
+    {"date": "2026-04-10", "day": 42, "text": "CEASE-FIRE Day 3 — holds overnight. Iran-US talks in Islamabad (Phase 1 → 45-day Phase 2 window). Both sides depleted: ~99 launchers remain; Gulf Patriots ~75% spent."},
+    {"date": "2026-04-11", "day": 43, "text": "CEASE-FIRE Day 4 — Kuwait National Guard site struck by drones (Apr 10 Thu night); several injured. IRGC denied. Iran threatens Islamabad walkout over Lebanon strikes + Hormuz dispute. Trump: Iran not reopening Strait. Cease-fire fraying at the edges."}
   ]
 }

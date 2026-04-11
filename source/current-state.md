@@ -1,7 +1,7 @@
 # Iran Missile & Drone Tracker — Current State
 
-Last updated: 2026-04-09 04:30 UTC
-Coverage: War through 2026-04-08 evening (Day 41) — CEASE-FIRE DAY 2
+Last updated: 2026-04-11 04:30 UTC
+Coverage: War through 2026-04-10 evening (Day 43) — CEASE-FIRE DAY 4
 Confidence: Medium overall
 
 ## Executive Bottom Line
@@ -28,7 +28,7 @@ Confidence: Medium overall
 | Daily ballistic launch capacity | ~8-18/day across all theaters (declining from peak; ~13 midpoint pre-cease-fire) | Medium |
 | Daily drone pressure | ~60-120/day across all theaters (declining from peak pre-cease-fire) | Low-Medium |
 
-**Key judgment:** Cease-fire Day 2. Post-ceasefire salvos Apr 8 (pipeline delay) then quiet overnight. Iran-US talks Friday in Islamabad. If cease-fire collapses, launchers (~99 remaining) remain binding constraint (~50 days to zero at pre-ceasefire rate). Gulf interceptor depletion (~75% Patriots spent) is now a coalition vulnerability too. Drones remain the durable long-war threat if hostilities resume.
+**Key judgment:** Cease-fire Day 4 — mostly holding but Kuwait drone attack Apr 10 + Iran threatening to skip Islamabad talks over Lebanon/Hormuz disputes. If cease-fire collapses, launchers (~99 remaining) remain binding constraint (~50 days to zero at pre-ceasefire rate). Gulf interceptor depletion (~75% Patriots spent) is a coalition vulnerability. Drones remain the durable long-war threat if hostilities resume.
 
 ## Confirmed Floors vs Best Estimate
 | Category | Confirmed / working floor | Best estimate total | Main source basis |
@@ -47,12 +47,15 @@ Confidence: Medium overall
 7. Reuters / NYT / BBC / Guardian / CNN / AP for event confirmation
 
 ## What Changed Recently
-- **Apr 8-9 — CEASE-FIRE DAY 2.** Post-ceasefire salvos Apr 8 across Gulf (pipeline delay); overnight Apr 9 quiet so far. Iran-US talks to begin Friday in Islamabad.
-- **Apr 8 — Post-ceasefire strikes:** UAE engaged incoming. Kuwait intercepted 28 drones. Qatar intercepted 7 BMs + drones. Saudi intercepted 9 drones. Bahrain injuries from debris. Iran state TV confirmed as retaliation for oil facility strikes.
-- **Apr 8 — NEW Bahrain cumulative:** 188 BMs + 468 drones (major uplift; was ~180/~310).
-- **Apr 7 — CEASE-FIRE ANNOUNCED.** 2-week deal via Pakistan mediation + China intervention. Strait of Hormuz to reopen. Israel says Lebanon excluded.
+- **Apr 10-11 — CEASE-FIRE DAY 4.** Holding for UAE, Saudi, Qatar, Bahrain, Oman — no strikes since Apr 8.
+- **EXCEPTION: Kuwait drone attack Apr 10 (Thu night).** Drones struck National Guard site; several injured. Kuwait condemned Iran + proxies. IRGC denied responsibility.
+- **Islamabad talks in doubt.** Iran threatens to skip if Israel continues Lebanon strikes. Trump accuses Iran of not reopening Hormuz.
+- **US embassy Bahrain** lifted shelter-in-place but warned of continued Iran/proxy targeting.
+- **Apr 8 — Post-ceasefire strikes (pipeline delay):** UAE, Kuwait (28 drones), Qatar (7 BMs), Saudi (9 drones + pipeline hit, 1 killed), Bahrain (injuries).
+- **Apr 7 — CEASE-FIRE ANNOUNCED.** 2-week deal via Pakistan mediation + China intervention.
 - **Apr 7 — UAE OFFICIAL CUMULATIVE:** 520 BMs / 26 CMs / 2,221 drones.
-- **JINSA (Mar 29):** Gulf states burned through ~75% of Patriot interceptor stocks. Interceptor supply now a coalition vulnerability.
+- **Bahrain cumulative (Apr 8 update):** 188 BMs + 468 drones.
+- **JINSA (Mar 29):** Gulf states burned through ~75% of Patriot interceptor stocks.
 
 ## Watch Items
 - New official Saudi or Qatari cumulative totals
@@ -70,4 +73,4 @@ Confidence: Medium overall
 - **Analytical review:** `/home/node/.openclaw/workspace/data/iran-tracker-review.md`
 
 ## One-Line CEO Summary
-Day 41: Cease-fire Day 2 — post-ceasefire salvos Apr 8 then quiet. Iran-US talks Friday. UAE 520/26/2,221. Bahrain uplift: 188 BMs + 468 drones. If cease-fire collapses, launchers (~99) binding at ~50 days; Gulf interceptor depletion (~75% Patriots) now a coalition problem too.
+Day 43: Cease-fire Day 4 — mostly holding but Kuwait drone attack Apr 10; IRGC denies. Islamabad talks in doubt as Iran threatens walkout over Lebanon/Hormuz. UAE 520/26/2,221. If cease-fire collapses, launchers (~99) binding at ~50 days; Patriot depletion (~75%) a coalition problem.
