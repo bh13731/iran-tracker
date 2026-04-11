@@ -4,136 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pipeline Delay: What Post-Ceasefire Salvos Reveal About Iran's Drone Machine — Iran Tracker</title>
+<link rel="stylesheet" href="story.css">
 <script src="https://d3js.org/d3.v7.min.js"></script>
-<style>
-:root {
-  --bg: #0d1117;
-  --surface: #161b22;
-  --border: #30363d;
-  --text: #c9d1d9;
-  --text-muted: #8b949e;
-  --accent: #58a6ff;
-  --red: #f85149;
-  --orange: #d29922;
-  --green: #3fb950;
-  --purple: #bc8cff;
-}
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.7;
-  padding: 0 16px 64px;
-  max-width: 760px;
-  margin: 0 auto;
-}
-nav { padding: 16px 0 8px; font-size: 0.85rem; }
-nav a { color: var(--accent); text-decoration: none; }
-nav a:hover { text-decoration: underline; }
-h1 { font-size: 1.5rem; font-weight: 700; margin: 20px 0 6px; line-height: 1.35; }
-h2 { font-size: 1.1rem; font-weight: 600; margin: 32px 0 10px; color: var(--accent); }
-p { font-size: 0.9rem; margin-bottom: 14px; }
-.meta { color: var(--text-muted); font-size: 0.78rem; margin-bottom: 24px; }
-.tag {
-  display: inline-block;
-  font-size: 0.7rem;
-  padding: 1px 8px;
-  border-radius: 10px;
-  font-weight: 500;
-  margin-left: 6px;
-}
-.tag-analysis { background: rgba(88,166,255,0.15); color: var(--accent); }
-.tag-drones { background: rgba(63,185,80,0.15); color: var(--green); }
-.tag-ceasefire { background: rgba(210,153,34,0.15); color: var(--orange); }
-.lede {
-  font-size: 1.0rem;
-  color: var(--text);
-  border-left: 3px solid var(--accent);
-  padding: 10px 16px;
-  margin: 16px 0 24px;
-  background: rgba(88,166,255,0.06);
-  line-height: 1.6;
-}
-.stat-row {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 12px;
-  margin: 20px 0;
-}
-.stat-box {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 14px;
-  text-align: center;
-}
-.stat-value { font-size: 1.35rem; font-weight: 700; font-variant-numeric: tabular-nums; }
-.stat-label { font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; margin-top: 2px; }
-.stat-sub { font-size: 0.72rem; color: var(--text-muted); margin-top: 2px; }
-.callout {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  padding: 14px 16px;
-  margin: 20px 0;
-  font-size: 0.85rem;
-}
-.callout strong { color: var(--accent); }
-.callout.warn { border-color: var(--orange); }
-.callout.warn strong { color: var(--orange); }
-.callout.green { border-color: var(--green); }
-.callout.green strong { color: var(--green); }
-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.82rem;
-  margin: 12px 0;
-}
-th, td {
-  padding: 7px 8px;
-  text-align: left;
-  border-bottom: 1px solid var(--border);
-}
-th { color: var(--text-muted); font-weight: 500; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px; }
-td.num { text-align: right; font-variant-numeric: tabular-nums; }
-.chart-wrap {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 16px;
-  margin: 20px 0;
-  overflow-x: auto;
-}
-.chart-label { font-size: 0.78rem; color: var(--text-muted); margin-bottom: 8px; }
-svg { display: block; }
-.axis text { fill: var(--text-muted); font-size: 11px; }
-.axis line, .axis path { stroke: var(--border); }
-.grid line { stroke: var(--border); stroke-opacity: 0.3; }
-.grid path { display: none; }
-.tooltip {
-  position: absolute;
-  background: #1c2128;
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  padding: 8px 12px;
-  font-size: 12px;
-  pointer-events: none;
-  opacity: 0;
-  z-index: 10;
-  max-width: 240px;
-  line-height: 1.4;
-}
-.source-note { font-size: 0.75rem; color: var(--text-muted); margin-top: 8px; font-style: italic; }
-@media (max-width: 560px) {
-  h1 { font-size: 1.2rem; }
-  .stat-row { grid-template-columns: repeat(2, 1fr); }
-}
-</style>
 </head>
 <body>
 
-<nav><a href="../index.html">&larr; Dashboard</a> &middot; <a href="index.html">Stories</a> &middot; <a href="../methodology.html">Methodology</a></nav>
+<header>
+  <nav>
+    <a class="nav-brand" href="../index.html">Iran Tracker</a>
+    <a href="../index.html">Dashboard</a>
+    <a href="index.html">Analysis</a>
+    <a href="../methodology.html">Methodology</a>
+  </nav>
+</header>
 
 <h1>Pipeline Delay: What Post-Ceasefire Salvos Reveal About Iran's Drone Machine</h1>
 <div class="meta">April 9, 2026 — Day 41 <span class="tag tag-analysis">Analysis</span> <span class="tag tag-drones">Drones</span> <span class="tag tag-ceasefire">Cease-fire</span></div>
@@ -148,22 +31,22 @@ The cease-fire was declared on April 7. On April 8, drones and missiles kept fly
 
 <div class="stat-row">
   <div class="stat-box">
-    <div class="stat-value" style="color:#58a6ff;">28</div>
+    <div class="stat-value" style="color:var(--accent);">28</div>
     <div class="stat-label">Kuwait post-CF drones</div>
     <div class="stat-sub">Apr 8, official</div>
   </div>
   <div class="stat-box">
-    <div class="stat-value" style="color:#f85149;">7</div>
+    <div class="stat-value" style="color:var(--red);">7</div>
     <div class="stat-label">Qatar post-CF BMs</div>
     <div class="stat-sub">Apr 8 + drones</div>
   </div>
   <div class="stat-box">
-    <div class="stat-value" style="color:#58a6ff;">9</div>
+    <div class="stat-value" style="color:var(--accent);">9</div>
     <div class="stat-label">Saudi post-CF drones</div>
     <div class="stat-sub">Apr 8, official</div>
   </div>
   <div class="stat-box">
-    <div class="stat-value" style="color:#d29922;">~0</div>
+    <div class="stat-value" style="color:var(--orange);">~0</div>
     <div class="stat-label">Reports overnight Apr 9</div>
     <div class="stat-sub">Quiet after first wave</div>
   </div>
@@ -177,12 +60,12 @@ The cease-fire was declared on April 7. On April 8, drones and missiles kept fly
 
 <div class="stat-row">
   <div class="stat-box">
-    <div class="stat-value" style="color:#f85149;">+8</div>
+    <div class="stat-value" style="color:var(--red);">+8</div>
     <div class="stat-label">BM revision (Bahrain)</div>
     <div class="stat-sub">180 → 188 (+4%)</div>
   </div>
   <div class="stat-box">
-    <div class="stat-value" style="color:#58a6ff;">+158</div>
+    <div class="stat-value" style="color:var(--accent);">+158</div>
     <div class="stat-label">Drone revision (Bahrain)</div>
     <div class="stat-sub">310 → 468 (+51%)</div>
   </div>
@@ -254,14 +137,13 @@ The cease-fire was declared on April 7. On April 8, drones and missiles kept fly
 
 <p>The Bahrain uplift is a small but important reminder: the numbers in this tracker are floors, not ceilings. Each country's official count is released on its own schedule, subject to operational security constraints, and will be revised upward as deconfliction is completed. The total drone picture at Day 41 is almost certainly higher than the confirmed floor of ~6,770. The best estimate of 8,500–9,500 reflects that gap — and the Bahrain revision is one piece of evidence that the gap is real.</p>
 
-<div style="margin-top:40px;padding-top:16px;border-top:1px solid var(--border);font-size:0.78rem;color:var(--text-muted);">
-  <a href="index.html" style="color:var(--accent);text-decoration:none;">&larr; All stories</a> &middot; <a href="../index.html" style="color:var(--accent);text-decoration:none;">Dashboard</a> &middot; <a href="../methodology.html" style="color:var(--accent);text-decoration:none;">Methodology</a>
-</div>
+<footer>
+  <a href="index.html">All analysis</a> · <a href="../index.html">Dashboard</a> · <a href="../methodology.html">Methodology</a> · <a href="https://github.com/bh13731/iran-tracker">GitHub</a>
+</footer>
 
 <div class="tooltip" id="tooltip"></div>
 
 <script>
-// Drone-to-BM ratio chart (horizontal bar, grouped)
 const countries = [
   { name: 'UAE', bm: 520, drones: 2221 },
   { name: 'Kuwait', bm: 365, drones: 655 },
@@ -272,8 +154,9 @@ const countries = [
 
 const tooltip = d3.select('#tooltip');
 const W = Math.min(700, window.innerWidth - 64);
-const barH = 24, gap = 8, groupGap = 14;
-const ml = 90, mr = 20, mt = 10, mb = 30;
+const MOBILE = W < 480;
+const barH = MOBILE ? 22 : 26, gap = 6, groupGap = MOBILE ? 12 : 16;
+const ml = MOBILE ? 80 : 95, mr = 50, mt = 10, mb = 34;
 const totalH = countries.length * (2 * barH + gap + groupGap) + mt + mb;
 const xMax = d3.max(countries, d => Math.max(d.bm, d.drones));
 const x = d3.scaleLinear().domain([0, xMax * 1.05]).range([ml, W - mr]);
@@ -282,51 +165,56 @@ const fmtNum = d3.format(',');
 const svg = d3.select('#ratio-chart').append('svg')
   .attr('width', W).attr('height', totalH).attr('viewBox', `0 0 ${W} ${totalH}`);
 
-// X axis
 svg.append('g').attr('class', 'axis').attr('transform', `translate(0,${totalH - mb})`)
   .call(d3.axisBottom(x).ticks(5).tickFormat(d3.format('~s')));
 
 countries.forEach((c, i) => {
   const yTop = mt + i * (2 * barH + gap + groupGap);
 
-  // Country label
-  svg.append('text').attr('x', ml - 6).attr('y', yTop + barH + gap / 2 + barH / 2)
+  svg.append('text').attr('x', ml - 8).attr('y', yTop + barH + gap / 2)
     .attr('text-anchor', 'end').attr('dominant-baseline', 'middle')
-    .attr('fill', '#c9d1d9').attr('font-size', 12).text(c.name);
+    .attr('fill', '#d4dae3').attr('font-size', MOBILE ? 10 : 11)
+    .attr('font-family', 'var(--font-sans)').text(c.name);
 
   // BM bar
   svg.append('rect')
     .attr('x', ml).attr('y', yTop).attr('height', barH)
-    .attr('width', x(c.bm) - ml).attr('fill', '#f85149').attr('opacity', 0.85).attr('rx', 2)
+    .attr('width', x(c.bm) - ml).attr('fill', '#e5534b').attr('opacity', 0.8).attr('rx', 3)
+    .style('cursor', 'pointer')
     .on('mouseover', (e) => {
       tooltip.style('opacity', 1).html(`<strong>${c.name}</strong><br>Ballistic missiles: ${fmtNum(c.bm)}`)
         .style('left', (e.pageX + 12) + 'px').style('top', (e.pageY - 28) + 'px');
     }).on('mouseout', () => tooltip.style('opacity', 0));
 
-  svg.append('text').attr('x', x(c.bm) + 4).attr('y', yTop + barH / 2)
-    .attr('dominant-baseline', 'middle').attr('fill', '#f85149').attr('font-size', 10)
+  svg.append('text').attr('x', x(c.bm) + 5).attr('y', yTop + barH / 2)
+    .attr('dominant-baseline', 'middle').attr('fill', '#e5534b')
+    .attr('font-size', MOBILE ? 9 : 10).attr('font-family', 'var(--font-sans)').attr('font-weight', 500)
     .text(fmtNum(c.bm));
 
   // Drone bar
   svg.append('rect')
     .attr('x', ml).attr('y', yTop + barH + gap).attr('height', barH)
-    .attr('width', x(c.drones) - ml).attr('fill', '#58a6ff').attr('opacity', 0.85).attr('rx', 2)
+    .attr('width', x(c.drones) - ml).attr('fill', '#5ba3f5').attr('opacity', 0.8).attr('rx', 3)
+    .style('cursor', 'pointer')
     .on('mouseover', (e) => {
       tooltip.style('opacity', 1).html(`<strong>${c.name}</strong><br>Drones: ${fmtNum(c.drones)}`)
         .style('left', (e.pageX + 12) + 'px').style('top', (e.pageY - 28) + 'px');
     }).on('mouseout', () => tooltip.style('opacity', 0));
 
-  svg.append('text').attr('x', x(c.drones) + 4).attr('y', yTop + barH + gap + barH / 2)
-    .attr('dominant-baseline', 'middle').attr('fill', '#58a6ff').attr('font-size', 10)
+  svg.append('text').attr('x', x(c.drones) + 5).attr('y', yTop + barH + gap + barH / 2)
+    .attr('dominant-baseline', 'middle').attr('fill', '#5ba3f5')
+    .attr('font-size', MOBILE ? 9 : 10).attr('font-family', 'var(--font-sans)').attr('font-weight', 500)
     .text(fmtNum(c.drones));
 });
 
 // Legend
 const legY = totalH - mb + 20;
-[{ label: 'Ballistic missiles', color: '#f85149' }, { label: 'Drones', color: '#58a6ff' }].forEach((l, i) => {
-  const lx = ml + i * 150;
-  svg.append('rect').attr('x', lx).attr('y', legY - 8).attr('width', 10).attr('height', 10).attr('fill', l.color).attr('rx', 1);
-  svg.append('text').attr('x', lx + 14).attr('y', legY).attr('fill', '#8b949e').attr('font-size', 10).text(l.label);
+[{ label: 'Ballistic missiles', color: '#e5534b' }, { label: 'Drones', color: '#5ba3f5' }].forEach((l, i) => {
+  const lx = ml + i * 160;
+  svg.append('rect').attr('x', lx).attr('y', legY - 8).attr('width', 12).attr('height', 12)
+    .attr('fill', l.color).attr('opacity', 0.8).attr('rx', 2);
+  svg.append('text').attr('x', lx + 16).attr('y', legY + 1)
+    .attr('fill', '#6b7a8d').attr('font-size', 10).attr('font-family', 'var(--font-sans)').text(l.label);
 });
 </script>
 

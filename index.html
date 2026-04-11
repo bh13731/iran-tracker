@@ -4,170 +4,386 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Iran Missile & Drone Tracker</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <style>
 :root {
-  --bg: #0d1117;
-  --surface: #161b22;
-  --border: #30363d;
-  --text: #c9d1d9;
-  --text-muted: #8b949e;
-  --accent: #58a6ff;
-  --red: #f85149;
-  --orange: #d29922;
-  --green: #3fb950;
-  --purple: #bc8cff;
-  --cyan: #39d2c0;
+  --bg: #101418;
+  --surface: #181d23;
+  --surface-raised: #1e242c;
+  --border: #2a3140;
+  --border-subtle: #222830;
+  --text: #d4dae3;
+  --text-secondary: #9aa5b4;
+  --text-muted: #6b7a8d;
+  --accent: #5ba3f5;
+  --accent-dim: rgba(91,163,245,0.12);
+  --red: #e5534b;
+  --red-dim: rgba(229,83,75,0.12);
+  --orange: #d4943a;
+  --orange-dim: rgba(212,148,58,0.12);
+  --green: #46954a;
+  --green-dim: rgba(70,149,74,0.12);
+  --purple: #b388f5;
+  --purple-dim: rgba(179,136,245,0.12);
+  --cyan: #39c5cf;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: var(--font-sans);
   background: var(--bg);
   color: var(--text);
-  line-height: 1.5;
-  padding: 0 16px 64px;
-  max-width: 960px;
+  line-height: 1.6;
+  padding: 0 24px 80px;
+  max-width: 980px;
   margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-h1 { font-size: 1.5rem; font-weight: 700; margin: 24px 0 4px; }
-h2 { font-size: 1.15rem; font-weight: 600; margin: 32px 0 12px; color: var(--accent); }
-h3 { font-size: 0.95rem; font-weight: 600; margin: 20px 0 8px; color: var(--text-muted); }
-.subtitle { color: var(--text-muted); font-size: 0.85rem; margin-bottom: 16px; }
-.card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 16px;
+
+/* --- Header & Nav --- */
+header {
+  padding: 28px 0 0;
+  margin-bottom: 32px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 14px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+nav a {
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+nav a:hover { color: var(--accent); }
+nav .nav-brand {
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-right: auto;
+}
+h1 {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin: 20px 0 6px;
+  color: #eaf0f6;
+}
+.subtitle {
+  font-family: var(--font-serif);
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 24px;
+  font-style: italic;
+}
+h2 {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 48px 0 6px;
+  color: #eaf0f6;
+  letter-spacing: -0.01em;
+}
+h2::after {
+  content: '';
+  display: block;
+  width: 36px;
+  height: 2px;
+  background: var(--accent);
+  margin-top: 8px;
+  border-radius: 1px;
+}
+.section-desc {
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  line-height: 1.55;
   margin-bottom: 16px;
+  max-width: 680px;
 }
+
+/* --- Executive summary --- */
 .ceo-line {
   background: var(--surface);
   border-left: 3px solid var(--accent);
-  padding: 12px 16px;
-  margin: 16px 0;
-  font-size: 0.9rem;
+  padding: 16px 20px;
+  margin: 0 0 32px;
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--text);
+  border-radius: 0 6px 6px 0;
 }
+.ceo-line strong { color: #eaf0f6; }
+
+/* --- Cards --- */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 10px;
+  padding: 20px 24px;
+  margin-bottom: 20px;
+  transition: border-color 0.2s;
+}
+
+/* --- Charts --- */
 .chart-container { width: 100%; overflow-x: auto; }
 svg { display: block; }
-.axis text { fill: var(--text-muted); font-size: 11px; }
-.axis line, .axis path { stroke: var(--border); }
-.grid line { stroke: var(--border); stroke-opacity: 0.3; }
+.axis text { fill: var(--text-muted); font-size: 11px; font-family: var(--font-sans); }
+.axis line, .axis path { stroke: var(--border-subtle); }
+.axis .domain { stroke: var(--border); }
+.grid line { stroke: var(--border-subtle); stroke-opacity: 0.5; }
 .grid path { display: none; }
 .tooltip {
   position: absolute;
-  background: #1c2128;
+  background: var(--surface-raised);
   border: 1px solid var(--border);
-  border-radius: 6px;
-  padding: 8px 12px;
-  font-size: 12px;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 0.75rem;
+  font-family: var(--font-sans);
   pointer-events: none;
   opacity: 0;
   z-index: 10;
   max-width: 280px;
-  line-height: 1.4;
+  line-height: 1.5;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  transition: opacity 0.12s;
 }
+.tooltip strong { color: #eaf0f6; }
 .legend {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
-  margin: 8px 0;
-  font-size: 0.8rem;
+  gap: 16px;
+  margin: 0 0 12px;
+  font-size: 0.75rem;
+  color: var(--text-muted);
 }
 .legend-item {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 6px;
 }
 .legend-swatch {
-  width: 12px;
+  width: 16px;
   height: 3px;
-  border-radius: 1px;
+  border-radius: 1.5px;
 }
 .bar-legend .legend-swatch {
   width: 12px;
   height: 12px;
-  border-radius: 2px;
+  border-radius: 3px;
 }
-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.82rem;
-  margin: 8px 0;
-}
-th, td {
-  padding: 6px 8px;
-  text-align: left;
-  border-bottom: 1px solid var(--border);
-}
-th { color: var(--text-muted); font-weight: 500; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px; }
-td.num { text-align: right; font-variant-numeric: tabular-nums; }
-.confidence-badge {
-  display: inline-block;
-  font-size: 0.7rem;
-  padding: 1px 6px;
-  border-radius: 10px;
-  font-weight: 500;
-}
-.conf-high { background: rgba(63, 185, 80, 0.15); color: var(--green); }
-.conf-medium { background: rgba(210, 153, 34, 0.15); color: var(--orange); }
-.conf-low { background: rgba(248, 81, 73, 0.15); color: var(--red); }
-.event-list { list-style: none; }
-.event-list li {
-  padding: 6px 0;
-  border-bottom: 1px solid var(--border);
-  font-size: 0.82rem;
-}
-.event-list li:last-child { border-bottom: none; }
-.event-date { color: var(--text-muted); font-size: 0.75rem; margin-right: 8px; }
-.event-day { color: var(--accent); font-size: 0.72rem; }
-.caveat-list { list-style: disc; padding-left: 20px; }
-.caveat-list li { font-size: 0.8rem; color: var(--text-muted); margin: 4px 0; }
+
+/* --- Stat grid --- */
 .stat-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 12px;
-  margin: 12px 0;
+  margin: 0 0 8px;
 }
 .stat-box {
-  background: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  padding: 12px;
+  background: var(--surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 10px;
+  padding: 16px 14px;
   text-align: center;
+  transition: border-color 0.2s;
 }
-.stat-value { font-size: 1.3rem; font-weight: 700; font-variant-numeric: tabular-nums; }
-.stat-label { font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; }
-.range-bar {
-  height: 6px;
-  border-radius: 3px;
-  background: var(--border);
+.stat-box:hover { border-color: var(--border); }
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+  color: #eaf0f6;
+}
+.stat-label {
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-top: 4px;
+  font-weight: 500;
+}
+
+/* --- Table --- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+  margin: 8px 0;
+}
+th, td {
+  padding: 10px 10px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-subtle);
+}
+th {
+  color: var(--text-muted);
+  font-weight: 600;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+td.num { text-align: right; font-variant-numeric: tabular-nums; }
+tr:last-child td { border-bottom: none; }
+.confidence-badge {
+  display: inline-block;
+  font-size: 0.68rem;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+.conf-high { background: var(--green-dim); color: var(--green); }
+.conf-medium { background: var(--orange-dim); color: var(--orange); }
+.conf-low { background: var(--red-dim); color: var(--red); }
+
+/* --- Events --- */
+.event-list { list-style: none; }
+.event-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border-subtle);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+.event-list li:last-child { border-bottom: none; }
+.event-date {
+  color: var(--text-muted);
+  font-size: 0.72rem;
+  font-variant-numeric: tabular-nums;
+  margin-right: 6px;
+}
+.event-day {
+  color: var(--accent);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+.caveat-list { list-style: none; padding-left: 0; }
+.caveat-list li {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin: 6px 0;
+  padding-left: 16px;
   position: relative;
-  margin: 4px 0;
 }
-.range-fill {
-  height: 100%;
-  border-radius: 3px;
+.caveat-list li::before {
+  content: '';
   position: absolute;
   left: 0;
+  top: 8px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--border);
 }
+
+/* --- Latest Analysis / Story cards --- */
+.story-card {
+  display: block;
+  background: var(--surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 10px;
+  padding: 24px;
+  margin-bottom: 14px;
+  text-decoration: none;
+  transition: border-color 0.2s, transform 0.15s;
+  cursor: pointer;
+}
+.story-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+.story-title {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: #eaf0f6;
+  line-height: 1.35;
+  margin-bottom: 6px;
+}
+.story-meta {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.story-excerpt {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+.stories-link {
+  font-size: 0.78rem;
+  text-align: center;
+  margin: 20px 0 0;
+}
+.stories-link a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.15s;
+}
+.stories-link a:hover { color: var(--accent); }
+
+/* --- Footer --- */
+footer {
+  margin-top: 56px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-subtle);
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  text-align: center;
+  line-height: 1.6;
+}
+footer a { color: var(--text-secondary); transition: color 0.15s; }
+footer a:hover { color: var(--accent); }
+
+/* --- Responsive --- */
 @media (max-width: 600px) {
-  body { padding: 0 10px 48px; }
-  h1 { font-size: 1.2rem; }
-  .stat-grid { grid-template-columns: repeat(2, 1fr); }
+  body { padding: 0 14px 56px; }
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.1rem; margin-top: 36px; }
+  .stat-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+  .stat-value { font-size: 1.2rem; }
+  .stat-box { padding: 12px 10px; }
+  .card { padding: 16px; }
   table { font-size: 0.75rem; }
-  th, td { padding: 4px 4px; }
+  th, td { padding: 8px 6px; }
+  .ceo-line { font-size: 0.88rem; padding: 14px 16px; }
+  .story-card { padding: 18px; }
+  nav { gap: 14px; }
 }
 </style>
 </head>
 <body>
 
-<nav style="display:flex;gap:16px;padding:16px 0 0;font-size:0.85rem;">
-  <a href="methodology.html" style="color:var(--accent);text-decoration:none;">Methodology</a>
-  <a href="stories/" style="color:var(--accent);text-decoration:none;">Stories</a>
-  <a href="https://github.com/bh13731/iran-tracker" style="color:var(--text-muted);text-decoration:none;">GitHub</a>
-</nav>
+<header>
+  <nav>
+    <span class="nav-brand">Iran Tracker</span>
+    <a href="methodology.html">Methodology</a>
+    <a href="stories/">Analysis</a>
+    <a href="https://github.com/bh13731/iran-tracker">GitHub</a>
+  </nav>
+</header>
 
-<h1>Iran Missile & Drone Tracker</h1>
+<h1>Iran Missile &amp; Drone Tracker</h1>
 <p class="subtitle">Depletion analysis — <span id="last-updated"></span></p>
 
 <div class="ceo-line" id="ceo-summary"></div>
@@ -175,28 +391,28 @@ td.num { text-align: right; font-variant-numeric: tabular-nums; }
 <div class="stat-grid" id="stat-grid"></div>
 
 <h2>UAE Official Cumulative Intercepts</h2>
-<p class="subtitle">UAE MoD data — highest confidence series. Ballistic missiles, cruise missiles, and drones intercepted since Feb 28.</p>
+<p class="section-desc">UAE MoD data — highest confidence series. Ballistic missiles, cruise missiles, and drones intercepted since Feb 28.</p>
 <div class="card">
   <div class="legend" id="uae-legend"></div>
   <div class="chart-container" id="uae-chart"></div>
 </div>
 
 <h2>Total Munitions Fired — All Theaters</h2>
-<p class="subtitle">Confirmed floor (solid) vs best-estimate range (shaded). Methodology shift on Day 20.</p>
+<p class="section-desc">Confirmed floor (solid) vs best-estimate range (shaded). Methodology shift on Day 20.</p>
 <div class="card">
   <div class="legend" id="total-legend"></div>
   <div class="chart-container" id="total-chart"></div>
 </div>
 
 <h2>Launcher Depletion</h2>
-<p class="subtitle">Estimated remaining operational ballistic missile launchers. This is the binding constraint — not missile stocks.</p>
+<p class="section-desc">Estimated remaining operational ballistic missile launchers. This is the binding constraint — not missile stocks.</p>
 <div class="card">
   <div class="legend" id="launcher-legend"></div>
   <div class="chart-container" id="launcher-chart"></div>
 </div>
 
 <h2>Gulf Breakdown by Country</h2>
-<p class="subtitle">Cumulative intercepts by target country (latest available figures).</p>
+<p class="section-desc">Cumulative intercepts by target country (latest available figures).</p>
 <div class="card">
   <div class="chart-container" id="gulf-chart"></div>
 </div>
@@ -216,43 +432,43 @@ td.num { text-align: right; font-variant-numeric: tabular-nums; }
   <ul class="event-list" id="event-list"></ul>
 </div>
 
-<h2>Methodology & Caveats</h2>
+<h2>Methodology &amp; Caveats</h2>
 <div class="card">
-  <p style="font-size: 0.85rem; margin-bottom: 8px;" id="methodology-text"></p>
+  <p style="font-size: 0.85rem; margin-bottom: 10px; line-height: 1.6; color: var(--text-secondary);" id="methodology-text"></p>
   <ul class="caveat-list" id="caveat-list"></ul>
 </div>
 
 <h2>Latest Analysis</h2>
-<div class="card" style="cursor:pointer;" onclick="location.href='stories/2026-04-11-ceasefire-fault-lines.html'">
-  <div style="font-weight:600;margin-bottom:4px;">The Cease-Fire's Fault Lines: Kuwait, Deniability, and the Islamabad Gamble</div>
-  <div style="font-size:0.78rem;color:var(--text-muted);margin-bottom:6px;">April 11, 2026</div>
-  <div style="font-size:0.85rem;color:var(--text-muted);">Day 4 of the cease-fire and Kuwait's National Guard was struck by drones. The IRGC denied it. That denial is analytically significant — either Iran has lost control of its proxies, or it is testing the cease-fire under plausible deniability. A data-driven look at the structural tensions threatening the 2-week deal.</div>
-</div>
-<div style="font-size:0.78rem;color:var(--text-muted);text-align:center;margin:24px 0 0;"><a href="stories/" style="color:var(--accent);text-decoration:none;">All stories &rarr;</a></div>
+<a class="story-card" href="stories/2026-04-11-ceasefire-fault-lines.html">
+  <div class="story-title">The Cease-Fire's Fault Lines: Kuwait, Deniability, and the Islamabad Gamble</div>
+  <div class="story-meta">April 11, 2026</div>
+  <div class="story-excerpt">Day 4 of the cease-fire and Kuwait's National Guard was struck by drones. The IRGC denied it. That denial is analytically significant — either Iran has lost control of its proxies, or it is testing the cease-fire under plausible deniability. A data-driven look at the structural tensions threatening the 2-week deal.</div>
+</a>
+<div class="stories-link"><a href="stories/">All analysis &rarr;</a></div>
 
-<div style="margin-top:32px;padding-top:16px;border-top:1px solid var(--border);font-size:0.75rem;color:var(--text-muted);text-align:center;">
-  Source files, methodology, and the full analytical ledger are available on <a href="https://github.com/bh13731/iran-tracker" style="color:var(--accent);">GitHub</a>.<br>
+<footer>
+  Source files, methodology, and the full analytical ledger are available on <a href="https://github.com/bh13731/iran-tracker">GitHub</a>.<br>
   Built with D3.js. No build system required.
-</div>
+</footer>
 
 <div class="tooltip" id="tooltip"></div>
 
 <script>
-const WIDTH = Math.min(920, window.innerWidth - 40);
+const WIDTH = Math.min(930, window.innerWidth - 52);
 const MOBILE = WIDTH < 500;
-const MARGIN = { top: 20, right: MOBILE ? 10 : 60, bottom: 40, left: MOBILE ? 45 : 55 };
-const H = MOBILE ? 240 : 300;
+const MARGIN = { top: 24, right: MOBILE ? 12 : 65, bottom: 44, left: MOBILE ? 48 : 56 };
+const H = MOBILE ? 260 : 320;
 
 const colors = {
-  bm: '#f85149',
-  drones: '#58a6ff',
-  cm: '#bc8cff',
-  bmFill: 'rgba(248,81,73,0.15)',
-  droneFill: 'rgba(88,166,255,0.15)',
-  cmFill: 'rgba(188,140,255,0.15)',
-  launcher: '#d29922',
-  launcherFill: 'rgba(210,153,34,0.15)',
-  green: '#3fb950'
+  bm: '#e5534b',
+  drones: '#5ba3f5',
+  cm: '#b388f5',
+  bmFill: 'rgba(229,83,75,0.12)',
+  droneFill: 'rgba(91,163,245,0.12)',
+  cmFill: 'rgba(179,136,245,0.12)',
+  launcher: '#d4943a',
+  launcherFill: 'rgba(212,148,58,0.12)',
+  green: '#46954a'
 };
 
 const tooltip = d3.select('#tooltip');
@@ -295,19 +511,12 @@ fetch('data.json').then(r => r.json()).then(data => {
     box.append('div').attr('class', 'stat-label').text(s.label);
   });
 
-  // UAE chart
   drawUAEChart(data);
-  // Total chart
   drawTotalChart(data);
-  // Launcher chart
   drawLauncherChart(data);
-  // Gulf breakdown
   drawGulfChart(data);
-  // Snapshot table
   drawSnapshotTable(data);
-  // Events
   drawEvents(data);
-  // Methodology
   d3.select('#methodology-text').text(data.meta.methodology);
   const cl = d3.select('#caveat-list');
   data.meta.caveats.forEach(c => cl.append('li').text(c));
@@ -319,6 +528,12 @@ function makeXScale(dates, w) {
   return d3.scaleTime().domain(d3.extent(dates)).range([MARGIN.left, w - MARGIN.right]);
 }
 
+function showTip(e, html) {
+  tooltip.style('opacity', 1).html(html)
+    .style('left', (e.pageX + 14) + 'px').style('top', (e.pageY - 32) + 'px');
+}
+function hideTip() { tooltip.style('opacity', 0); }
+
 function drawUAEChart(data) {
   const pts = data.uaeCumulative.map(d => ({ ...d, dt: parseDate(d.date) }));
   const w = WIDTH, h = H;
@@ -328,11 +543,9 @@ function drawUAEChart(data) {
 
   const svg = d3.select('#uae-chart').append('svg').attr('width', w).attr('height', h).attr('viewBox', `0 0 ${w} ${h}`);
 
-  // Grid
   svg.append('g').attr('class', 'grid').attr('transform', `translate(${MARGIN.left},0)`)
     .call(d3.axisLeft(y).ticks(5).tickSize(-(w - MARGIN.left - MARGIN.right)).tickFormat(''));
 
-  // Axes
   svg.append('g').attr('class', 'axis').attr('transform', `translate(0,${h - MARGIN.bottom})`)
     .call(d3.axisBottom(x).ticks(MOBILE ? 5 : 8).tickFormat(fmtDate));
   svg.append('g').attr('class', 'axis').attr('transform', `translate(${MARGIN.left},0)`)
@@ -340,32 +553,31 @@ function drawUAEChart(data) {
 
   const line = (key) => d3.line().x(d => x(d.dt)).y(d => y(d[key])).curve(d3.curveMonotoneX);
 
-  // Lines
   [
     { key: 'drones', color: colors.drones, label: 'Drones' },
     { key: 'bm', color: colors.bm, label: 'Ballistic' },
     { key: 'cm', color: colors.cm, label: 'Cruise' },
   ].forEach(s => {
-    svg.append('path').datum(pts).attr('fill', 'none').attr('stroke', s.color).attr('stroke-width', 2).attr('d', line(s.key));
+    svg.append('path').datum(pts).attr('fill', 'none').attr('stroke', s.color)
+      .attr('stroke-width', 2).attr('stroke-linecap', 'round').attr('d', line(s.key));
     svg.selectAll(`.dot-${s.key}`).data(pts).enter().append('circle')
-      .attr('cx', d => x(d.dt)).attr('cy', d => y(d[s.key])).attr('r', 3).attr('fill', s.color)
-      .on('mouseover', (e, d) => {
-        tooltip.style('opacity', 1).html(
-          `<strong>${fmtDate(d.dt)}</strong> (Day ${d.day})<br>` +
-          `BM: ${fmtNum(d.bm)} | CM: ${fmtNum(d.cm)} | Drones: ${fmtNum(d.drones)}`
-        ).style('left', (e.pageX + 12) + 'px').style('top', (e.pageY - 28) + 'px');
-      })
-      .on('mouseout', () => tooltip.style('opacity', 0));
+      .attr('cx', d => x(d.dt)).attr('cy', d => y(d[s.key])).attr('r', 3.5)
+      .attr('fill', s.color).attr('stroke', 'var(--surface)').attr('stroke-width', 1.5)
+      .style('cursor', 'pointer')
+      .on('mouseover', (e, d) => showTip(e,
+        `<strong>${fmtDate(d.dt)}</strong> (Day ${d.day})<br>` +
+        `BM: ${fmtNum(d.bm)} &middot; CM: ${fmtNum(d.cm)} &middot; Drones: ${fmtNum(d.drones)}`
+      ))
+      .on('mouseout', hideTip);
 
-    // Label at end
     if (!MOBILE) {
       const last = pts[pts.length - 1];
-      svg.append('text').attr('x', x(last.dt) + 6).attr('y', y(last[s.key]) + 4)
-        .attr('fill', s.color).attr('font-size', 11).text(`${s.label}: ${fmtNum(last[s.key])}`);
+      svg.append('text').attr('x', x(last.dt) + 8).attr('y', y(last[s.key]) + 4)
+        .attr('fill', s.color).attr('font-size', 11).attr('font-weight', 500)
+        .attr('font-family', 'var(--font-sans)').text(`${s.label}: ${fmtNum(last[s.key])}`);
     }
   });
 
-  // Legend
   const leg = d3.select('#uae-legend');
   [
     { label: 'Drones', color: colors.drones },
@@ -398,43 +610,42 @@ function drawTotalChart(data) {
   const shiftDate = parseDate('2026-03-19');
   svg.append('line').attr('x1', x(shiftDate)).attr('x2', x(shiftDate))
     .attr('y1', MARGIN.top).attr('y2', h - MARGIN.bottom)
-    .attr('stroke', '#484f58').attr('stroke-dasharray', '4,3').attr('stroke-width', 1);
-  svg.append('text').attr('x', x(shiftDate) + 4).attr('y', MARGIN.top + 12)
-    .attr('fill', '#484f58').attr('font-size', 9).text('Methodology shift');
+    .attr('stroke', 'var(--border)').attr('stroke-dasharray', '4,4').attr('stroke-width', 1);
+  svg.append('text').attr('x', x(shiftDate) + 5).attr('y', MARGIN.top + 14)
+    .attr('fill', 'var(--text-muted)').attr('font-size', 9).attr('font-family', 'var(--font-sans)')
+    .text('Methodology shift');
 
-  // Draw each series: area for best-estimate range, line for floor
   const series = [
     { floor: 'droneFloor', best: 'droneBest', color: colors.drones, fill: colors.droneFill, label: 'Drones' },
     { floor: 'bmFloor', best: 'bmBest', color: colors.bm, fill: colors.bmFill, label: 'Ballistic' },
   ];
 
   series.forEach(s => {
-    // Best-estimate band
     const area = d3.area().x(d => x(d.dt))
       .y0(d => y(d[s.best][0])).y1(d => y(d[s.best][1]))
       .curve(d3.curveMonotoneX);
     svg.append('path').datum(pts).attr('fill', s.fill).attr('d', area);
 
-    // Floor line
     const line = d3.line().x(d => x(d.dt)).y(d => y(d[s.floor])).curve(d3.curveMonotoneX);
-    svg.append('path').datum(pts).attr('fill', 'none').attr('stroke', s.color).attr('stroke-width', 2).attr('d', line);
+    svg.append('path').datum(pts).attr('fill', 'none').attr('stroke', s.color)
+      .attr('stroke-width', 2).attr('stroke-linecap', 'round').attr('d', line);
 
-    // Dots with tooltip
     svg.selectAll(`.dot-total-${s.floor}`).data(pts).enter().append('circle')
-      .attr('cx', d => x(d.dt)).attr('cy', d => y(d[s.floor])).attr('r', 3).attr('fill', s.color)
-      .on('mouseover', (e, d) => {
-        tooltip.style('opacity', 1).html(
-          `<strong>${fmtDate(d.dt)}</strong> (Day ${d.day})<br>` +
-          `${s.label} floor: ${fmtNum(d[s.floor])}<br>` +
-          `${s.label} best est: ${fmtNum(d[s.best][0])}-${fmtNum(d[s.best][1])}`
-        ).style('left', (e.pageX + 12) + 'px').style('top', (e.pageY - 28) + 'px');
-      })
-      .on('mouseout', () => tooltip.style('opacity', 0));
+      .attr('cx', d => x(d.dt)).attr('cy', d => y(d[s.floor])).attr('r', 3.5)
+      .attr('fill', s.color).attr('stroke', 'var(--surface)').attr('stroke-width', 1.5)
+      .style('cursor', 'pointer')
+      .on('mouseover', (e, d) => showTip(e,
+        `<strong>${fmtDate(d.dt)}</strong> (Day ${d.day})<br>` +
+        `${s.label} floor: ${fmtNum(d[s.floor])}<br>` +
+        `${s.label} best est: ${fmtNum(d[s.best][0])}\u2013${fmtNum(d[s.best][1])}`
+      ))
+      .on('mouseout', hideTip);
 
     if (!MOBILE) {
       const last = pts[pts.length - 1];
-      svg.append('text').attr('x', x(last.dt) + 6).attr('y', y(last[s.floor]) + 4)
-        .attr('fill', s.color).attr('font-size', 11).text(`${s.label}: ~${fmtNum(last[s.floor])}+`);
+      svg.append('text').attr('x', x(last.dt) + 8).attr('y', y(last[s.floor]) + 4)
+        .attr('fill', s.color).attr('font-size', 11).attr('font-weight', 500)
+        .attr('font-family', 'var(--font-sans)').text(`${s.label}: ~${fmtNum(last[s.floor])}+`);
     }
   });
 
@@ -466,9 +677,10 @@ function drawLauncherChart(data) {
 
   // Pre-war band
   svg.append('rect').attr('x', MARGIN.left).attr('y', y(440)).attr('width', w - MARGIN.left - MARGIN.right)
-    .attr('height', y(410) - y(440)).attr('fill', 'rgba(63,185,80,0.08)');
-  svg.append('text').attr('x', MARGIN.left + 4).attr('y', y(440) + 12)
-    .attr('fill', colors.green).attr('font-size', 9).attr('opacity', 0.6).text('Pre-war: 410-440');
+    .attr('height', y(410) - y(440)).attr('fill', 'rgba(70,149,74,0.06)');
+  svg.append('text').attr('x', MARGIN.left + 6).attr('y', y(440) + 13)
+    .attr('fill', colors.green).attr('font-size', 9).attr('opacity', 0.7)
+    .attr('font-family', 'var(--font-sans)').text('Pre-war: 410\u2013440');
 
   // Remaining band
   const area = d3.area().x(d => x(d.dt))
@@ -478,7 +690,8 @@ function drawLauncherChart(data) {
 
   // Midpoint line
   const line = d3.line().x(d => x(d.dt)).y(d => y(d.midpoint)).curve(d3.curveMonotoneX);
-  svg.append('path').datum(pts).attr('fill', 'none').attr('stroke', colors.launcher).attr('stroke-width', 2.5).attr('d', line);
+  svg.append('path').datum(pts).attr('fill', 'none').attr('stroke', colors.launcher)
+    .attr('stroke-width', 2.5).attr('stroke-linecap', 'round').attr('d', line);
 
   // Zero line projection
   const lastPt = pts[pts.length - 1];
@@ -487,33 +700,34 @@ function drawLauncherChart(data) {
   if (x(zeroDate) <= w - MARGIN.right) {
     svg.append('line').attr('x1', x(lastPt.dt)).attr('x2', x(zeroDate))
       .attr('y1', y(lastPt.midpoint)).attr('y2', y(0))
-      .attr('stroke', colors.red).attr('stroke-dasharray', '6,4').attr('stroke-width', 1.5).attr('opacity', 0.6);
-    svg.append('text').attr('x', x(zeroDate) - 4).attr('y', y(0) - 6)
-      .attr('fill', colors.red).attr('font-size', 10).attr('text-anchor', 'end').attr('opacity', 0.7)
-      .text('~0 launchers');
+      .attr('stroke', colors.red).attr('stroke-dasharray', '6,4').attr('stroke-width', 1.5).attr('opacity', 0.5);
+    svg.append('text').attr('x', x(zeroDate) - 4).attr('y', y(0) - 8)
+      .attr('fill', colors.red).attr('font-size', 10).attr('text-anchor', 'end').attr('opacity', 0.6)
+      .attr('font-family', 'var(--font-sans)').attr('font-weight', 500).text('~0 launchers');
   }
 
   // Dots
   svg.selectAll('.dot-launcher').data(pts).enter().append('circle')
-    .attr('cx', d => x(d.dt)).attr('cy', d => y(d.midpoint)).attr('r', 4).attr('fill', colors.launcher)
-    .on('mouseover', (e, d) => {
-      tooltip.style('opacity', 1).html(
-        `<strong>${fmtDate(d.dt)}</strong> (Day ${d.day})<br>` +
-        `Remaining: ${d.remaining[0]}-${d.remaining[1]} (mid: ${d.midpoint})<br>` +
-        (d.note ? `<em>${d.note}</em>` : '')
-      ).style('left', (e.pageX + 12) + 'px').style('top', (e.pageY - 28) + 'px');
-    })
-    .on('mouseout', () => tooltip.style('opacity', 0));
+    .attr('cx', d => x(d.dt)).attr('cy', d => y(d.midpoint)).attr('r', 4)
+    .attr('fill', colors.launcher).attr('stroke', 'var(--surface)').attr('stroke-width', 1.5)
+    .style('cursor', 'pointer')
+    .on('mouseover', (e, d) => showTip(e,
+      `<strong>${fmtDate(d.dt)}</strong> (Day ${d.day})<br>` +
+      `Remaining: ${d.remaining[0]}\u2013${d.remaining[1]} (mid: ${d.midpoint})` +
+      (d.note ? `<br><em style="color:var(--text-muted)">${d.note}</em>` : '')
+    ))
+    .on('mouseout', hideTip);
 
   if (!MOBILE) {
-    svg.append('text').attr('x', x(lastPt.dt) + 6).attr('y', y(lastPt.midpoint) + 4)
-      .attr('fill', colors.launcher).attr('font-size', 11).text(`~${lastPt.midpoint} remaining`);
+    svg.append('text').attr('x', x(lastPt.dt) + 8).attr('y', y(lastPt.midpoint) + 4)
+      .attr('fill', colors.launcher).attr('font-size', 11).attr('font-weight', 500)
+      .attr('font-family', 'var(--font-sans)').text(`~${lastPt.midpoint} remaining`);
   }
 
   const leg = d3.select('#launcher-legend');
   [
     { label: 'Remaining (midpoint)', color: colors.launcher },
-    { label: 'Range (low-high)', color: colors.launcherFill },
+    { label: 'Range (low\u2013high)', color: colors.launcherFill },
     { label: 'Projected to zero', color: colors.red },
   ].forEach(l => {
     const item = leg.append('div').attr('class', 'legend-item');
@@ -524,19 +738,19 @@ function drawLauncherChart(data) {
 
 function drawGulfChart(data) {
   const countries = data.gulfBreakdown.countries;
-  const w = WIDTH, h = MOBILE ? 220 : 260;
-  const margin = { top: 20, right: 10, bottom: 30, left: MOBILE ? 60 : 80 };
+  const w = WIDTH, h = MOBILE ? 240 : 280;
+  const margin = { top: 24, right: 14, bottom: 34, left: MOBILE ? 65 : 85 };
 
   const svg = d3.select('#gulf-chart').append('svg').attr('width', w).attr('height', h).attr('viewBox', `0 0 ${w} ${h}`);
 
-  const y = d3.scaleBand().domain(countries.map(c => c.name)).range([margin.top, h - margin.bottom]).padding(0.25);
+  const y = d3.scaleBand().domain(countries.map(c => c.name)).range([margin.top, h - margin.bottom]).padding(0.3);
   const xMax = d3.max(countries, c => c.bm + c.cm + c.drones);
   const x = d3.scaleLinear().domain([0, xMax * 1.05]).range([margin.left, w - margin.right]);
 
   svg.append('g').attr('class', 'axis').attr('transform', `translate(0,${h - margin.bottom})`)
     .call(d3.axisBottom(x).ticks(MOBILE ? 4 : 6).tickFormat(d3.format('~s')));
   svg.append('g').attr('class', 'axis').attr('transform', `translate(${margin.left},0)`)
-    .call(d3.axisLeft(y));
+    .call(d3.axisLeft(y)).selectAll('text').style('font-size', '11px');
 
   const stack = ['drones', 'bm', 'cm'];
   const stackColors = { drones: colors.drones, bm: colors.bm, cm: colors.cm };
@@ -549,30 +763,30 @@ function drawGulfChart(data) {
         svg.append('rect')
           .attr('x', x(cumX)).attr('y', y(c.name))
           .attr('width', x(cumX + val) - x(cumX)).attr('height', y.bandwidth())
-          .attr('fill', stackColors[key]).attr('rx', 2)
-          .on('mouseover', (e) => {
-            tooltip.style('opacity', 1).html(
-              `<strong>${c.name}</strong> (as of ${c.asOf})<br>` +
-              `BM: ${fmtNum(c.bm)} | CM: ${fmtNum(c.cm)} | Drones: ${fmtNum(c.drones)}<br>` +
-              `Quality: ${c.quality}` + (c.note ? `<br><em>${c.note}</em>` : '')
-            ).style('left', (e.pageX + 12) + 'px').style('top', (e.pageY - 28) + 'px');
-          })
-          .on('mouseout', () => tooltip.style('opacity', 0));
+          .attr('fill', stackColors[key]).attr('rx', 3).attr('opacity', 0.85)
+          .style('cursor', 'pointer')
+          .on('mouseover', (e) => showTip(e,
+            `<strong>${c.name}</strong> (as of ${c.asOf})<br>` +
+            `BM: ${fmtNum(c.bm)} &middot; CM: ${fmtNum(c.cm)} &middot; Drones: ${fmtNum(c.drones)}<br>` +
+            `Quality: ${c.quality}` + (c.note ? `<br><em style="color:var(--text-muted)">${c.note}</em>` : '')
+          ))
+          .on('mouseout', hideTip);
         cumX += val;
       }
     });
   });
 
   // Inline legend
-  const leg = svg.append('g').attr('transform', `translate(${margin.left + 4}, ${margin.top - 6})`);
+  const leg = svg.append('g').attr('transform', `translate(${margin.left + 4}, ${margin.top - 8})`);
   [
     { label: 'Drones', color: colors.drones },
     { label: 'Ballistic', color: colors.bm },
     { label: 'Cruise', color: colors.cm },
   ].forEach((l, i) => {
-    const g = leg.append('g').attr('transform', `translate(${i * 80}, 0)`);
-    g.append('rect').attr('width', 10).attr('height', 10).attr('fill', l.color).attr('rx', 2);
-    g.append('text').attr('x', 14).attr('y', 9).attr('fill', '#8b949e').attr('font-size', 10).text(l.label);
+    const g = leg.append('g').attr('transform', `translate(${i * 85}, 0)`);
+    g.append('rect').attr('width', 10).attr('height', 10).attr('fill', l.color).attr('rx', 2).attr('opacity', 0.85);
+    g.append('text').attr('x', 14).attr('y', 9).attr('fill', 'var(--text-muted)')
+      .attr('font-size', 10).attr('font-family', 'var(--font-sans)').text(l.label);
   });
 }
 
@@ -581,9 +795,9 @@ function drawSnapshotTable(data) {
   data.currentSnapshot.categories.filter(c => c.name !== 'Launchers').forEach(c => {
     const tr = tbody.append('tr');
     tr.append('td').text(c.name);
-    tr.append('td').attr('class', 'num').text(`${fmtNum(c.preWar[0])}-${fmtNum(c.preWar[1])}`);
-    tr.append('td').attr('class', 'num').text(`${fmtNum(c.fired[0])}-${fmtNum(c.fired[1])}`);
-    tr.append('td').attr('class', 'num').text(`${fmtNum(c.remaining[0])}-${fmtNum(c.remaining[1])}`);
+    tr.append('td').attr('class', 'num').text(`${fmtNum(c.preWar[0])}\u2013${fmtNum(c.preWar[1])}`);
+    tr.append('td').attr('class', 'num').text(`${fmtNum(c.fired[0])}\u2013${fmtNum(c.fired[1])}`);
+    tr.append('td').attr('class', 'num').text(`${fmtNum(c.remaining[0])}\u2013${fmtNum(c.remaining[1])}`);
     const confClass = c.confidence.includes('Low') ? 'conf-low' : c.confidence.includes('High') ? 'conf-high' : 'conf-medium';
     tr.append('td').append('span').attr('class', `confidence-badge ${confClass}`).text(c.confidence);
   });
@@ -591,9 +805,9 @@ function drawSnapshotTable(data) {
   const lnch = data.currentSnapshot.categories.find(c => c.name === 'Launchers');
   const tr = tbody.append('tr');
   tr.append('td').text(lnch.name);
-  tr.append('td').attr('class', 'num').text(`${fmtNum(lnch.preWar[0])}-${fmtNum(lnch.preWar[1])}`);
-  tr.append('td').attr('class', 'num').text(`${fmtNum(lnch.destroyed[0])}-${fmtNum(lnch.destroyed[1])} destroyed`);
-  tr.append('td').attr('class', 'num').text(`${fmtNum(lnch.remaining[0])}-${fmtNum(lnch.remaining[1])}`);
+  tr.append('td').attr('class', 'num').text(`${fmtNum(lnch.preWar[0])}\u2013${fmtNum(lnch.preWar[1])}`);
+  tr.append('td').attr('class', 'num').text(`${fmtNum(lnch.destroyed[0])}\u2013${fmtNum(lnch.destroyed[1])} destroyed`);
+  tr.append('td').attr('class', 'num').text(`${fmtNum(lnch.remaining[0])}\u2013${fmtNum(lnch.remaining[1])}`);
   tr.append('td').append('span').attr('class', 'confidence-badge conf-high').text(lnch.confidence);
 }
 
@@ -603,7 +817,7 @@ function drawEvents(data) {
     const li = list.append('li');
     li.append('span').attr('class', 'event-date').text(ev.date);
     li.append('span').attr('class', 'event-day').text(`Day ${ev.day}`);
-    li.append('span').text(` — ${ev.text}`);
+    li.append('span').text(` \u2014 ${ev.text}`);
   });
 }
 </script>

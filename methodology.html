@@ -4,59 +4,153 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Methodology — Iran Missile & Drone Tracker</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <style>
 :root {
-  --bg: #0d1117;
-  --surface: #161b22;
-  --border: #30363d;
-  --text: #c9d1d9;
-  --text-muted: #8b949e;
-  --accent: #58a6ff;
-  --red: #f85149;
-  --orange: #d29922;
-  --green: #3fb950;
+  --bg: #101418;
+  --surface: #181d23;
+  --surface-raised: #1e242c;
+  --border: #2a3140;
+  --border-subtle: #222830;
+  --text: #d4dae3;
+  --text-secondary: #9aa5b4;
+  --text-muted: #6b7a8d;
+  --accent: #5ba3f5;
+  --accent-dim: rgba(91,163,245,0.12);
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: var(--font-sans);
   background: var(--bg);
   color: var(--text);
-  line-height: 1.6;
-  padding: 0 16px 64px;
+  line-height: 1.7;
+  padding: 0 24px 80px;
   max-width: 760px;
   margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
 }
-nav { padding: 16px 0 8px; font-size: 0.85rem; }
-nav a { color: var(--accent); text-decoration: none; }
-nav a:hover { text-decoration: underline; }
-h1 { font-size: 1.5rem; font-weight: 700; margin: 16px 0 4px; }
-h2 { font-size: 1.15rem; font-weight: 600; margin: 28px 0 10px; color: var(--accent); }
-h3 { font-size: 0.95rem; font-weight: 600; margin: 20px 0 8px; color: var(--text-muted); }
-p, li { font-size: 0.9rem; margin-bottom: 8px; }
-ul, ol { padding-left: 24px; }
-.subtitle { color: var(--text-muted); font-size: 0.85rem; margin-bottom: 20px; }
+header {
+  padding: 28px 0 0;
+  margin-bottom: 32px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 14px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+nav a {
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+nav a:hover { color: var(--accent); }
+nav .nav-brand {
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-right: auto;
+}
+h1 {
+  font-family: var(--font-serif);
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin: 20px 0 6px;
+  color: #eaf0f6;
+}
+.subtitle {
+  font-family: var(--font-serif);
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 32px;
+  font-style: italic;
+}
+h2 {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 40px 0 6px;
+  color: #eaf0f6;
+}
+h2::after {
+  content: '';
+  display: block;
+  width: 28px;
+  height: 2px;
+  background: var(--accent);
+  margin-top: 6px;
+  border-radius: 1px;
+}
+h3 {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin: 18px 0 6px;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+p, li { font-size: 0.88rem; margin-bottom: 8px; line-height: 1.7; color: var(--text-secondary); }
+p strong, li strong { color: var(--text); }
+ul, ol { padding-left: 20px; }
 .card {
   background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 16px 20px;
-  margin-bottom: 16px;
+  border: 1px solid var(--border-subtle);
+  border-radius: 10px;
+  padding: 20px 24px;
+  margin: 12px 0 20px;
 }
-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; margin: 12px 0; }
-th, td { padding: 6px 10px; text-align: left; border-bottom: 1px solid var(--border); }
-th { color: var(--text-muted); font-weight: 500; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px; }
-code { background: var(--surface); padding: 2px 6px; border-radius: 4px; font-size: 0.85em; }
+table { width: 100%; border-collapse: collapse; font-size: 0.82rem; margin: 12px 0; }
+th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid var(--border-subtle); }
+th { color: var(--text-muted); font-weight: 600; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.06em; }
+tr:last-child td { border-bottom: none; }
+code {
+  background: var(--surface-raised);
+  padding: 2px 7px;
+  border-radius: 4px;
+  font-size: 0.82em;
+  color: var(--accent);
+}
+a { color: var(--accent); transition: color 0.15s; }
+a:hover { color: #7dbaf7; }
+footer {
+  margin-top: 48px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-subtle);
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  text-align: center;
+}
 @media (max-width: 600px) {
-  body { padding: 0 10px 48px; }
-  h1 { font-size: 1.2rem; }
+  body { padding: 0 14px 56px; }
+  h1 { font-size: 1.35rem; }
+  .card { padding: 16px; }
 }
 </style>
 </head>
 <body>
 
-<nav><a href="index.html">&larr; Dashboard</a> &middot; <a href="stories/">Stories</a></nav>
+<header>
+  <nav>
+    <a class="nav-brand" href="index.html">Iran Tracker</a>
+    <a href="index.html">Dashboard</a>
+    <a href="stories/">Analysis</a>
+  </nav>
+</header>
 
-<h1>Methodology & Caveats</h1>
+<h1>Methodology &amp; Caveats</h1>
 <p class="subtitle">How this tracker works, what it can and cannot tell you, and where the numbers come from.</p>
 
 <h2>Purpose</h2>
@@ -139,7 +233,7 @@ code { background: var(--surface); padding: 2px 6px; border-radius: 4px; font-si
 
 <h2>Source Files</h2>
 <div class="card">
-<p>The full source material behind this tracker is available in the <a href="https://github.com/bh13731/iran-tracker/tree/master/source" style="color: var(--accent);">source/</a> directory of this repository:</p>
+<p>The full source material behind this tracker is available in the <a href="https://github.com/bh13731/iran-tracker/tree/master/source">source/</a> directory of this repository:</p>
 <ul>
   <li><code>source/current-state.md</code> — Latest tracker summary</li>
   <li><code>source/ledger.md</code> — Structured cumulative reference with every official data point</li>
@@ -148,6 +242,10 @@ code { background: var(--surface); padding: 2px 6px; border-radius: 4px; font-si
   <li><code>source/archive/</code> — Pre-restructure historical tracker (2,273 lines)</li>
 </ul>
 </div>
+
+<footer>
+  <a href="index.html">Dashboard</a> &middot; <a href="stories/">Analysis</a> &middot; <a href="https://github.com/bh13731/iran-tracker">GitHub</a>
+</footer>
 
 </body>
 </html>

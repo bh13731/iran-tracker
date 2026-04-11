@@ -3,68 +3,158 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Stories — Iran Missile & Drone Tracker</title>
+<title>Analysis — Iran Missile & Drone Tracker</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <style>
 :root {
-  --bg: #0d1117;
-  --surface: #161b22;
-  --border: #30363d;
-  --text: #c9d1d9;
-  --text-muted: #8b949e;
-  --accent: #58a6ff;
-  --red: #f85149;
-  --orange: #d29922;
-  --green: #3fb950;
+  --bg: #101418;
+  --surface: #181d23;
+  --border: #2a3140;
+  --border-subtle: #222830;
+  --text: #d4dae3;
+  --text-secondary: #9aa5b4;
+  --text-muted: #6b7a8d;
+  --accent: #5ba3f5;
+  --accent-dim: rgba(91,163,245,0.12);
+  --red: #e5534b;
+  --orange: #d4943a;
+  --green: #46954a;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: var(--font-sans);
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
-  padding: 0 16px 64px;
+  padding: 0 24px 80px;
   max-width: 760px;
   margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
 }
-nav { padding: 16px 0 8px; font-size: 0.85rem; }
-nav a { color: var(--accent); text-decoration: none; }
-nav a:hover { text-decoration: underline; }
-h1 { font-size: 1.5rem; font-weight: 700; margin: 16px 0 4px; }
-.subtitle { color: var(--text-muted); font-size: 0.85rem; margin-bottom: 24px; }
+header {
+  padding: 28px 0 0;
+  margin-bottom: 32px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 14px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+nav a {
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+nav a:hover { color: var(--accent); }
+nav .nav-brand {
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-right: auto;
+}
+h1 {
+  font-family: var(--font-serif);
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin: 20px 0 6px;
+  color: #eaf0f6;
+}
+.subtitle {
+  font-family: var(--font-serif);
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 36px;
+  font-style: italic;
+}
 .story-card {
+  display: block;
   background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 20px;
+  border: 1px solid var(--border-subtle);
+  border-radius: 10px;
+  padding: 24px 28px;
   margin-bottom: 16px;
   text-decoration: none;
-  display: block;
-  transition: border-color 0.15s;
+  transition: border-color 0.2s, transform 0.15s;
 }
-.story-card:hover { border-color: var(--accent); }
-.story-card h2 { font-size: 1.1rem; font-weight: 600; color: var(--text); margin-bottom: 6px; }
-.story-card .meta { font-size: 0.78rem; color: var(--text-muted); margin-bottom: 8px; }
-.story-card .excerpt { font-size: 0.88rem; color: var(--text-muted); }
+.story-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+.story-card h2 {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #eaf0f6;
+  margin-bottom: 8px;
+  line-height: 1.35;
+}
+.story-card h2::after { display: none; }
+.story-card .meta {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.story-card .excerpt {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
 .tag {
   display: inline-block;
-  font-size: 0.7rem;
-  padding: 1px 8px;
-  border-radius: 10px;
-  font-weight: 500;
+  font-size: 0.65rem;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-weight: 600;
   margin-left: 6px;
+  letter-spacing: 0.02em;
 }
-.tag-analysis { background: rgba(88,166,255,0.15); color: var(--accent); }
-.tag-ceasefire { background: rgba(63,185,80,0.15); color: var(--green); }
-.tag-drones { background: rgba(88,166,255,0.15); color: var(--accent); }
-.tag-proxies { background: rgba(210,153,34,0.15); color: var(--orange); }
+.tag-analysis { background: rgba(91,163,245,0.12); color: var(--accent); }
+.tag-ceasefire { background: rgba(70,149,74,0.12); color: var(--green); }
+.tag-drones { background: rgba(91,163,245,0.12); color: var(--accent); }
+.tag-proxies { background: rgba(212,148,58,0.12); color: var(--orange); }
+footer {
+  margin-top: 48px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-subtle);
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  text-align: center;
+}
+footer a { color: var(--text-secondary); transition: color 0.15s; }
+footer a:hover { color: var(--accent); }
+@media (max-width: 600px) {
+  body { padding: 0 14px 56px; }
+  h1 { font-size: 1.35rem; }
+  .story-card { padding: 18px 20px; }
+}
 </style>
 </head>
 <body>
 
-<nav><a href="../index.html">&larr; Dashboard</a> &middot; <a href="../methodology.html">Methodology</a></nav>
+<header>
+  <nav>
+    <a class="nav-brand" href="../index.html">Iran Tracker</a>
+    <a href="../index.html">Dashboard</a>
+    <a href="../methodology.html">Methodology</a>
+  </nav>
+</header>
 
-<h1>Stories</h1>
-<p class="subtitle">Data-driven analysis pieces from the Iran Missile & Drone Tracker.</p>
+<h1>Analysis</h1>
+<p class="subtitle">Data-driven analysis pieces from the Iran Missile &amp; Drone Tracker.</p>
 
 <a class="story-card" href="2026-04-11-ceasefire-fault-lines.html">
   <h2>The Cease-Fire's Fault Lines: Kuwait, Deniability, and the Islamabad Gamble</h2>
@@ -83,6 +173,10 @@ h1 { font-size: 1.5rem; font-weight: 700; margin: 16px 0 4px; }
   <div class="meta">April 8, 2026 <span class="tag tag-analysis">Analysis</span> <span class="tag tag-ceasefire">Cease-fire</span></div>
   <p class="excerpt">Iran's ballistic missile rate had collapsed from ~20/day to ~7/day at UAE before any deal was signed. The data shows a military whose offensive capacity was breaking down from the inside — launchers destroyed, commanders killed, production halted. The cease-fire may have saved Iran from a visible collapse.</p>
 </a>
+
+<footer>
+  <a href="../index.html">Dashboard</a> &middot; <a href="../methodology.html">Methodology</a> &middot; <a href="https://github.com/bh13731/iran-tracker">GitHub</a>
+</footer>
 
 </body>
 </html>
