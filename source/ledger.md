@@ -187,3 +187,7 @@ Only add **official or near-official** tally updates here.
 | 2026-04-09 | AJ citing Qatar MoD | Qatar daily (Apr 8) | Ballistic missiles | 7 | High | 7 BMs intercepted post-ceasefire Apr 8 |
 | 2026-04-09 | AJ citing Saudi MoD | Saudi daily (Apr 8) | Drones | 9 | Medium-High | 9 drones intercepted post-ceasefire Apr 8 |
 | 2026-04-09 | JINSA / NBC | Coalition interceptors | Patriot depletion | ~75% | Medium-High | UAE + Kuwait burned ~75% of Patriot stocks by Mar 29 |
+
+| 2026-04-13 | Wikipedia citing UAE MoD | UAE cumulative (Apr 9) | Ballistic missiles | 537 | High | Official cumulative: +17 vs Apr 7 (520). Pipeline/counting lag post-ceasefire |
+| 2026-04-13 | Wikipedia citing UAE MoD | UAE cumulative (Apr 9) | Cruise missiles | 26 | High | Unchanged vs Apr 7 |
+| 2026-04-13 | Wikipedia citing UAE MoD | UAE cumulative (Apr 9) | Drones | 2,256 | High | Official cumulative: +35 vs Apr 7 (2,221). Pipeline/counting lag post-ceasefire |

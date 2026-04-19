@@ -406,3 +406,92 @@ Kuwait and Qatar theater contributions were significantly underestimated. After 
 - **No new official cumulative tallies.** UAE last: 520/26/2,221 (Apr 7). Bahrain: 188/468.
 - **Islamabad talks status uncertain.** Were scheduled for Sat morning (Apr 12) but Iran's participation now in doubt.
 - **All depletion clocks remain paused.** Kuwait incident too small to materially change estimates.
+
+## 2026-04-12 — Day 44
+
+### 04:30 UTC update
+- **CEASE-FIRE DAY 5.** Holding across UAE, Saudi, Qatar, Bahrain, Oman. No new strikes reported since Kuwait drone incident Apr 10.
+- **Islamabad talks proceeding.** Despite Iran's earlier threat to boycott, Pakistan locked down Islamabad ahead of scheduled Sat morning talks. Vance warned Iran publicly: "don't try to play the U.S. in peace talks."
+- **Strait of Hormuz still closed.** Trump/Vance continue to pressure Iran on this as core ceasefire obligation.
+- **No new official cumulative tallies.** UAE last: 520/26/2,221 (Apr 7). Bahrain: 188/468.
+- **IRGC maintains denial** of any post-ceasefire launches despite Kuwait evidence.
+- **All depletion clocks remain paused.** No material changes to stockpile estimates.
+
+## 2026-04-13 — Day 45
+
+### 04:30 UTC update
+- **CEASE-FIRE DAY 6.** Holding across all theaters. No strikes reported since Kuwait drone incident Apr 10.
+- **NEW UAE CUMULATIVE (Apr 9):** 537 BMs / 26 CMs / 2,256 drones. Up from 520/26/2,221 (Apr 7). The +17 BMs and +35 drones likely represent post-ceasefire pipeline arrivals counted Apr 7-9.
+- **Islamabad talks:** No public outcome yet from Sat Apr 12 session. Talks appear ongoing.
+- **Strait of Hormuz still closed.** Core sticking point.
+- **No new tallies from Saudi, Bahrain, Kuwait, or Qatar.**
+- **Depletion clocks remain paused under ceasefire.**
+
+## 2026-04-14 — Day 46
+
+### 04:30 UTC update
+- **CEASE-FIRE DAY 7 (one week).** Holding across all theaters. No strikes since Kuwait Apr 10 incident.
+- **No new official cumulative tallies.** Last: UAE 537/26/2,256 (Apr 9). Bahrain 188/468.
+- **Islamabad talks:** No public outcome from weekend sessions. Negotiations appear ongoing but opaque.
+- **Strait of Hormuz still closed.** Remains core sticking point.
+- **NBC data tracker published** (Apr 10): confirms Gulf energy infrastructure damage "will take years to repair." No new official numbers beyond existing ledger.
+- **Wikipedia UAE article confirms** Apr 9 cumulative (537/26/2,256) as latest. No updates beyond that.
+- **Depletion clocks remain paused under ceasefire.**
+
+## 2026-04-17 — Day 49
+
+### 04:30 UTC update
+- **CEASE-FIRE DAY 10.** Holding. Zero Iran-direct fire since Apr 11 (single drone at Bahrain).
+- **No new official cumulative tallies.** Last: UAE 537/26/2,256 (Apr 9). Bahrain 188/468.
+- **Reuters Apr 16:** US/Iran scaled back from comprehensive deal to temporary memorandum to prevent return to conflict.
+- **NPR Apr 12:** First Islamabad round collapsed; US announced Iranian port blockade.
+- **Trump Apr 16:** "Very close to a deal." Claims Tehran agreed to hand over enriched uranium. Sharif pushing second round before expiry.
+- **Israel-Lebanon:** 10-day ceasefire took effect Apr 16 midnight. Lebanon commits to stopping Hezbollah.
+- **4 days to Apr 21 ceasefire expiry.**
+- **Strait of Hormuz still closed.** US port blockade in effect.
+- Depletion clocks remain paused under ceasefire.
+
+## 2026-04-16 — Day 48
+
+### 04:30 UTC update
+- **CEASE-FIRE DAY 9.** Holding. No new strikes reported since Apr 11 single Bahrain drone.
+- **No new official cumulative tallies.** Last: UAE 537/26/2,256 (Apr 9). Bahrain 188/468.
+- ISW Apr 12-13 reports confirm: zero intercepts detected Apr 12 onward. Last fire was Apr 11 single drone at Bahrain.
+- ISW Apr 13: Bahrain FM summoned Iranian chargé d'affaires over post-ceasefire attacks.
+- Iraqi militia fronts still claiming drone attacks on US bases in Gulf but no confirmed Iran-direct fire.
+- **5 days remain to Apr 21 ceasefire expiry.** Islamabad talks still opaque.
+- **Strait of Hormuz still closed.**
+- Depletion clocks remain paused under ceasefire.
+
+## 2026-04-15 — Day 47
+
+### 04:30 UTC update
+- **CEASE-FIRE DAY 8.** Holding across all theaters. No strikes since Kuwait Apr 10 drone incident.
+- **No new official cumulative tallies.** Last: UAE 537/26/2,256 (Apr 9). Bahrain 188/468.
+- **Islamabad talks:** Still opaque. No public outcome from recent sessions.
+- **Strait of Hormuz still closed.**
+- **2-week ceasefire expires ~Apr 21.** One week remaining.
+- **Wikipedia UAE article** (checked Apr 15) confirms 537/26/2,256 as latest. No new figures.
+- **Depletion clocks remain paused under ceasefire.**
+
+## 2026-04-18 — Day 50
+
+### 04:30 UTC update
+- **CEASE-FIRE DAY 11.** Holding. Zero Iran-direct fire since Apr 11. 3 days to Apr 21 expiry.
+- **HORMUZ REOPENED (declared).** Iran FM Araghchi declared Hormuz "completely open" for commercial vessels during ceasefire (Apr 17). Trump says US blockade "will remain in full force" until peace deal.
+- **Islamabad Round 2 set for Monday (Apr 21).** CNN/BBC: next US-Iran talks in Pakistan on Monday. Trump says deal "in the next day or two."
+- **Israel-Lebanon ceasefire holding (Day 2).** At least 1 killed in Israeli strike post-ceasefire (Lebanon MoH).
+- **No new official cumulative tallies.** UAE 537/26/2,256 (Apr 9) remains latest.
+- **No change to fired or remaining estimates.**
+- **Key shift:** Iran's Hormuz concession + Round 2 timing suggest both sides maneuvering for deal before Apr 21 expiry.
+
+## 2026-04-19 — Day 51
+
+### 04:30 UTC update
+- **CEASE-FIRE DAY 12.** Holding. Zero Iran-direct fire since Apr 11. Ceasefire expires ~Apr 22 (corrected from Apr 21; 2-week window from Apr 8).
+- **ISLAMABAD ROUND 2 IMMINENT.** Trump: talks "probably this weekend"; US officials say Monday (Apr 21) first feasible day. 45-day ceasefire extension on table per Wikipedia ceasefire page.
+- **50,000 US personnel** involved in Iran operations (Pentagon via AFP, Apr 15).
+- **Netanyahu supports ceasefire** (ABC7, Apr 18).
+- **No new official cumulative tallies.** UAE 537/26/2,256 (Apr 9) remains latest. No ISW special reports since Apr 12.
+- **No change to fired or remaining estimates.** Depletion clocks paused under ceasefire.
+- **Key watch:** If 45-day extension agreed at Islamabad, depletion tracker stays frozen well into June.

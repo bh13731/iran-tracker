@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Three Days to Apr 22: The Depletion Math Behind the Extension Window — Iran Tracker</title>
+<link rel="stylesheet" href="story.css">
+<script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a class="nav-brand" href="../index.html">Iran Tracker</a>
+    <a href="../index.html">Dashboard</a>
+    <a href="index.html">Analysis</a>
+    <a href="../methodology.html">Methodology</a>
+  </nav>
+</header>
+
+<h1>Three Days to Apr 22: The Depletion Math Behind the Extension Window</h1>
+<div class="meta">April 19, 2026 — Day 51 <span class="tag tag-analysis">Analysis</span> <span class="tag tag-ceasefire">Cease-fire</span></div>
+
+<div class="lede">
+The cease-fire expires in three days. Islamabad Round 2 is set for Monday. A 45-day extension is on the table. Both sides say they want a deal — but the data reveals that each side's incentive to extend is shaped by a different depletion problem, and those problems are running on different clocks. Neither clock resets in 45 days.
+</div>
+
+<h2>What Day 12 Actually Means</h2>
+
+<p>Twelve days into the cease-fire, the tracker's aggregate estimates have not moved. Zero ballistic missiles have been confirmed fired since April 11. Zero cruise missiles. The only drone activity — the Kuwait National Guard incident on April 10 — was small, attributed to proxies, and denied by the IRGC. By the numbers, the cease-fire is the cleanest pause in this war.</p>
+
+<div class="stat-row">
+  <div class="stat-box">
+    <div class="stat-value" style="color:var(--green);">12</div>
+    <div class="stat-label">Cease-fire days elapsed</div>
+    <div class="stat-sub">Apr 7 → Apr 19</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-value" style="color:var(--orange);">3</div>
+    <div class="stat-label">Days to Apr 22 expiry</div>
+    <div class="stat-sub">Original 2-week deal</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-value" style="color:var(--accent);">45</div>
+    <div class="stat-label">Day extension on table</div>
+    <div class="stat-sub">Would run to ~Jun 5</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-value" style="color:var(--red);">~102</div>
+    <div class="stat-label">Iran launchers remaining</div>
+    <div class="stat-sub">Of 410–440 pre-war</div>
+  </div>
+</div>
+
+<p>What makes the pause analytically significant is not the absence of fire — it is what the absence reveals about what both sides are conserving. Iran is not launching because it cannot replace its launcher hardware, and each ballistic salvo permanently reduces the stack. The coalition is not contesting because its Patriot interceptor stocks are roughly 75% depleted and resupply is measured in months, not days.</p>
+
+<p>The cease-fire is not a pause in hostilities. It is a pause in two simultaneous depletion races — one running on Iran's side, one on the coalition's.</p>
+
+<h2>The 45-Day Extension: What It Actually Buys Each Side</h2>
+
+<p>The 45-day extension under discussion at Islamabad would take the cease-fire to approximately June 5. The tracker can model what that means for each side's underlying constraint.</p>
+
+<div class="chart-wrap">
+  <div class="chart-label">Launcher countdown: Iran's ~102 remaining at ~13/day pre-ceasefire rate</div>
+  <div id="countdown-chart"></div>
+</div>
+
+<table>
+  <thead>
+    <tr><th>Scenario</th><th>War resumes</th><th>Iran hits ~0 launchers</th><th>Days of fire left</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>No extension — deal collapses Apr 22</td>
+      <td>~Apr 22</td>
+      <td>~Jun 10</td>
+      <td class="num"><strong>~50</strong></td>
+    </tr>
+    <tr>
+      <td>45-day extension — deal expires Jun 5</td>
+      <td>~Jun 5</td>
+      <td>~Jul 25</td>
+      <td class="num"><strong>~50</strong></td>
+    </tr>
+    <tr>
+      <td>Comprehensive deal or indefinite hold</td>
+      <td>Never</td>
+      <td>Never (or years, with production restart)</td>
+      <td class="num">—</td>
+    </tr>
+  </tbody>
+</table>
+
+<p class="source-note">Launcher figure: tracker estimate (~102 midpoint); daily rate: ~13/day pre-ceasefire midpoint from UAE data; range ~8–18/day. Days-to-zero is approximate.</p>
+
+<p>The table above reveals an asymmetry that is easy to miss: Iran gets the same 50 days of fire regardless of whether it resumes April 22 or June 5. The extension does not extend the launcher countdown — it merely defers when that countdown begins. For Iran's military planners, the decision about whether to support an extension is therefore not really about launcher preservation. It is about diplomatic time — time to reorganize C2 (two Aerospace commanders killed in March), time to push the US into a more favorable Hormuz position, time to give Russia and China space to pressure for concessions.</p>
+
+<div class="callout">
+  <strong>What the extension actually buys Iran:</strong> Not launcher life — hardware cannot be replaced. It buys time to rebuild C2 under two decapitated commands, to consolidate proxy networks that may be operating outside central control (Kuwait incident), and to extract diplomatic concessions on Hormuz and Lebanon before the clock restarts.
+</div>
+
+<h2>The Coalition's Depletion Problem Is Different — and Slower</h2>
+
+<p>The coalition's constraint is Patriot interceptor stock. JINSA estimated, as of March 29, that Gulf states had burned through approximately 75% of their Patriot missile inventory. The remaining ~25% represents the coalition's entire ballistic missile defense reserve entering any resumed conflict.</p>
+
+<table>
+  <thead>
+    <tr><th>Metric</th><th class="num">Pre-war</th><th class="num">Expended</th><th class="num">Remaining</th><th>Resupply timeline</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Coalition Patriot interceptors</td>
+      <td class="num">~100%</td>
+      <td class="num">~75%</td>
+      <td class="num"><strong>~25%</strong></td>
+      <td>12–18 months for PAC-3 production; 3–6 months to ship existing inventories</td>
+    </tr>
+    <tr>
+      <td>Iran BM launchers</td>
+      <td class="num">410–440</td>
+      <td class="num">~300–340</td>
+      <td class="num"><strong>~68–135</strong></td>
+      <td>Cannot be replaced during active conflict; production facilities halted</td>
+    </tr>
+    <tr>
+      <td>Iran drones</td>
+      <td class="num">~35K–55K</td>
+      <td class="num">~8.5K–9.5K</td>
+      <td class="num"><strong>~25K–46K</strong></td>
+      <td>Distributed production; Chinese chemical inputs; partially ongoing</td>
+    </tr>
+  </tbody>
+</table>
+
+<p class="source-note">Patriot depletion: JINSA estimate (Mar 29, 2026); Iran figures: tracker estimates; drone inventory: wide uncertainty band.</p>
+
+<p>A 45-day extension is not long enough to materially rebuild Patriot stocks. PAC-3 production is measured in months of lead time; emergency shipment of existing US inventory is possible but faces its own production constraints given three years of prior depletion in other theaters. The extension buys the coalition time — but not enough time to close the interceptor gap before the next potential conflict window.</p>
+
+<div class="callout warn">
+  <strong>The interceptor arithmetic if conflict resumes:</strong> At Iran's pre-ceasefire rate of ~13 BMs/day, the coalition's remaining ~25% Patriot stock would be exhausted in roughly 3–5 days of sustained ballistic fire — depending on salvo patterns, theater distribution, and which targets Iran prioritizes. After that, the coalition depends on Iron Dome, Arrow, THAAD, and point defense only. That is a significantly weaker posture than when the war started.
+</div>
+
+<h2>The Hormuz Wild Card</h2>
+
+<p>The cease-fire deal explicitly required Iran to allow Strait of Hormuz reopening. The data on that is clear: Iran FM Araghchi declared the Strait "completely open for commercial vessels" on April 17. Trump responded the same day that the US blockade "will remain in full force." BBC tracking shows few ships actually transiting.</p>
+
+<p>The Hormuz dispute is not just a diplomatic wrangle. It is the deal-breaker variable that makes or breaks the Apr 22 extension. The 2-week cease-fire was sold to both domestic audiences as resolving the Hormuz question — Iran as a victory (Strait reopens), the US as a constraint (Iran complies before any deal). If that condition is disputed at the table on Apr 21, neither side can declare the original deal successful, and extending it becomes harder to justify politically.</p>
+
+<div class="callout red">
+  <strong>The three conditions the Islamabad talks must resolve by Apr 22:</strong><br>
+  1. <strong>Hormuz compliance</strong> — Who verifies that transit is actually normalizing?<br>
+  2. <strong>Lebanon carve-out</strong> — Israel says the cease-fire doesn't include Lebanon. Iran disagrees. Hezbollah is still active.<br>
+  3. <strong>Proxy attribution</strong> — Kuwait (Apr 10). Who controls what fires, and who is responsible when proxies act?
+</div>
+
+<h2>What the Numbers Say About Resumed Conflict</h2>
+
+<p>If the Apr 22 deadline passes without an extension, the tracker's depletion clocks restart. The implication of the numbers is not a symmetric return to war — it is a structurally different conflict from what the opening 39 days looked like.</p>
+
+<div class="chart-wrap">
+  <div class="chart-label">Depletion asymmetry: remaining capacity at Day 51 vs. Day 1</div>
+  <div id="asymmetry-chart"></div>
+</div>
+
+<p>Iran's playbook in a resumed conflict is constrained by its launcher count. With ~102 launchers, Iran's daily ballistic ceiling is roughly 8–18 BMs across all theaters — a fraction of the opening salvos. Iran's rational substitution is drones: ~80% of pre-war drone stock remains intact, distributed launch infrastructure requires no specialized TELs, and Chinese fuel-chemical inputs have sustained some production. A drone-heavy resumed conflict would exploit exactly the coalition's weakest remaining asset (its interceptor magazine) with exactly Iran's most preserved asset.</p>
+
+<p>The tracker's core judgment on resumed conflict has not changed since the cease-fire was signed: it would look more like a drone pressure campaign against Gulf energy and civilian infrastructure than the ballistic-heavy opening barrage. Iran's incentive structure — preserve launchers, exhaust coalition interceptors — has been reinforced by 12 days of ceasefire that have done nothing to close the Patriot gap.</p>
+
+<h2>What the Tracker Will Watch</h2>
+
+<p>Islamabad Round 2 on Monday April 21 is the most consequential diplomatic event in this tracker's history since the cease-fire was announced. Three signals will determine the next update's direction:</p>
+
+<p><strong>1. Extension or expiry.</strong> If a 45-day extension is agreed at Islamabad, the depletion clocks stay paused and the tracker's estimates remain unchanged. If talks collapse, watch for immediate signals of resumed activity within 24–48 hours of April 22.</p>
+
+<p><strong>2. Hormuz compliance evidence.</strong> Lloyd's List shipping data, BBC AIS tracking, or official UAE/Bahrain transit confirmation would signal one of the three Islamabad conditions is resolved. Continued blockade-level transit fees would signal the deal is still unresolved on its central term.</p>
+
+<p><strong>3. Proxy signal.</strong> Any drone or missile incident in Kuwait, Saudi Arabia, or UAE territory between now and Apr 22 — regardless of IRGC attribution — would signal the cease-fire is already functionally broken and that the extension discussion is moot.</p>
+
+<div class="callout warn">
+  <strong>Watch items for the 72-hour window:</strong><br>
+  Islamabad talks outcome (Apr 21) · Any new intercept report in any Gulf theater · Hormuz AIS transit data · Official extension announcement or expiry · Evidence of Iranian C2 reconstitution or proxy network control signals
+</div>
+
+<p>The 45-day extension is in the interest of both sides — but for different reasons, on different timelines, with different vulnerabilities. Iran buys diplomatic and C2 reorganization time. The coalition buys time that is not quite enough to fix its Patriot deficit. Both sides are entering an extension window that defers, rather than resolves, the underlying depletion race. The question Islamabad will answer is not whether either side has won, but whether the clock gets paused again — and for how long.</p>
+
+<footer>
+  <a href="index.html">All analysis</a> · <a href="../index.html">Dashboard</a> · <a href="../methodology.html">Methodology</a> · <a href="https://github.com/bh13731/iran-tracker">GitHub</a>
+</footer>
+
+<div class="tooltip" id="tooltip"></div>
+
+<script>
+const tooltip = d3.select('#tooltip');
+const W = Math.min(700, window.innerWidth - 64);
+const MOBILE = W < 480;
+
+// --- Chart 1: Launcher countdown ---
+(function() {
+  const scenarios = [
+    { label: 'Resume\nApr 22', start: 0, days: 50, color: '#e5534b', note: 'Zero: ~Jun 10' },
+    { label: 'Resume\nJun 5', start: 44, days: 50, color: '#d4943a', note: 'Zero: ~Jul 25' },
+    { label: 'Permanent\ndeal', start: 0, days: 0, color: '#46954a', note: 'Clock never restarts' }
+  ];
+
+  const barH = MOBILE ? 28 : 34;
+  const gap = MOBILE ? 8 : 14;
+  const ml = MOBILE ? 70 : 90, mr = MOBILE ? 90 : 110, mt = 16, mb = 36;
+  const totalH = scenarios.length * (barH + gap) + mt + mb;
+  const maxDays = 100;
+  const x = d3.scaleLinear().domain([0, maxDays]).range([ml, W - mr]);
+
+  const svg = d3.select('#countdown-chart').append('svg')
+    .attr('width', W).attr('height', totalH).attr('viewBox', `0 0 ${W} ${totalH}`);
+
+  svg.append('g').attr('class', 'axis')
+    .attr('transform', `translate(0,${totalH - mb})`)
+    .call(d3.axisBottom(x).ticks(5).tickFormat(d => `Day +${d}`));
+
+  svg.append('g').attr('class', 'grid')
+    .attr('transform', `translate(0,${totalH - mb})`)
+    .call(d3.axisBottom(x).ticks(5).tickSize(-(totalH - mb - mt)).tickFormat(''))
+    .select('.domain').remove();
+
+  // Ceasefire band
+  svg.append('rect')
+    .attr('x', x(0)).attr('y', mt - 8)
+    .attr('width', x(3) - x(0)).attr('height', totalH - mb - mt + 8)
+    .attr('fill', 'rgba(70,149,74,0.08)');
+  svg.append('text')
+    .attr('x', x(1.5)).attr('y', mt + 4)
+    .attr('text-anchor', 'middle')
+    .attr('fill', '#46954a').attr('font-size', 9).attr('font-family', 'var(--font-sans)')
+    .text('Apr 22');
+
+  scenarios.forEach((s, i) => {
+    const y = mt + i * (barH + gap);
+    const lines = s.label.split('\n');
+    lines.forEach((line, li) => {
+      svg.append('text')
+        .attr('x', ml - 8).attr('y', y + barH / 2 + (li - (lines.length - 1) / 2) * 13)
+        .attr('text-anchor', 'end').attr('dominant-baseline', 'middle')
+        .attr('fill', '#d4dae3').attr('font-size', MOBILE ? 10 : 11).attr('font-family', 'var(--font-sans)')
+        .text(line);
+    });
+
+    if (s.days > 0) {
+      // Extension gap (if any)
+      if (s.start > 0) {
+        svg.append('rect')
+          .attr('x', x(0)).attr('y', y + barH * 0.25)
+          .attr('width', x(s.start) - x(0)).attr('height', barH * 0.5)
+          .attr('fill', 'rgba(70,149,74,0.2)').attr('rx', 2);
+        svg.append('text')
+          .attr('x', (x(0) + x(s.start)) / 2).attr('y', y + barH / 2 + 4)
+          .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
+          .attr('fill', '#46954a').attr('font-size', 9).attr('font-family', 'var(--font-sans)')
+          .text('extension');
+      }
+
+      svg.append('rect')
+        .attr('x', x(s.start)).attr('y', y)
+        .attr('width', x(s.start + s.days) - x(s.start)).attr('height', barH)
+        .attr('fill', s.color).attr('opacity', 0.75).attr('rx', 3)
+        .style('cursor', 'pointer')
+        .on('mouseover', (e) => {
+          tooltip.style('opacity', 1)
+            .html(`<strong>${s.label.replace('\n', ' ')}</strong><br>${s.days} days of fire at ~13/day<br>${s.note}`)
+            .style('left', (e.pageX + 12) + 'px').style('top', (e.pageY - 28) + 'px');
+        }).on('mouseout', () => tooltip.style('opacity', 0));
+
+      svg.append('text')
+        .attr('x', x(s.start + s.days) + 6).attr('y', y + barH / 2 + 4)
+        .attr('dominant-baseline', 'middle')
+        .attr('fill', s.color).attr('font-size', MOBILE ? 9 : 10).attr('font-family', 'var(--font-sans)')
+        .attr('font-weight', 500).text(s.note);
+    } else {
+      svg.append('rect')
+        .attr('x', x(0)).attr('y', y + barH * 0.3)
+        .attr('width', x(maxDays) - x(0)).attr('height', barH * 0.4)
+        .attr('fill', s.color).attr('opacity', 0.2).attr('rx', 2);
+      svg.append('text')
+        .attr('x', x(maxDays / 2)).attr('y', y + barH / 2 + 4)
+        .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
+        .attr('fill', s.color).attr('font-size', MOBILE ? 9 : 10).attr('font-family', 'var(--font-sans)')
+        .text(s.note);
+    }
+  });
+})();
+
+// --- Chart 2: Depletion asymmetry ---
+(function() {
+  const categories = [
+    { label: 'Iran BM\nLaunchers', pctRemaining: Math.round(102 / 425 * 100), color: '#e5534b', note: '~102 of ~425 remain (~24%)' },
+    { label: 'Iran\nDrones', pctRemaining: Math.round(9000 / 45000 * 100), color: '#5ba3f5', isInverted: true, note: '~80% of pre-war stock intact' },
+    { label: 'Coalition\nPatriot Stock', pctRemaining: 25, color: '#d4943a', note: '~25% remaining (JINSA Mar 29)' }
+  ];
+
+  const barH = MOBILE ? 30 : 36;
+  const gap = MOBILE ? 8 : 14;
+  const ml = MOBILE ? 80 : 110, mr = 100, mt = 12, mb = 36;
+  const totalH = categories.length * (barH + gap) + mt + mb;
+  const x = d3.scaleLinear().domain([0, 100]).range([ml, W - mr]);
+
+  const svg = d3.select('#asymmetry-chart').append('svg')
+    .attr('width', W).attr('height', totalH).attr('viewBox', `0 0 ${W} ${totalH}`);
+
+  svg.append('g').attr('class', 'axis')
+    .attr('transform', `translate(0,${totalH - mb})`)
+    .call(d3.axisBottom(x).ticks(5).tickFormat(d => d + '%'));
+
+  svg.append('g').attr('class', 'grid')
+    .attr('transform', `translate(0,${totalH - mb})`)
+    .call(d3.axisBottom(x).ticks(5).tickSize(-(totalH - mb - mt)).tickFormat(''))
+    .select('.domain').remove();
+
+  categories.forEach((c, i) => {
+    const y = mt + i * (barH + gap);
+    const pctUsed = c.isInverted ? c.pctRemaining : (100 - c.pctRemaining);
+    const pctLeft = c.isInverted ? (100 - c.pctRemaining) : c.pctRemaining;
+
+    const lines = c.label.split('\n');
+    lines.forEach((line, li) => {
+      svg.append('text')
+        .attr('x', ml - 8).attr('y', y + barH / 2 + (li - (lines.length - 1) / 2) * 13)
+        .attr('text-anchor', 'end').attr('dominant-baseline', 'middle')
+        .attr('fill', '#d4dae3').attr('font-size', MOBILE ? 10 : 11).attr('font-family', 'var(--font-sans)')
+        .text(line);
+    });
+
+    // Expended
+    svg.append('rect')
+      .attr('x', ml).attr('y', y).attr('height', barH)
+      .attr('width', x(pctUsed) - ml)
+      .attr('fill', c.color).attr('opacity', 0.2).attr('rx', 3)
+      .style('cursor', 'pointer')
+      .on('mouseover', (e) => {
+        tooltip.style('opacity', 1)
+          .html(`<strong>${c.label.replace('\n', ' ')}</strong><br>${c.note}`)
+          .style('left', (e.pageX + 12) + 'px').style('top', (e.pageY - 28) + 'px');
+      }).on('mouseout', () => tooltip.style('opacity', 0));
+
+    // Remaining
+    svg.append('rect')
+      .attr('x', x(pctUsed)).attr('y', y).attr('height', barH)
+      .attr('width', x(pctLeft) - ml > 0 ? (W - mr - x(pctUsed)) : 0)
+      .attr('fill', c.color).attr('opacity', 0.85).attr('rx', 3)
+      .style('cursor', 'pointer')
+      .on('mouseover', (e) => {
+        tooltip.style('opacity', 1)
+          .html(`<strong>${c.label.replace('\n', ' ')}</strong><br>${c.note}`)
+          .style('left', (e.pageX + 12) + 'px').style('top', (e.pageY - 28) + 'px');
+      }).on('mouseout', () => tooltip.style('opacity', 0));
+
+    svg.append('text')
+      .attr('x', W - mr + 6).attr('y', y + barH / 2 + 4)
+      .attr('dominant-baseline', 'middle')
+      .attr('fill', c.color).attr('font-size', MOBILE ? 9 : 10).attr('font-family', 'var(--font-sans)')
+      .attr('font-weight', 500)
+      .text(c.isInverted ? pctUsed + '% used' : pctLeft + '% left');
+  });
+
+  const legItems = [{ label: 'Expended / degraded', opacity: 0.2 }, { label: 'Remaining capacity', opacity: 0.85 }];
+  const legY = totalH - mb + 20;
+  legItems.forEach((l, i) => {
+    const lx = ml + i * 180;
+    svg.append('rect').attr('x', lx).attr('y', legY - 8).attr('width', 12).attr('height', 12)
+      .attr('fill', '#6b7a8d').attr('opacity', l.opacity).attr('rx', 2);
+    svg.append('text').attr('x', lx + 16).attr('y', legY + 1)
+      .attr('fill', '#6b7a8d').attr('font-size', 10).attr('font-family', 'var(--font-sans)').text(l.label);
+  });
+})();
+</script>
+
+</body>
+</html>
