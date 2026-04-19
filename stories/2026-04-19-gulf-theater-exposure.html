@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Theater by Theater: What Iran's Strike Map Reveals About the Next Phase — Iran Tracker</title>
+<link rel="stylesheet" href="story.css">
+<script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a class="nav-brand" href="../index.html">Iran Tracker</a>
+    <a href="../index.html">Dashboard</a>
+    <a href="index.html">Analysis</a>
+    <a href="../methodology.html">Methodology</a>
+  </nav>
+</header>
+
+<h1>Theater by Theater: What Iran's Strike Map Reveals About the Next Phase</h1>
+<div class="meta">April 19, 2026 — Day 51 <span class="tag tag-analysis">Analysis</span> <span class="tag tag-ceasefire">Cease-fire</span></div>
+
+<div class="lede">
+The cease-fire has frozen the numbers. But beneath the aggregate totals — ~2,950–3,500 ballistic missiles, ~8,500–9,500 drones — lies a very uneven map. UAE absorbed 63% of confirmed Gulf-theater drones. Kuwait took proportionally more ballistic missiles per capita than any other Gulf state. Qatar's LNG infrastructure was struck with unusual BM precision. Saudi Arabia faced an almost entirely drone-driven campaign. If Islamabad Round 2 fails and war resumes, Iran's remaining ~102 launchers cannot replicate Day 1 everywhere. It will have to choose.
+</div>
+
+<h2>Six Theaters, Six Profiles</h2>
+
+<p>The tracker's gulf breakdown is based on official cumulative reporting from UAE MoD and Bahrain Defence Force (High quality), working estimates for Kuwait and Qatar (Medium), and methodologically noisy Saudi data (Medium-Low). Israel receives separate MRBM-dominant strikes; drone and cruise missile counts toward Israel are not fully tracked in this dataset.</p>
+
+<div class="stat-row">
+  <div class="stat-box">
+    <div class="stat-value" style="color:var(--red);">2,819</div>
+    <div class="stat-label">Total munitions — UAE theater</div>
+    <div class="stat-sub">537 BM · 26 CM · 2,256 drones</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-value" style="color:var(--orange);">1,020</div>
+    <div class="stat-label">Total munitions — Kuwait theater</div>
+    <div class="stat-sub">365 BM · 655 drones</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-value" style="color:var(--accent);">363</div>
+    <div class="stat-label">Total munitions — Qatar theater</div>
+    <div class="stat-sub">235 BM · 8 CM · 120 drones (BM-heavy)</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-value" style="color:#9f7aea;">752</div>
+    <div class="stat-label">Total munitions — Saudi theater</div>
+    <div class="stat-sub">65 BM · 7 CM · 680 drones (drone-heavy)</div>
+  </div>
+</div>
+
+<p>Each stat above reflects a different operational logic. UAE's total is inflated by its role as the principal Gulf air-defense node — Iranian drones probing UAE defenses have been the dominant drone story of this war. Kuwait's BM total, by contrast, reflects systematic targeting of its refinery infrastructure rather than a defensive test: 365 ballistic missiles against a country of 4.7 million is the highest BM intensity per capita of any Gulf state. Qatar's LNG complex at Ras Laffan was the target of unusually precise BM salvos — drones played a secondary role, suggesting Iran was trying to cause sustained facility damage rather than air-defense exhaustion. And Saudi Arabia's 10:1 drone-to-BM ratio suggests Iran chose to avoid the Patriot-defended Riyadh corridor and instead ranged energy infrastructure at Ras Tanura and SAMREF Yanbu with cheaper drone swarms.</p>
+
+<div class="chart-wrap">
+  <div class="chart-label">Total munitions by theater — BM, cruise missile, and drone (confirmed + working estimates)</div>
+  <div id="theater-bar-chart"></div>
+  <p class="source-note">UAE/Bahrain: official cumulative (High). Kuwait/Qatar/Saudi: working estimates (Medium/Medium-Low). Israel: BM-only (drone/CM not separately tracked toward Israel). Figures as of Apr 19, 2026 (cease-fire frozen).</p>
+</div>
+
+<h2>The Drone Fraction: Iran's Most Revealing Choice</h2>
+
+<p>The share of drones versus ballistic missiles in each theater is one of the clearest signals of Iranian operational intent. Drones are cheap, distributed, and difficult to track until launch. Ballistic missiles require a TEL, a crew, a launch position, and logistical support — all of which are in increasingly short supply at ~102 remaining launchers. Iran's drone-to-BM ratio by theater therefore reflects both targeting objectives and resource constraints.</p>
+
+<div class="chart-wrap">
+  <div class="chart-label">Drone share of total munitions by theater (excluding Israel, where drone data is incomplete)</div>
+  <div id="drone-fraction-chart"></div>
+</div>
+
+<p>Saudi Arabia's 90% drone share is the structural outlier. The kingdom's energy infrastructure — Ras Tanura, SAMREF Yanbu, Abqaiq — lies within SRBM range but behind the densest US and Saudi Patriot coverage in the region. Iran's rational substitution was drone swarms: lower cost per unit, smaller radar cross-section at low altitude, and no TEL requirement. This is analytically significant for the resumed conflict scenario: Saudi Arabia's threat profile in any resumed conflict will be almost entirely drone-driven, regardless of how many ballistic launchers Iran retains.</p>
+
+<p>Qatar's 33% drone share — the lowest of any Gulf state — reflects the opposite logic. Ras Laffan LNG, the target, is a concentrated fixed facility that drones can damage but cannot structurally destroy in the way a 1,000kg BM warhead can. Iran deployed SRBMs against Qatar in a pattern consistent with sustained infrastructure targeting — the goal was economic disruption (QatarEnergy confirmed ~17% LNG capacity disrupted), not air-defense exhaustion.</p>
+
+<div class="callout">
+  <strong>The drone-fraction rule of thumb:</strong> High drone share (UAE, Saudi) = Iran was probing defenses or ranging dispersed infrastructure with cheap munitions. Low drone share (Qatar, Israel) = Iran was targeting concentrated high-value fixed facilities with precision BMs. If war resumes, that logic persists — and Iran has far more drones left than launchers.
+</div>
+
+<h2>The BM Intensity Table</h2>
+
+<p>Across 39 active conflict days (Day 1 through the cease-fire on Day 39), Iran averaged different BM rates against each theater. The table below shows confirmed/working BM totals divided by active conflict days — a rough measure of how consistently each theater was under ballistic fire.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Theater</th>
+      <th class="num">BMs fired</th>
+      <th class="num">BMs/active day</th>
+      <th>Primary infrastructure at risk</th>
+      <th>Data quality</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>UAE</td>
+      <td class="num">537</td>
+      <td class="num"><strong>13.8</strong></td>
+      <td>Dubai Port, Khalifa Port, Ruwais refinery, desalination plants</td>
+      <td>High (official)</td>
+    </tr>
+    <tr>
+      <td>Kuwait</td>
+      <td class="num">365</td>
+      <td class="num"><strong>9.4</strong></td>
+      <td>Mina Al-Ahmadi refinery, Mina Abdullah refinery (both already hit)</td>
+      <td>Medium (working)</td>
+    </tr>
+    <tr>
+      <td>Israel</td>
+      <td class="num">400+</td>
+      <td class="num"><strong>~10.3</strong></td>
+      <td>Haifa port, Negev region, infrastructure targets; Dimona near-miss Day 23</td>
+      <td>Medium (NBC est)</td>
+    </tr>
+    <tr>
+      <td>Qatar</td>
+      <td class="num">235</td>
+      <td class="num"><strong>6.0</strong></td>
+      <td>Ras Laffan LNG (17% capacity already disrupted), North Field gas</td>
+      <td>Medium (working)</td>
+    </tr>
+    <tr>
+      <td>Bahrain</td>
+      <td class="num">188</td>
+      <td class="num"><strong>4.8</strong></td>
+      <td>US 5th Fleet HQ (NAVCENT), Al Asfar oil field, Sitra refinery</td>
+      <td>High (official)</td>
+    </tr>
+    <tr>
+      <td>Saudi Arabia</td>
+      <td class="num">65</td>
+      <td class="num"><strong>1.7</strong></td>
+      <td>Ras Tanura complex, SAMREF Yanbu (pipeline hit Apr 8), Abqaiq</td>
+      <td>Medium-Low (noisy)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p class="source-note">BMs/active day = confirmed BM total ÷ 39 active conflict days (Day 1 through Day 39 cease-fire). This is a floor figure; best-estimate totals would be higher. Israel BM count from NBC estimate (Apr 4); drone/CM not tracked separately toward Israel in this dataset.</p>
+
+<h2>What ~102 Launchers Actually Means for Theater Selection</h2>
+
+<p>Here is the critical constraint the tracker has been tracking since mid-March: at ~102 remaining launchers and ~13 BMs/day pre-ceasefire (midpoint), Iran has approximately 50 days of fire left — spread across all six theaters. That is not 50 days per theater. It is 50 days total.</p>
+
+<p>At pre-ceasefire rates, Iran was averaging roughly:</p>
+
+<table>
+  <thead>
+    <tr><th>Theater allocation (pre-ceasefire midpoint)</th><th class="num">BMs/day</th><th class="num">Share</th><th>Launcher deployment implied</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>UAE</td><td class="num">~5–6</td><td class="num">~40%</td><td>~10–15 TELs assigned</td></tr>
+    <tr><td>Kuwait</td><td class="num">~3–4</td><td class="num">~25%</td><td>~8–12 TELs assigned</td></tr>
+    <tr><td>Israel</td><td class="num">~3–4</td><td class="num">~25%</td><td>~8–12 MRBMs / separate launcher pool</td></tr>
+    <tr><td>Qatar + Bahrain</td><td class="num">~1–2</td><td class="num">~10%</td><td>~4–8 TELs (rotated / shared)</td></tr>
+    <tr><td>Saudi Arabia</td><td class="num">&lt;1</td><td class="num">&lt;5%</td><td>Minimal BM assignment; drone-primary</td></tr>
+  </tbody>
+</table>
+
+<p class="source-note">Estimated allocation based on observed BM distributions. TEL figures are notional; actual assignments unknown. Saudi BM data is methodologically noisy — true BM count may be higher.</p>
+
+<p>With only ~102 launchers remaining (versus ~425 pre-war), any resumed conflict forces Iran to compress this allocation. At a 24% remaining launcher fraction, Iran's theoretical BM ceiling across all theaters drops to roughly ~8–12/day at peak — and declining. It cannot maintain 5–6/day to UAE while also servicing Kuwait, Qatar, Bahrain, and Israel. Something gets deprioritized.</p>
+
+<div class="chart-wrap">
+  <div class="chart-label">Iran's launcher capacity: pre-war vs. remaining (% of original 410–440 fleet)</div>
+  <div id="launcher-capacity-chart"></div>
+</div>
+
+<div class="callout warn">
+  <strong>The resumed conflict playbook, as the data implies:</strong><br>
+  Iran's rational strategy with ~102 launchers is to <em>concentrate</em> rather than spread. UAE and Kuwait — the highest BM-intensity theaters with the most critical energy and commercial infrastructure — are the likely priority targets. Qatar (LNG, globally significant) is a secondary priority. Saudi Arabia gets the drone campaign it already faced. Israel requires MRBMs from a separate launcher pool; that pool is also degraded. Bahrain, hosting the US 5th Fleet, is a political deterrent target rather than a sustained-fire priority.
+</div>
+
+<h2>The Interceptor Picture by Theater</h2>
+
+<p>The coalition's defensive constraint is the inverse of Iran's offensive one: ~75% of Gulf-wide Patriot stocks have been expended (JINSA, Mar 29). But that depletion is not distributed evenly. UAE, as the highest-volume intercept theater, has almost certainly absorbed a disproportionate share of the Patriot expenditure — both for ballistic threats (PAC-3 required) and for the mass-drone scenarios where mixed systems (C-RAM, Iron Dome, point defense) were used.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Theater</th>
+      <th>Total intercepts handled</th>
+      <th>Dominant threat type</th>
+      <th>Interceptor mix needed</th>
+      <th>Post-ceasefire posture risk</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>UAE</td>
+      <td>2,819 total (High quality data)</td>
+      <td>Drones (80% of total)</td>
+      <td>Mass-drone: C-RAM, SHORAD, directed energy; BM: PAC-3</td>
+      <td><strong>High</strong> — highest total intercept burden</td>
+    </tr>
+    <tr>
+      <td>Kuwait</td>
+      <td>~1,020 (Medium quality)</td>
+      <td>Balanced BM + drone</td>
+      <td>PAC-3 for 365 BMs; SHORAD for 655 drones</td>
+      <td><strong>High</strong> — BM-heavy in small airspace</td>
+    </tr>
+    <tr>
+      <td>Bahrain</td>
+      <td>656 total (High quality data)</td>
+      <td>Balanced BM + drone</td>
+      <td>US carrier-based systems (AEGIS), PAC-3 co-located with 5th Fleet</td>
+      <td><strong>Medium</strong> — US assets supplement host-nation defense</td>
+    </tr>
+    <tr>
+      <td>Qatar</td>
+      <td>~363 (Medium quality)</td>
+      <td>BM-heavy (67%)</td>
+      <td>PAC-3/THAAD for BMs; limited drone demand</td>
+      <td><strong>High</strong> — BM-primary against LNG; THAAD reserve uncertain</td>
+    </tr>
+    <tr>
+      <td>Saudi Arabia</td>
+      <td>~752 (Medium-Low quality)</td>
+      <td>Drone-dominant (90%)</td>
+      <td>SHORAD, C-RAM, Patriot in BM-alert mode (low consumption)</td>
+      <td><strong>Medium-Low</strong> — drones don't require PAC-3; Patriot stock relatively preserved</td>
+    </tr>
+    <tr>
+      <td>Israel</td>
+      <td>400+ BMs (incomplete)</td>
+      <td>MRBM-dominant (Arrow/Iron Dome/PAC-3 mix)</td>
+      <td>Arrow-3 (exoatmospheric), Arrow-2, David's Sling, Iron Dome</td>
+      <td><strong>Medium</strong> — Israeli inventory separate from Gulf; Arrow production ongoing</td>
+    </tr>
+  </tbody>
+</table>
+
+<p class="source-note">Interceptor mix and posture risk are analytical judgments based on observed threat type per theater and reported system types. JINSA Mar 29 ~75% Gulf-wide Patriot depletion is the basis for coalition-level assessment.</p>
+
+<p>Saudi Arabia's drone-dominated threat profile carries an unappreciated defensive silver lining: drone intercepts typically do not require PAC-3 MSE ($4M/shot). Lower-tier systems — C-RAM, SHORAD, even directed energy — are used for drone kill chains, preserving Patriot stock for ballistic threats. Saudi Arabia may therefore have expended proportionally less of its Patriot inventory than Kuwait or Qatar, making it relatively better positioned defensively in a resumed conflict — even though it has the most economically significant energy infrastructure at stake.</p>
+
+<h2>If Islamabad Fails: What Changes by Theater</h2>
+
+<p>The three conditions Islamabad Round 2 (Monday, Apr 21) must resolve — Hormuz compliance, Lebanon carve-out, and proxy attribution — are not evenly distributed in their risk to each theater. A collapsed Islamabad deal implies resumed conflict, but the character of that resumed conflict varies by theater.</p>
+
+<p><strong>UAE</strong> faces the drone-saturation scenario immediately: with ~80% of Iran's pre-war drone stock still intact, UAE air defense systems would face mass-drone pressure that tests whether its non-Patriot intercept systems are still at full capacity. The BM threat to UAE is real but constrained by Iran's launcher ceiling.</p>
+
+<p><strong>Kuwait</strong> faces the worst BM concentration risk of any Gulf state. Its refinery infrastructure — already hit on multiple occasions — is the most economically vulnerable target in the Gulf that is within reliable SRBM range. If Iran allocates a disproportionate share of its remaining ~102 launchers to Kuwait, the refinery corridor at Mina Al-Ahmadi faces serious sustained disruption.</p>
+
+<p><strong>Qatar</strong> faces the LNG escalation scenario. A resumed conflict with even moderate BM allocation toward Ras Laffan could push LNG disruption beyond the 17% figure already recorded — with global gas market consequences that extend well beyond the Gulf. Qatar's threat profile is low-volume but high-consequence.</p>
+
+<p><strong>Saudi Arabia</strong> faces the drone infrastructure attrition problem it has had throughout: Ras Tanura, Yanbu, Abqaiq. The pipeline hit on April 8 demonstrated that even post-ceasefire, drone access to Saudi energy infrastructure is not fully sealed. A resumed conflict would see that pressure resume immediately, without the BM threat that taxes Patriot stock.</p>
+
+<div class="callout red">
+  <strong>The tracker's theater assessment for a resumed conflict:</strong><br>
+  Kuwait (BM concentration risk, highest per-capita exposure) and Qatar (LNG consequence risk, BM-precise campaign) face the most acute threats relative to their defensive capacity. UAE faces the highest absolute volume but has the most capable air defense infrastructure in the Gulf. Saudi Arabia faces drone attrition that is persistent but not Patriot-depleting. Bahrain's US 5th Fleet presence provides a deterrent overlay that reduces but does not eliminate its risk.
+</div>
+
+<h2>What the Tracker Will Watch at Islamabad</h2>
+
+<p>Monday's talks are the moment when the theater-by-theater calculus becomes concrete. The outcome at Islamabad determines whether the depletion clocks restart — and which theaters see resumed fire first.</p>
+
+<p><strong>Hormuz compliance</strong> matters most to Saudi Arabia and Kuwait, whose crude exports transit the Strait. An unresolved Hormuz dispute accelerates economic pressure on both sides. If transit remains blocked despite Iran's April 17 declaration, Saudi and Kuwaiti energy export revenue stays suppressed — a pressure point that affects both the incentive to resume and the cost of resumption.</p>
+
+<p><strong>Lebanon carve-out</strong> matters most to Israel. Hezbollah remains active; Israel says the Iran-US cease-fire does not extend to Lebanon. An Islamabad agreement that doesn't address the Lebanon dimension leaves the MRBM theater unresolved, even if the Gulf theaters get an extension.</p>
+
+<p><strong>Proxy attribution</strong> (the Kuwait Apr 10 drone incident) matters most to Kuwait and the small Gulf states. A resumed conflict triggered not by IRGC central command but by a proxy operating outside the cease-fire framework would arrive without the 24–48 hour warning that official resumption would provide.</p>
+
+<div class="callout warn">
+  <strong>Watch list for the 72-hour window (Apr 19–22):</strong><br>
+  Islamabad Round 2 outcome (Apr 21) · Theater-specific intercept reports (Kuwait, UAE first) · Hormuz AIS transit data (BBC/Lloyd's List) · Official extension announcement · Any sign of SRBM TEL repositioning toward Kuwait or Qatar · Evidence of Iranian drone resupply to proxies in Kuwait/Saudi corridor
+</div>
+
+<p>The aggregate tracker numbers — ~2,950–3,500 ballistic missiles and ~8,500–9,500 drones — obscure a geography that is sharply unequal. Iran's remaining ~102 launchers cannot reopen a six-theater war at anywhere near the Day 1 tempo. The next phase — if there is one — will be a concentrated, selective campaign aimed at maximum economic disruption per remaining launcher expended. Kuwait and Qatar sit at the intersection of concentration risk and consequence risk. The Islamabad talks are not just about whether the cease-fire holds — they are about which theater the next chapter of this war starts in.</p>
+
+<footer>
+  <a href="index.html">All analysis</a> · <a href="../index.html">Dashboard</a> · <a href="../methodology.html">Methodology</a> · <a href="https://github.com/bh13731/iran-tracker">GitHub</a>
+</footer>
+
+<div class="tooltip" id="tooltip"></div>
+
+<script>
+const tooltip = d3.select('#tooltip');
+const W = Math.min(700, window.innerWidth - 64);
+const MOBILE = W < 480;
+
+// --- Chart 1: Stacked theater bar chart ---
+(function() {
+  const theaters = [
+    { name: 'UAE', bm: 537, cm: 26, drones: 2256, quality: 'High' },
+    { name: 'Kuwait', bm: 365, cm: 0, drones: 655, quality: 'Medium' },
+    { name: 'Saudi Arabia', bm: 65, cm: 7, drones: 680, quality: 'Medium-Low' },
+    { name: 'Bahrain', bm: 188, cm: 0, drones: 468, quality: 'High' },
+    { name: 'Israel (BM only)', bm: 400, cm: 0, drones: 0, quality: 'Medium' },
+    { name: 'Qatar', bm: 235, cm: 8, drones: 120, quality: 'Medium' }
+  ].sort((a, b) => (b.bm + b.cm + b.drones) - (a.bm + a.cm + a.drones));
+
+  theaters.forEach(t => { t.total = t.bm + t.cm + t.drones; });
+
+  const barH = MOBILE ? 28 : 32;
+  const gap = MOBILE ? 6 : 10;
+  const ml = MOBILE ? 90 : 120, mr = 60, mt = 12, mb = 48;
+  const totalH = theaters.length * (barH + gap) + mt + mb;
+  const maxVal = d3.max(theaters, d => d.total);
+  const x = d3.scaleLinear().domain([0, maxVal]).range([ml, W - mr]);
+
+  const colBM = '#e5534b';
+  const colCM = '#d4943a';
+  const colDrone = '#5ba3f5';
+
+  const svg = d3.select('#theater-bar-chart').append('svg')
+    .attr('width', W).attr('height', totalH).attr('viewBox', `0 0 ${W} ${totalH}`);
+
+  svg.append('g').attr('class', 'axis')
+    .attr('transform', `translate(0,${totalH - mb})`)
+    .call(d3.axisBottom(x).ticks(MOBILE ? 4 : 5).tickFormat(d => d >= 1000 ? (d/1000).toFixed(1)+'K' : d));
+
+  svg.append('g').attr('class', 'grid')
+    .attr('transform', `translate(0,${totalH - mb})`)
+    .call(d3.axisBottom(x).ticks(MOBILE ? 4 : 5).tickSize(-(totalH - mb - mt)).tickFormat(''))
+    .select('.domain').remove();
+
+  theaters.forEach((t, i) => {
+    const y = mt + i * (barH + gap);
+
+    // Label
+    svg.append('text')
+      .attr('x', ml - 6).attr('y', y + barH / 2 + 4)
+      .attr('text-anchor', 'end').attr('dominant-baseline', 'middle')
+      .attr('fill', t.quality === 'High' ? '#d4dae3' : '#9aa5b4')
+      .attr('font-size', MOBILE ? 10 : 11).attr('font-family', 'var(--font-sans)')
+      .text(t.name);
+
+    let cursor = ml;
+
+    // BM segment
+    if (t.bm > 0) {
+      const w = x(t.bm) - x(0);
+      svg.append('rect')
+        .attr('x', cursor).attr('y', y).attr('width', w).attr('height', barH)
+        .attr('fill', colBM).attr('opacity', 0.85).attr('rx', i === 0 ? 3 : 0)
+        .style('cursor', 'pointer')
+        .on('mouseover', e => tooltip.style('opacity', 1)
+          .html(`<strong>${t.name}</strong><br>Ballistic missiles: ${t.bm.toLocaleString()}<br>Data quality: ${t.quality}`)
+          .style('left', (e.pageX + 12) + 'px').style('top', (e.pageY - 28) + 'px'))
+        .on('mouseout', () => tooltip.style('opacity', 0));
+      cursor += w;
+    }
+
+    // CM segment
+    if (t.cm > 0) {
+      const w = x(t.cm) - x(0);
+      svg.append('rect')
+        .attr('x', cursor).attr('y', y).attr('width', w).attr('height', barH)
+        .attr('fill', colCM).attr('opacity', 0.85)
+        .style('cursor', 'pointer')
+        .on('mouseover', e => tooltip.style('opacity', 1)
+          .html(`<strong>${t.name}</strong><br>Cruise missiles: ${t.cm}<br>Data quality: ${t.quality}`)
+          .style('left', (e.pageX + 12) + 'px').style('top', (e.pageY - 28) + 'px'))
+        .on('mouseout', () => tooltip.style('opacity', 0));
+      cursor += w;
+    }
+
+    // Drone segment
+    if (t.drones > 0) {
+      const w = x(t.drones) - x(0);
+      svg.append('rect')
+        .attr('x', cursor).attr('y', y).attr('width', w).attr('height', barH)
+        .attr('fill', colDrone).attr('opacity', 0.75)
+        .attr('rx', 0)
+        .style('cursor', 'pointer')
+        .on('mouseover', e => tooltip.style('opacity', 1)
+          .html(`<strong>${t.name}</strong><br>Drones: ${t.drones.toLocaleString()}<br>Data quality: ${t.quality}`)
+          .style('left', (e.pageX + 12) + 'px').style('top', (e.pageY - 28) + 'px'))
+        .on('mouseout', () => tooltip.style('opacity', 0));
+    }
+
+    // Total label
+    svg.append('text')
+      .attr('x', x(t.total) + 6).attr('y', y + barH / 2 + 4)
+      .attr('dominant-baseline', 'middle')
+      .attr('fill', '#9aa5b4').attr('font-size', MOBILE ? 9 : 10).attr('font-family', 'var(--font-sans)')
+      .attr('font-weight', 500)
+      .text(t.total.toLocaleString() + (t.name.includes('Israel') ? '+' : ''));
+  });
+
+  // Legend
+  const legItems = [
+    { label: 'Ballistic missiles', color: colBM },
+    { label: 'Cruise missiles', color: colCM },
+    { label: 'Drones', color: colDrone }
+  ];
+  const legY = totalH - 16;
+  legItems.forEach((l, i) => {
+    const lx = ml + i * (MOBILE ? 90 : 120);
+    svg.append('rect').attr('x', lx).attr('y', legY - 8).attr('width', 12).attr('height', 12)
+      .attr('fill', l.color).attr('opacity', 0.85).attr('rx', 2);
+    svg.append('text').attr('x', lx + 16).attr('y', legY + 1)
+      .attr('fill', '#6b7a8d').attr('font-size', MOBILE ? 9 : 10).attr('font-family', 'var(--font-sans)').text(l.label);
+  });
+})();
+
+// --- Chart 2: Drone fraction chart ---
+(function() {
+  const data = [
+    { name: 'Saudi Arabia', dronePct: 90, bmPct: 10, total: 752, note: '680 drones / 72 BM+CM' },
+    { name: 'UAE', dronePct: 80, bmPct: 20, total: 2819, note: '2,256 drones / 563 BM+CM' },
+    { name: 'Bahrain', dronePct: 71, bmPct: 29, total: 656, note: '468 drones / 188 BM' },
+    { name: 'Kuwait', dronePct: 64, bmPct: 36, total: 1020, note: '655 drones / 365 BM' },
+    { name: 'Qatar', dronePct: 33, bmPct: 67, total: 363, note: '120 drones / 243 BM+CM' }
+  ];
+
+  const barH = MOBILE ? 26 : 30;
+  const gap = MOBILE ? 6 : 10;
+  const ml = MOBILE ? 90 : 120, mr = 40, mt = 12, mb = 36;
+  const totalH = data.length * (barH + gap) + mt + mb;
+  const x = d3.scaleLinear().domain([0, 100]).range([ml, W - mr]);
+
+  const svg = d3.select('#drone-fraction-chart').append('svg')
+    .attr('width', W).attr('height', totalH).attr('viewBox', `0 0 ${W} ${totalH}`);
+
+  svg.append('g').attr('class', 'axis')
+    .attr('transform', `translate(0,${totalH - mb})`)
+    .call(d3.axisBottom(x).ticks(5).tickFormat(d => d + '%'));
+
+  svg.append('g').attr('class', 'grid')
+    .attr('transform', `translate(0,${totalH - mb})`)
+    .call(d3.axisBottom(x).ticks(5).tickSize(-(totalH - mb - mt)).tickFormat(''))
+    .select('.domain').remove();
+
+  data.forEach((d, i) => {
+    const y = mt + i * (barH + gap);
+
+    svg.append('text')
+      .attr('x', ml - 6).attr('y', y + barH / 2 + 4)
+      .attr('text-anchor', 'end').attr('dominant-baseline', 'middle')
+      .attr('fill', '#d4dae3').attr('font-size', MOBILE ? 10 : 11).attr('font-family', 'var(--font-sans)')
+      .text(d.name);
+
+    // BM segment (left = BM)
+    svg.append('rect')
+      .attr('x', ml).attr('y', y).attr('width', x(d.bmPct) - x(0)).attr('height', barH)
+      .attr('fill', '#e5534b').attr('opacity', 0.7).attr('rx', 3)
+      .style('cursor', 'pointer')
+      .on('mouseover', e => tooltip.style('opacity', 1)
+        .html(`<strong>${d.name}</strong><br>${d.note}<br>BM+CM: ${d.bmPct}% / Drones: ${d.dronePct}%`)
+        .style('left', (e.pageX + 12) + 'px').style('top', (e.pageY - 28) + 'px'))
+      .on('mouseout', () => tooltip.style('opacity', 0));
+
+    // Drone segment (right)
+    svg.append('rect')
+      .attr('x', x(d.bmPct)).attr('y', y).attr('width', x(d.dronePct) - x(0)).attr('height', barH)
+      .attr('fill', '#5ba3f5').attr('opacity', 0.75)
+      .style('cursor', 'pointer')
+      .on('mouseover', e => tooltip.style('opacity', 1)
+        .html(`<strong>${d.name}</strong><br>${d.note}<br>BM+CM: ${d.bmPct}% / Drones: ${d.dronePct}%`)
+        .style('left', (e.pageX + 12) + 'px').style('top', (e.pageY - 28) + 'px'))
+      .on('mouseout', () => tooltip.style('opacity', 0));
+
+    svg.append('text')
+      .attr('x', x(100) + 6).attr('y', y + barH / 2 + 4)
+      .attr('dominant-baseline', 'middle')
+      .attr('fill', '#5ba3f5').attr('font-size', MOBILE ? 9 : 10).attr('font-family', 'var(--font-sans)')
+      .attr('font-weight', 500).text(d.dronePct + '% drone');
+  });
+
+  const legY = totalH - 16;
+  [{ label: 'BM + CM share', color: '#e5534b' }, { label: 'Drone share', color: '#5ba3f5' }].forEach((l, i) => {
+    const lx = ml + i * (MOBILE ? 110 : 140);
+    svg.append('rect').attr('x', lx).attr('y', legY - 8).attr('width', 12).attr('height', 12)
+      .attr('fill', l.color).attr('opacity', 0.75).attr('rx', 2);
+    svg.append('text').attr('x', lx + 16).attr('y', legY + 1)
+      .attr('fill', '#6b7a8d').attr('font-size', MOBILE ? 9 : 10).attr('font-family', 'var(--font-sans)').text(l.label);
+  });
+})();
+
+// --- Chart 3: Launcher capacity decline ---
+(function() {
+  const pts = [
+    { label: 'Pre-war', pct: 100 },
+    { label: 'Day 5', pct: Math.round(125 / 425 * 100) },
+    { label: 'Day 20', pct: Math.round(150 / 425 * 100) },
+    { label: 'Day 22', pct: Math.round(130 / 425 * 100) },
+    { label: 'Day 26', pct: Math.round(120 / 425 * 100) },
+    { label: 'Day 29', pct: Math.round(120 / 425 * 100) },
+    { label: 'Day 33', pct: Math.round(117 / 425 * 100) },
+    { label: 'Day 37', pct: Math.round(102 / 425 * 100) },
+    { label: 'Day 39\n(cease-fire)', pct: Math.round(102 / 425 * 100) },
+    { label: 'Day 51\n(today)', pct: Math.round(102 / 425 * 100) }
+  ];
+
+  const ml = MOBILE ? 40 : 50, mr = MOBILE ? 16 : 20, mt = 16, mb = MOBILE ? 44 : 48;
+  const chartH = MOBILE ? 120 : 140;
+  const totalH = chartH + mt + mb;
+  const x = d3.scalePoint().domain(pts.map(d => d.label)).range([ml, W - mr]).padding(0.3);
+  const y = d3.scaleLinear().domain([0, 100]).range([mt + chartH, mt]);
+
+  const svg = d3.select('#launcher-capacity-chart').append('svg')
+    .attr('width', W).attr('height', totalH).attr('viewBox', `0 0 ${W} ${totalH}`);
+
+  svg.append('g').attr('class', 'grid')
+    .attr('transform', `translate(${ml},0)`)
+    .call(d3.axisLeft(y).ticks(4).tickSize(-(W - ml - mr)).tickFormat(''))
+    .select('.domain').remove();
+
+  svg.append('g').attr('class', 'axis')
+    .attr('transform', `translate(0,${mt + chartH})`)
+    .call(d3.axisBottom(x).tickSize(0))
+    .selectAll('text')
+    .attr('font-size', MOBILE ? 8 : 9)
+    .each(function(d) {
+      const lines = d.split('\n');
+      if (lines.length > 1) {
+        const el = d3.select(this);
+        el.text('');
+        lines.forEach((line, li) => {
+          el.append('tspan').attr('x', 0).attr('dy', li === 0 ? '1em' : '1.1em').text(line);
+        });
+      }
+    });
+
+  svg.append('g').attr('class', 'axis')
+    .attr('transform', `translate(${ml},0)`)
+    .call(d3.axisLeft(y).ticks(4).tickFormat(d => d + '%'));
+
+  // Ceasefire band
+  const cfX = x('Day 39\n(cease-fire)');
+  svg.append('rect')
+    .attr('x', cfX - 2).attr('y', mt)
+    .attr('width', (W - mr) - cfX + 2).attr('height', chartH)
+    .attr('fill', 'rgba(70,149,74,0.07)');
+
+  svg.append('text')
+    .attr('x', cfX + ((W - mr - cfX) / 2)).attr('y', mt + 10)
+    .attr('text-anchor', 'middle').attr('fill', '#46954a')
+    .attr('font-size', 9).attr('font-family', 'var(--font-sans)').text('Cease-fire — attrition paused');
+
+  // Line
+  const line = d3.line().x(d => x(d.label)).y(d => y(d.pct)).curve(d3.curveMonotoneX);
+  svg.append('path').datum(pts).attr('d', line)
+    .attr('fill', 'none').attr('stroke', '#e5534b').attr('stroke-width', 2).attr('opacity', 0.8);
+
+  // Area
+  const area = d3.area().x(d => x(d.label)).y0(mt + chartH).y1(d => y(d.pct)).curve(d3.curveMonotoneX);
+  svg.append('path').datum(pts).attr('d', area)
+    .attr('fill', '#e5534b').attr('opacity', 0.08);
+
+  // Dots
+  pts.forEach(d => {
+    svg.append('circle')
+      .attr('cx', x(d.label)).attr('cy', y(d.pct)).attr('r', 4)
+      .attr('fill', '#e5534b').attr('opacity', 0.9)
+      .style('cursor', 'pointer')
+      .on('mouseover', e => tooltip.style('opacity', 1)
+        .html(`<strong>${d.label.replace('\n', ' ')}</strong><br>~${d.pct}% of pre-war launcher capacity`)
+        .style('left', (e.pageX + 12) + 'px').style('top', (e.pageY - 28) + 'px'))
+      .on('mouseout', () => tooltip.style('opacity', 0));
+  });
+
+  // 24% annotation
+  svg.append('text')
+    .attr('x', x('Day 37') + 6).attr('y', y(24) - 8)
+    .attr('fill', '#e5534b').attr('font-size', 9).attr('font-family', 'var(--font-sans)')
+    .text('~24% remaining');
+})();
+</script>
+
+</body>
+</html>
