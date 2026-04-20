@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Counting Problem: Why Two Authoritative Estimates of Iran's Arsenal Diverge — Iran Tracker</title>
+<link rel="stylesheet" href="story.css">
+<script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a class="nav-brand" href="../index.html">Iran Tracker</a>
+    <a href="../index.html">Dashboard</a>
+    <a href="index.html">Analysis</a>
+    <a href="../methodology.html">Methodology</a>
+  </nav>
+</header>
+
+<h1>The Counting Problem: Why Two Authoritative Estimates of Iran's Arsenal Now Diverge by Hundreds of Missiles</h1>
+<div class="meta">April 20, 2026 — Day 52 <span class="tag tag-analysis">Analysis</span> <span class="tag tag-ceasefire">Cease-fire</span></div>
+
+<div class="lede">
+The ISW's latest assessment says Iran has fired approximately 1,500 MRBMs and consumed well over half its pre-war drone stock. This tracker — anchored to Gulf official cumulative data — says 820–1,000 MRBMs fired and 8,500–9,500 drones. Both are credible, both are methodologically defensible, and they imply meaningfully different things about the threat that resumes if Islamabad Round 2 fails today.
+</div>
+
+<h2>The Two Estimates, Side by Side</h2>
+
+<p>On Day 52, Cease-fire Day 13, the quantitative freeze that began April 7 means no new official intercept data has entered either estimate. What has changed is the analytical reference frame: an ISW assessment (sourced in this tracker's daily log) now sits alongside the Gulf-official-anchored methodology this tracker uses. They do not agree.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th class="num">ISW assessment</th>
+      <th class="num">This tracker (best est.)</th>
+      <th class="num">Gap</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MRBMs fired</td>
+      <td class="num">~1,500</td>
+      <td class="num">820–1,000</td>
+      <td class="num" style="color:var(--orange);">+500–680</td>
+      <td>ISW: retains ~1,000 of 2,500 pre-war</td>
+    </tr>
+    <tr>
+      <td>MRBMs remaining</td>
+      <td class="num">~1,000</td>
+      <td class="num">500–1,880</td>
+      <td class="num">—</td>
+      <td>ISW gives point estimate; tracker gives range</td>
+    </tr>
+    <tr>
+      <td>Drones fired</td>
+      <td class="num">~19,000–28,000*</td>
+      <td class="num">8,500–9,500</td>
+      <td class="num" style="color:var(--red);">+10,000–18,000</td>
+      <td>ISW: "well under 50% remain"; estimate derived</td>
+    </tr>
+    <tr>
+      <td>Drones remaining</td>
+      <td class="num">&lt;50% of pre-war</td>
+      <td class="num">~25,500–46,500</td>
+      <td class="num">—</td>
+      <td>Wide divergence; scope difference most likely</td>
+    </tr>
+    <tr>
+      <td>Total BMs fired</td>
+      <td class="num">~3,500–4,500*</td>
+      <td class="num">2,950–3,500</td>
+      <td class="num" style="color:var(--orange);">+500–1,000</td>
+      <td>SRBM totals not separately addressed by ISW</td>
+    </tr>
+  </tbody>
+</table>
+<p class="source-note">*ISW drone and total BM figures derived from reported percentages applied to pre-war baseline ranges. The ISW assessment does not give an explicit total-fired number for all categories.</p>
+
+<div class="chart-wrap">
+  <div class="chart-label">MRBM depletion: ISW vs. this tracker — % of pre-war stock fired</div>
+  <div id="depletion-chart"></div>
+</div>
+
+<h2>Why the MRBM Gap Exists</h2>
+
+<p>A 500–680 missile gap in MRBM accounting is not a rounding error. Five hypotheses explain most of it, and they are not mutually exclusive.</p>
+
+<p><strong>1. Pre-war baseline difference.</strong> This tracker uses a 2,000–3,000 MRBM range from open-source estimates (Atlantic, NYT, IDF, former US officials). ISW's figure of 2,500 is the low-to-mid end of that range. At equal fired figures, a lower baseline implies higher depletion — but ISW's 1,500-fired number is also absolutely higher. The baseline alone doesn't close the gap.</p>
+
+<p><strong>2. Israel theater accounting.</strong> This tracker records 400+ BMs toward Israel (NBC estimate through Apr 4), but cannot distinguish MRBM vs. SRBM in most Israel-theater strikes. Iran's Israel-directed strikes disproportionately used MRBMs — Khorramshahr-4, Emad, Fattah-2 — because only those have the range from western Iran. ISW, with access to US/Israeli intelligence, likely has a better MRBM/SRBM split for the Israel theater. If 200–300 of those 400+ Israel BMs were MRBMs (plausible), the tracker's MRBM count rises to 1,020–1,300, narrowing the ISW gap to 200–480.</p>
+
+<p><strong>3. Non-Gulf theaters.</strong> Iranian proxy networks — Iraqi Shia militia, Hezbollah — received IRGC-produced systems early in the war and used them against targets in Iraq, Syria, and the Red Sea corridor. This tracker does not count proxy-attributed strikes; ISW may. Even a handful of MRBM-equivalent strikes through proxies would add to ISW's tally without appearing in Gulf official data.</p>
+
+<p><strong>4. Underreporting adjustment differences.</strong> This tracker applies an explicit underreporting multiplier to Gulf official floor data, but that multiplier is calibrated conservatively. ISW may apply a more aggressive upward adjustment, particularly for early-war strikes (Days 1–7) where reporting was least systematic.</p>
+
+<p><strong>5. Classification differences.</strong> The boundary between long-range SRBM and short-range MRBM is fuzzy in practice. The Fateh-110 family extends into the 300km+ range; some variants may be counted as MRBMs by ISW but tracked as SRBMs here. A re-classification of 100–200 weapons at the margin would substantially close the gap.</p>
+
+<div class="callout warn">
+  <strong>Bottom line on MRBMs:</strong> The ISW gap is real but mostly explained by scope (Israel theater MRBM accounting + proxy attribution) rather than methodological error in either direction. The structural conclusion — MRBM stock significantly depleted, launchers the binding constraint — holds under both estimates.
+</div>
+
+<h2>The Drone Divergence Is Larger and More Consequential</h2>
+
+<p>The MRBM discrepancy is explainable. The drone divergence is not — and it matters more for assessing the resumed-conflict threat.</p>
+
+<p>ISW says "well under 50% of drones remain." Applied to the pre-war range:</p>
+
+<div class="stat-row">
+  <div class="stat-box">
+    <div class="stat-value" style="color:var(--red);">~21,000</div>
+    <div class="stat-label">ISW-implied drones fired</div>
+    <div class="stat-sub">If pre-war was 35,000 and 40% remain</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-value" style="color:var(--orange);">~33,000</div>
+    <div class="stat-label">ISW-implied drones fired</div>
+    <div class="stat-sub">If pre-war was 55,000 and 40% remain</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-value" style="color:var(--accent);">~9,000</div>
+    <div class="stat-label">This tracker's estimate</div>
+    <div class="stat-sub">Midpoint of 8,500–9,500 best estimate</div>
+  </div>
+</div>
+
+<p>The gap — 12,000 to 24,000 drones — cannot be explained by baseline differences or classification ambiguities alone. Three explanations carry analytical weight:</p>
+
+<p><strong>Proxy attribution is the dominant factor.</strong> Iran's drone campaign was never solely direct-launch from IRGC units on Iranian soil. Houthi forces in Yemen, Iraqi Shia militia, and Hezbollah all launched Iranian-supplied or Iranian-design systems throughout the conflict. This tracker captures Gulf theater direct-Iran strikes via official MoD reporting. ISW's "Iranian drone" count almost certainly includes proxy-attributed strikes across a wider geographic scope — Red Sea corridor, Iraq, Lebanon, and potentially strikes ISW attributes to Iranian command direction even when physically launched by proxies.</p>
+
+<p><strong>Saudi and Iraqi theater underreporting.</strong> Saudi Arabia's reported drone figure in this tracker (680) is flagged as "Medium-Low" quality — methodologically noisy. Saudi official reporting was sparse and inconsistent. If actual drone intercepts in Saudi Arabia and adjacent Iraqi airspace were 2–4x the reported figure (consistent with patterns seen in Bahrain's 51% revision), the Gulf official floor rises by 1,400–2,720 without touching ISW's scope assumption.</p>
+
+<p><strong>Production during the war.</strong> Iran sustained some drone production through the early weeks of the conflict using Chinese chemical inputs and distributed manufacturing. ISW may be counting from a pre-war baseline while noting that some of the "fired" drones were produced after Feb 28. This tracker's pre-war figure is genuinely pre-war; ISW may effectively be measuring total-produced-and-fired rather than fired-from-stockpile.</p>
+
+<div class="chart-wrap">
+  <div class="chart-label">Drone accounting: confirmed floor, this tracker's best estimate, and ISW-implied range</div>
+  <div id="drone-chart"></div>
+</div>
+
+<h2>What Each Estimate Implies for Resumed Conflict</h2>
+
+<p>This is where the divergence stops being a methodology puzzle and becomes operationally significant. The two estimates point to very different threats if Islamabad Round 2 fails.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Scenario</th>
+      <th>MRBM threat if conflict resumes</th>
+      <th>Drone threat if conflict resumes</th>
+      <th>Strategic implication</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>This tracker is right</strong></td>
+      <td>820–1,000 MRBMs fired; 500–1,880 remaining; ~8–12 BMs/day at reduced launcher capacity</td>
+      <td>80%+ of pre-war stock intact; 25,500–46,500 available; persistent pressure sustainable for years</td>
+      <td>Drone war of attrition against Gulf energy infra; BM harassment secondary. Coalition interceptor gap is the acute problem.</td>
+    </tr>
+    <tr>
+      <td><strong>ISW is right</strong></td>
+      <td>~1,500 MRBMs fired; ~1,000 remaining; sharper MRBM depletion than tracked here</td>
+      <td>&lt;50% of pre-war intact; substantial drone depletion across all theaters including proxies; less sustainable pressure</td>
+      <td>Both BM and drone threats more degraded than tracker shows. Iran's strategic position weaker; coalition leverage at Islamabad stronger.</td>
+    </tr>
+    <tr>
+      <td><strong>Launchers (both agree)</strong></td>
+      <td colspan="2">~102 remaining (68–135 range); ~50 days to zero at pre-ceasefire rate. This constraint is consistent across both estimates.</td>
+      <td>Regardless of MRBM stockpile, launcher scarcity caps BM output. Drones don't need TELs — drone threat depends on production/supply, not hardware count.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The critical asymmetry: Iran's launcher count is the one estimate both approaches effectively agree on. The hardware was physically destroyed — ISW and coalition defense sources align on ~300–340 launchers destroyed or combat-ineffective. That ceiling (~8–18 BMs/day if resumed) holds under either stockpile accounting.</p>
+
+<p>Where ISW's higher drone depletion figure, if correct, significantly changes the picture: it undermines the "drone long war" thesis. If Iran has consumed 60% or more of its drone stock rather than 17–27%, the sustained pressure campaign against Gulf energy infrastructure becomes finite rather than open-ended. Iran's incentive to extend the cease-fire would be stronger under ISW's numbers — not just for diplomatic reasons, but because its most durable offensive asset is more depleted than the tracker's current estimate shows.</p>
+
+<div class="callout">
+  <strong>The Islamabad implication:</strong> If ISW's figures reflect a more depleted Iranian arsenal (particularly drones), Iran's position at the table today is weaker than this tracker's conservative Gulf-official-anchored estimate suggests. A 45-day extension, under ISW's accounting, buys Iran more recovery time for its most degraded asset class — not launchers (irreplaceable), but drone supply chains and proxy re-arming.
+</div>
+
+<h2>What the Tracker Should Do With This Divergence</h2>
+
+<p>Two things are worth distinguishing: what the tracker's methodology is designed to measure, and what ISW's methodology is likely measuring.</p>
+
+<p>This tracker uses UAE MoD and Bahrain Defence Force official cumulatives as its highest-confidence anchor. Those are direct-Iran strikes against Gulf theater targets. The tracker then applies upward adjustments for underreporting and other theaters, but retains the Gulf-official data as the floor. That produces a conservative, well-sourced lower bound with explicit uncertainty ranges.</p>
+
+<p>ISW's methodology is broader: it integrates US intelligence community assessments, Israeli military reporting, and multi-theater attribution. It likely captures the full scope of IRGC-directed strikes — including those conducted through proxies, in non-Gulf theaters, and with production-during-war drones. That produces a higher figure that is probably more accurate for total-system expenditure but harder to audit from open sources.</p>
+
+<p>The two approaches are complements, not competitors. The practical synthesis:</p>
+
+<ul>
+  <li>For Gulf theater threat assessment (UAE, Kuwait, Qatar, Bahrain, Saudi): this tracker's Gulf-official floor is the right baseline.</li>
+  <li>For Iran's total strategic depletion: ISW's figures, if validated, paint a more degraded picture — especially for drones.</li>
+  <li>For launcher constraint: both agree. That constraint is the right analytical lens regardless of stockpile accounting.</li>
+  <li>For Islamabad leverage: ISW's more depleted picture gives coalition negotiators stronger structural position than this tracker's conservative estimates would suggest.</li>
+</ul>
+
+<div class="callout green">
+  <strong>The one firm anchor:</strong> Whether Iran has fired 820 MRBMs (this tracker) or 1,500 (ISW), and whether it has 9,000 or 21,000 drones consumed, the launcher count — ~102 remaining, ~50 days to zero if resumed — is the binding constraint on the ballistic missile campaign. Both estimates agree that Iran cannot regenerate launcher hardware. The depletion is irreversible regardless of which stockpile figure is correct.
+</div>
+
+<h2>Watch List</h2>
+
+<p>The divergence between these two estimates will either narrow or widen in the next 72 hours depending on what happens at Islamabad. If talks produce a 45-day extension, figures remain frozen. If talks collapse and fire resumes, the tracker's confirmed-floor methodology will pick up new official intercept data from UAE and Bahrain within 12–24 hours of any renewed strikes — and those data points will begin to discriminate between the two estimates.</p>
+
+<ul>
+  <li><strong>Islamabad Round 2 outcome (today, Apr 21):</strong> Extension agreed → both estimates frozen; ISW divergence unresolved. Collapse → resumed fire data begins discriminating.</li>
+  <li><strong>Any new Gulf official cumulative update:</strong> UAE or Bahrain reporting a Day 52+ figure would move this tracker's floor and potentially reveal whether pre-ceasefire underreporting was larger than assumed.</li>
+  <li><strong>ISW special report:</strong> An ISW report with explicit category-level fired figures (rather than percent-remaining) would allow direct reconciliation with this tracker's Gulf data.</li>
+  <li><strong>Saudi Arabia revised reporting:</strong> Saudi data is the weakest link in this tracker's Gulf breakdown. A revision comparable to Bahrain's 51% uplift (Apr 9) would disproportionately close the drone gap.</li>
+</ul>
+
+<footer>
+  <a href="../index.html">Dashboard</a> &middot; <a href="index.html">Analysis</a> &middot; <a href="../methodology.html">Methodology</a> &middot; <a href="https://github.com/bh13731/iran-tracker">GitHub</a>
+</footer>
+
+<div class="tooltip" id="tooltip"></div>
+
+<script>
+const tooltip = d3.select('#tooltip');
+function showTip(e, html) {
+  tooltip.style('opacity', 1).html(html)
+    .style('left', (e.pageX + 14) + 'px').style('top', (e.pageY - 32) + 'px');
+}
+function hideTip() { tooltip.style('opacity', 0); }
+
+// Chart 1: MRBM depletion comparison — grouped bars
+(function() {
+  const el = document.getElementById('depletion-chart');
+  const W = Math.min(700, el.offsetWidth || 680);
+  const H = 180;
+  const M = { top: 16, right: 20, bottom: 40, left: 160 };
+
+  const data = [
+    { label: 'MRBMs fired (% of pre-war)', isw: 60, tracker_lo: 27, tracker_hi: 46, tracker_mid: 37 },
+    { label: 'MRBMs remaining (% of pre-war)', isw: 40, tracker_lo: 17, tracker_hi: 63, tracker_mid: 40 },
+  ];
+
+  const svg = d3.select('#depletion-chart').append('svg')
+    .attr('width', W).attr('height', H).attr('viewBox', `0 0 ${W} ${H}`);
+
+  const y = d3.scaleBand().domain(data.map(d => d.label))
+    .range([M.top, H - M.bottom]).padding(0.35);
+
+  const x = d3.scaleLinear().domain([0, 80]).range([M.left, W - M.right]);
+
+  svg.append('g').attr('class', 'axis').attr('transform', `translate(0,${H - M.bottom})`)
+    .call(d3.axisBottom(x).ticks(5).tickFormat(d => d + '%'));
+  svg.append('g').attr('class', 'axis').attr('transform', `translate(${M.left},0)`)
+    .call(d3.axisLeft(y).tickSize(0)).select('.domain').remove();
+  svg.selectAll('.axis text').style('font-size', '11px');
+
+  const bh = y.bandwidth() / 2 - 3;
+
+  data.forEach(d => {
+    const yc = y(d.label);
+
+    // ISW bar
+    svg.append('rect')
+      .attr('x', x(0)).attr('y', yc).attr('height', bh)
+      .attr('width', x(d.isw) - x(0))
+      .attr('fill', '#e5534b').attr('opacity', 0.8).attr('rx', 2)
+      .style('cursor', 'pointer')
+      .on('mouseover', e => showTip(e, `<strong>ISW:</strong> ${d.isw}%`))
+      .on('mouseout', hideTip);
+    svg.append('text').attr('x', x(d.isw) + 4).attr('y', yc + bh * 0.7)
+      .attr('fill', '#e5534b').attr('font-size', 10).attr('font-family', 'var(--font-sans)')
+      .attr('font-weight', 600).text(`ISW ${d.isw}%`);
+
+    // Tracker range bar
+    svg.append('rect')
+      .attr('x', x(d.tracker_lo)).attr('y', yc + bh + 6).attr('height', bh)
+      .attr('width', x(d.tracker_hi) - x(d.tracker_lo))
+      .attr('fill', '#5ba3f5').attr('opacity', 0.35).attr('rx', 2);
+    svg.append('rect')
+      .attr('x', x(d.tracker_mid) - 1).attr('y', yc + bh + 6).attr('height', bh)
+      .attr('width', 2).attr('fill', '#5ba3f5');
+    svg.append('text').attr('x', x(d.tracker_hi) + 4).attr('y', yc + bh * 1.7 + 6)
+      .attr('fill', '#5ba3f5').attr('font-size', 10).attr('font-family', 'var(--font-sans)')
+      .attr('font-weight', 600).text(`Tracker ${d.tracker_lo}–${d.tracker_hi}%`);
+  });
+})();
+
+// Chart 2: Drone accounting — horizontal bar comparison
+(function() {
+  const el = document.getElementById('drone-chart');
+  const W = Math.min(700, el.offsetWidth || 680);
+  const H = 200;
+  const M = { top: 16, right: 20, bottom: 40, left: 170 };
+
+  const data = [
+    { label: 'Confirmed floor', lo: 7100, hi: 7100, color: '#9aa5b4', note: 'UAE + Bahrain + Kuwait + Qatar + Saudi official' },
+    { label: 'This tracker (best est.)', lo: 8500, hi: 9500, color: '#5ba3f5', note: 'Gulf official + underreporting adjustment' },
+    { label: 'ISW-implied (pre-war 35K)', lo: 19000, hi: 22000, color: '#d4943a', note: 'ISW: >50% consumed; 35K pre-war baseline' },
+    { label: 'ISW-implied (pre-war 55K)', lo: 28000, hi: 33000, color: '#e5534b', note: 'ISW: >50% consumed; 55K pre-war baseline' },
+  ];
+
+  const xMax = 35000;
+  const svg = d3.select('#drone-chart').append('svg')
+    .attr('width', W).attr('height', H).attr('viewBox', `0 0 ${W} ${H}`);
+
+  const y = d3.scaleBand().domain(data.map(d => d.label))
+    .range([M.top, H - M.bottom]).padding(0.3);
+  const x = d3.scaleLinear().domain([0, xMax]).range([M.left, W - M.right]);
+
+  svg.append('g').attr('class', 'axis').attr('transform', `translate(0,${H - M.bottom})`)
+    .call(d3.axisBottom(x).ticks(5).tickFormat(d3.format('~s')));
+  svg.append('g').attr('class', 'axis').attr('transform', `translate(${M.left},0)`)
+    .call(d3.axisLeft(y).tickSize(0)).select('.domain').remove();
+  svg.selectAll('.axis text').style('font-size', '10px');
+
+  data.forEach(d => {
+    const barW = Math.max(2, x(d.hi) - x(0));
+    svg.append('rect')
+      .attr('x', x(0)).attr('y', y(d.label))
+      .attr('width', barW).attr('height', y.bandwidth())
+      .attr('fill', d.color).attr('opacity', 0.75).attr('rx', 2)
+      .style('cursor', 'pointer')
+      .on('mouseover', e => showTip(e, `<strong>${d.label}</strong><br>${d.lo.toLocaleString()}–${d.hi.toLocaleString()} drones<br><em style="color:var(--text-muted)">${d.note}</em>`))
+      .on('mouseout', hideTip);
+
+    const labelX = x(d.hi) + 5;
+    if (labelX < W - M.right - 10) {
+      svg.append('text').attr('x', labelX).attr('y', y(d.label) + y.bandwidth() * 0.65)
+        .attr('fill', d.color).attr('font-size', 10).attr('font-family', 'var(--font-sans)')
+        .attr('font-weight', 600).text(d.lo === d.hi ? d3.format(',')(d.lo) : `${d3.format('~s')(d.lo)}–${d3.format('~s')(d.hi)}`);
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

@@ -495,3 +495,14 @@ Kuwait and Qatar theater contributions were significantly underestimated. After 
 - **No new official cumulative tallies.** UAE 537/26/2,256 (Apr 9) remains latest. No ISW special reports since Apr 12.
 - **No change to fired or remaining estimates.** Depletion clocks paused under ceasefire.
 - **Key watch:** If 45-day extension agreed at Islamabad, depletion tracker stays frozen well into June.
+
+## 2026-04-20 — Day 52
+
+### 04:30 UTC update
+- **CEASE-FIRE DAY 13.** Holding. Zero Iran-direct fire since Apr 11. ~2 days to Apr 22 expiry.
+- **ISLAMABAD ROUND 2 TODAY (Mon Apr 21).** 45-day extension on table. Trump: deal "probably this weekend."
+- **ISW Apr 11 assessment confirmed:** Iran retains ~1,000 of 2,500 pre-war MRBMs; "well under 50%" of OWA drones.
+- **No new official cumulative tallies.** UAE 537/26/2,256 (Apr 9) still latest. Bahrain 188/468. No ISW special reports since Apr 12.
+- **Hormuz declared open** (Iran FM) but US blockade remains; few ships actually transiting (BBC tracking).
+- **Depletion clocks remain paused.** If 45d extension agreed, tracker effectively frozen to early June.
+- **Key watch:** Islamabad outcome within 24-48h sets whether we restart depletion counters.

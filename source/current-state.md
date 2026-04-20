@@ -1,7 +1,7 @@
 # Iran Missile & Drone Tracker — Current State
 
-Last updated: 2026-04-19 04:30 UTC
-Coverage: War through 2026-04-18 evening (Day 51) — CEASE-FIRE DAY 12
+Last updated: 2026-04-20 04:30 UTC
+Coverage: War through 2026-04-19 evening (Day 52) — CEASE-FIRE DAY 13
 Confidence: Medium overall
 
 ## Executive Bottom Line
@@ -15,7 +15,7 @@ Confidence: Medium overall
 |---|---:|---:|---:|---|---|
 | MRBMs (Israel-range) | ~2,000-3,000 | ~820-1,000 | ~500-1,880 | 4 production facilities halted; 29+ launch bases struck; IRGC morale collapse; CEASE-FIRE Apr 7; holding Day 11 | Medium |
 | SRBMs (Gulf-range) | ~6,000-8,000 | ~2,100-2,500 | ~3,500-5,900 | Large paper inventory; production halted; post-ceasefire salvos Apr 8 then quiet | Medium-Low |
-| **Total ballistic missiles** | **~8,000-11,000** | **~2,950-3,500** | **~4,050-7,750** | **CEASE-FIRE Day 12. Zero fire since Apr 11. ~3 days to expiry (Apr 22). 45-day extension on table** | Medium-Low |
+| **Total ballistic missiles** | **~8,000-11,000** | **~2,950-3,500** | **~4,050-7,750** | **CEASE-FIRE Day 13. Zero fire since Apr 11. ~2 days to expiry (Apr 22). Islamabad Round 2 today; 45-day extension on table** | Medium-Low |
 | Drones | ~35,000-55,000 usable pre-war (working estimate) | ~8,500-9,500 | Deep reserves remain; China fuel chemicals sustaining some production | Bahrain uplift: 468 drones cumulative (was ~310). UAE 2,221 (Apr 7). Apr 8 Kuwait intercepted 28 drones post-ceasefire | Low |
 | Cruise missiles | ~200-500 | ~100-150 | ~50-400 | UAE CMs at 26; 50+ CMs in Gulf theater total; CM usage was rising before ceasefire | Low |
 
@@ -28,7 +28,7 @@ Confidence: Medium overall
 | Daily ballistic launch capacity | ~8-18/day across all theaters (declining from peak; ~13 midpoint pre-cease-fire) | Medium |
 | Daily drone pressure | ~60-120/day across all theaters (declining from peak pre-cease-fire) | Low-Medium |
 
-**Key judgment:** Cease-fire Day 12 — holding; ~3 days to Apr 22 expiry (corrected). 45-day extension on table at Islamabad Round 2 (Mon Apr 21; Trump says "probably this weekend"). Netanyahu supports ceasefire. Iran declared Hormuz open (few ships moving; US blockade stays). 50,000 US personnel in theater. UAE Apr 9 cumulative: 537/26/2,256. If cease-fire collapses, launchers (~102 remaining) remain binding constraint (~50 days to zero at pre-ceasefire rate). Gulf interceptor depletion (~75% Patriots spent) is a coalition vulnerability. Drones remain the durable long-war threat if hostilities resume.
+**Key judgment:** Cease-fire Day 13 — holding; ~2 days to Apr 22 expiry. Islamabad Round 2 TODAY (Mon Apr 21) with 45-day extension on table. Netanyahu supports ceasefire. Iran declared Hormuz open (few ships moving; US blockade stays). 50,000 US personnel in theater. UAE Apr 9 cumulative: 537/26/2,256. If cease-fire collapses, launchers (~102 remaining) remain binding constraint (~50 days to zero at pre-ceasefire rate). Gulf interceptor depletion (~75% Patriots spent) is a coalition vulnerability. Drones remain the durable long-war threat if hostilities resume.
 
 ## Confirmed Floors vs Best Estimate
 | Category | Confirmed / working floor | Best estimate total | Main source basis |
@@ -75,4 +75,4 @@ Confidence: Medium overall
 - **Analytical review:** `/home/node/.openclaw/workspace/data/iran-tracker-review.md`
 
 ## One-Line CEO Summary
-Day 51: Cease-fire Day 12 — holding; ~3 days to Apr 22 expiry. 45-day extension on table. Islamabad Round 2 imminent (this weekend or Mon). Netanyahu supports ceasefire. Hormuz declared open (few ships moving; US blockade stays). UAE 537/26/2,256. Launchers (~102) binding at ~50 days if war resumes; Patriot depletion (~75%) a coalition problem.
+Day 52: Cease-fire Day 13 — holding; ~2 days to Apr 22 expiry. Islamabad Round 2 today (Mon Apr 21); 45-day extension on table. Netanyahu supports. Hormuz declared open (US blockade remains). UAE 537/26/2,256. ISW: Iran retains ~1,000 MRBMs + <50% of drones. Launchers (~102) binding if war resumes.
