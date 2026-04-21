@@ -506,3 +506,13 @@ Kuwait and Qatar theater contributions were significantly underestimated. After 
 - **Hormuz declared open** (Iran FM) but US blockade remains; few ships actually transiting (BBC tracking).
 - **Depletion clocks remain paused.** If 45d extension agreed, tracker effectively frozen to early June.
 - **Key watch:** Islamabad outcome within 24-48h sets whether we restart depletion counters.
+
+## 2026-04-21 — Day 53 / Cease-fire Day 14 (final day)
+
+- **Trump (Apr 20): extension "highly unlikely."** CNN: ceasefire expires 0000 GMT Wednesday (Apr 22, 8pm ET Tue).
+- **Iran (Apr 20, AJ): "no talks with US for now"** — casts doubt on Islamabad Round 2; Pakistan still pushing multi-day format.
+- **Reuters Apr 20:** US seized Iranian cargo ship running blockade; Tehran vowed retaliation. Naval blockade "fully implemented"; 9 ships turned back incl. Chinese-owned Rich Starry.
+- **Ceasefire holding on fire (no Iran-direct launches since Apr 11, Day 10 of quiet)** but diplomatic track wobbling hard in final 24h.
+- **No new official cumulative tallies** since UAE 537/26/2,256 (Apr 9) and Bahrain 188/468. Wikipedia Islamabad Talks page notes Round 1 agreed on 10-point frame minus Hormuz + nuclear.
+- **Depletion math unchanged** — tracker remains paused; clocks restart if war resumes Apr 22.
+- **Key watch next 24h:** Whether Iran actually shows up in Islamabad; whether Trump extends or lets it lapse; post-Apr 22 re-engagement risk very high.

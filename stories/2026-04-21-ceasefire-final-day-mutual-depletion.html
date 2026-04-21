@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Symmetry of Exhaustion: Both Sides Are ~75% Depleted — But Only One Can Rebuild — Iran Tracker</title>
+<link rel="stylesheet" href="story.css">
+<script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a class="nav-brand" href="../index.html">Iran Tracker</a>
+    <a href="../index.html">Dashboard</a>
+    <a href="index.html">Analysis</a>
+    <a href="../methodology.html">Methodology</a>
+  </nav>
+</header>
+
+<h1>The Symmetry of Exhaustion: Both Sides Are ~75% Depleted — But Only One Can Rebuild</h1>
+<div class="meta">April 21, 2026 — Day 53 <span class="tag tag-analysis">Analysis</span> <span class="tag tag-ceasefire">Cease-fire</span></div>
+
+<div class="lede">
+The ceasefire expires at midnight GMT. Trump says extension is "highly unlikely." Iran says there are "no talks with US for now." The United States seized an Iranian cargo ship this week; Tehran vowed retaliation. Every diplomatic signal from both sides points toward breakdown. The military math points somewhere more interesting: on the final day of the ceasefire, Iran's launcher inventory and the coalition's Patriot interceptor stocks are both sitting at roughly 24–25% of their pre-war levels. The exhaustion is symmetric. What is not symmetric is which side can rebuild in 45 days.
+</div>
+
+<h2>The Depletion Mirror</h2>
+
+<p>Iran entered this war with approximately 410–440 operational ballistic missile launchers. After 39 days of sustained IDF and coalition strikes — 600+ dedicated launcher-site missions, 29 launch bases hit, two IRGC Aerospace Force commanders killed — roughly 300–340 are assessed as destroyed or combat-ineffective. The best planning midpoint: <strong>~102 remaining</strong>, or about 24% of the pre-war total.</p>
+
+<p>The coalition entered this war with its Gulf partners' Patriot interceptor magazines at or near peacetime levels. By March 29 — Day 29 of 53 — JINSA's analysis found those stocks roughly 75% depleted. No public figure since has revised that assessment upward. The working estimate for coalition interceptor availability: approximately <strong>25% of pre-war stocks remaining</strong>.</p>
+
+<div class="stat-row">
+  <div class="stat-box">
+    <div class="stat-value" style="color:var(--red);">~24%</div>
+    <div class="stat-label">Iran: launchers remaining</div>
+    <div class="stat-sub">~102 of 410–440 pre-war</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-value" style="color:var(--accent);">~25%</div>
+    <div class="stat-label">Coalition: Patriots remaining</div>
+    <div class="stat-sub">JINSA: ~75% spent by Day 29</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-value" style="color:var(--orange);">~50</div>
+    <div class="stat-label">Days to Iran launcher zero</div>
+    <div class="stat-sub">At pre-ceasefire ~13/day rate</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-value" style="color:var(--green);">11</div>
+    <div class="stat-label">Fire-silence days</div>
+    <div class="stat-sub">Zero Iran-direct launches since Apr 11</div>
+  </div>
+</div>
+
+<p>This near-identical depletion fraction is not a coincidence. It is the mathematical signature of a war that ran until both offense and defense were near exhaustion — and then paused. The ceasefire did not arrive because diplomacy was ready. It arrived because the depletion curves converged.</p>
+
+<div class="chart-wrap">
+  <div class="chart-label">Depletion state comparison — pre-war baseline vs estimated remaining (Day 53)</div>
+  <div id="depletion-chart"></div>
+</div>
+
+<h2>The Asymmetry That Changes Everything</h2>
+
+<p>The symmetry in depletion percentages obscures a fundamental asymmetry in recovery. The two constraints are categorically different types of problems.</p>
+
+<p><strong>Iran's launcher constraint is structural.</strong> Ballistic missile launcher production requires specialized facilities, technical expertise, and precision manufacturing. The four key BM production facilities assessed as destroyed (WaPo, Mar 29) cannot be rebuilt in months. Even the surviving facilities — if any — face US/Israeli targeting the moment production activity resumes. The IRGC lost two Aerospace Force commanders in 48 hours in late March. Training replacements and reconstituting C2 nodes takes a year minimum, not 45 days.</p>
+
+<p><strong>The coalition's Patriot constraint is logistical.</strong> The United States maintains Patriot production and stockpiles. Resupply is measured in months — the lead time for Patriot PAC-3 missiles runs roughly 24–36 months for new production, but drawing from US military stockpiles is faster. European allies (Germany, Netherlands) are also Patriot holders. The constraint is real and politically complicated by Ukraine demands on the same stock, but it is not permanent in the way Iran's launcher destruction is permanent.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Constraint</th>
+      <th>Current level</th>
+      <th>Recovery timeline</th>
+      <th>Recovery mechanism</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Iran: operational launchers</td>
+      <td class="num" style="color:var(--red);">~102 (~24%)</td>
+      <td>Years, if ever</td>
+      <td>Requires facility rebuilding under targeting threat; C2 reconstitution; crew training</td>
+    </tr>
+    <tr>
+      <td>Coalition: Patriot interceptors</td>
+      <td class="num" style="color:var(--accent);">~25% remaining</td>
+      <td>Months (stockpile draw); 2–3 years (new production)</td>
+      <td>US stockpile drawdown; allied transfers; shared burden</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>A 45-day ceasefire extension does not close this gap. It gives the coalition 45 days to accelerate interceptor resupply logistics, shore up political agreements with European Patriot holders, and work on point-defense alternatives. Iran gets 45 days of launcher attrition pause — but its launchers are not recovering. The <strong>asymmetry widens</strong> with every day of extension.</p>
+
+<h2>Why Both Sides Are Signaling Toughness on the Last Day</h2>
+
+<p>If the math says Iran needs the ceasefire more than the coalition does, why is Iran saying "no talks with US for now" on Day 14? And why is the US signaling "extension highly unlikely" while simultaneously holding 50,000 personnel in theater at enormous cost?</p>
+
+<p>The answer is that both sides are conducting last-day leverage maximization, not stating their actual bottom line.</p>
+
+<p>Iran's "no talks" signal is designed to make the cost of US intransigence on the Hormuz/blockade question visible — if the ceasefire collapses, Iran cannot easily be blamed for it having walked away from talks. It also signals that Iran is not desperate, even if the math suggests otherwise. Desperation invites demands.</p>
+
+<p>The US "highly unlikely" signal on extension serves a similar function: it increases pressure on Iran to accept terms at Islamabad that the US actually wants — specifically, some form of Hormuz reopening that the blockade achieves by other means. The US has operational leverage right now that it won't have after a 45-day pause during which Iran can begin quietly reconstituting some capacity.</p>
+
+<p>The cargo ship seizure is the most operationally significant signal: it demonstrates the blockade is real, that the US will enforce it regardless of ceasefire diplomacy, and that Iran's vow of retaliation puts it in the position of being the party that breaks the ceasefire — which has significant diplomatic costs.</p>
+
+<div class="highlight-box">
+<strong>The strategic logic:</strong> Both sides are trying to extract maximum concessions in the final 18 hours. Both are constrained enough that an uncontrolled collapse would be costly. The tough signaling is rational — it raises the other side's cost of walking away. But the underlying math favors the side whose constraint is recoverable. That is not Iran.
+</div>
+
+<h2>If the Ceasefire Collapses Tonight</h2>
+
+<p>If midnight passes and no extension is agreed, the tracker's most important number is not how many missiles Iran has in warehouses. It is how fast the remaining ~102 launchers deplete.</p>
+
+<div class="chart-wrap">
+  <div class="chart-label">Iran launcher countdown from Day 53 — three resumption scenarios</div>
+  <div id="scenarios-chart"></div>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Scenario</th>
+      <th>Launch rate</th>
+      <th>Launchers hit zero</th>
+      <th>BMs fired before zero</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Heavy resumption (pre-ceasefire peak rate)</td>
+      <td class="num">~13/day</td>
+      <td>~Jun 9 (50 days)</td>
+      <td class="num">~650</td>
+    </tr>
+    <tr>
+      <td>Moderate resumption (half rate)</td>
+      <td class="num">~7/day</td>
+      <td>~Jul 7 (77 days)</td>
+      <td class="num">~350</td>
+    </tr>
+    <tr>
+      <td>Drone-heavy / BM-light (conservation)</td>
+      <td class="num">~3/day (BM only)</td>
+      <td>~Aug 28 (128 days)</td>
+      <td class="num">~150</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The BM fired figures above are not "missiles left in warehouses" — they are <em>launchable</em> missiles given the launcher constraint. Iran's stockpile of 4,000–7,750 remaining ballistic missiles is largely a theoretical number. What matters for any resumed campaign is the ~102 functional launchers, each with a finite operational life measured in attrition-days.</p>
+
+<p>The drone picture is different. Drones are the genuinely durable threat: a working estimate of 25,500–46,500 remaining, produced by a distributed manufacturing base that is harder to surgically destroy than fixed launch complexes. A ceasefire collapse likely produces a drone-first resumption before any BM barrage, with BMs reserved for high-value targets where the launcher expenditure is worth it.</p>
+
+<h2>What the Next 18 Hours Will Reveal</h2>
+
+<p>Watch items ranked by analytical value:</p>
+
+<ul class="watch-list">
+  <li><strong>Does Iran appear at Islamabad Round 2 or formally withdraw?</strong> Formal withdrawal makes Iran the party that broke the ceasefire. Appearance signals that the "no talks" signal was leverage, not a decision.</li>
+  <li><strong>Does Tehran execute on its cargo-ship retaliation threat before midnight?</strong> Action before midnight breaks the ceasefire on Iran's terms. Action after midnight is a separate escalation in resumed hostilities.</li>
+  <li><strong>Does the US announce any Patriot resupply timeline or allied transfer deal?</strong> A public commitment to resupply is the kind of signal that reduces coalition urgency for extension — watch for it as a softening of the "unlikely" extension stance.</li>
+  <li><strong>Does ISW publish any update on the Islamabad talks status?</strong> ISW's IRGC-sourced assessments have been the most reliable leading indicator in this conflict.</li>
+</ul>
+
+<p>The tracker will update as soon as any of these materializes. The figures above — 2,950–3,500 BMs fired, 8,500–9,500 drones, ~102 launchers — remain the last-known state of the war. Whatever happens tonight, the war's next phase starts from this inventory.</p>
+
+<footer>
+  <a href="../index.html">Dashboard</a> &middot; <a href="index.html">Analysis</a> &middot; <a href="../methodology.html">Methodology</a>
+</footer>
+
+<script>
+const colors = {
+  red: '#e5534b',
+  accent: '#5ba3f5',
+  orange: '#d4943a',
+  green: '#46954a',
+  purple: '#b388f5',
+  muted: '#6b7a8d',
+  border: '#2a3140',
+  borderSubtle: '#222830',
+  surface: '#181d23'
+};
+
+// Depletion comparison chart
+(function() {
+  const W = Math.min(680, window.innerWidth - 52);
+  const H = 180;
+  const margin = { top: 28, right: 20, bottom: 36, left: 200 };
+
+  const data = [
+    { label: "Iran: launchers remaining", pct: 24, color: colors.red, note: "~102 of 410–440 pre-war" },
+    { label: "Iran: launchers destroyed", pct: 76, color: "rgba(229,83,75,0.2)", note: "~300–340 destroyed/ineffective" },
+    { label: "Coalition: Patriots remaining", pct: 25, color: colors.accent, note: "JINSA: ~75% spent by Day 29" },
+    { label: "Coalition: Patriots spent", pct: 75, color: "rgba(91,163,245,0.18)", note: "Estimated depleted" },
+  ];
+
+  const svg = d3.select('#depletion-chart').append('svg')
+    .attr('width', W).attr('height', H).attr('viewBox', `0 0 ${W} ${H}`);
+
+  const xScale = d3.scaleLinear().domain([0, 100]).range([margin.left, W - margin.right]);
+  const barH = 28;
+  const barGap = 10;
+  const rows = [
+    { label: "Iran — launchers", pct: 24, color: colors.red, bgColor: "rgba(229,83,75,0.15)", note: "~102 remaining / ~322 destroyed" },
+    { label: "Coalition — Patriots", pct: 25, color: colors.accent, bgColor: "rgba(91,163,245,0.15)", note: "~25% remaining / ~75% spent" },
+  ];
+
+  svg.append('g').attr('class', 'axis')
+    .attr('transform', `translate(0,${margin.top + rows.length * (barH + barGap) + 6})`)
+    .call(d3.axisBottom(xScale).ticks(5).tickFormat(d => d + '%'))
+    .selectAll('text').style('fill', colors.muted).style('font-size', '11px');
+  svg.select('.axis .domain').style('stroke', colors.border);
+  svg.selectAll('.axis .tick line').style('stroke', colors.borderSubtle);
+
+  rows.forEach((row, i) => {
+    const y = margin.top + i * (barH + barGap);
+
+    svg.append('text')
+      .attr('x', margin.left - 8).attr('y', y + barH / 2 + 4)
+      .attr('text-anchor', 'end').attr('font-size', 11)
+      .attr('font-family', 'var(--font-sans)').attr('fill', colors.muted)
+      .text(row.label);
+
+    svg.append('rect')
+      .attr('x', xScale(0)).attr('y', y)
+      .attr('width', xScale(100) - xScale(0)).attr('height', barH)
+      .attr('fill', row.bgColor).attr('rx', 4);
+
+    svg.append('rect')
+      .attr('x', xScale(0)).attr('y', y)
+      .attr('width', xScale(row.pct) - xScale(0)).attr('height', barH)
+      .attr('fill', row.color).attr('rx', 4).attr('opacity', 0.9);
+
+    svg.append('text')
+      .attr('x', xScale(row.pct) + 6).attr('y', y + barH / 2 + 4)
+      .attr('font-size', 11).attr('font-weight', 600)
+      .attr('font-family', 'var(--font-sans)').attr('fill', row.color)
+      .text(`${row.pct}%  ${row.note}`);
+  });
+
+  svg.append('line')
+    .attr('x1', xScale(24)).attr('x2', xScale(24))
+    .attr('y1', margin.top - 8).attr('y2', margin.top + rows.length * (barH + barGap) + 2)
+    .attr('stroke', colors.muted).attr('stroke-dasharray', '3,3').attr('stroke-width', 1).attr('opacity', 0.5);
+})();
+
+// Scenarios countdown chart
+(function() {
+  const W = Math.min(680, window.innerWidth - 52);
+  const H = 220;
+  const margin = { top: 24, right: 20, bottom: 44, left: 54 };
+
+  const startDay = 53;
+  const startLaunchers = 102;
+  const rates = [
+    { label: "Heavy (~13/day)", rate: 13, color: colors.red },
+    { label: "Moderate (~7/day)", rate: 7, color: colors.orange },
+    { label: "Light (~3/day BM)", rate: 3, color: colors.accent },
+  ];
+
+  const days = d3.range(0, 140);
+  const xScale = d3.scaleLinear().domain([0, 139]).range([margin.left, W - margin.right]);
+  const yScale = d3.scaleLinear().domain([0, 115]).range([H - margin.bottom, margin.top]);
+
+  const svg = d3.select('#scenarios-chart').append('svg')
+    .attr('width', W).attr('height', H).attr('viewBox', `0 0 ${W} ${H}`);
+
+  svg.append('g').attr('class', 'grid').attr('transform', `translate(${margin.left},0)`)
+    .call(d3.axisLeft(yScale).ticks(5).tickSize(-(W - margin.left - margin.right)).tickFormat(''))
+    .selectAll('line').style('stroke', colors.borderSubtle).style('stroke-opacity', 0.5);
+  svg.select('.grid .domain').style('display', 'none');
+
+  svg.append('g').attr('class', 'axis')
+    .attr('transform', `translate(0,${H - margin.bottom})`)
+    .call(d3.axisBottom(xScale).ticks(7).tickFormat(d => `+${d}d`))
+    .selectAll('text').style('fill', colors.muted).style('font-size', '10px');
+
+  svg.append('g').attr('class', 'axis')
+    .attr('transform', `translate(${margin.left},0)`)
+    .call(d3.axisLeft(yScale).ticks(5))
+    .selectAll('text').style('fill', colors.muted).style('font-size', '10px');
+
+  svg.append('line')
+    .attr('x1', margin.left).attr('x2', W - margin.right)
+    .attr('y1', yScale(0)).attr('y2', yScale(0))
+    .attr('stroke', colors.red).attr('stroke-dasharray', '4,3').attr('stroke-width', 1).attr('opacity', 0.4);
+
+  rates.forEach(r => {
+    const pts = days.map(d => ({
+      d,
+      launchers: Math.max(0, startLaunchers - r.rate * d)
+    })).filter(p => p.launchers >= 0);
+
+    const line = d3.line().x(p => xScale(p.d)).y(p => yScale(p.launchers)).curve(d3.curveLinear);
+    svg.append('path').datum(pts).attr('fill', 'none')
+      .attr('stroke', r.color).attr('stroke-width', 2)
+      .attr('stroke-linecap', 'round').attr('d', line);
+
+    const last = pts[pts.length - 1];
+    if (last.d < 138) {
+      svg.append('circle').attr('cx', xScale(last.d)).attr('cy', yScale(0))
+        .attr('r', 4).attr('fill', r.color);
+    }
+
+    svg.append('text')
+      .attr('x', xScale(Math.min(last.d, 138)) - 4)
+      .attr('y', yScale(Math.max(last.launchers, 0)) - 8)
+      .attr('text-anchor', 'end').attr('font-size', 10).attr('font-weight', 500)
+      .attr('font-family', 'var(--font-sans)').attr('fill', r.color)
+      .text(r.label);
+  });
+
+  svg.append('text')
+    .attr('x', margin.left + 4).attr('y', margin.top + 2)
+    .attr('font-size', 10).attr('font-family', 'var(--font-sans)')
+    .attr('fill', colors.muted).text('Launchers remaining from Day 53 resumption');
+})();
+</script>
+
+</body>
+</html>

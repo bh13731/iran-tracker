@@ -2,8 +2,8 @@
   "meta": {
     "title": "Iran Missile & Drone Tracker",
     "warStart": "2026-02-28",
-    "lastUpdated": "2026-04-20T04:30:00Z",
-    "lastDay": 52,
+    "lastUpdated": "2026-04-21T06:00:00Z",
+    "lastDay": 53,
     "methodology": "UAE MoD figures are official cumulative intercepts (highest confidence). Other Gulf state figures are working estimates from official MoD reports, ISW, and Wikipedia cross-referencing. Best-estimate totals include underreporting adjustments for Israel theater and other targets. Launcher estimates derived from IDF/ISW structured reporting. Pre-war stockpile estimates from Atlantic, NYT, IDF, and former US/Israeli officials.",
     "caveats": [
       "Pre-Mar 19 data uses a different methodology (less structured, wider ranges)",
@@ -24,15 +24,15 @@
     "launchers": [410, 440]
   },
   "currentSnapshot": {
-    "date": "2026-04-20",
-    "day": 52,
+    "date": "2026-04-21",
+    "day": 53,
     "categories": [
       {
         "name": "MRBMs (Israel-range)",
         "preWar": [2000, 3000],
         "fired": [820, 1000],
         "remaining": [500, 1880],
-        "status": "CEASE-FIRE Day 13 — holding. 4 production facilities halted; 29+ launch bases struck; IRGC morale collapse. Zero fire since Apr 11. ~2 days to Apr 22 expiry. Islamabad Round 2 today (Apr 21); 45-day extension on table.",
+        "status": "CEASE-FIRE Day 14 (FINAL) — expires 0000 GMT Apr 22. 4 production facilities halted; 29+ launch bases struck; IRGC morale collapse. Zero fire since Apr 11. Trump: extension 'highly unlikely'; Iran: 'no talks with US for now.' US seized Iranian cargo ship; Tehran vowed retaliation.",
         "confidence": "Medium"
       },
       {
@@ -40,7 +40,7 @@
         "preWar": [6000, 8000],
         "fired": [2100, 2500],
         "remaining": [3500, 5900],
-        "status": "Large paper inventory; production halted; post-ceasefire salvos Apr 8 then quiet Apr 9-20. Cease-fire Day 13.",
+        "status": "Large paper inventory; production halted; post-ceasefire salvos Apr 8 then quiet Apr 9-21. Cease-fire Day 14 (FINAL) — expires 0000 GMT Apr 22.",
         "confidence": "Medium-Low"
       },
       {
@@ -48,7 +48,7 @@
         "preWar": [8000, 11000],
         "fired": [2950, 3500],
         "remaining": [4050, 7750],
-        "status": "CEASE-FIRE Day 13. Zero fire since Apr 11. ~2 days to Apr 22 expiry. 45-day extension on table. Islamabad Round 2 today (Apr 21). Launcher constraint binding at ~50 days to zero if resumed.",
+        "status": "CEASE-FIRE Day 14 (FINAL). Zero fire since Apr 11. Expires 0000 GMT Apr 22. Trump: extension 'highly unlikely.' Iran: 'no talks with US for now.' US seized Iranian cargo ship; Tehran vowed retaliation. Naval blockade: 9 ships turned back. Launcher constraint binding at ~50 days to zero if resumed.",
         "confidence": "Medium-Low"
       },
       {
@@ -56,7 +56,7 @@
         "preWar": [35000, 55000],
         "fired": [8500, 9500],
         "remaining": [25500, 46500],
-        "status": "Most durable threat. Deep reserves intact (~80% of pre-war stock unused). China fuel chemicals sustaining some production. If cease-fire collapses, drone-heavy resumption more likely than BM barrage.",
+        "status": "Most durable threat. Deep reserves intact (~80% of pre-war stock unused). China fuel chemicals sustaining production. If cease-fire collapses, drone-heavy resumption more likely than BM barrage — launchers are the BM bottleneck.",
         "confidence": "Low"
       },
       {
@@ -64,7 +64,7 @@
         "preWar": [200, 500],
         "fired": [100, 150],
         "remaining": [50, 400],
-        "status": "UAE CMs at 26 (official, Apr 7); 50+ CMs in Gulf theater total. No CM reports since Apr 8.",
+        "status": "UAE CMs at 26 (official, Apr 7); 50+ CMs in Gulf theater total. No CM reports since Apr 8. Cease-fire Day 14.",
         "confidence": "Low"
       },
       {
@@ -74,7 +74,7 @@
         "remaining": [68, 135],
         "midpoint": 102,
         "daysToZero": 50,
-        "status": "CEASE-FIRE Day 13 — attrition paused. ~50 days to zero if hostilities resume. Launcher constraint is the binding BM ceiling. Attrition clock restarts if Apr 22 deal fails.",
+        "status": "CEASE-FIRE Day 14 (FINAL) — expires 0000 GMT Apr 22. Attrition clock paused. ~50 days to zero if hostilities resume. Launcher constraint is the binding BM ceiling. Both sides deeply depleted: Iran's ~24% of launchers vs coalition's ~25% of Patriots remaining.",
         "confidence": "High"
       }
     ]
@@ -123,7 +123,8 @@
     {"date": "2026-04-13", "day": 45, "bmFloor": 2350, "bmBest": [2950, 3500], "droneFloor": 6770, "droneBest": [8500, 9500], "cmFloor": 80, "cmBest": [100, 150], "note": "Cease-fire Day 6 — holding; Islamabad Round 1 collapsed; Round 2 in planning"},
     {"date": "2026-04-16", "day": 48, "bmFloor": 2350, "bmBest": [2950, 3500], "droneFloor": 6770, "droneBest": [8500, 9500], "cmFloor": 80, "cmBest": [100, 150], "note": "Cease-fire Day 9 — holding; Reuters: US/Iran scaled to temporary memorandum; Hormuz dispute unresolved"},
     {"date": "2026-04-19", "day": 51, "bmFloor": 2350, "bmBest": [2950, 3500], "droneFloor": 6770, "droneBest": [8500, 9500], "cmFloor": 80, "cmBest": [100, 150], "note": "Cease-fire Day 12 — holding; zero fire since Apr 11; 3 days to Apr 22 expiry; Islamabad Round 2 set Mon Apr 21; 45-day extension on table"},
-    {"date": "2026-04-20", "day": 52, "bmFloor": 2350, "bmBest": [2950, 3500], "droneFloor": 6770, "droneBest": [8500, 9500], "cmFloor": 80, "cmBest": [100, 150], "note": "Cease-fire Day 13 — holding; zero fire since Apr 11; 2 days to Apr 22 expiry; Islamabad Round 2 today; ISW assessment: Iran retains ~1,000 of 2,500 pre-war MRBMs; 'well under 50%' of drones remain"}
+    {"date": "2026-04-20", "day": 52, "bmFloor": 2350, "bmBest": [2950, 3500], "droneFloor": 6770, "droneBest": [8500, 9500], "cmFloor": 80, "cmBest": [100, 150], "note": "Cease-fire Day 13 — holding; zero fire since Apr 11; 2 days to Apr 22 expiry; Islamabad Round 2 today; ISW assessment: Iran retains ~1,000 of 2,500 pre-war MRBMs; 'well under 50%' of drones remain"},
+    {"date": "2026-04-21", "day": 53, "bmFloor": 2350, "bmBest": [2950, 3500], "droneFloor": 6770, "droneBest": [8500, 9500], "cmFloor": 80, "cmBest": [100, 150], "note": "Cease-fire Day 14 (FINAL) — expires 0000 GMT Apr 22; Trump: extension 'highly unlikely'; Iran: 'no talks with US for now'; US seized Iranian cargo ship; Tehran vowed retaliation; fire-silence Day 11"}
   ],
   "launcherHistory": [
     {"date": "2026-03-04", "day": 5, "remaining": [110, 140], "midpoint": 125, "destroyed": [300, 300], "note": "300+ MRBM launchers destroyed (IDF)"},
@@ -143,7 +144,8 @@
     {"date": "2026-04-13", "day": 45, "remaining": [68, 135], "midpoint": 102, "destroyed": [300, 340], "note": "CEASE-FIRE Day 6 — holding; Islamabad Round 1 collapsed; attrition clock still paused"},
     {"date": "2026-04-16", "day": 48, "remaining": [68, 135], "midpoint": 102, "destroyed": [300, 340], "note": "CEASE-FIRE Day 9 — holding; Round 2 being arranged; attrition paused; ~50 days to zero from resumption"},
     {"date": "2026-04-19", "day": 51, "remaining": [68, 135], "midpoint": 102, "destroyed": [300, 340], "note": "CEASE-FIRE Day 12 — holding; 3 days to Apr 22 expiry; Islamabad Round 2 Mon Apr 21; 45-day extension on table; attrition paused"},
-    {"date": "2026-04-20", "day": 52, "remaining": [68, 135], "midpoint": 102, "destroyed": [300, 340], "note": "CEASE-FIRE Day 13 — holding; 2 days to Apr 22 expiry; Islamabad Round 2 today; attrition clock paused pending outcome"}
+    {"date": "2026-04-20", "day": 52, "remaining": [68, 135], "midpoint": 102, "destroyed": [300, 340], "note": "CEASE-FIRE Day 13 — holding; 2 days to Apr 22 expiry; Islamabad Round 2 today; attrition clock paused pending outcome"},
+    {"date": "2026-04-21", "day": 53, "remaining": [68, 135], "midpoint": 102, "destroyed": [300, 340], "note": "CEASE-FIRE Day 14 (FINAL) — expires 0000 GMT Apr 22; Trump: 'extension highly unlikely'; Iran: 'no talks with US for now'; US seized Iranian cargo ship; attrition clock suspended; ~50 days to zero from resumption"}
   ],
   "gulfBreakdown": {
     "asOf": "2026-04-19",
@@ -179,6 +181,7 @@
     {"date": "2026-04-16", "day": 48, "text": "Reuters: US/Iran scaled back to temporary memorandum — comprehensive deal off table for now. Round 2 talks imminent. Netanyahu supports ceasefire."},
     {"date": "2026-04-17", "day": 49, "text": "Iran FM Araghchi declares Hormuz 'completely open' for commercial vessels. Trump: US blockade 'will remain in full force.' BBC tracking shows few ships actually moving."},
     {"date": "2026-04-19", "day": 51, "text": "CEASE-FIRE Day 12 — holding. Zero fire since Apr 11. ~3 days to Apr 22 expiry. Islamabad Round 2 set for Mon Apr 21. 45-day extension on table. Netanyahu supports ceasefire. 50,000 US personnel in theater."},
-    {"date": "2026-04-20", "day": 52, "text": "CEASE-FIRE Day 13 — holding. Islamabad Round 2 underway today. 45-day extension on table; decision expected before Apr 22 expiry. ISW assessment published: Iran retains ~1,000 of 2,500 pre-war MRBMs; 'well under 50%' of drones intact. Hormuz declared open by Iran FM but US blockade remains; Lloyd's List tracking shows minimal transit."}
+    {"date": "2026-04-20", "day": 52, "text": "CEASE-FIRE Day 13 — holding. Islamabad Round 2 underway today. 45-day extension on table; decision expected before Apr 22 expiry. ISW assessment published: Iran retains ~1,000 of 2,500 pre-war MRBMs; 'well under 50%' of drones intact. Hormuz declared open by Iran FM but US blockade remains; Lloyd's List tracking shows minimal transit."},
+    {"date": "2026-04-21", "day": 53, "text": "CEASE-FIRE Day 14 (FINAL) — expires 0000 GMT Apr 22. Trump: extension 'highly unlikely.' Iran FM: 'no talks with US for now.' US seized Iranian cargo ship (blockade running); Tehran vowed retaliation. Naval blockade: 9 ships turned back. Fire-silence Day 11. Islamabad Round 2 status: Iran participation uncertain. Both sides signaling toughness in final hours while math shows both deeply depleted."}
   ]
 }

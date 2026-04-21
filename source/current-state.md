@@ -1,7 +1,7 @@
 # Iran Missile & Drone Tracker — Current State
 
-Last updated: 2026-04-20 04:30 UTC
-Coverage: War through 2026-04-19 evening (Day 52) — CEASE-FIRE DAY 13
+Last updated: 2026-04-21 04:30 UTC
+Coverage: War through 2026-04-20 evening (Day 53) — CEASE-FIRE DAY 14 (final)
 Confidence: Medium overall
 
 ## Executive Bottom Line
@@ -28,7 +28,7 @@ Confidence: Medium overall
 | Daily ballistic launch capacity | ~8-18/day across all theaters (declining from peak; ~13 midpoint pre-cease-fire) | Medium |
 | Daily drone pressure | ~60-120/day across all theaters (declining from peak pre-cease-fire) | Low-Medium |
 
-**Key judgment:** Cease-fire Day 13 — holding; ~2 days to Apr 22 expiry. Islamabad Round 2 TODAY (Mon Apr 21) with 45-day extension on table. Netanyahu supports ceasefire. Iran declared Hormuz open (few ships moving; US blockade stays). 50,000 US personnel in theater. UAE Apr 9 cumulative: 537/26/2,256. If cease-fire collapses, launchers (~102 remaining) remain binding constraint (~50 days to zero at pre-ceasefire rate). Gulf interceptor depletion (~75% Patriots spent) is a coalition vulnerability. Drones remain the durable long-war threat if hostilities resume.
+**Key judgment:** Cease-fire Day 14 (FINAL) — expires 0000 GMT Apr 22. Trump (Apr 20): extension "highly unlikely." Iran (Apr 20): "no talks with US for now" — Islamabad Round 2 participation uncertain. US seized Iranian cargo ship running blockade; Tehran vowed retaliation. Naval blockade fully implemented (9 ships turned back). Fire-silence holding Day 10 (no Iran-direct launches since Apr 11) but diplomatic track wobbling hard. UAE Apr 9 cumulative: 537/26/2,256. If cease-fire collapses within 24h, launchers (~102) remain binding constraint (~50 days to zero at pre-cease-fire rate). Gulf interceptor depletion (~75% Patriots spent) is the coalition vulnerability. Drones remain the durable long-war threat.
 
 ## Confirmed Floors vs Best Estimate
 | Category | Confirmed / working floor | Best estimate total | Main source basis |
@@ -75,4 +75,4 @@ Confidence: Medium overall
 - **Analytical review:** `/home/node/.openclaw/workspace/data/iran-tracker-review.md`
 
 ## One-Line CEO Summary
-Day 52: Cease-fire Day 13 — holding; ~2 days to Apr 22 expiry. Islamabad Round 2 today (Mon Apr 21); 45-day extension on table. Netanyahu supports. Hormuz declared open (US blockade remains). UAE 537/26/2,256. ISW: Iran retains ~1,000 MRBMs + <50% of drones. Launchers (~102) binding if war resumes.
+Day 53: Cease-fire FINAL DAY — expires 0000 GMT Apr 22. Trump says extension "highly unlikely"; Iran says "no talks with US for now." US seized Iranian cargo ship; Tehran vowed retaliation. Fire-silence Day 10. UAE 537/26/2,256. ISW: Iran retains ~1,000 MRBMs + <50% of drones. Launchers (~102) binding if war resumes within 24h.
