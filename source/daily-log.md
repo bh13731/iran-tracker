@@ -516,3 +516,15 @@ Kuwait and Qatar theater contributions were significantly underestimated. After 
 - **No new official cumulative tallies** since UAE 537/26/2,256 (Apr 9) and Bahrain 188/468. Wikipedia Islamabad Talks page notes Round 1 agreed on 10-point frame minus Hormuz + nuclear.
 - **Depletion math unchanged** — tracker remains paused; clocks restart if war resumes Apr 22.
 - **Key watch next 24h:** Whether Iran actually shows up in Islamabad; whether Trump extends or lets it lapse; post-Apr 22 re-engagement risk very high.
+
+## 2026-04-22 (04:30 UTC) — CEASE-FIRE EXTENDED INDEFINITELY
+
+- **Apr 21 — CEASE-FIRE EXTENDED INDEFINITELY.** Trump announced hours before 0000 GMT Apr 22 expiry that US is extending ceasefire with Iran to allow peace talks to continue (AP, Reuters, NYT, NPR, CNN).
+- Extension at Pakistan PM Shehbaz Sharif's request ("graciously accepting our request").
+- US naval blockade remains in force; Trump: military "ready and able."
+- VP Vance Middle East trip reportedly on hold.
+- WSJ prior reporting said Trump "not inclined to extend" — reversed.
+- Iran-direct fire silence now Day 11 (no launches since Apr 11).
+- No new official Gulf cumulative tallies published since UAE 537/26/2,256 (Apr 9). Bahrain stuck at 188/468.
+- Post-ceasefire "enemy attack" struck Iran's Lavan Island oil refinery and Sirri Island crude export facilities — unclaimed.
+- **Key judgment:** War freeze now open-ended. Stockpile depletion math frozen pending resumption. Launchers (~102) still binding if fighting restarts.

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Indefinite Freeze: What an Open-Ended Ceasefire Does to the Depletion Asymmetry — Iran Tracker</title>
+<link rel="stylesheet" href="story.css">
+<script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a class="nav-brand" href="../index.html">Iran Tracker</a>
+    <a href="../index.html">Dashboard</a>
+    <a href="index.html">Analysis</a>
+    <a href="../methodology.html">Methodology</a>
+  </nav>
+</header>
+
+<h1>The Indefinite Freeze: What an Open-Ended Ceasefire Does to the Depletion Asymmetry</h1>
+<div class="meta">April 22, 2026 — Day 54 <span class="tag tag-analysis">Analysis</span> <span class="tag tag-ceasefire">Cease-fire</span></div>
+
+<div class="lede">
+Eighteen hours ago Trump said an extension was "highly unlikely." Then he extended it indefinitely. The fastest diplomatic reversal of the conflict changes the war's temporal structure in ways the daily fire-count doesn't capture: a time-bounded truce creates a restart clock; an open-ended freeze lets both sides defer the military decision while the depletion asymmetry quietly compounds. Every additional day the ceasefire holds, Iran cannot rebuild what was destroyed. Every additional day, the coalition can.
+</div>
+
+<h2>From Clock to Calendar</h2>
+
+<p>The original 2-week ceasefire created a hard deadline — Apr 22 — that forced both sides to make a binary decision: extend or resume. That deadline generated pressure, and pressure generates concessions. Pakistan exploited the deadline architecture to bring both sides back to Islamabad twice. The US used the blockade's demonstrated enforcement (nine ships turned back, one Iranian cargo vessel seized) to signal that the economic squeeze would continue regardless of diplomatic theatre. Iran used its "no talks with US for now" posture to avoid appearing desperate.</p>
+
+<p>An indefinite extension removes that pressure. The diplomatic calendar no longer has a forcing function. Islamabad becomes the venue for a conversation without a clock, and conversations without clocks tend to drift.</p>
+
+<p>For the depletion tracker, this matters more than the daily fire rate. The fire rate has been zero since Apr 11. What has not been zero — and what changes character under an open-ended freeze — is the rate at which the underlying asymmetry widens.</p>
+
+<h2>What the Freeze Preserves</h2>
+
+<p>The ceasefire froze the <em>numbers</em>. It did not freeze the underlying <em>geometry</em> of the two sides' recovery problems. Those are running at fundamentally different speeds.</p>
+
+<div class="chart-wrap">
+  <div class="chart-label">Recovery trajectory under indefinite freeze — Iran vs coalition (schematic)</div>
+  <div id="recovery-chart"></div>
+</div>
+
+<p>Iran's constraints are structural and slow to recover:</p>
+
+<ul>
+  <li><strong>~102 remaining launchers.</strong> These do not regenerate. Each day of freeze preserves them, but no new launchers are being produced — the four key BM manufacturing complexes assessed as destroyed by WaPo (Mar 29) cannot be rebuilt under continuous targeting threat. The freeze holds the number at ~102; it does not increase it.</li>
+  <li><strong>BM production halted.</strong> The Khojir (88 structures destroyed), Shahroud (28), Parchin (12), and Hakimiyeh (19) complex strikes eliminated assessed production capacity. Iran's warehoused missile stocks remain large (4,000–7,750 BMs estimated remaining), but warehouses are only useful if you have launchers to fire them from. The freeze preserves the stock; it does not restore the throughput.</li>
+  <li><strong>C2 degradation.</strong> Two IRGC Aerospace Force commanders killed in 48 hours (Mar 21–22). Training replacements and reconstituting C2 nodes takes at least 12–18 months, not the weeks of an indefinite ceasefire window.</li>
+  <li><strong>IRGC morale.</strong> Absenteeism and refusal to man launch sites was documented by Mar 25. The freeze stops attrition; it does not restore institutional confidence.</li>
+</ul>
+
+<p>The coalition's constraints are logistical and faster to recover:</p>
+
+<ul>
+  <li><strong>Patriot interceptor restocking.</strong> JINSA estimated ~75% depletion by Day 29. The US maintains Patriot stockpiles and production lines. Drawing from US military reserves is a matter of political priority and transport, not factory rebuild time. A serious resupply push during an indefinite ceasefire window could materially change the interceptor picture before any resumption.</li>
+  <li><strong>European Patriot transfers.</strong> Germany and the Netherlands are Patriot holders; precedent from the Ukraine theater has already established the transfer mechanism. The political friction is real but not structural.</li>
+  <li><strong>Terminal High Altitude Area Defense (THAAD) repositioning.</strong> The ceasefire window allows THAAD batteries to be redeployed, repositioned, or augmented across Gulf theaters without the operational risk of moving them under fire.</li>
+</ul>
+
+<div class="stat-row">
+  <div class="stat-box">
+    <div class="stat-value" style="color:var(--red);">~102</div>
+    <div class="stat-label">Iran launchers remaining</div>
+    <div class="stat-sub">Frozen — not recovering</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-value" style="color:var(--orange);">~25%</div>
+    <div class="stat-label">Coalition Patriots remaining</div>
+    <div class="stat-sub">Frozen now; recoverable with resupply</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-value" style="color:var(--green);">12</div>
+    <div class="stat-label">Fire-silence days</div>
+    <div class="stat-sub">Zero Iran-direct launches since Apr 11</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-value" style="color:var(--accent);">0</div>
+    <div class="stat-label">New BM production sites</div>
+    <div class="stat-sub">Assessed halted since ~Mar 29</div>
+  </div>
+</div>
+
+<h2>The Lavan/Sirri Strike: The Freeze's First Anomaly</h2>
+
+<p>On the night of the extension announcement, an unclaimed attack struck Iran's Lavan Island oil refinery and Sirri Island crude export facilities. These are not military targets — Lavan and Sirri handle a meaningful fraction of Iran's oil export capacity. The strike was not claimed by Israel, the US, or any proxy.</p>
+
+<p>This is the first attack on Iranian oil infrastructure to occur during the ceasefire period, and it happened on the same night Trump reversed course on the extension. The timing is not coincidence-shaped.</p>
+
+<p>Analytically, the Lavan/Sirri strike matters for a few reasons:</p>
+
+<ul>
+  <li><strong>It tests Iran's retaliation logic under an indefinite freeze.</strong> If Tehran retaliates against Gulf oil infrastructure in response, it becomes the party that broke the ceasefire. If it absorbs the strike without response, it signals that the indefinite extension is more valuable to Iran than a tit-for-tat on oil facilities.</li>
+  <li><strong>It applies economic pressure independent of the blockade.</strong> The US naval blockade is cutting Iran's export income at sea; a strike on export infrastructure hits it at source. The two mechanisms compound.</li>
+  <li><strong>It is unclaimed for a reason.</strong> An unclaimed strike avoids placing the ceasefire in formal jeopardy while still delivering the coercive effect. This is the same deniability logic Iran used with the Kuwait drone incident on Apr 10 — except now applied in the other direction.</li>
+</ul>
+
+<div class="highlight-box">
+<strong>Working hypothesis:</strong> The Lavan/Sirri strike is an extension of the blockade's economic logic by kinetic means. It does not break the ceasefire because it is not attributed. But it narrows the economic oxygen available to Iran's negotiating position at Islamabad, independent of what the diplomats say in the room.
+</div>
+
+<h2>Why "Indefinite" Is Not "Permanent"</h2>
+
+<p>The diplomatic history of indefinite ceasefires in high-intensity conflicts is not encouraging. They tend to end in one of three ways: a formal deal, a slow erosion into proxy-only violence that never quite restarts the main war, or an abrupt collapse triggered by a miscalculation neither side intended.</p>
+
+<p>The depletion math creates a specific kind of pressure on the third outcome. Iran's military capability is not recovering during the freeze, but its domestic political pressure is. The IRGC is not being destroyed by strikes during the ceasefire, but its institutional credibility — built on the claim that it could deter and punish — has been visibly damaged. Indefinite ceasefire is not a comfortable equilibrium for an organization that defines itself through offensive capability.</p>
+
+<p>The coalition, conversely, benefits from extended silence. The blockade is working without bullets. Patriot resupply can proceed. The diplomatic framework — even if no comprehensive deal emerges — keeps the military pause alive long enough for the interceptor balance to shift.</p>
+
+<div class="chart-wrap">
+  <div class="chart-label">Interceptor balance trajectory — schematic recovery under indefinite freeze</div>
+  <div id="balance-chart"></div>
+</div>
+
+<h2>The Numbers That Still Matter</h2>
+
+<p>With fire rate at zero, the tracker's most analytically active numbers are the ones that change during the freeze rather than those that require resumed fire to matter.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Metric</th>
+      <th>Current value</th>
+      <th>Trend during freeze</th>
+      <th>Why it matters</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Iran operational launchers</td>
+      <td class="num" style="color:var(--red);">~102</td>
+      <td>Flat (attrition paused)</td>
+      <td>Still binding constraint if war resumes; not recovering</td>
+    </tr>
+    <tr>
+      <td>Coalition Patriot stocks</td>
+      <td class="num" style="color:var(--accent);">~25%</td>
+      <td>Improving (resupply window)</td>
+      <td>Defense capacity improves without firing a shot</td>
+    </tr>
+    <tr>
+      <td>Iran BM production capacity</td>
+      <td class="num" style="color:var(--red);">Assessed halted</td>
+      <td>Flat (no evidence of restart)</td>
+      <td>Warehoused stock cannot grow; throughput constrained</td>
+    </tr>
+    <tr>
+      <td>Drone manufacturing (Iran)</td>
+      <td class="num" style="color:var(--orange);">Partially active</td>
+      <td>Possibly increasing (distributed base)</td>
+      <td>Drones are the genuinely durable threat; harder to halt than BM production</td>
+    </tr>
+    <tr>
+      <td>Iran export revenue</td>
+      <td class="num" style="color:var(--red);">Blockaded + Lavan/Sirri hit</td>
+      <td>Declining</td>
+      <td>Narrows Iran's negotiating runway; accelerates need for deal</td>
+    </tr>
+    <tr>
+      <td>US interceptor resupply progress</td>
+      <td class="num" style="color:var(--accent);">Unknown</td>
+      <td>Key watch item</td>
+      <td>A public US resupply announcement changes the military balance readout</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Watch Items for the Indefinite Period</h2>
+
+<ul class="watch-list">
+  <li><strong>Iran's response to the Lavan/Sirri strike.</strong> Retaliation = ceasefire break signal. Silence = Iran values the freeze enough to absorb kinetic pressure on its oil infrastructure.</li>
+  <li><strong>US Patriot resupply announcement.</strong> Any public statement about interceptor transfers to Gulf partners changes the coalition's military posture for a resumed conflict and signals confidence in the ceasefire's durability.</li>
+  <li><strong>Islamabad Round 3 timeline.</strong> Without a forcing-function deadline, the schedule for the next round is the only visible signal of diplomatic momentum. Delay of more than ~2 weeks suggests drift.</li>
+  <li><strong>IRGC public activity.</strong> The IRGC's institutional response to the ceasefire — public statements, exercises, personnel announcements — will indicate whether it is managing the pause as a recovery window or as a humiliation.</li>
+  <li><strong>Iran drone-component imports.</strong> Drone production is the genuinely durable threat. Evidence of continued component imports (China fuel chemicals, Russian FPV tech) during the freeze would be the tracker's most analytically significant data point in the absence of fire-rate numbers.</li>
+</ul>
+
+<p>The tracker's figures — 2,950–3,500 BMs fired, 8,500–9,500 drones, ~102 launchers remaining — are frozen at Day 54. They will not change until the freeze ends or new official cumulative data is published. What is changing, every day the freeze holds, is the gap between the two sides' ability to fight the next phase.</p>
+
+<footer>
+  <a href="../index.html">Dashboard</a> &middot; <a href="index.html">Analysis</a> &middot; <a href="../methodology.html">Methodology</a>
+</footer>
+
+<script>
+const colors = {
+  red: '#e5534b',
+  accent: '#5ba3f5',
+  orange: '#d4943a',
+  green: '#46954a',
+  purple: '#b388f5',
+  muted: '#6b7a8d',
+  border: '#2a3140',
+  borderSubtle: '#222830',
+  surface: '#181d23'
+};
+
+// Recovery trajectory chart (schematic)
+(function() {
+  const W = Math.min(680, window.innerWidth - 52);
+  const H = 220;
+  const margin = { top: 28, right: 24, bottom: 44, left: 56 };
+  const iW = W - margin.left - margin.right;
+  const iH = H - margin.top - margin.bottom;
+
+  const svg = d3.select('#recovery-chart').append('svg')
+    .attr('width', W).attr('height', H).attr('viewBox', `0 0 ${W} ${H}`);
+
+  const g = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
+
+  // x = days of freeze (0 to 90), y = capability % (0 to 100)
+  const xScale = d3.scaleLinear().domain([0, 90]).range([0, iW]);
+  const yScale = d3.scaleLinear().domain([0, 100]).range([iH, 0]);
+
+  // Grid lines
+  g.append('g').attr('class', 'grid')
+    .call(d3.axisLeft(yScale).ticks(5).tickSize(-iW).tickFormat(''))
+    .selectAll('line').style('stroke', colors.borderSubtle).style('stroke-opacity', 0.4);
+  g.select('.grid .domain').remove();
+
+  // Axes
+  g.append('g').attr('transform', `translate(0,${iH})`)
+    .call(d3.axisBottom(xScale).ticks(6).tickFormat(d => `Day +${d}`))
+    .selectAll('text').style('fill', colors.muted).style('font-size', '10px');
+  g.append('g')
+    .call(d3.axisLeft(yScale).ticks(5).tickFormat(d => d + '%'))
+    .selectAll('text').style('fill', colors.muted).style('font-size', '10px');
+
+  // Iran launcher capacity — flat (no recovery)
+  const iranData = d3.range(0, 91).map(d => ({ x: d, y: 24 }));
+  const iranLine = d3.line().x(d => xScale(d.x)).y(d => yScale(d.y)).curve(d3.curveMonotoneX);
+
+  g.append('path').datum(iranData).attr('fill', 'none')
+    .attr('stroke', colors.red).attr('stroke-width', 2.5).attr('d', iranLine);
+
+  g.append('text').attr('x', xScale(88)).attr('y', yScale(24) - 6)
+    .attr('text-anchor', 'end').attr('font-size', 10).attr('font-family', 'var(--font-sans)')
+    .attr('fill', colors.red).text('Iran: launchers (flat — no recovery)');
+
+  // Coalition Patriot — gradual recovery curve
+  const coalitionData = d3.range(0, 91).map(d => ({
+    x: d,
+    y: Math.min(75, 25 + d * 0.55)
+  }));
+  const coalitionLine = d3.line().x(d => xScale(d.x)).y(d => yScale(d.y)).curve(d3.curveMonotoneX);
+
+  // Area fill
+  const coalitionArea = d3.area().x(d => xScale(d.x))
+    .y0(yScale(25)).y1(d => yScale(d.y)).curve(d3.curveMonotoneX);
+  g.append('path').datum(coalitionData).attr('fill', 'rgba(91,163,245,0.08)').attr('d', coalitionArea);
+
+  g.append('path').datum(coalitionData).attr('fill', 'none')
+    .attr('stroke', colors.accent).attr('stroke-width', 2.5)
+    .attr('stroke-dasharray', '6,3').attr('d', coalitionLine);
+
+  g.append('text').attr('x', xScale(88)).attr('y', yScale(Math.min(75, 25 + 88 * 0.55)) - 6)
+    .attr('text-anchor', 'end').attr('font-size', 10).attr('font-family', 'var(--font-sans)')
+    .attr('fill', colors.accent).text('Coalition: Patriots (recoverable)');
+
+  // Vertical "now" line
+  g.append('line')
+    .attr('x1', xScale(0)).attr('x2', xScale(0))
+    .attr('y1', 0).attr('y2', iH)
+    .attr('stroke', colors.muted).attr('stroke-dasharray', '2,2').attr('stroke-width', 1);
+
+  g.append('text').attr('x', xScale(1)).attr('y', 12)
+    .attr('font-size', 9).attr('font-family', 'var(--font-sans)')
+    .attr('fill', colors.muted).text('Apr 22 — freeze extended');
+
+  // Y-axis label
+  svg.append('text').attr('transform', 'rotate(-90)')
+    .attr('x', -(H / 2)).attr('y', 14)
+    .attr('text-anchor', 'middle').attr('font-size', 10)
+    .attr('font-family', 'var(--font-sans)').attr('fill', colors.muted)
+    .text('% of pre-war capability');
+
+  // Axis domain lines
+  g.selectAll('.domain').style('stroke', colors.border);
+  g.selectAll('.tick line').style('stroke', colors.borderSubtle);
+})();
+
+// Balance chart — interceptor balance over time
+(function() {
+  const W = Math.min(680, window.innerWidth - 52);
+  const H = 180;
+  const margin = { top: 28, right: 24, bottom: 44, left: 60 };
+  const iW = W - margin.left - margin.right;
+  const iH = H - margin.top - margin.bottom;
+
+  const svg = d3.select('#balance-chart').append('svg')
+    .attr('width', W).attr('height', H).attr('viewBox', `0 0 ${W} ${H}`);
+
+  const g = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
+
+  const xScale = d3.scaleLinear().domain([0, 90]).range([0, iW]);
+  // "balance" = coalition capability / iran capability — starts at ~1 (25/24), widens
+  const yScale = d3.scaleLinear().domain([0.8, 4]).range([iH, 0]);
+
+  g.append('g').attr('class', 'grid')
+    .call(d3.axisLeft(yScale).ticks(4).tickSize(-iW).tickFormat(''))
+    .selectAll('line').style('stroke', colors.borderSubtle).style('stroke-opacity', 0.3);
+  g.select('.grid .domain').remove();
+
+  g.append('g').attr('transform', `translate(0,${iH})`)
+    .call(d3.axisBottom(xScale).ticks(6).tickFormat(d => `Day +${d}`))
+    .selectAll('text').style('fill', colors.muted).style('font-size', '10px');
+  g.append('g')
+    .call(d3.axisLeft(yScale).ticks(4).tickFormat(d => `${d.toFixed(1)}×`))
+    .selectAll('text').style('fill', colors.muted).style('font-size', '10px');
+
+  const balanceData = d3.range(0, 91).map(d => ({
+    x: d,
+    y: Math.min(75, 25 + d * 0.55) / 24
+  }));
+  const line = d3.line().x(d => xScale(d.x)).y(d => yScale(d.y)).curve(d3.curveMonotoneX);
+  const area = d3.area().x(d => xScale(d.x)).y0(yScale(1)).y1(d => yScale(d.y)).curve(d3.curveMonotoneX);
+
+  g.append('path').datum(balanceData).attr('fill', 'rgba(70,149,74,0.08)').attr('d', area);
+  g.append('path').datum(balanceData).attr('fill', 'none')
+    .attr('stroke', colors.green).attr('stroke-width', 2.5).attr('d', line);
+
+  // Parity line
+  g.append('line')
+    .attr('x1', 0).attr('x2', iW)
+    .attr('y1', yScale(1)).attr('y2', yScale(1))
+    .attr('stroke', colors.muted).attr('stroke-dasharray', '4,3')
+    .attr('stroke-width', 1).attr('opacity', 0.5);
+  g.append('text').attr('x', 4).attr('y', yScale(1) - 4)
+    .attr('font-size', 9).attr('font-family', 'var(--font-sans)')
+    .attr('fill', colors.muted).text('parity');
+
+  g.append('text').attr('x', xScale(88)).attr('y', yScale(balanceData[88].y) - 6)
+    .attr('text-anchor', 'end').attr('font-size', 10).attr('font-family', 'var(--font-sans)')
+    .attr('fill', colors.green).text('Coalition advantage (coalition % / Iran %)');
+
+  g.selectAll('.domain').style('stroke', colors.border);
+  g.selectAll('.tick line').style('stroke', colors.borderSubtle);
+})();
+</script>
+
+</body>
+</html>
