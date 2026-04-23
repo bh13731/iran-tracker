@@ -528,3 +528,12 @@ Kuwait and Qatar theater contributions were significantly underestimated. After 
 - No new official Gulf cumulative tallies published since UAE 537/26/2,256 (Apr 9). Bahrain stuck at 188/468.
 - Post-ceasefire "enemy attack" struck Iran's Lavan Island oil refinery and Sirri Island crude export facilities — unclaimed.
 - **Key judgment:** War freeze now open-ended. Stockpile depletion math frozen pending resumption. Launchers (~102) still binding if fighting restarts.
+
+## 2026-04-23 (04:30 UTC) — CEASE-FIRE DAY 15 / Indefinite
+
+- **Ceasefire Day 15, indefinite extension holding.** No Iran-direct launches since Apr 11 (Day 12 of fire silence).
+- **ISW Apr 19 Special Report — NEW OFFICIAL BREAKDOWN (US officials to NYT):** Iran retains ~70% of missile stockpile, ~40% of attack drones, ~60% of missile launchers — INCL. ~100 launchers Iran has dug out from underground facilities SINCE ceasefire began. ISW: Iran exploiting ceasefire to reorganize/regenerate BM forces tactically.
+- **FDD Long War Journal (Apr 19):** Kuwait took 852 drones + 369 missiles = 1,221 systems total. Saudi ~612 drones + 68 missiles = 680. UAE bore brunt.
+- **No new UAE/Bahrain official cumulatives** since Apr 9 (537/26/2,256) and (188/468).
+- **Launcher reconstitution is the new story:** ~100 new operational launchers = raising effective count from ~102 to ~200+. Binding constraint loosening during ceasefire.
+- **Key judgment:** Iran using open-ended truce to rebuild. If war resumes, depletion clocks restart from materially better Iranian posture than Apr 7 ceasefire baseline.

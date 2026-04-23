@@ -1,7 +1,7 @@
 # Iran Missile & Drone Tracker — Current State
 
-Last updated: 2026-04-22 04:30 UTC
-Coverage: War through 2026-04-21 evening (Day 54) — CEASE-FIRE EXTENDED INDEFINITELY
+Last updated: 2026-04-23 04:30 UTC
+Coverage: War through 2026-04-22 evening (Day 55) — CEASE-FIRE Day 15, INDEFINITE
 Confidence: Medium overall
 
 ## Executive Bottom Line
@@ -13,7 +13,7 @@ Confidence: Medium overall
 ## Best Current Estimates
 | Category | Pre-war estimate | Fired to date | Estimated remaining stock | Effective operational status | Confidence |
 |---|---:|---:|---:|---|---|
-| MRBMs (Israel-range) | ~2,000-3,000 | ~820-1,000 | ~500-1,880 | 4 production facilities halted; 29+ launch bases struck; IRGC morale collapse; CEASE-FIRE Apr 7; holding Day 11 | Medium |
+| MRBMs (Israel-range) | ~2,000-3,000 | ~820-1,000 | ~500-1,880 (NYT/US officials Apr 19: ~70% of pre-war missile stockpile retained) | CEASE-FIRE Day 15 (indefinite); Iran reorganizing/regenerating BM forces during truce | Medium |
 | SRBMs (Gulf-range) | ~6,000-8,000 | ~2,100-2,500 | ~3,500-5,900 | Large paper inventory; production halted; post-ceasefire salvos Apr 8 then quiet | Medium-Low |
 | **Total ballistic missiles** | **~8,000-11,000** | **~2,950-3,500** | **~4,050-7,750** | **CEASE-FIRE Day 13. Zero fire since Apr 11. ~2 days to expiry (Apr 22). Islamabad Round 2 today; 45-day extension on table** | Medium-Low |
 | Drones | ~35,000-55,000 usable pre-war (working estimate) | ~8,500-9,500 | Deep reserves remain; China fuel chemicals sustaining some production | Bahrain uplift: 468 drones cumulative (was ~310). UAE 2,221 (Apr 7). Apr 8 Kuwait intercepted 28 drones post-ceasefire | Low |
@@ -24,11 +24,11 @@ Confidence: Medium overall
 |---|---:|---|
 | Pre-war ballistic missile launchers | ~410-440 | Very High |
 | Destroyed / combat-ineffective | ~300-340 | Very High |
-| **Remaining operational** | **~68-135** (best planning midpoint: **~102**) | High |
+| **Remaining operational** | **~170-235** (best planning midpoint: **~200**) — ISW Apr 19: Iran dug out ~100 launchers from underground during ceasefire | High |
 | Daily ballistic launch capacity | ~8-18/day across all theaters (declining from peak; ~13 midpoint pre-cease-fire) | Medium |
 | Daily drone pressure | ~60-120/day across all theaters (declining from peak pre-cease-fire) | Low-Medium |
 
-**Key judgment:** Apr 21 — CEASE-FIRE EXTENDED INDEFINITELY. Trump reversed prior "highly unlikely" stance hours before 0000 GMT Apr 22 expiry, at PM Sharif's request, to allow continued talks. US blockade remains in force; military "ready and able." Vance ME trip on hold. Fire-silence Day 11 (no Iran-direct launches since Apr 11). UAE Apr 9 cumulative unchanged: 537/26/2,256. War freeze now open-ended. If cease-fire collapses, launchers (~102) remain binding constraint (~50 days to zero at pre-cease-fire rate). Gulf interceptor depletion (~75% Patriots) is coalition vulnerability. Drones remain durable long-war threat.
+**Key judgment:** Apr 22 — CEASE-FIRE Day 15, indefinite. ISW Apr 19 (US officials to NYT): Iran retains ~70% missile stockpile, ~40% drones, ~60% launchers — INCLUDING ~100 launchers newly dug out from underground since ceasefire began. Launcher reconstitution loosens the binding constraint from ~102 to ~200. Iran is exploiting the truce tactically. Fire-silence Day 12. UAE/Bahrain cumulatives unchanged. If war resumes, Iran's posture is materially better than Apr 7 ceasefire baseline.
 
 ## Confirmed Floors vs Best Estimate
 | Category | Confirmed / working floor | Best estimate total | Main source basis |
@@ -75,4 +75,4 @@ Confidence: Medium overall
 - **Analytical review:** `/home/node/.openclaw/workspace/data/iran-tracker-review.md`
 
 ## One-Line CEO Summary
-Day 54: CEASE-FIRE EXTENDED INDEFINITELY. Trump reversed Apr 20 "highly unlikely" stance hours before expiry at Pakistan's request. US blockade remains; Vance ME trip on hold. Fire-silence Day 11. UAE 537/26/2,256. ISW: Iran retains ~1,000 MRBMs + <50% of drones. Launchers (~102) binding if war resumes.
+Day 55: CEASE-FIRE Day 15 indefinite. ISW Apr 19 / US officials to NYT: Iran retains ~70% missiles, ~40% drones, ~60% launchers — incl. ~100 launchers dug out during truce. Iran is reconstituting. Launcher count now ~200 (up from ~102). Fire-silence Day 12. UAE/Bahrain cumulatives unchanged (537/26/2,256; 188/468).

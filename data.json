@@ -2,8 +2,8 @@
   "meta": {
     "title": "Iran Missile & Drone Tracker",
     "warStart": "2026-02-28",
-    "lastUpdated": "2026-04-22T04:30:00Z",
-    "lastDay": 54,
+    "lastUpdated": "2026-04-23T04:30:00Z",
+    "lastDay": 55,
     "methodology": "UAE MoD figures are official cumulative intercepts (highest confidence). Other Gulf state figures are working estimates from official MoD reports, ISW, and Wikipedia cross-referencing. Best-estimate totals include underreporting adjustments for Israel theater and other targets. Launcher estimates derived from IDF/ISW structured reporting. Pre-war stockpile estimates from Atlantic, NYT, IDF, and former US/Israeli officials.",
     "caveats": [
       "Pre-Mar 19 data uses a different methodology (less structured, wider ranges)",
@@ -12,7 +12,9 @@
       "Drone pre-war estimates range 30K-80K — extremely wide uncertainty",
       "Launcher estimates are judgmental, combining hardware kills with C2/morale degradation",
       "Production was ongoing early in the war but is assessed as halted for BMs since ~Mar 29",
-      "Cease-fire extended indefinitely Apr 22 at Pakistan's request; all figures frozen pending resumption or permanent deal"
+      "Cease-fire extended indefinitely Apr 22 at Pakistan's request; all figures frozen pending resumption or permanent deal",
+      "ISW Apr 19 / US officials to NYT: Iran dug ~100 launchers from underground storage during ceasefire; effective launcher count revised from ~102 to ~200 as of Apr 23",
+      "FDD/Long War Journal Apr 19: Kuwait revised to 369 BMs + 852 drones; Saudi revised to 68 BMs + 612 drones — Kuwait drone figure is ~30% higher than prior tracking estimate"
     ]
   },
   "preWar": {
@@ -24,15 +26,15 @@
     "launchers": [410, 440]
   },
   "currentSnapshot": {
-    "date": "2026-04-22",
-    "day": 54,
+    "date": "2026-04-23",
+    "day": 55,
     "categories": [
       {
         "name": "MRBMs (Israel-range)",
         "preWar": [2000, 3000],
         "fired": [820, 1000],
         "remaining": [500, 1880],
-        "status": "CEASE-FIRE EXTENDED INDEFINITELY (Day 15+). Trump reversed 'highly unlikely' stance hours before expiry at Pakistan PM Sharif's request. 4 production facilities halted; 29+ launch bases struck; IRGC morale collapse. Zero fire since Apr 11. War freeze now open-ended.",
+        "status": "CEASE-FIRE Day 15, indefinite. US officials to NYT (Apr 19): Iran retains ~70% of pre-war missile stockpile — implying ~30% fired, consistent with 820-1,000 MRBM best estimate. Iran reorganizing/regenerating BM forces during truce. Zero fire since Apr 11.",
         "confidence": "Medium"
       },
       {
@@ -40,7 +42,7 @@
         "preWar": [6000, 8000],
         "fired": [2100, 2500],
         "remaining": [3500, 5900],
-        "status": "Large paper inventory; production halted; post-ceasefire salvos Apr 8 then quiet. Cease-fire extended indefinitely Apr 22. No new fire since Apr 8 post-ceasefire pipeline salvos.",
+        "status": "Large paper inventory; production halted; post-ceasefire salvos Apr 8 then quiet. Cease-fire indefinite. No new fire since Apr 8 post-ceasefire pipeline salvos. US officials: ~70% of total BM stockpile retained.",
         "confidence": "Medium-Low"
       },
       {
@@ -48,7 +50,7 @@
         "preWar": [8000, 11000],
         "fired": [2950, 3500],
         "remaining": [4050, 7750],
-        "status": "CEASE-FIRE EXTENDED INDEFINITELY. Trump announcement hours before 0000 GMT Apr 22 expiry. Zero fire since Apr 11. US naval blockade remains in force. Launchers (~102) remain binding constraint at ~50 days to zero if resumed. Unclaimed strike hit Iran Lavan/Sirri oil infrastructure overnight.",
+        "status": "CEASE-FIRE DAY 15, INDEFINITE. Zero fire since Apr 11. US officials to NYT (Apr 19): Iran retains ~70% of pre-war missile stockpile. Launcher reconstitution is the dominant new development — effective launcher count has risen from ~102 to ~200 as Iran digs out buried hardware. BM production still halted. Days to functional zero from resumption: ~100 days (up from ~51 at ceasefire).",
         "confidence": "Medium-Low"
       },
       {
@@ -56,7 +58,7 @@
         "preWar": [35000, 55000],
         "fired": [8500, 9500],
         "remaining": [25500, 46500],
-        "status": "Most durable threat. Deep reserves intact (~80% of pre-war stock unused). China fuel chemicals sustaining some production. If cease-fire collapses, drone-heavy resumption more likely than BM barrage — launchers are the BM bottleneck. Cease-fire extended indefinitely.",
+        "status": "US officials to NYT (Apr 19): Iran retains ~40% of attack drones — heavier proportional hit than BMs. FDD/LWJ Apr 19: Kuwait took 852 drones (vs prior 655 working estimate); Saudi ~612. China fuel chemicals sustaining some production. If cease-fire collapses, drone pressure will resume but BM mix will dominate given reconstituted launcher count.",
         "confidence": "Low"
       },
       {
@@ -64,17 +66,17 @@
         "preWar": [200, 500],
         "fired": [100, 150],
         "remaining": [50, 400],
-        "status": "UAE CMs at 26 (official, Apr 9 update); 50+ CMs in Gulf theater total. No CM reports since Apr 8 post-ceasefire pipeline salvos. Cease-fire extended indefinitely.",
+        "status": "UAE CMs at 26 (official, Apr 9 update); 50+ CMs in Gulf theater total. No CM reports since Apr 8 post-ceasefire pipeline salvos. Cease-fire indefinite.",
         "confidence": "Low"
       },
       {
         "name": "Launchers",
         "preWar": [410, 440],
         "destroyed": [300, 340],
-        "remaining": [68, 135],
-        "midpoint": 102,
-        "daysToZero": 50,
-        "status": "CEASE-FIRE EXTENDED INDEFINITELY. Attrition clock remains paused. ~50 days to zero if hostilities resume. Launcher constraint is the binding BM ceiling. Iran's ~24% of launchers vs coalition's ~25% of Patriots remaining — symmetric depletion, asymmetric recovery. BM production still halted; coalition can resupply Patriots. Asymmetry widens with each day of freeze.",
+        "remaining": [170, 235],
+        "midpoint": 200,
+        "daysToZero": 100,
+        "status": "CEASE-FIRE DAY 15. MAJOR REVISION. ISW Apr 19 / US officials to NYT: Iran has dug ~100 launchers from underground hardened facilities during ceasefire — raising effective count from ~102 to ~200 (60% of pre-war fleet). Days to BM functional zero from resumption: ~100 days (up from ~51 at Apr 7). Iran is exploiting the truce to rebuild the primary military constraint. Reconstitution is retrieval of buried hardware, not new production — the 300-340 destroyed remain destroyed. BM production still halted.",
         "confidence": "High"
       }
     ]
@@ -125,7 +127,8 @@
     {"date": "2026-04-19", "day": 51, "bmFloor": 2350, "bmBest": [2950, 3500], "droneFloor": 6770, "droneBest": [8500, 9500], "cmFloor": 80, "cmBest": [100, 150], "note": "Cease-fire Day 12 — holding; zero fire since Apr 11; 3 days to Apr 22 expiry; Islamabad Round 2 set Mon Apr 21; 45-day extension on table"},
     {"date": "2026-04-20", "day": 52, "bmFloor": 2350, "bmBest": [2950, 3500], "droneFloor": 6770, "droneBest": [8500, 9500], "cmFloor": 80, "cmBest": [100, 150], "note": "Cease-fire Day 13 — holding; zero fire since Apr 11; 2 days to Apr 22 expiry; Islamabad Round 2 today; ISW assessment: Iran retains ~1,000 of 2,500 pre-war MRBMs; 'well under 50%' of drones remain"},
     {"date": "2026-04-21", "day": 53, "bmFloor": 2350, "bmBest": [2950, 3500], "droneFloor": 6770, "droneBest": [8500, 9500], "cmFloor": 80, "cmBest": [100, 150], "note": "Cease-fire Day 14 (FINAL) — expires 0000 GMT Apr 22; Trump: extension 'highly unlikely'; Iran: 'no talks with US for now'; US seized Iranian cargo ship; Tehran vowed retaliation; fire-silence Day 11"},
-    {"date": "2026-04-22", "day": 54, "bmFloor": 2350, "bmBest": [2950, 3500], "droneFloor": 6770, "droneBest": [8500, 9500], "cmFloor": 80, "cmBest": [100, 150], "note": "CEASE-FIRE EXTENDED INDEFINITELY — Trump reversed hours before expiry at Pakistan PM Sharif's request; US blockade remains; VP Vance ME trip on hold; fire-silence Day 12; unclaimed strike on Iran Lavan/Sirri oil infrastructure overnight; no new Gulf cumulative tallies"}
+    {"date": "2026-04-22", "day": 54, "bmFloor": 2350, "bmBest": [2950, 3500], "droneFloor": 6770, "droneBest": [8500, 9500], "cmFloor": 80, "cmBest": [100, 150], "note": "CEASE-FIRE EXTENDED INDEFINITELY — Trump reversed hours before expiry at Pakistan PM Sharif's request; US blockade remains; VP Vance ME trip on hold; fire-silence Day 12; unclaimed strike on Iran Lavan/Sirri oil infrastructure overnight; no new Gulf cumulative tallies"},
+    {"date": "2026-04-23", "day": 55, "bmFloor": 2350, "bmBest": [2950, 3500], "droneFloor": 6900, "droneBest": [8500, 9500], "cmFloor": 80, "cmBest": [100, 150], "note": "CEASE-FIRE DAY 15, INDEFINITE — fire-silence Day 13; no new official cumulative tallies; ISW Apr 19 / US officials to NYT: Iran retains ~70% missiles, ~40% drones, ~60% launchers — incl. ~100 launchers dug from underground; FDD/LWJ Apr 19: Kuwait revised to 369 BMs + 852 drones (drone floor lifted); launcher effective count revised from ~102 to ~200"}
   ],
   "launcherHistory": [
     {"date": "2026-03-04", "day": 5, "remaining": [110, 140], "midpoint": 125, "destroyed": [300, 300], "note": "300+ MRBM launchers destroyed (IDF)"},
@@ -147,16 +150,17 @@
     {"date": "2026-04-19", "day": 51, "remaining": [68, 135], "midpoint": 102, "destroyed": [300, 340], "note": "CEASE-FIRE Day 12 — holding; 3 days to Apr 22 expiry; Islamabad Round 2 Mon Apr 21; 45-day extension on table; attrition paused"},
     {"date": "2026-04-20", "day": 52, "remaining": [68, 135], "midpoint": 102, "destroyed": [300, 340], "note": "CEASE-FIRE Day 13 — holding; 2 days to Apr 22 expiry; Islamabad Round 2 today; attrition clock paused pending outcome"},
     {"date": "2026-04-21", "day": 53, "remaining": [68, 135], "midpoint": 102, "destroyed": [300, 340], "note": "CEASE-FIRE Day 14 (FINAL) — expires 0000 GMT Apr 22; Trump: 'extension highly unlikely'; Iran: 'no talks with US for now'; US seized Iranian cargo ship; attrition clock suspended; ~50 days to zero from resumption"},
-    {"date": "2026-04-22", "day": 54, "remaining": [68, 135], "midpoint": 102, "destroyed": [300, 340], "note": "CEASE-FIRE EXTENDED INDEFINITELY — Trump reversed hours before expiry; attrition clock remains paused; ~50 days to zero from resumption; BM production still halted; unclaimed strike on Lavan/Sirri oil infrastructure; coalition begins Patriot resupply window"}
+    {"date": "2026-04-22", "day": 54, "remaining": [68, 135], "midpoint": 102, "destroyed": [300, 340], "note": "CEASE-FIRE EXTENDED INDEFINITELY — Trump reversed hours before expiry; attrition clock remains paused; ~50 days to zero from resumption; BM production still halted; unclaimed strike on Lavan/Sirri oil infrastructure; coalition begins Patriot resupply window"},
+    {"date": "2026-04-23", "day": 55, "remaining": [170, 235], "midpoint": 200, "destroyed": [300, 340], "note": "MAJOR REVISION — ISW Apr 19 / US officials to NYT: Iran dug ~100 launchers from underground hardened facilities during ceasefire; effective count revised from ~102 to ~200 (60% of pre-war fleet). Days to zero from resumption: ~100 days (up from ~51). Reconstitution is retrieval of buried hardware, not new production. BM production still halted. Iran exploiting ceasefire tactically."}
   ],
   "gulfBreakdown": {
-    "asOf": "2026-04-19",
+    "asOf": "2026-04-23",
     "countries": [
       {"name": "UAE", "bm": 537, "cm": 26, "drones": 2256, "quality": "High", "asOf": "Apr 9 (official uplift)", "note": "+17 BMs / +35 drones in pipeline since Apr 7 cease-fire"},
-      {"name": "Kuwait", "bm": 365, "cm": 0, "drones": 655, "quality": "Medium", "asOf": "Apr 7 (working)"},
+      {"name": "Kuwait", "bm": 369, "cm": 0, "drones": 852, "quality": "Medium-High", "asOf": "Apr 19 (FDD/LWJ)", "note": "FDD/Long War Journal Apr 19: 369 BMs + 852 drones. Drone figure 30% higher than prior working estimate of 655."},
       {"name": "Qatar", "bm": 235, "cm": 8, "drones": 120, "quality": "Medium", "asOf": "Apr 7 (working)"},
       {"name": "Bahrain", "bm": 188, "cm": 0, "drones": 468, "quality": "High", "asOf": "Apr 9 (official uplift)", "note": "+158 drones vs prior estimate; confirms systematic underreporting"},
-      {"name": "Saudi Arabia", "bm": 65, "cm": 7, "drones": 680, "quality": "Medium-Low", "asOf": "Apr 7 (working)"},
+      {"name": "Saudi Arabia", "bm": 68, "cm": 7, "drones": 612, "quality": "Medium", "asOf": "Apr 19 (FDD/LWJ)", "note": "FDD/Long War Journal Apr 19: 68 BMs + 612 drones. CM figure (7) retained from prior Saudi MoD reporting."},
       {"name": "Israel", "bm": 400, "cm": 0, "drones": 0, "quality": "Medium", "asOf": "Apr 4 (NBC est)", "note": "Drone/CM counts toward Israel not separately tracked"}
     ]
   },
@@ -185,6 +189,7 @@
     {"date": "2026-04-19", "day": 51, "text": "CEASE-FIRE Day 12 — holding. Zero fire since Apr 11. ~3 days to Apr 22 expiry. Islamabad Round 2 set for Mon Apr 21. 45-day extension on table. Netanyahu supports ceasefire. 50,000 US personnel in theater."},
     {"date": "2026-04-20", "day": 52, "text": "CEASE-FIRE Day 13 — holding. Islamabad Round 2 underway today. 45-day extension on table; decision expected before Apr 22 expiry. ISW assessment published: Iran retains ~1,000 of 2,500 pre-war MRBMs; 'well under 50%' of drones intact. Hormuz declared open by Iran FM but US blockade remains; Lloyd's List tracking shows minimal transit."},
     {"date": "2026-04-21", "day": 53, "text": "CEASE-FIRE Day 14 (FINAL) — expires 0000 GMT Apr 22. Trump: extension 'highly unlikely.' Iran FM: 'no talks with US for now.' US seized Iranian cargo ship (blockade running); Tehran vowed retaliation. Naval blockade: 9 ships turned back. Fire-silence Day 11. Islamabad Round 2 status: Iran participation uncertain. Both sides signaling toughness in final hours while math shows both deeply depleted."},
-    {"date": "2026-04-22", "day": 54, "text": "CEASE-FIRE EXTENDED INDEFINITELY — Trump reversed 'highly unlikely' stance hours before 0000 GMT Apr 22 expiry at Pakistan PM Shehbaz Sharif's request. US naval blockade remains in full force; military 'ready and able.' VP Vance ME trip on hold. Fire-silence Day 12 (zero Iran-direct launches since Apr 11). Unclaimed attack struck Iran's Lavan Island oil refinery and Sirri Island crude export facilities overnight — first strike on Iranian oil infrastructure during the freeze. War freeze now open-ended; depletion tracker remains paused."}
+    {"date": "2026-04-22", "day": 54, "text": "CEASE-FIRE EXTENDED INDEFINITELY — Trump reversed 'highly unlikely' stance hours before 0000 GMT Apr 22 expiry at Pakistan PM Shehbaz Sharif's request. US naval blockade remains in full force; military 'ready and able.' VP Vance ME trip on hold. Fire-silence Day 12 (zero Iran-direct launches since Apr 11). Unclaimed attack struck Iran's Lavan Island oil refinery and Sirri Island crude export facilities overnight — first strike on Iranian oil infrastructure during the freeze. War freeze now open-ended; depletion tracker remains paused."},
+    {"date": "2026-04-23", "day": 55, "text": "LAUNCHER RECONSTITUTION CONFIRMED — ISW Apr 19 / US officials to NYT: Iran has dug ~100 launchers from underground hardened facilities since the ceasefire began. Effective launcher count revised from ~102 to ~200 (60% of pre-war fleet). Days to BM functional zero from resumption extends from ~51 to ~100 days. US officials: Iran retains ~70% missile stockpile, ~40% drones, ~60% launchers. FDD/LWJ Apr 19: Kuwait theater revised to 369 BMs + 852 drones — 30% more drones than prior tracking estimate. Fire-silence Day 13. No new official Gulf cumulative tallies."}
   ]
 }
