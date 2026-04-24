@@ -537,3 +537,13 @@ Kuwait and Qatar theater contributions were significantly underestimated. After 
 - **No new UAE/Bahrain official cumulatives** since Apr 9 (537/26/2,256) and (188/468).
 - **Launcher reconstitution is the new story:** ~100 new operational launchers = raising effective count from ~102 to ~200+. Binding constraint loosening during ceasefire.
 - **Key judgment:** Iran using open-ended truce to rebuild. If war resumes, depletion clocks restart from materially better Iranian posture than Apr 7 ceasefire baseline.
+
+## 2026-04-24 (Day 57, CEASE-FIRE Day 17)
+
+- **CEASE-FIRE EXTENDED INDEFINITELY (Apr 21).** Trump announced unilateral extension a day before Apr 22 expiry. Iran state media mocked, denied asking; WH's Leavitt dismissed as "mocking statements" (Apr 22).
+- **Islamabad Round 2 POSTPONED INDEFINITELY.** Ghalibaf was expected opposite VP Vance; Iran did not confirm attendance. Mohammadi called extension a "ploy to buy time for surprise strike."
+- **Hormuz escalation (Apr 22):** IRGC Navy seized 2 commercial ships near Strait of Hormuz — first naval seizure since truce. Tests US blockade posture.
+- **Israel-Lebanon:** Trump announced 3-week extension of IL-Lebanon ceasefire (Apr 23, NPR).
+- **Fire-silence Day 16 since Apr 8 post-ceasefire bleed.** No new BM/drone intercepts reported by UAE/Bahrain/Kuwait/Saudi/Qatar.
+- **No new official cumulatives.** UAE stuck at 537/26/2,256. Bahrain 188/468. No Saudi/Kuwait/Qatar updates.
+- **Assessment:** Ceasefire indefinite but fragile. Hormuz ship seizures signal Iran probing. If talks collapse, Iran's regenerated posture (~200 launchers, 70% BM stock per ISW Apr 19) is materially stronger than Apr 7 baseline.

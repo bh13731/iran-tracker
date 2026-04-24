@@ -1,7 +1,7 @@
 # Iran Missile & Drone Tracker — Current State
 
-Last updated: 2026-04-23 04:30 UTC
-Coverage: War through 2026-04-22 evening (Day 55) — CEASE-FIRE Day 15, INDEFINITE
+Last updated: 2026-04-24 04:30 UTC
+Coverage: War through 2026-04-23 evening (Day 57) — CEASE-FIRE Day 17, INDEFINITE
 Confidence: Medium overall
 
 ## Executive Bottom Line
@@ -28,7 +28,7 @@ Confidence: Medium overall
 | Daily ballistic launch capacity | ~8-18/day across all theaters (declining from peak; ~13 midpoint pre-cease-fire) | Medium |
 | Daily drone pressure | ~60-120/day across all theaters (declining from peak pre-cease-fire) | Low-Medium |
 
-**Key judgment:** Apr 22 — CEASE-FIRE Day 15, indefinite. ISW Apr 19 (US officials to NYT): Iran retains ~70% missile stockpile, ~40% drones, ~60% launchers — INCLUDING ~100 launchers newly dug out from underground since ceasefire began. Launcher reconstitution loosens the binding constraint from ~102 to ~200. Iran is exploiting the truce tactically. Fire-silence Day 12. UAE/Bahrain cumulatives unchanged. If war resumes, Iran's posture is materially better than Apr 7 ceasefire baseline.
+**Key judgment:** Apr 24 — CEASE-FIRE Day 17, indefinite (Trump extended Apr 21). Islamabad Round 2 postponed indefinitely; Iran did not confirm attendance; Mohammadi called extension a "ploy". IRGC Navy seized 2 ships near Hormuz Apr 22 — first naval provocation since truce. ISW Apr 19 baseline still stands: Iran ~70% BMs, ~40% drones, ~60% launchers (~200 incl. ~100 dug out). Fire-silence Day 16. UAE/Bahrain cumulatives unchanged. Regenerated posture remains materially stronger than Apr 7 baseline; ceasefire fragile.
 
 ## Confirmed Floors vs Best Estimate
 | Category | Confirmed / working floor | Best estimate total | Main source basis |
@@ -49,7 +49,10 @@ Confidence: Medium overall
 ## What Changed Recently
 - **Apr 12-19 — CEASE-FIRE DAYS 5-12.** Holding. Zero Iran-direct fire since Apr 11.
 - **Apr 17 — HORMUZ DECLARED OPEN.** Iran FM Araghchi: Hormuz "completely open" for commercial vessels during ceasefire. Trump: US blockade "will remain in full force" until peace deal. BBC: tracking shows few ships actually moving.
-- **Apr 18-19 — ISLAMABAD ROUND 2 IMMINENT.** Trump: "probably this weekend"; US officials say Mon Apr 21. 45-day ceasefire extension on table. Netanyahu supports ceasefire.
+- **Apr 21 — CEASE-FIRE EXTENDED INDEFINITELY.** Trump unilateral extension day before Apr 22 expiry. Iran state media mocked; denied asking.
+- **Apr 22 — ISLAMABAD ROUND 2 POSTPONED INDEFINITELY.** Ghalibaf-Vance talks did not happen. Iran's Mohammadi: extension is "ploy to buy time for surprise strike."
+- **Apr 22 — HORMUZ SHIP SEIZURES.** IRGC Navy seized 2 commercial vessels near Strait — first naval provocation since truce.
+- **Apr 23 — Israel-Lebanon ceasefire extended 3 weeks (Trump).**
 - **Israel-Lebanon ceasefire holding (Day 3).**
 - **Reuters Apr 16:** US/Iran scaled back to temporary memorandum — comprehensive deal off table for now.
 - **~3 days to Apr 22 ceasefire expiry** (corrected from Apr 21). US port blockade in effect. 50,000 US personnel in theater.
@@ -75,4 +78,4 @@ Confidence: Medium overall
 - **Analytical review:** `/home/node/.openclaw/workspace/data/iran-tracker-review.md`
 
 ## One-Line CEO Summary
-Day 55: CEASE-FIRE Day 15 indefinite. ISW Apr 19 / US officials to NYT: Iran retains ~70% missiles, ~40% drones, ~60% launchers — incl. ~100 launchers dug out during truce. Iran is reconstituting. Launcher count now ~200 (up from ~102). Fire-silence Day 12. UAE/Bahrain cumulatives unchanged (537/26/2,256; 188/468).
+Day 57: CEASE-FIRE Day 17 indefinite (Trump extended Apr 21). Islamabad Round 2 postponed; Iran seized 2 ships near Hormuz Apr 22. Fire-silence Day 16. Iran posture regenerated (~70% BMs, ~40% drones, ~200 launchers per ISW Apr 19). Cumulatives unchanged (UAE 537/26/2,256; Bahrain 188/468).
