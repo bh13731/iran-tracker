@@ -1,7 +1,7 @@
 # Iran Missile & Drone Tracker — Current State
 
-Last updated: 2026-04-24 04:30 UTC
-Coverage: War through 2026-04-23 evening (Day 57) — CEASE-FIRE Day 17, INDEFINITE
+Last updated: 2026-04-25 04:30 UTC
+Coverage: War through 2026-04-24 evening (Day 58) — CEASE-FIRE Day 18, INDEFINITE
 Confidence: Medium overall
 
 ## Executive Bottom Line
@@ -28,7 +28,7 @@ Confidence: Medium overall
 | Daily ballistic launch capacity | ~8-18/day across all theaters (declining from peak; ~13 midpoint pre-cease-fire) | Medium |
 | Daily drone pressure | ~60-120/day across all theaters (declining from peak pre-cease-fire) | Low-Medium |
 
-**Key judgment:** Apr 24 — CEASE-FIRE Day 17, indefinite (Trump extended Apr 21). Islamabad Round 2 postponed indefinitely; Iran did not confirm attendance; Mohammadi called extension a "ploy". IRGC Navy seized 2 ships near Hormuz Apr 22 — first naval provocation since truce. ISW Apr 19 baseline still stands: Iran ~70% BMs, ~40% drones, ~60% launchers (~200 incl. ~100 dug out). Fire-silence Day 16. UAE/Bahrain cumulatives unchanged. Regenerated posture remains materially stronger than Apr 7 baseline; ceasefire fragile.
+**Key judgment:** Apr 25 — CEASE-FIRE Day 18, indefinite. Fire-silence Day 17. ISW Apr 19 baseline still stands: Iran ~70% BMs, ~40% drones, ~60% launchers (~200 incl. ~100 dug out from underground during truce). UAE/Bahrain cumulatives unchanged (537/26/2,256; 188/468). 2 vessels seized by IRGC Apr 22 still held, no new naval incidents. Regenerated posture materially stronger than Apr 7 baseline; ceasefire fragile but no rupture overnight.
 
 ## Confirmed Floors vs Best Estimate
 | Category | Confirmed / working floor | Best estimate total | Main source basis |
@@ -78,4 +78,4 @@ Confidence: Medium overall
 - **Analytical review:** `/home/node/.openclaw/workspace/data/iran-tracker-review.md`
 
 ## One-Line CEO Summary
-Day 57: CEASE-FIRE Day 17 indefinite (Trump extended Apr 21). Islamabad Round 2 postponed; Iran seized 2 ships near Hormuz Apr 22. Fire-silence Day 16. Iran posture regenerated (~70% BMs, ~40% drones, ~200 launchers per ISW Apr 19). Cumulatives unchanged (UAE 537/26/2,256; Bahrain 188/468).
+Day 58: CEASE-FIRE Day 18 indefinite. Fire-silence Day 17. Iran posture regenerated (~70% BMs, ~40% drones, ~200 launchers per ISW Apr 19). Cumulatives unchanged (UAE 537/26/2,256; Bahrain 188/468). 2 IRGC-seized vessels still held; no new naval incidents.

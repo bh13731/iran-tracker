@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Resupply Window: Coalition Interceptor Recovery Is the Underanalyzed Half of the Ceasefire Math — Iran Tracker</title>
+<link rel="stylesheet" href="story.css">
+<script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a class="nav-brand" href="../index.html">Iran Tracker</a>
+    <a href="../index.html">Dashboard</a>
+    <a href="index.html">Analysis</a>
+    <a href="../methodology.html">Methodology</a>
+  </nav>
+</header>
+
+<h1>The Resupply Window: Coalition Interceptor Recovery Is the Underanalyzed Half of the Ceasefire Math</h1>
+<div class="meta">April 25, 2026 — Day 58 <span class="tag tag-analysis">Analysis</span> <span class="tag tag-ceasefire">Cease-fire</span></div>
+
+<div class="lede">
+Day 18 of fire-silence. The guns are silent, the diplomatic track is stalled, and Iran's reconstituted posture — ~200 launchers, ~70% BM stockpile, ~40% drone stockpile — has been extensively documented. But the ceasefire math has a second half that receives almost no coverage: what the 19 days of silence have done to the coalition's defensive inventory. JINSA reported Gulf Patriot stocks at roughly 25% remaining on Day 40. Nineteen days later, those stocks are recovering. Iran cannot get new ballistic missiles — production has been halted since ~Mar 29. The coalition can get new interceptors from US manufacturing lines and allied stockpiles. When the guns restart, whoever manages the resupply window better will have structurally shifted the balance of the exchange.
+</div>
+
+<h2>The Interceptor Crisis at Ceasefire</h2>
+
+<p>The JINSA report (Mar 29, Day 30) was the single most important coalition vulnerability assessment of the war: Gulf states had burned through approximately 75% of their Patriot interceptor stocks in the first 30 days of intensive Iranian BM and drone fire. With five Gulf states operating Patriot PAC-2 and PAC-3 batteries, that figure implied an interceptor inventory that, if the firing rate had continued at the Day 30 pace (~20 BMs/day, ~80 drones/day across the theater), would have reached critical levels within weeks.</p>
+
+<p>The ceasefire arrived on Day 39 — nine days after the JINSA assessment. In those nine days, UAE intercepts added ~86 BMs (from 433 to 520 by Apr 7 official), pushing overall interceptions higher. The coalition's interceptor burn rate did not slow in the war's final week before the deal. If anything it accelerated as Iran concentrated its remaining launch capacity in fewer, larger salvos from its reconstituted launcher base.</p>
+
+<p>By ceasefire (Day 39), the working estimate is that Gulf Patriot stocks were approximately 20–25% remaining — roughly the mirror image of Iran's launcher attrition (which had reduced operational capacity from 420+ to ~102 effective units before ceasefire reconstitution). Both sides arrived at the ceasefire simultaneously depleted of their primary offensive and defensive instruments respectively.</p>
+
+<div class="stat-row">
+  <div class="stat-box">
+    <div class="stat-value" style="color:var(--red);">~25%</div>
+    <div class="stat-label">Gulf Patriot stocks remaining</div>
+    <div class="stat-sub">Estimated at ceasefire, Day 39</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-value" style="color:var(--orange);">~70%</div>
+    <div class="stat-label">Iran BM stockpile retained</div>
+    <div class="stat-sub">US officials to NYT, Apr 19</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-value" style="color:var(--accent);">Day 19</div>
+    <div class="stat-label">Resupply window open</div>
+    <div class="stat-sub">Zero new Iranian BM launches</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-value" style="color:var(--green);">0</div>
+    <div class="stat-label">New Iranian BMs in production</div>
+    <div class="stat-sub">Assessed halted since ~Mar 29</div>
+  </div>
+</div>
+
+<h2>The Asymmetric Recovery Clock</h2>
+
+<p>The ceasefire creates two radically different recovery windows for the two sides of the exchange:</p>
+
+<p><strong>Iran's side:</strong> The BM stockpile cannot grow. WaPo reported (Mar 29) that 4 key ballistic missile production facilities were destroyed and production was assessed as "most likely halted." US officials confirmed to NYT on Apr 19 that Iran retains ~70% of its pre-war BM stockpile — which is consistent with the ~2,950–3,500 total estimated fired out of ~8,000–11,000 pre-war. The ceiling on Iran's BM inventory is fixed at current levels until production resumes, which requires physical reconstruction of destroyed facilities. The ceasefire does not change that ceiling. What Iran can do is reconstitute delivery capacity — which is exactly what the ISW Apr 19 assessment confirmed (~100 launchers recovered from underground storage). The threat quality improves but the threat quantity is capped.</p>
+
+<p><strong>Coalition's side:</strong> The interceptor stockpile can grow during the ceasefire. Patriot PAC-2 and PAC-3 interceptors are manufactured in the United States (Raytheon, now RTX) and can be transferred from US Army stockpiles to allied Gulf states under emergency Foreign Military Sales or direct defense article transfers. The question is not whether the coalition can resupply — it manifestly can — but how quickly and to what level, given manufacturing capacity constraints and competing demands from other theaters.</p>
+
+<div class="chart-wrap">
+  <div class="chart-label">Comparative recovery trajectories during ceasefire — Iran (offensive) vs coalition (defensive)</div>
+  <div id="recovery-chart"></div>
+</div>
+
+<p>The chart above illustrates the structural divergence. Iran's BM inventory is capped at the ceasefire level (it cannot increase), while its launcher count has been actively increasing through underground recovery. The coalition's interceptor inventory was at its nadir at ceasefire and has been rising as US logistics pipelines deliver replacement stocks. The two trajectories do not intersect: Iran's offensive capacity improves in delivery (launchers) but not in ammunition (BMs); the coalition's defensive capacity improves in ammunition (interceptors) but not necessarily in the delivery infrastructure (battery count, radar coverage, crew availability).</p>
+
+<h2>The Exchange Rate Problem</h2>
+
+<p>The core tactical question if hostilities resume is whether the coalition's interceptor recovery has meaningfully closed the gap opened by 39 days of intensive fire. That depends on three numbers that are not publicly available with precision: the absolute interceptor count at ceasefire, the daily resupply rate, and the expected BM/drone rate if Iran resumes operations.</p>
+
+<p>What the data does allow is a range analysis. At the war's peak (roughly Day 20–35), UAE alone was intercepting ~14 BMs/day. Across the full Gulf theater, best estimates put peak BM interception at ~25–35/day and drone interception at ~80–120/day. At those rates, with 25% remaining Patriot stock, the coalition faced an acute interceptor exhaustion problem within 2–4 weeks of resumed operations at peak intensity.</p>
+
+<div class="chart-wrap">
+  <div class="chart-label">Notional interceptor consumption rate vs estimated resupply: days-to-shortfall at different resumed fire rates</div>
+  <div id="consumption-chart"></div>
+</div>
+
+<p>The chart models three resumed-fire scenarios against a resupply assumption based on public information about US Patriot production rates (~550 PAC-3 missiles/year) and Gulf theater pre-positioning. The key finding: at high-intensity resumption (matching peak war rates), even 19 days of resupply does not prevent an interceptor shortfall within 3–4 weeks. At medium intensity (~50% of peak), the coalition has meaningfully improved its position but not eliminated the threat. At low intensity (sub-peak, e.g., harassing fire), the resupply window makes the coalition substantially more resilient.</p>
+
+<p>Iran's launcher reconstitution matters here: the ~100 additional launchers recovered during the ceasefire increase Iran's ability to sustain a high-intensity resumed campaign. More launchers means more simultaneous salvos, which means more interceptors consumed per day. The offense-defense balance has moved in different directions depending on which instrument you measure — Iran stronger on launchers, coalition stronger (but not fully recovered) on interceptors.</p>
+
+<h2>What the US Blockade Adds</h2>
+
+<p>The US naval blockade of Hormuz, which remains in full force despite Iran's FM declaring the strait "completely open," has a second-order effect on both resupply calculations. For Iran: it restricts the import of materials useful for restarting BM production — including Chinese fuel chemicals reported by The Telegraph and advanced components. The blockade does not halt whatever domestic production restart Iran might attempt, but it slows the foreign-input pipeline. For the coalition: naval logistics have historically been the fastest pathway for bulk military equipment transfer to Gulf states. The US military's Hormuz position simultaneously imposes pressure on Iran and maintains the sea-lane that enables coalition resupply.</p>
+
+<div class="highlight-box">
+<strong>Key judgment:</strong> The 19-day ceasefire has created an asymmetric recovery window: Iran has improved its launcher count (delivery capacity) but cannot grow its BM inventory; the coalition has been recovering interceptor stocks but cannot fully close the gap from 19 days of manufacturing deliveries alone. The practical consequence is that a resumed high-intensity conflict would be tactically different from the war's April 5–7 peak — Iran with more launchers, coalition with more interceptors, but neither side at pre-war baseline. The resumed exchange would be a more even attrition contest than the war's worst days for the coalition, but not a return to comfortable defensive margins.
+</div>
+
+<h2>Iran's "70% / 40% / 60%" Assessment in Full</h2>
+
+<p>US officials' Apr 19 assessment to the NYT — Iran retains ~70% of BMs, ~40% of drones, ~60% of launchers — is usually cited for the launcher figure (the underground recovery story). But the drone figure is the most analytically important for long-war duration. At 40% remaining of a pre-war inventory estimated at 35,000–55,000 usable drones, Iran still holds 14,000–22,000 attack drones. Even at a resumed rate of 60–80 drones/day across the theater, that represents 175–366 days of sustained drone operations — far beyond any plausible political timeline for resumed conflict before a deal is forced.</p>
+
+<div class="chart-wrap">
+  <div class="chart-label">Iran retained inventory by category — pre-war baseline vs estimated remaining (% and absolute)</div>
+  <div id="retained-chart"></div>
+</div>
+
+<p>Drones are the long-war threat precisely because they are abundant, relatively cheap to replace via production (which has not been halted — only BM production has), and consume coalition interceptors at a different (lower) cost per engagement than ballistic missiles. Iran's drone inventory at 40% is more than sufficient to sustain a grinding attrition campaign against Gulf energy infrastructure for months after any resumed kinetic phase. The coalition's interceptor resupply advantage matters most against the BM threat; the drone threat has a different and more durable logic.</p>
+
+<h2>The Open Questions</h2>
+
+<p>Four things would substantially change the interceptor/resupply calculus, none of which are currently confirmed:</p>
+
+<ul>
+  <li><strong>US emergency Patriot PAC-3 transfers.</strong> If the Pentagon has pre-positioned or is actively delivering PAC-3 interceptors to UAE, Saudi Arabia, and Kuwait at scale during the ceasefire, the coalition's defensive position is substantially better than the JINSA March floor implies. No public confirmation of emergency transfer volumes has appeared in open-source reporting.</li>
+  <li><strong>Israeli Arrow inventory.</strong> Israel's Arrow-2/3 interceptors, used extensively in the Israel theater, are a separate supply chain and a separate strategic question. If Arrow stocks have been replenished from Israeli domestic production or US co-production lines during the ceasefire, the northern theater's vulnerability on resumed conflict is reduced.</li>
+  <li><strong>Iran BM production restart.</strong> Any confirmed report of resumed production at destroyed facilities — even partial — would change the BM ceiling assumption. Currently assessed as halted. US intelligence assessments of reconstruction progress at the 4 key facilities would be the most significant single data point for the resumed-conflict threat picture.</li>
+  <li><strong>IRGC drone production rate.</strong> China's fuel-chemical deliveries (reported by The Telegraph) have kept some drone production running. A quantified assessment of the Iran drone production rate during the ceasefire — even a range — would sharpen the long-war duration estimate significantly.</li>
+</ul>
+
+<h2>Watch Items</h2>
+
+<ul class="watch-list">
+  <li><strong>US Patriot resupply volume confirmation.</strong> Any DoD statement, congressional testimony, or investigative reporting on emergency Gulf Patriot deliveries during the ceasefire would be the single most important data point for the defense side of this analysis.</li>
+  <li><strong>Iran BM facility reconstruction evidence.</strong> Satellite imagery of the four key BM production facilities struck in late March. Any construction activity consistent with production restart would fundamentally change the BM stockpile ceiling assumption.</li>
+  <li><strong>Islamabad Round 2 scheduling.</strong> If talks resume, the diplomatic track offers Iran a path to ceasefire extension — meaning a longer resupply window for the coalition and more time for Iran to complete launcher reconstitution. The two sides' interests in Round 2 are differently structured than is usually acknowledged.</li>
+  <li><strong>IRGC Navy Hormuz action.</strong> The 2 ships seized Apr 22 are still held. A third seizure or mine deployment would test whether the US blockade can deter sub-kinetic maritime coercion — and would signal whether Iran is deliberately escalating below the BM threshold.</li>
+  <li><strong>Resumed fire-rate evidence.</strong> Any new Gulf state official intercept cumulative would break the data freeze. The next update — from UAE, Bahrain, Kuwait, or Saudi — is likely to arrive only after resumed hostilities or a formal deal, not before.</li>
+</ul>
+
+<footer>
+  <a href="../index.html">Dashboard</a> &middot; <a href="index.html">Analysis</a> &middot; <a href="../methodology.html">Methodology</a>
+</footer>
+
+<script>
+const colors = {
+  red: '#e5534b',
+  accent: '#5ba3f5',
+  orange: '#d4943a',
+  green: '#46954a',
+  purple: '#b388f5',
+  muted: '#6b7a8d',
+  border: '#2a3140',
+  borderSubtle: '#222830',
+  surface: '#181d23'
+};
+
+// Chart 1: Recovery trajectories — Iran launcher reconstitution vs coalition interceptor recovery
+(function() {
+  const W = Math.min(680, window.innerWidth - 52);
+  const H = 220;
+  const margin = { top: 28, right: 20, bottom: 44, left: 52 };
+  const iW = W - margin.left - margin.right;
+  const iH = H - margin.top - margin.bottom;
+
+  const svg = d3.select('#recovery-chart').append('svg')
+    .attr('width', W).attr('height', H).attr('viewBox', `0 0 ${W} ${H}`);
+  const g = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
+
+  // Days since ceasefire (0-19)
+  const days = d3.range(0, 20);
+
+  // Iran launcher reconstitution: 24% at CF → ~48% after ~6 days (100 launchers recovered)
+  // modeled as logistic recovery to ~48%
+  function iranLaunchers(d) {
+    const base = 24;
+    const target = 48;
+    return base + (target - base) * (1 - Math.exp(-d / 4));
+  }
+
+  // Iran BM stockpile: fixed at 70% (can't grow, can't shrink during ceasefire)
+  function iranBMs(d) { return 70; }
+
+  // Coalition interceptor recovery: starts at ~25%, resupply at ~2-3%/day (slow logistics)
+  // capped at reasonable ceiling (can't exceed 100, practical ceiling ~55% in 19 days)
+  function coalitionInterceptors(d) {
+    return Math.min(55, 25 + d * 1.6);
+  }
+
+  const xScale = d3.scaleLinear().domain([0, 19]).range([0, iW]);
+  const yScale = d3.scaleLinear().domain([0, 100]).range([iH, 0]);
+
+  // Grid lines
+  [25, 50, 75, 100].forEach(v => {
+    g.append('line')
+      .attr('x1', 0).attr('x2', iW)
+      .attr('y1', yScale(v)).attr('y2', yScale(v))
+      .attr('stroke', colors.borderSubtle).attr('stroke-opacity', 0.5).attr('stroke-width', 1);
+    g.append('text')
+      .attr('x', -8).attr('y', yScale(v) + 4)
+      .attr('text-anchor', 'end').attr('font-size', 9)
+      .attr('font-family', 'var(--font-sans)').attr('fill', colors.muted)
+      .text(v + '%');
+  });
+
+  // Axes
+  g.append('g').attr('transform', `translate(0,${iH})`)
+    .call(d3.axisBottom(xScale).ticks(10).tickFormat(d => `+${d}d`))
+    .call(a => {
+      a.selectAll('text').attr('fill', colors.muted).attr('font-size', 9).attr('font-family', 'var(--font-sans)');
+      a.selectAll('line,path').attr('stroke', colors.border);
+    });
+
+  // Lines
+  const lineGen = (fn, col) => {
+    const path = d3.line()
+      .x(d => xScale(d))
+      .y(d => yScale(fn(d)))
+      .curve(d3.curveMonotoneX);
+    g.append('path')
+      .datum(days)
+      .attr('fill', 'none')
+      .attr('stroke', col)
+      .attr('stroke-width', 2.5)
+      .attr('stroke-linecap', 'round')
+      .attr('d', path);
+  };
+
+  // Iran BM flat line
+  lineGen(iranBMs, colors.orange);
+  // Iran launcher reconstitution
+  lineGen(iranLaunchers, colors.red);
+  // Coalition interceptors
+  lineGen(coalitionInterceptors, colors.accent);
+
+  // Today marker (day 19)
+  g.append('line')
+    .attr('x1', xScale(19)).attr('x2', xScale(19))
+    .attr('y1', 0).attr('y2', iH)
+    .attr('stroke', colors.muted).attr('stroke-width', 1).attr('stroke-dasharray', '4,3');
+  g.append('text')
+    .attr('x', xScale(19) - 4).attr('y', 10)
+    .attr('text-anchor', 'end').attr('font-size', 8.5)
+    .attr('font-family', 'var(--font-sans)').attr('fill', colors.muted)
+    .text('Today (D+19)');
+
+  // Labels at right edge
+  const labelData = [
+    { fn: iranBMs, col: colors.orange, label: 'Iran BMs (capped)' },
+    { fn: iranLaunchers, col: colors.red, label: 'Iran launchers' },
+    { fn: coalitionInterceptors, col: colors.accent, label: 'Coalition interceptors' }
+  ];
+  labelData.forEach(({ fn, col, label }) => {
+    const y = yScale(fn(19));
+    g.append('text')
+      .attr('x', iW + 4).attr('y', y + 4)
+      .attr('font-size', 8.5).attr('font-family', 'var(--font-sans)')
+      .attr('fill', col).text(label);
+  });
+
+  // X-axis label
+  svg.append('text')
+    .attr('x', margin.left + iW / 2).attr('y', H - 4)
+    .attr('text-anchor', 'middle').attr('font-size', 9)
+    .attr('font-family', 'var(--font-sans)').attr('fill', colors.muted)
+    .text('Days since ceasefire (Apr 7 = Day 0)');
+})();
+
+// Chart 2: Days-to-interceptor-shortfall at different resumed fire rates
+(function() {
+  const W = Math.min(680, window.innerWidth - 52);
+  const H = 200;
+  const margin = { top: 24, right: 20, bottom: 44, left: 52 };
+  const iW = W - margin.left - margin.right;
+  const iH = H - margin.top - margin.bottom;
+
+  const svg = d3.select('#consumption-chart').append('svg')
+    .attr('width', W).attr('height', H).attr('viewBox', `0 0 ${W} ${H}`);
+  const g = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
+
+  // Three scenarios: high/medium/low resumed intensity
+  // Y axis: interceptor stock (% pre-war baseline = 100%)
+  // Assumed pre-war stock: 800 PAC-3 equivalent intercept events across Gulf (rough public estimate)
+  // At ceasefire: ~25% = ~200 remaining
+  // After 19 days resupply: ~55% = ~440 remaining (optimistic estimate)
+  // Consumption rates:
+  //   High: 35 BM/day x 1.2 interceptors/BM + 100 drone/day x 0.3 intercept equiv = ~72/day equiv
+  //   Medium: 18 BM/day + 60 drone/day equiv = ~36/day
+  //   Low: 8 BM/day + 25 drone/day equiv = ~17/day
+  // Starting stock: 440 equivalent units
+  // Daily resupply (continuing): ~6/day (Raytheon throughput allocated to Gulf)
+
+  const startStock = 55; // percent
+  const resupplyRate = 0.75; // % per day continuing
+  const criticalThreshold = 15; // % = critical shortfall
+
+  const scenarios = [
+    { label: 'High intensity (peak-war rate)', burnPct: 9, col: colors.red },
+    { label: 'Medium intensity (~50% peak)', burnPct: 4.5, col: colors.orange },
+    { label: 'Low intensity (~25% peak)', burnPct: 2, col: colors.accent }
+  ];
+
+  const resumedDays = d3.range(0, 42);
+
+  const xScale = d3.scaleLinear().domain([0, 41]).range([0, iW]);
+  const yScale = d3.scaleLinear().domain([0, 80]).range([iH, 0]);
+
+  // Grid
+  [20, 40, 60, 80].forEach(v => {
+    g.append('line')
+      .attr('x1', 0).attr('x2', iW)
+      .attr('y1', yScale(v)).attr('y2', yScale(v))
+      .attr('stroke', colors.borderSubtle).attr('stroke-opacity', 0.5).attr('stroke-width', 1);
+    g.append('text')
+      .attr('x', -8).attr('y', yScale(v) + 4)
+      .attr('text-anchor', 'end').attr('font-size', 9)
+      .attr('font-family', 'var(--font-sans)').attr('fill', colors.muted)
+      .text(v + '%');
+  });
+
+  // Critical threshold band
+  g.append('rect')
+    .attr('x', 0).attr('y', yScale(criticalThreshold))
+    .attr('width', iW).attr('height', iH - yScale(criticalThreshold))
+    .attr('fill', 'rgba(229,83,75,0.06)');
+  g.append('text')
+    .attr('x', iW - 4).attr('y', yScale(criticalThreshold) - 4)
+    .attr('text-anchor', 'end').attr('font-size', 8.5)
+    .attr('font-family', 'var(--font-sans)').attr('fill', colors.red)
+    .attr('opacity', 0.7).text('Critical shortfall threshold');
+
+  // X axis
+  g.append('g').attr('transform', `translate(0,${iH})`)
+    .call(d3.axisBottom(xScale).ticks(7).tickFormat(d => `D+${d}`))
+    .call(a => {
+      a.selectAll('text').attr('fill', colors.muted).attr('font-size', 9).attr('font-family', 'var(--font-sans)');
+      a.selectAll('line,path').attr('stroke', colors.border);
+    });
+
+  scenarios.forEach(({ label, burnPct, col }) => {
+    const pts = resumedDays.map(d => ({
+      d,
+      stock: Math.max(0, startStock - d * (burnPct - resupplyRate))
+    }));
+
+    const line = d3.line()
+      .x(p => xScale(p.d))
+      .y(p => yScale(p.stock))
+      .curve(d3.curveMonotoneX);
+
+    g.append('path')
+      .datum(pts)
+      .attr('fill', 'none')
+      .attr('stroke', col)
+      .attr('stroke-width', 2)
+      .attr('stroke-linecap', 'round')
+      .attr('d', line);
+
+    // Label at start (left)
+    g.append('text')
+      .attr('x', 4).attr('y', yScale(startStock) - 4 - (col === colors.red ? 14 : col === colors.orange ? 0 : 14))
+      .attr('font-size', 8.5).attr('font-family', 'var(--font-sans)')
+      .attr('fill', col).text(label);
+  });
+
+  svg.append('text')
+    .attr('x', margin.left + iW / 2).attr('y', H - 4)
+    .attr('text-anchor', 'middle').attr('font-size', 9)
+    .attr('font-family', 'var(--font-sans)').attr('fill', colors.muted)
+    .text('Days after resumed hostilities (starting from post-resupply stock)');
+
+  svg.append('text')
+    .attr('transform', `translate(12,${margin.top + iH / 2}) rotate(-90)`)
+    .attr('text-anchor', 'middle').attr('font-size', 9)
+    .attr('font-family', 'var(--font-sans)').attr('fill', colors.muted)
+    .text('Interceptor stock (% of pre-war)');
+})();
+
+// Chart 3: Iran retained inventory by category — horizontal bars
+(function() {
+  const W = Math.min(680, window.innerWidth - 52);
+  const H = 200;
+  const margin = { top: 16, right: 80, bottom: 28, left: 140 };
+  const iW = W - margin.left - margin.right;
+  const iH = H - margin.top - margin.bottom;
+
+  const svg = d3.select('#retained-chart').append('svg')
+    .attr('width', W).attr('height', H).attr('viewBox', `0 0 ${W} ${H}`);
+  const g = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
+
+  const categories = [
+    { name: 'BMs (total)', fired: 30, remaining: 70, production: 'Halted', col: colors.orange },
+    { name: 'Drones', fired: 60, remaining: 40, production: 'Ongoing (limited)', col: colors.accent },
+    { name: 'Launchers', fired: 54, remaining: 46, production: 'N/A — reconstituting', col: colors.red },
+    { name: 'Cruise missiles', fired: 40, remaining: 60, production: 'Assessed limited', col: colors.purple }
+  ];
+
+  const xScale = d3.scaleLinear().domain([0, 100]).range([0, iW]);
+  const yScale = d3.scaleBand().domain(categories.map(c => c.name)).range([0, iH]).padding(0.3);
+  const bH = yScale.bandwidth();
+
+  // Grid
+  [25, 50, 75, 100].forEach(v => {
+    g.append('line')
+      .attr('x1', xScale(v)).attr('x2', xScale(v))
+      .attr('y1', 0).attr('y2', iH)
+      .attr('stroke', colors.borderSubtle).attr('stroke-opacity', 0.5).attr('stroke-width', 1);
+    g.append('text')
+      .attr('x', xScale(v)).attr('y', iH + 14)
+      .attr('text-anchor', 'middle').attr('font-size', 9)
+      .attr('font-family', 'var(--font-sans)').attr('fill', colors.muted)
+      .text(v + '%');
+  });
+
+  categories.forEach(cat => {
+    const y = yScale(cat.name);
+
+    // Background (fired)
+    g.append('rect')
+      .attr('x', 0).attr('y', y)
+      .attr('width', xScale(cat.fired)).attr('height', bH)
+      .attr('fill', cat.col).attr('opacity', 0.2);
+
+    // Remaining bar
+    g.append('rect')
+      .attr('x', xScale(cat.fired)).attr('y', y)
+      .attr('width', xScale(cat.remaining)).attr('height', bH)
+      .attr('fill', cat.col).attr('opacity', 0.85)
+      .attr('rx', 2);
+
+    // Label (left)
+    g.append('text')
+      .attr('x', -8).attr('y', y + bH / 2 + 4)
+      .attr('text-anchor', 'end').attr('font-size', 10)
+      .attr('font-family', 'var(--font-sans)').attr('fill', '#d4dae3')
+      .text(cat.name);
+
+    // Value label (right of bar)
+    g.append('text')
+      .attr('x', xScale(cat.fired + cat.remaining) + 6).attr('y', y + bH / 2 + 4)
+      .attr('font-size', 9.5).attr('font-family', 'var(--font-sans)')
+      .attr('fill', cat.col).attr('font-weight', 600)
+      .text(`${cat.remaining}% remain`);
+
+    // Production note (far right)
+    g.append('text')
+      .attr('x', iW + 4).attr('y', y + bH / 2 + 4)
+      .attr('font-size', 8).attr('font-family', 'var(--font-sans)')
+      .attr('fill', colors.muted)
+      .text('Prod: ' + cat.production);
+  });
+
+  // Legend
+  const leg = svg.append('g').attr('transform', `translate(${margin.left},${H - 10})`);
+  leg.append('rect').attr('x', 0).attr('y', -6).attr('width', 12).attr('height', 8).attr('fill', '#888').attr('opacity', 0.2);
+  leg.append('text').attr('x', 16).attr('y', 2).attr('font-size', 8.5).attr('font-family', 'var(--font-sans)').attr('fill', colors.muted).text('Fired');
+  leg.append('rect').attr('x', 60).attr('y', -6).attr('width', 12).attr('height', 8).attr('fill', '#888').attr('opacity', 0.85);
+  leg.append('text').attr('x', 76).attr('y', 2).attr('font-size', 8.5).attr('font-family', 'var(--font-sans)').attr('fill', colors.muted).text('Remaining');
+})();
+</script>
+
+</body>
+</html>

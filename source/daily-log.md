@@ -547,3 +547,11 @@ Kuwait and Qatar theater contributions were significantly underestimated. After 
 - **Fire-silence Day 16 since Apr 8 post-ceasefire bleed.** No new BM/drone intercepts reported by UAE/Bahrain/Kuwait/Saudi/Qatar.
 - **No new official cumulatives.** UAE stuck at 537/26/2,256. Bahrain 188/468. No Saudi/Kuwait/Qatar updates.
 - **Assessment:** Ceasefire indefinite but fragile. Hormuz ship seizures signal Iran probing. If talks collapse, Iran's regenerated posture (~200 launchers, 70% BM stock per ISW Apr 19) is materially stronger than Apr 7 baseline.
+
+## 2026-04-25 (Day 58, CEASE-FIRE Day 18)
+
+- **Ceasefire Day 18, indefinite. Fire-silence Day 17.** No new Iran-direct launches reported by UAE/Bahrain/Kuwait/Saudi/Qatar/Israel.
+- **No new official cumulatives.** UAE remains at 537 BMs / 26 CMs / 2,256 drones (Apr 9). Bahrain 188/468 (Apr 9). No Saudi/Kuwait/Qatar updates.
+- **Diplomatic track:** Islamabad Round 2 still postponed; no breakthrough reported overnight.
+- **Hormuz:** 2 IRGC-seized vessels from Apr 22 still held; no new naval incidents reported.
+- **Assessment:** Status quo holds — frozen depletion math, regenerated Iranian posture per ISW Apr 19 baseline (~70% BMs, ~40% drones, ~200 launchers). Ceasefire fragile but no rupture overnight.
