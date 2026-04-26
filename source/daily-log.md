@@ -555,3 +555,13 @@ Kuwait and Qatar theater contributions were significantly underestimated. After 
 - **Diplomatic track:** Islamabad Round 2 still postponed; no breakthrough reported overnight.
 - **Hormuz:** 2 IRGC-seized vessels from Apr 22 still held; no new naval incidents reported.
 - **Assessment:** Status quo holds — frozen depletion math, regenerated Iranian posture per ISW Apr 19 baseline (~70% BMs, ~40% drones, ~200 launchers). Ceasefire fragile but no rupture overnight.
+
+## 2026-04-26 04:30 UTC — Day 60, CEASE-FIRE Day 19
+
+- Apr 24: Kuwait MoD confirmed 2 explosive-laden drones hit northern border posts; launched from Iraq (proxy/militia, not direct Iran). Material damage, no casualties.
+- Iraqi-launched drones complicate attribution but consistent with Iran-aligned militia activity (Islamic Resistance in Iraq pattern).
+- Trump: blockade continues; Iran must present "unified proposal." Third US carrier ordered to region.
+- Iran FM Araghchi to Islamabad Apr 24 for "consultations" — Oman/Russia delegations also. Talks remain deadlocked over Hormuz blockade (Iran calls it ceasefire violation).
+- No new official UAE/Bahrain/Saudi cumulatives published. UAE 537/26/2,256, Bahrain 188/468 unchanged.
+- Direct Iran fire-silence: Day 19 (since Apr 11). Naval seizures from Apr 22 still unresolved.
+- Posture: ceasefire fraying at edges via Iraqi proxy strikes; no rupture in direct Iran fire yet.

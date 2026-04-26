@@ -1,7 +1,7 @@
 # Iran Missile & Drone Tracker — Current State
 
-Last updated: 2026-04-25 04:30 UTC
-Coverage: War through 2026-04-24 evening (Day 58) — CEASE-FIRE Day 18, INDEFINITE
+Last updated: 2026-04-26 04:30 UTC
+Coverage: War through 2026-04-25 evening (Day 60) — CEASE-FIRE Day 19, INDEFINITE
 Confidence: Medium overall
 
 ## Executive Bottom Line
@@ -28,7 +28,7 @@ Confidence: Medium overall
 | Daily ballistic launch capacity | ~8-18/day across all theaters (declining from peak; ~13 midpoint pre-cease-fire) | Medium |
 | Daily drone pressure | ~60-120/day across all theaters (declining from peak pre-cease-fire) | Low-Medium |
 
-**Key judgment:** Apr 25 — CEASE-FIRE Day 18, indefinite. Fire-silence Day 17. ISW Apr 19 baseline still stands: Iran ~70% BMs, ~40% drones, ~60% launchers (~200 incl. ~100 dug out from underground during truce). UAE/Bahrain cumulatives unchanged (537/26/2,256; 188/468). 2 vessels seized by IRGC Apr 22 still held, no new naval incidents. Regenerated posture materially stronger than Apr 7 baseline; ceasefire fragile but no rupture overnight.
+**Key judgment:** Apr 26 — CEASE-FIRE Day 19, indefinite. Direct Iran fire-silence Day 19 holding. Apr 24 Kuwait hit by 2 drones launched from Iraq (Iran-aligned militia proxy) — first kinetic incident since Apr 22 vessel seizures. ISW Apr 19 baseline still stands: ~70% BMs, ~40% drones, ~60% launchers (~200). Cumulatives unchanged (UAE 537/26/2,256; Bahrain 188/468). Talks deadlocked in Islamabad over Hormuz blockade; third US carrier ordered to region. Ceasefire fraying at proxy edges, no direct rupture.
 
 ## Confirmed Floors vs Best Estimate
 | Category | Confirmed / working floor | Best estimate total | Main source basis |
@@ -78,4 +78,4 @@ Confidence: Medium overall
 - **Analytical review:** `/home/node/.openclaw/workspace/data/iran-tracker-review.md`
 
 ## One-Line CEO Summary
-Day 58: CEASE-FIRE Day 18 indefinite. Fire-silence Day 17. Iran posture regenerated (~70% BMs, ~40% drones, ~200 launchers per ISW Apr 19). Cumulatives unchanged (UAE 537/26/2,256; Bahrain 188/468). 2 IRGC-seized vessels still held; no new naval incidents.
+Day 60: CEASE-FIRE Day 19 indefinite. Direct Iran fire-silence Day 19. Apr 24 Kuwait hit by 2 Iraq-launched proxy drones (no casualties). Cumulatives unchanged (UAE 537/26/2,256; Bahrain 188/468). Talks deadlocked over Hormuz blockade; 3rd US carrier ordered in.
