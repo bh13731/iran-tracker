@@ -565,3 +565,13 @@ Kuwait and Qatar theater contributions were significantly underestimated. After 
 - No new official UAE/Bahrain/Saudi cumulatives published. UAE 537/26/2,256, Bahrain 188/468 unchanged.
 - Direct Iran fire-silence: Day 19 (since Apr 11). Naval seizures from Apr 22 still unresolved.
 - Posture: ceasefire fraying at edges via Iraqi proxy strikes; no rupture in direct Iran fire yet.
+
+## 2026-04-27 04:30 UTC — Day 61, CEASE-FIRE Day 20
+
+- Direct Iran fire-silence Day 20 (since Apr 11). No new UAE/Bahrain/Kuwait/Saudi/Qatar intercepts reported overnight.
+- No new official cumulatives. UAE 537/26/2,256 (Apr 9). Bahrain 188/468 (Apr 9). Saudi/Kuwait/Qatar working estimates unchanged.
+- Diplomatic: Islamabad Round 2 still postponed indefinitely. Trump blockade in force; Iran demands lifting as precondition.
+- Hormuz: 2 IRGC-seized vessels from Apr 22 still held. No new naval incidents.
+- No new ISW special report indicating direct Iran-launched waves; war continues at frozen kinetic baseline with proxy fringe activity (Apr 24 Iraq-launched drones into Kuwait).
+- Posture per ISW Apr 19 baseline holds: ~70% BM stock retained, ~60% launchers (~200 operational), drones depleted ~40%.
+- Assessment: 20th day of fire-silence is the longest pause of the war. Talks deadlocked but ceasefire intact at the direct-Iran level. Iranian regenerated posture means depletion math is paused, not running.
