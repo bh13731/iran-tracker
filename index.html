@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Iran Missile & Drone Tracker</title>
+<title>Iran Dual Tracker — Hormuz &amp; Depletion</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -370,6 +370,190 @@ footer a:hover { color: var(--accent); }
   .story-card { padding: 18px; }
   nav { gap: 14px; }
 }
+
+/* --- Dual-tracker headers --- */
+.tracker-header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 44px 0 16px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--border);
+}
+.tracker-badge {
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 4px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  border: 1px solid;
+}
+.badge-live { background: var(--green-dim); color: var(--green); border-color: var(--green); }
+.badge-frozen { background: var(--orange-dim); color: var(--orange); border-color: var(--orange); }
+.tracker-name {
+  font-size: 1.05rem;
+  font-weight: 600;
+  font-family: var(--font-serif);
+  color: #eaf0f6;
+}
+.frozen-note {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin-left: auto;
+}
+.frozen-banner {
+  background: var(--orange-dim);
+  border: 1px solid rgba(212,148,58,0.4);
+  border-radius: 6px;
+  padding: 10px 16px;
+  font-size: 0.8rem;
+  color: var(--orange);
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+/* --- Hormuz panel --- */
+.hormuz-panel { margin-bottom: 8px; }
+.hormuz-top {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+  align-items: start;
+}
+@media (max-width: 620px) {
+  .hormuz-top { grid-template-columns: 1fr; }
+  .tracker-header { flex-direction: column; align-items: flex-start; }
+  .frozen-note { margin-left: 0; }
+}
+.prob-display {
+  background: var(--surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 10px;
+  padding: 18px 16px;
+  text-align: center;
+}
+.prob-value {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--green);
+  letter-spacing: -0.03em;
+  line-height: 1;
+  margin-bottom: 10px;
+  font-variant-numeric: tabular-nums;
+}
+.prob-bar-track {
+  background: var(--border);
+  border-radius: 4px;
+  height: 8px;
+  margin: 8px 0;
+  overflow: hidden;
+}
+.prob-bar-fill {
+  background: var(--green);
+  height: 100%;
+  border-radius: 4px;
+}
+.prob-label {
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  margin-top: 8px;
+}
+.prob-trend { font-size: 0.72rem; color: var(--text-secondary); margin-top: 6px; line-height: 1.4; }
+
+.scenario-ladder-card {
+  background: var(--surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 10px;
+  padding: 16px 18px;
+}
+.scenario-ladder-title {
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.scenario-row { display: flex; align-items: center; gap: 10px; margin-bottom: 9px; }
+.scenario-label { font-size: 0.76rem; color: var(--text-secondary); min-width: 185px; flex: 0 0 185px; }
+.scenario-bar-wrap { flex: 1; display: flex; align-items: center; gap: 8px; }
+.scenario-bar { height: 13px; border-radius: 3px; min-width: 2px; opacity: 0.85; }
+.scenario-pct { font-size: 0.72rem; color: var(--text); font-weight: 600; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.scenario-contrib { font-size: 0.66rem; color: var(--text-muted); white-space: nowrap; }
+.scenario-hint { font-size: 0.65rem; color: var(--text-muted); margin-top: 4px; }
+
+.driver-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+@media (max-width: 620px) { .driver-grid { grid-template-columns: 1fr; } }
+.driver-col {
+  background: var(--surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: 14px 16px;
+}
+.driver-col-title {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 10px;
+}
+.driver-push .driver-col-title { color: var(--green); }
+.driver-block .driver-col-title { color: var(--red); }
+.driver-item {
+  font-size: 0.76rem;
+  color: var(--text-secondary);
+  margin-bottom: 7px;
+  padding-left: 16px;
+  position: relative;
+  line-height: 1.45;
+}
+.driver-push .driver-item::before { content: '+'; position: absolute; left: 0; color: var(--green); font-weight: 700; }
+.driver-block .driver-item::before { content: '\2212'; position: absolute; left: 0; color: var(--red); font-weight: 700; }
+
+.hormuz-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+@media (max-width: 620px) { .hormuz-row { grid-template-columns: 1fr; } }
+.watch-card, .timeline-card {
+  background: var(--surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: 14px 16px;
+}
+.subsection-title {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+.watch-item {
+  font-size: 0.76rem;
+  color: var(--text-secondary);
+  margin-bottom: 6px;
+  padding-left: 14px;
+  position: relative;
+  line-height: 1.4;
+}
+.watch-item::before { content: '\25C6'; position: absolute; left: 0; color: var(--accent); font-size: 0.45rem; top: 5px; }
+.timeline-entry { display: flex; gap: 10px; margin-bottom: 7px; font-size: 0.76rem; }
+.timeline-date { color: var(--text-muted); font-variant-numeric: tabular-nums; white-space: nowrap; min-width: 46px; flex: 0 0 46px; font-weight: 500; }
+.timeline-text { color: var(--text-secondary); line-height: 1.4; }
 </style>
 </head>
 <body>
@@ -383,12 +567,122 @@ footer a:hover { color: var(--accent); }
   </nav>
 </header>
 
-<h1>Iran Missile &amp; Drone Tracker</h1>
-<p class="subtitle">Depletion analysis — <span id="last-updated"></span></p>
+<h1>Iran Conflict Tracker</h1>
+<p class="subtitle">Dual tracker: Hormuz reopening (live) &amp; missile depletion (frozen) — <span id="last-updated"></span></p>
 
 <div class="ceo-line" id="ceo-summary"></div>
 
 <div class="stat-grid" id="stat-grid"></div>
+
+<!-- ===== TRACKER B: HORMUZ REOPENING [LIVE] ===== -->
+<div class="tracker-header">
+  <span class="tracker-badge badge-live">LIVE</span>
+  <span class="tracker-name">Tracker B &mdash; Strait of Hormuz Reopening</span>
+</div>
+
+<div class="ceo-line" style="border-left-color:var(--green);margin-bottom:20px;">
+  <strong>Hormuz &mdash; Day 21:</strong> P(reopen to normal traffic within 30 days) = <strong style="color:var(--green);font-size:1.05em">~15%</strong>. US blockade locked to comprehensive deal, not the ceasefire. IRGC seized 2 ships near Strait (Apr 22). Islamabad talks deadlocked; no Round 3 date. Third carrier in theater.
+</div>
+
+<div class="hormuz-panel">
+
+  <div class="hormuz-top">
+    <div class="prob-display">
+      <div class="prob-value">15%</div>
+      <div class="prob-bar-track"><div class="prob-bar-fill" style="width:15%"></div></div>
+      <div class="prob-label">P(Reopen &le;30 days)</div>
+      <div class="prob-trend">&darr; from ~17% Apr 27 &mdash; IRGC ship seizures &amp; talks collapse</div>
+    </div>
+
+    <div class="scenario-ladder-card">
+      <div class="scenario-ladder-title">Scenario Ladder</div>
+
+      <div class="scenario-row">
+        <span class="scenario-label">Stalemate &mdash; blockade holds</span>
+        <div class="scenario-bar-wrap">
+          <div class="scenario-bar" style="width:55%;background:var(--orange)"></div>
+          <span class="scenario-pct">55%</span>
+          <span class="scenario-contrib">&rarr; 0 pp</span>
+        </div>
+      </div>
+      <div class="scenario-row">
+        <span class="scenario-label">Ceasefire rupture / war resumes</span>
+        <div class="scenario-bar-wrap">
+          <div class="scenario-bar" style="width:23%;background:var(--red)"></div>
+          <span class="scenario-pct">23%</span>
+          <span class="scenario-contrib">&rarr; 0 pp</span>
+        </div>
+      </div>
+      <div class="scenario-row">
+        <span class="scenario-label">Partial traffic arrangement</span>
+        <div class="scenario-bar-wrap">
+          <div class="scenario-bar" style="width:15%;background:var(--accent)"></div>
+          <span class="scenario-pct">15%</span>
+          <span class="scenario-contrib">&rarr; 9 pp</span>
+        </div>
+      </div>
+      <div class="scenario-row">
+        <span class="scenario-label">Comprehensive peace deal</span>
+        <div class="scenario-bar-wrap">
+          <div class="scenario-bar" style="width:7%;background:var(--green)"></div>
+          <span class="scenario-pct">7%</span>
+          <span class="scenario-contrib">&rarr; 6 pp</span>
+        </div>
+      </div>
+      <div class="scenario-hint">pp = contribution to P(reopen). Scenarios are exhaustive; sum to 100%.</div>
+    </div>
+  </div><!-- .hormuz-top -->
+
+  <div class="driver-grid">
+    <div class="driver-col driver-push">
+      <div class="driver-col-title">Pushing Toward Open</div>
+      <div class="driver-item">Ceasefire Day 21 holding; no direct Iran fire since Apr 11</div>
+      <div class="driver-item">Iran FM Apr 17: Hormuz &ldquo;completely open&rdquo; during truce &mdash; diplomatic signal</div>
+      <div class="driver-item">Economic pain on Iran; oil revenues depressed by blockade</div>
+      <div class="driver-item">Chinese pressure for oil access (largest Iran crude buyer)</div>
+    </div>
+    <div class="driver-col driver-block">
+      <div class="driver-col-title">Blocking Reopening</div>
+      <div class="driver-item">US blockade tied explicitly to comprehensive deal, not ceasefire (Trump)</div>
+      <div class="driver-item">Islamabad Round 2 postponed indefinitely; no Round 3 date</div>
+      <div class="driver-item">IRGC seized 2 commercial ships near Strait Apr 22 &mdash; escalatory</div>
+      <div class="driver-item">Third US carrier ordered to theater &mdash; military pressure not diplomacy</div>
+      <div class="driver-item">Iran cannot visibly capitulate without verifiable deal</div>
+    </div>
+  </div>
+
+  <div class="hormuz-row">
+    <div class="watch-card">
+      <div class="subsection-title">Watch List</div>
+      <div class="watch-item">Islamabad Round 3 date announced &rarr; +5&ndash;10%</div>
+      <div class="watch-item">New IRGC ship seizures &rarr; &minus;5&ndash;8% per incident</div>
+      <div class="watch-item">US carrier withdrawal or drawdown signal &rarr; +3&ndash;5%</div>
+      <div class="watch-item">Commercial vessel transits without incident &rarr; +2&ndash;3%</div>
+      <div class="watch-item">Chinese/Omani direct mediation &rarr; +4&ndash;7%</div>
+      <div class="watch-item">Ceasefire rupture / resumed direct fire &rarr; &minus;13&ndash;15%</div>
+    </div>
+    <div class="timeline-card">
+      <div class="subsection-title">Recent Timeline</div>
+      <div class="timeline-entry"><span class="timeline-date">Apr 7</span><span class="timeline-text">Ceasefire; US blockade continues independent of fire-silence</span></div>
+      <div class="timeline-entry"><span class="timeline-date">Apr 17</span><span class="timeline-text">Iran FM: Hormuz &ldquo;open&rdquo;; Trump: blockade stays; few ships moving (BBC)</span></div>
+      <div class="timeline-entry"><span class="timeline-date">Apr 21</span><span class="timeline-text">Ceasefire extended indefinitely (Trump unilateral)</span></div>
+      <div class="timeline-entry"><span class="timeline-date">Apr 22</span><span class="timeline-text">Round 2 postponed; IRGC seizes 2 ships near Strait</span></div>
+      <div class="timeline-entry"><span class="timeline-date">Apr 24</span><span class="timeline-text">Kuwait hit by 2 Iraq-launched proxy drones</span></div>
+      <div class="timeline-entry"><span class="timeline-date">Apr 28</span><span class="timeline-text">Day 21; blockade in force; talks deadlocked; 3rd carrier in theater</span></div>
+    </div>
+  </div>
+
+</div><!-- .hormuz-panel -->
+
+<!-- ===== TRACKER A: DEPLETION [FROZEN] ===== -->
+<div class="tracker-header" style="margin-top:12px;">
+  <span class="tracker-badge badge-frozen">FROZEN</span>
+  <span class="tracker-name">Tracker A &mdash; Missile &amp; Drone Depletion</span>
+  <span class="frozen-note">Last direct fire: Apr 11 &middot; Last data: Apr 26 &middot; Clock resumes if ceasefire ruptures</span>
+</div>
+<div class="frozen-banner">
+  &#9646; Clock paused &mdash; Iran&rsquo;s direct fire stopped Apr 11 (cease-fire Day 4). Charts show last live state as of Apr 26. All data intact; depletion tracker resumes automatically if hostilities restart.
+</div>
 
 <h2>UAE Official Cumulative Intercepts</h2>
 <p class="section-desc">UAE MoD data — highest confidence series. Ballistic missiles, cruise missiles, and drones intercepted since Feb 28.</p>
@@ -439,10 +733,10 @@ footer a:hover { color: var(--accent); }
 </div>
 
 <h2>Latest Analysis</h2>
-<a class="story-card" href="stories/2026-04-27-day-20-ceasefire-balance.html">
-  <div class="story-title">The 20-Day Reckoning: Iran Has Gained More From the Pause Than the Diplomatic Track Shows</div>
-  <div class="story-meta">April 27, 2026</div>
-  <div class="story-excerpt">Twenty days into the ceasefire, Iran's effective launcher count has nearly doubled — from ~102 to ~200 — while zero diplomatic milestones were reached. Islamabad Round 1 collapsed, Round 2 is postponed indefinitely, Hormuz remains blockaded, and the last official Gulf cumulative tally is 18 days old. The coalition improved on interceptors and carrier presence. But the military math at Day 20 favors Iran on its binding constraint. The freeze has a winner.</div>
+<a class="story-card" href="stories/2026-04-28-hormuz-blockade-architecture.html">
+  <div class="story-title">The Blockade Architecture: Why Hormuz Stays Closed Even When Missiles Stop Flying</div>
+  <div class="story-meta">April 28, 2026</div>
+  <div class="story-excerpt">Twenty-one days of fire-silence and Hormuz remains closed. The reason is structural: the US blockade is tied to a comprehensive peace deal, not the ceasefire — making it a completely separate instrument that Iran's compliance with the truce cannot unlock. The IRGC's Apr 22 ship seizures are Iran's answer to this decoupling. A data-driven breakdown of the 15% reopening probability: what the scenario ladder shows, what moves the needle, and why the most likely outcome is continued stalemate through May.</div>
 </a>
 <div class="stories-link"><a href="stories/">All analysis &rarr;</a></div>
 

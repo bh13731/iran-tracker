@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Methodology — Iran Missile & Drone Tracker</title>
+<title>Methodology — Iran Dual Tracker</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -151,9 +151,19 @@ footer {
 </header>
 
 <h1>Methodology &amp; Caveats</h1>
-<p class="subtitle">How this tracker works, what it can and cannot tell you, and where the numbers come from.</p>
+<p class="subtitle">How both trackers work, what they can and cannot tell you, and where the numbers come from.</p>
 
-<h2>Purpose</h2>
+<h2>Two Trackers, Two Questions</h2>
+<div class="card">
+<p>This site runs two co-equal trackers that address different questions about the 2026 Iran conflict:</p>
+<ul>
+  <li><strong>Tracker B — Strait of Hormuz Reopening (LIVE):</strong> The primary live dashboard during the ceasefire period. Headline metric is P(Hormuz reopens to ~normal commercial traffic within 30 days), maintained as a calibrated Bayesian probability estimate updated daily from <code>source/hormuz-state.md</code>.</li>
+  <li><strong>Tracker A — Missile &amp; Drone Depletion (FROZEN):</strong> The original tracker. Clock paused when Iran's direct fire stopped on Apr 11. All depletion data is preserved exactly as of the last live day. Resumes as the primary tracker if the ceasefire ruptures.</li>
+</ul>
+<p>If the ceasefire ruptures, the visual hierarchy inverts: Depletion becomes prominent and live; Hormuz becomes secondary.</p>
+</div>
+
+<h2>Purpose — Tracker A (Depletion)</h2>
 <div class="card">
 <p>This tracker provides a <strong>current operational assessment</strong> of Iran's missile and drone capacity during the 2026 conflict. It is not a raw data dump or a news aggregator. Every number is either a confirmed floor (from official sources) or a best estimate (triangulated from multiple source tiers).</p>
 </div>
@@ -231,11 +241,45 @@ footer {
 <p>We avoid: pseudo-precise arithmetic unsupported by data, treating destroyed launchers as destroyed missile inventory, large narrative swings from a single source family, and repeating full war history in every update.</p>
 </div>
 
+<h2>Tracker B Methodology — Hormuz Reopening Probability</h2>
+<div class="card">
+<h3>Approach</h3>
+<p>The Hormuz tracker uses a <strong>subjective Bayesian scenario decomposition</strong>. It is a calibrated human judgment, not a model output. The approach:</p>
+<ol>
+  <li>Define 4 exhaustive, mutually exclusive scenarios that cover the full outcome space.</li>
+  <li>Assign a probability to each scenario (sum to 100%).</li>
+  <li>Assign P(reopen | scenario) — the probability Hormuz reopens to ~normal commercial traffic conditional on that scenario occurring within 30 days.</li>
+  <li>Compute P(reopen) = &sum; P(scenario<sub>i</sub>) &times; P(reopen | scenario<sub>i</sub>).</li>
+</ol>
+
+<h3>Current Scenarios (as of Apr 28)</h3>
+<table>
+  <thead><tr><th>Scenario</th><th>P(scenario)</th><th>P(open|scenario)</th><th>Contribution</th></tr></thead>
+  <tbody>
+    <tr><td>Stalemate — blockade holds, ceasefire continues</td><td>55%</td><td>0%</td><td>0 pp</td></tr>
+    <tr><td>Ceasefire rupture / war resumes</td><td>23%</td><td>0%</td><td>0 pp</td></tr>
+    <tr><td>Partial Hormuz traffic arrangement</td><td>15%</td><td>60%</td><td>9 pp</td></tr>
+    <tr><td>Comprehensive peace deal signed</td><td>7%</td><td>90%</td><td>6 pp</td></tr>
+    <tr><td><strong>Total</strong></td><td><strong>100%</strong></td><td></td><td><strong>~15%</strong></td></tr>
+  </tbody>
+</table>
+
+<h3>Updating Rules</h3>
+<ul>
+  <li>The estimate is updated when new signal arrives. Absence of news is weak evidence of stalemate (marginally bearish for reopening).</li>
+  <li>Scenario probabilities shift based on diplomatic signals, naval incidents, carrier movements, and official statements.</li>
+  <li>P(open | scenario) is set based on whether that scenario's resolution removes both the US blockade AND IRGC interference to approximately pre-war commercial traffic levels.</li>
+  <li>Confidence in the point estimate is low: ±8 pp given scenario probability uncertainty.</li>
+  <li>The 30-day window is a rolling window from the current date.</li>
+</ul>
+</div>
+
 <h2>Source Files</h2>
 <div class="card">
-<p>The full source material behind this tracker is available in the <a href="https://github.com/bh13731/iran-tracker/tree/master/source">source/</a> directory of this repository:</p>
+<p>The full source material behind both trackers is available in the <a href="https://github.com/bh13731/iran-tracker/tree/master/source">source/</a> directory of this repository:</p>
 <ul>
-  <li><code>source/current-state.md</code> — Latest tracker summary</li>
+  <li><code>source/hormuz-state.md</code> — Hormuz tracker state: probability, scenarios, drivers, watch list, timeline</li>
+  <li><code>source/current-state.md</code> — Depletion tracker summary (frozen as of Apr 26)</li>
   <li><code>source/ledger.md</code> — Structured cumulative reference with every official data point</li>
   <li><code>source/daily-log.md</code> — Dated daily analytical notes</li>
   <li><code>source/methodology.md</code> — This methodology in plain Markdown</li>
