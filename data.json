@@ -2,8 +2,8 @@
   "meta": {
     "title": "Iran Missile & Drone Tracker",
     "warStart": "2026-02-28",
-    "lastUpdated": "2026-04-27T04:30:00Z",
-    "lastDay": 61,
+    "lastUpdated": "2026-05-02T04:30:00Z",
+    "lastDay": 66,
     "methodology": "UAE MoD figures are official cumulative intercepts (highest confidence). Other Gulf state figures are working estimates from official MoD reports, ISW, and Wikipedia cross-referencing. Best-estimate totals include underreporting adjustments for Israel theater and other targets. Launcher estimates derived from IDF/ISW structured reporting. Pre-war stockpile estimates from Atlantic, NYT, IDF, and former US/Israeli officials.",
     "caveats": [
       "Pre-Mar 19 data uses a different methodology (less structured, wider ranges)",
@@ -26,15 +26,15 @@
     "launchers": [410, 440]
   },
   "currentSnapshot": {
-    "date": "2026-04-27",
-    "day": 61,
+    "date": "2026-05-02",
+    "day": 66,
     "categories": [
       {
         "name": "MRBMs (Israel-range)",
         "preWar": [2000, 3000],
         "fired": [820, 1000],
         "remaining": [500, 1880],
-        "status": "CEASE-FIRE Day 20, indefinite. US officials to NYT (Apr 19): Iran retains ~70% of pre-war missile stockpile — implying ~30% fired, consistent with 820-1,000 MRBM best estimate. Iran reorganizing/regenerating BM forces during truce. Zero direct fire since Apr 11. Apr 24 Kuwait proxy strike (Iraq-launched drones). 2 IRGC vessels still held near Hormuz (Day 5). Fire-silence Day 20.",
+        "status": "CEASE-FIRE Day 25, indefinite. US officials to NYT (Apr 19): Iran retains ~70% of pre-war missile stockpile — implying ~30% fired, consistent with 820-1,000 MRBM best estimate. Iran reorganizing/regenerating BM forces during truce. Zero direct fire since Apr 11 (fire-silence Day 21). 2 IRGC-seized vessels still held near Hormuz (Day 10). No Round 3 date; Chinese mediation not engaged.",
         "confidence": "Medium"
       },
       {
@@ -42,7 +42,7 @@
         "preWar": [6000, 8000],
         "fired": [2100, 2500],
         "remaining": [3500, 5900],
-        "status": "Large paper inventory; production halted; post-ceasefire salvos Apr 8 then quiet. Cease-fire indefinite Day 20. No direct fire since Apr 8 post-ceasefire pipeline salvos. Apr 24 Kuwait proxy drone strike (Iraq-launched, not direct Iran). US officials: ~70% of total BM stockpile retained. Coalition Patriot resupply window Day 20.",
+        "status": "Large paper inventory; production halted; post-ceasefire salvos Apr 8 then quiet. Cease-fire indefinite Day 25. No direct fire since Apr 8 post-ceasefire pipeline salvos. US officials: ~70% of total BM stockpile retained. Coalition Patriot resupply window Day 25.",
         "confidence": "Medium-Low"
       },
       {
@@ -50,7 +50,7 @@
         "preWar": [8000, 11000],
         "fired": [2950, 3500],
         "remaining": [4050, 7750],
-        "status": "CEASE-FIRE DAY 20, INDEFINITE. Zero direct fire since Apr 11 (Day 16 direct-fire silence). Apr 24 Kuwait hit by 2 Iraq-launched proxy drones, no casualties. 2 IRGC-seized vessels near Hormuz still held (Day 5 since Apr 22). Third US carrier now in theater. US officials to NYT (Apr 19): Iran retains ~70% of pre-war missile stockpile. Launcher reconstitution confirmed — effective count ~200. BM production still halted. Islamabad Round 2 postponed indefinitely. 18 days since last official Gulf cumulative tally.",
+        "status": "CEASE-FIRE DAY 25, INDEFINITE. Zero direct fire since Apr 11 (fire-silence Day 21). 2 IRGC-seized vessels near Hormuz still held (Day 10 since Apr 22). Third US carrier in theater. US officials to NYT (Apr 19): Iran retains ~70% of pre-war missile stockpile. Launcher reconstitution confirmed — effective count ~200. BM production still halted. Islamabad Round 2 postponed indefinitely; no Round 3 date. Chinese mediation not engaged. 23 days since last official Gulf cumulative tally.",
         "confidence": "Medium-Low"
       },
       {
@@ -58,7 +58,7 @@
         "preWar": [35000, 55000],
         "fired": [8500, 9500],
         "remaining": [25500, 46500],
-        "status": "US officials to NYT (Apr 19): Iran retains ~40% of attack drones — heavier proportional hit than BMs. FDD/LWJ Apr 19: Kuwait took 852 drones (vs prior 655 working estimate); Saudi ~612. Apr 24 Iraq-launched proxy drones hit Kuwait — militia network operational during ceasefire. China fuel chemicals sustaining some production. Fire-silence Day 20 (direct Iran). 2 IRGC vessels still held near Hormuz.",
+        "status": "US officials to NYT (Apr 19): Iran retains ~40% of attack drones — heavier proportional hit than BMs. FDD/LWJ Apr 19: Kuwait took 852 drones (vs prior 655 working estimate); Saudi ~612. Apr 24 Iraq-launched proxy drones hit Kuwait — militia network operational during ceasefire. China fuel chemicals sustaining some production. Fire-silence Day 21 (direct Iran). 2 IRGC vessels still held near Hormuz (Day 10).",
         "confidence": "Low"
       },
       {
@@ -66,7 +66,7 @@
         "preWar": [200, 500],
         "fired": [100, 150],
         "remaining": [50, 400],
-        "status": "UAE CMs at 26 (official, Apr 9 update); 50+ CMs in Gulf theater total. No CM reports since Apr 8 post-ceasefire pipeline salvos. Cease-fire indefinite Day 20. Fire-silence Day 20 (direct Iran). Apr 24 Kuwait proxy drone strike did not involve CMs.",
+        "status": "UAE CMs at 26 (official, Apr 9 update); 50+ CMs in Gulf theater total. No CM reports since Apr 8 post-ceasefire pipeline salvos. Cease-fire indefinite Day 25. Fire-silence Day 21 (direct Iran). Apr 24 Kuwait proxy drone strike did not involve CMs.",
         "confidence": "Low"
       },
       {
@@ -76,7 +76,7 @@
         "remaining": [170, 235],
         "midpoint": 200,
         "daysToZero": 100,
-        "status": "CEASE-FIRE DAY 20, INDEFINITE. ISW Apr 19 / US officials to NYT: Iran has dug ~100 launchers from underground hardened facilities during ceasefire — raising effective count from ~102 to ~200 (60% of pre-war fleet). Days to BM functional zero from resumption: ~100 days (up from ~51 at Apr 7). Reconstitution is retrieval of buried hardware, not new production — the 300-340 destroyed remain destroyed. BM production still halted. Third US carrier now in theater. Coalition Patriot resupply window now 20 days old. 2 IRGC vessels still held near Hormuz.",
+        "status": "CEASE-FIRE DAY 25, INDEFINITE. ISW Apr 19 / US officials to NYT: Iran has dug ~100 launchers from underground hardened facilities during ceasefire — raising effective count from ~102 to ~200 (60% of pre-war fleet). Days to BM functional zero from resumption: ~100 days (up from ~51 at Apr 7). Reconstitution is retrieval of buried hardware, not new production — the 300-340 destroyed remain destroyed. BM production still halted. Third US carrier in theater. Coalition Patriot resupply window now 25 days old. 2 IRGC vessels still held near Hormuz (Day 10).",
         "confidence": "High"
       }
     ]
@@ -132,7 +132,8 @@
     {"date": "2026-04-24", "day": 57, "bmFloor": 2350, "bmBest": [2950, 3500], "droneFloor": 6900, "droneBest": [8500, 9500], "cmFloor": 80, "cmBest": [100, 150], "note": "CEASE-FIRE DAY 17, INDEFINITE — fire-silence Day 16; IRGC Navy seized 2 commercial ships near Hormuz Apr 22 — first naval provocation since truce; Islamabad Round 2 postponed indefinitely (Mohammadi: extension a 'ploy'); Israel-Lebanon ceasefire extended 3 weeks (Trump Apr 23); all cumulative fired totals frozen; ~200 launchers operational"},
     {"date": "2026-04-25", "day": 58, "bmFloor": 2350, "bmBest": [2950, 3500], "droneFloor": 6900, "droneBest": [8500, 9500], "cmFloor": 80, "cmBest": [100, 150], "note": "CEASE-FIRE DAY 19, INDEFINITE — fire-silence Day 18; 2 IRGC-seized vessels still held (Day 3 since Apr 22); Islamabad Round 2 no new date; coalition Patriot resupply window Day 19; Iran posture: ~200 launchers, ~70% BMs, ~40% drones; all cumulative fired totals frozen; US blockade in full force"},
     {"date": "2026-04-26", "day": 60, "bmFloor": 2350, "bmBest": [2950, 3500], "droneFloor": 6900, "droneBest": [8500, 9500], "cmFloor": 80, "cmBest": [100, 150], "note": "CEASE-FIRE DAY 19, INDEFINITE — direct fire-silence Day 19; Apr 24 Kuwait hit by 2 Iraq-launched proxy drones (Islamic Resistance in Iraq pattern), no casualties — first kinetic incident since Apr 22 vessel seizures; Trump: third US carrier ordered to region; Iran FM Araghchi to Islamabad for consultations; talks deadlocked over Hormuz blockade; 2 IRGC-seized vessels still held; all cumulative fired totals frozen; Iran posture unchanged: ~200 launchers, ~70% BMs, ~40% drones"},
-    {"date": "2026-04-27", "day": 61, "bmFloor": 2350, "bmBest": [2950, 3500], "droneFloor": 6900, "droneBest": [8500, 9500], "cmFloor": 80, "cmBest": [100, 150], "note": "CEASE-FIRE DAY 20, INDEFINITE — fire-silence Day 20; 2 IRGC-seized vessels still held (Day 5 since Apr 22); no new official cumulatives (18 days since UAE Apr 9); Islamabad Round 2 postponed indefinitely; 3rd US carrier now in theater; Iran posture stable at ~200 launchers, ~70% BMs, ~40% drones; all cumulative fired totals frozen; longest fire-silence of the war"}
+    {"date": "2026-04-27", "day": 61, "bmFloor": 2350, "bmBest": [2950, 3500], "droneFloor": 6900, "droneBest": [8500, 9500], "cmFloor": 80, "cmBest": [100, 150], "note": "CEASE-FIRE DAY 20, INDEFINITE — fire-silence Day 20; 2 IRGC-seized vessels still held (Day 5 since Apr 22); no new official cumulatives (18 days since UAE Apr 9); Islamabad Round 2 postponed indefinitely; 3rd US carrier now in theater; Iran posture stable at ~200 launchers, ~70% BMs, ~40% drones; all cumulative fired totals frozen; longest fire-silence of the war"},
+    {"date": "2026-05-02", "day": 66, "bmFloor": 2350, "bmBest": [2950, 3500], "droneFloor": 6900, "droneBest": [8500, 9500], "cmFloor": 80, "cmBest": [100, 150], "note": "CEASE-FIRE DAY 25, INDEFINITE — fire-silence Day 21; 2 IRGC-seized vessels still held (Day 10 since Apr 22); no new official cumulatives (23 days since UAE Apr 9); no Round 3 date; Chinese mediation not engaged; Iran posture unchanged: ~200 launchers, ~70% BMs, ~40% drones; all cumulative fired totals frozen; P(Hormuz reopen 30d) = ~15% unchanged"}
   ],
   "launcherHistory": [
     {"date": "2026-03-04", "day": 5, "remaining": [110, 140], "midpoint": 125, "destroyed": [300, 300], "note": "300+ MRBM launchers destroyed (IDF)"},
@@ -159,7 +160,8 @@
     {"date": "2026-04-24", "day": 57, "remaining": [170, 235], "midpoint": 200, "destroyed": [300, 340], "note": "CEASE-FIRE Day 17 — launcher count unchanged at ~200 (reconstituted per ISW Apr 19). IRGC Navy seized 2 ships near Hormuz Apr 22 — Iran pivoting to naval gray-zone pressure below missile threshold. Islamabad Round 2 postponed indefinitely. Fire-silence Day 16. BM production still halted."},
     {"date": "2026-04-25", "day": 58, "remaining": [170, 235], "midpoint": 200, "destroyed": [300, 340], "note": "CEASE-FIRE Day 19 — launcher count stable at ~200 (reconstituted per ISW Apr 19). No new deployment evidence. Fire-silence Day 18. 2 IRGC-seized vessels still held. Coalition Patriot resupply window now 19 days — the under-analyzed asymmetry of the freeze. BM production still halted. Islamabad Round 2 no new date."},
     {"date": "2026-04-26", "day": 60, "remaining": [170, 235], "midpoint": 200, "destroyed": [300, 340], "note": "CEASE-FIRE Day 19 — launcher count stable at ~200 per ISW Apr 19 baseline; no new deployment evidence. Direct fire-silence Day 19. Apr 24 Kuwait proxy drone strike (Iraq-launched, 2 drones, no casualties) — Iran proxy network operational during ceasefire. Third US carrier ordered to region. BM production still halted."},
-    {"date": "2026-04-27", "day": 61, "remaining": [170, 235], "midpoint": 200, "destroyed": [300, 340], "note": "CEASE-FIRE Day 20 — launcher count stable at ~200 per ISW Apr 19 baseline; no new deployment evidence. Fire-silence Day 20. 2 IRGC-seized vessels still held near Hormuz (Day 5). 3rd US carrier now in theater. BM production still halted. Islamabad Round 2 no date. 18 days since last official Gulf tally. Longest fire-silence of the war."}
+    {"date": "2026-04-27", "day": 61, "remaining": [170, 235], "midpoint": 200, "destroyed": [300, 340], "note": "CEASE-FIRE Day 20 — launcher count stable at ~200 per ISW Apr 19 baseline; no new deployment evidence. Fire-silence Day 20. 2 IRGC-seized vessels still held near Hormuz (Day 5). 3rd US carrier now in theater. BM production still halted. Islamabad Round 2 no date. 18 days since last official Gulf tally. Longest fire-silence of the war."},
+    {"date": "2026-05-02", "day": 66, "remaining": [170, 235], "midpoint": 200, "destroyed": [300, 340], "note": "CEASE-FIRE Day 25 — launcher count stable at ~200 per ISW Apr 19 baseline; no new evidence of further reconstitution or attrition. Fire-silence Day 21. 2 IRGC-seized vessels still held near Hormuz (Day 10). 3rd US carrier in theater. BM production still halted. 23 days since last official Gulf tally. Ceasefire intact at direct-Iran level; proxy and naval coercion continue."}
   ],
   "gulfBreakdown": {
     "asOf": "2026-04-23",
@@ -202,6 +204,7 @@
     {"date": "2026-04-24", "day": 57, "text": "NAVAL PROVOCATION — IRGC Navy seized 2 commercial vessels near Strait of Hormuz Apr 22: first naval action since truce. Islamabad Round 2 postponed indefinitely; Iran's Mohammadi called ceasefire extension a 'ploy to buy time for surprise strike.' Trump announced Israel-Lebanon ceasefire extended 3 weeks (Apr 23). Fire-silence Day 16 — zero Iran-direct launches since Apr 11. All Gulf cumulative totals unchanged. Iran holding reconstituted posture: ~200 launchers, ~70% BMs, ~40% drones."},
     {"date": "2026-04-25", "day": 58, "text": "CEASEFIRE DAY 19 — Fire-silence Day 18. No new Iran-direct launches since Apr 11. 2 IRGC-seized vessels near Hormuz still held (Day 3). Islamabad Round 2: no new date set. Coalition Patriot interceptor resupply window now 19 days old — the asymmetric recovery the fire-silence enables. Iran frozen: ~200 launchers, ~70% BMs, ~40% drones. US blockade in full force. No new Gulf official cumulative tallies."},
     {"date": "2026-04-26", "day": 60, "text": "SPLIT SIGNAL — Direct fire-silence Day 19, but Apr 24 Kuwait struck by 2 Iraq-launched proxy drones (Islamic Resistance in Iraq, no casualties). First kinetic incident since Apr 22 vessel seizures. Trump orders third US carrier to region — signals US intelligence concern over Iran's reconstituted posture. Iran FM Araghchi to Islamabad for consultations; talks deadlocked over Hormuz blockade. 2 IRGC-seized vessels still held. No new official Gulf cumulative tallies."},
-    {"date": "2026-04-27", "day": 61, "text": "DAY 20 — Longest fire-silence of the war. No deal reached; Islamabad Round 2 postponed indefinitely; Hormuz blockade unchanged. 2 IRGC-seized vessels still held near Hormuz (Day 5). 3rd US carrier now in theater. Iran posture: ~200 launchers (doubled from ceasefire baseline), ~70% BM stock, ~40% drones. 18 days since last official Gulf cumulative tally. Military balance at Day 20 favors Iran on launchers; coalition on interceptors. Ceasefire intact at direct-Iran level; proxy fringe (Apr 24 Kuwait) and naval coercion continue."}
+    {"date": "2026-04-27", "day": 61, "text": "DAY 20 — Longest fire-silence of the war. No deal reached; Islamabad Round 2 postponed indefinitely; Hormuz blockade unchanged. 2 IRGC-seized vessels still held near Hormuz (Day 5). 3rd US carrier now in theater. Iran posture: ~200 launchers (doubled from ceasefire baseline), ~70% BM stock, ~40% drones. 18 days since last official Gulf cumulative tally. Military balance at Day 20 favors Iran on launchers; coalition on interceptors. Ceasefire intact at direct-Iran level; proxy fringe (Apr 24 Kuwait) and naval coercion continue."},
+    {"date": "2026-05-02", "day": 66, "text": "DAY 25 — Fire-silence Day 21. P(Hormuz reopen 30d) = ~15% unchanged; rolling window May 2–Jun 1. 2 IRGC-seized vessels still held near Hormuz (Day 10). No Round 3 date. Chinese mediation not engaged despite direct economic stake as Iran's largest crude buyer; structural obstacles identified. 23 days since last official Gulf cumulative tally. Iran posture stable: ~200 launchers, ~70% BMs, ~40% drones. Coalition Patriot resupply window Day 25. Stalemate self-reinforcing; no forcing function visible."}
   ]
 }
