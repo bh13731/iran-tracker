@@ -1,15 +1,15 @@
 # Strait of Hormuz Reopening Tracker — State File
 
-Status: CEASEFIRE ACTIVE (Indefinite, Day 23 as of 2026-04-30)
-Last updated: 2026-04-30 UTC
+Status: CEASEFIRE ACTIVE (Indefinite, Day 26 as of 2026-05-03)
+Last updated: 2026-05-03 UTC
 Primary question: P(Hormuz reopens to ~normal commercial traffic within 30 days)
 
 ## Headline Probability
 
 **P(reopen 30d): ~15%**
 
-Previous: ~15% (Apr 29)
-Direction: Unchanged — Day 23 stalemate; no new diplomatic signal; probability held static per methodology (absence of news = weak stalemate evidence)
+Previous: ~15% (May 2)
+Direction: Unchanged — Day 26 stalemate; IRGC ship seizures now 11 days old; no Round 3 date; no new diplomatic signal; probability held static per methodology (absence of news = weak stalemate evidence)
 
 ## Scenario Ladder
 
@@ -23,7 +23,7 @@ Direction: Unchanged — Day 23 stalemate; no new diplomatic signal; probability
 
 ## Drivers Pushing Toward Reopening
 
-- Ceasefire holding at Day 23; Iran hasn't directly fired since Apr 11 (Day 14 of conflict)
+- Ceasefire holding at Day 26; Iran hasn't directly fired since Apr 11 (Day 14 of conflict)
 - Iran FM Araghchi Apr 17: Hormuz "completely open" for commercial vessels — diplomatic signal even if no operational change
 - Economic pain on Iran from continued blockade; oil revenues depressed
 - Chinese diplomatic pressure for oil market access (China is Iran's largest crude buyer)
@@ -64,6 +64,7 @@ Direction: Unchanged — Day 23 stalemate; no new diplomatic signal; probability
 | Apr 24 | Kuwait hit by 2 Iraq-launched proxy drones (no casualties) | Proxy escalation continues below direct-fire threshold |
 | Apr 28 | Day 21 ceasefire; cumulatives unchanged; talks deadlocked; 3rd carrier in theater | Status quo; no new signal |
 | Apr 30 | Day 23; P(reopen) = ~15% unchanged; no Round 3 date; no new naval incident; stalemate static | Probability held; rolling window now Apr 30–May 30; negotiation calendar increasingly compressed with no active track |
+| May 3 | Day 26; P(reopen) = ~15% unchanged; ceasefire holding; IRGC ship seizures 11 days old; China non-engagement structural (see analysis); no diplomatic track | Probability held; rolling window May 3–Jun 2; rupture risk scenario (23%) increasingly load-bearing as diplomatic path narrows |
 
 ## Methodology Note
 
@@ -71,10 +72,10 @@ This tracker uses a **subjective Bayesian** approach — not a model output. Key
 
 1. **Scenarios are exhaustive and mutually exclusive** (sum to 100%).
 2. **P(open|scenario)** is set based on whether that scenario's resolution removes both the US blockade AND IRGC interference to ~pre-war commercial traffic levels.
-3. **30-day window** runs from today's date (2026-04-30).
+3. **30-day window** runs from today's date (2026-05-03).
 4. **Estimate updates when new signal arrives** — it does not automatically decay. Absence of news is weak evidence of stalemate (slightly bearish for reopening).
 5. **Confidence in the point estimate is low** — the range is roughly ±8 percentage points given scenario probability uncertainty.
 
 ## One-Line Summary
 
-Day 23 ceasefire, Day 23 fire-silence: P(Hormuz reopen 30d) = ~15%. Blockade decoupled from ceasefire; no Round 3 date; partial deal path requires full negotiation cycle within 30-day window with no active track to bootstrap it.
+Day 26 ceasefire, Day 22 fire-silence: P(Hormuz reopen 30d) = ~15%. Blockade decoupled from ceasefire; no Round 3 date; China non-engagement structural; IRGC ship seizures 11 days old; rupture scenario (23%) is now the dominant downside tail — more plausible than any diplomatic opening in the May 3–Jun 2 window.
