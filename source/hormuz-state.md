@@ -1,15 +1,15 @@
 # Strait of Hormuz Reopening Tracker — State File
 
-Status: CEASEFIRE ACTIVE (Indefinite, Day 32 as of 2026-05-09)
-Last updated: 2026-05-09 UTC
+Status: CEASEFIRE ACTIVE (Indefinite, Day 33 as of 2026-05-10)
+Last updated: 2026-05-10 UTC
 Primary question: P(Hormuz reopens to ~normal commercial traffic within 30 days)
 
 ## Headline Probability
 
 **P(reopen 30d): ~15%**
 
-Previous: ~15% (May 8)
-Direction: Unchanged — Day 32 stalemate; IRGC ship seizures now 17 days old; no Round 3 date; no new diplomatic signal; probability held static per methodology (absence of news = weak stalemate evidence). Rolling window now May 9–Jun 8. Calendar compression note: if no Round 3 date by ~May 20, partial arrangement scenario feasibility within the window declines sharply — a passive erosion force the methodology does not yet treat as a signal.
+Previous: ~15% (May 9)
+Direction: Unchanged — Day 33 stalemate; IRGC ship seizures now 18 days old; no Round 3 date; no new diplomatic signal; fire-silence Day 29; probability held static per methodology (absence of news = weak stalemate evidence). Rolling window now May 10–Jun 9. Reconstitution plateau watch: launcher count has been steady at ~200 for 17 days (since Apr 23 ISW Apr 19 baseline); no new authoritative revision in either direction — open question whether the underground reserve has been fully tapped, Iran is pacing extraction deliberately, or intelligence reporting has plateaued. Calendar compression continues: 10 days remain to the May 20 Round 3 announcement threshold for partial arrangement scenario feasibility.
 
 ## Scenario Ladder
 
@@ -23,7 +23,7 @@ Direction: Unchanged — Day 32 stalemate; IRGC ship seizures now 17 days old; n
 
 ## Drivers Pushing Toward Reopening
 
-- Ceasefire holding at Day 32; Iran hasn't directly fired since Apr 11 (fire-silence Day 28)
+- Ceasefire holding at Day 33; Iran hasn't directly fired since Apr 11 (fire-silence Day 29) — longest sustained pause of the conflict
 - Iran FM Araghchi Apr 17: Hormuz "completely open" for commercial vessels — diplomatic signal even if no operational change
 - Economic pain on Iran from continued blockade; oil revenues depressed
 - Chinese diplomatic pressure for oil market access (China is Iran's largest crude buyer)
@@ -33,7 +33,7 @@ Direction: Unchanged — Day 32 stalemate; IRGC ship seizures now 17 days old; n
 
 - US blockade explicitly tied to comprehensive peace deal, NOT the ceasefire (Trump Apr 17: "will remain in full force until peace deal")
 - Islamabad Round 2 postponed indefinitely (Apr 22); no Round 3 date announced
-- IRGC Apr 22: Seized 2 commercial vessels near Strait — 17 days in custody; no new seizures; no diplomatic deployment; leverage instrument depreciating unused
+- IRGC Apr 22: Seized 2 commercial vessels near Strait — 18 days in custody; no new seizures; no diplomatic deployment; leverage instrument depreciating unused
 - Third US carrier in theater — military pressure posture may be raising Iran's domestic political floor for deal acceptance
 - Iran domestic constraints: cannot visibly capitulate on Hormuz without a verifiable deal to show domestically
 - Saudi and UAE quietly benefit from elevated oil prices under continued blockade
@@ -67,6 +67,7 @@ Direction: Unchanged — Day 32 stalemate; IRGC ship seizures now 17 days old; n
 | May 3 | Day 26; P(reopen) = ~15% unchanged; ceasefire holding; IRGC ship seizures 11 days old; China non-engagement structural (see analysis); no diplomatic track | Probability held; rolling window May 3–Jun 2; rupture risk scenario (23%) increasingly load-bearing as diplomatic path narrows |
 | May 4 | Day 27; P(reopen) = ~15% unchanged; 12 days since IRGC seizures; no Round 3 date; stalemate static; Iran's ceasefire posture now consistent with deliberate delay rather than passive equilibrium | Probability held; rolling window May 4–Jun 3; stalemate scenario (55%) may reflect Iran's revealed strategic preference: military recovery + no visible capitulation + proxy channel open |
 | May 9 | Day 32; P(reopen) = ~15% unchanged — 11 consecutive days static (Apr 28–May 9); 17 days since IRGC seizures; fire-silence Day 28; no Round 3 date; no back-channel confirmed; calendar compression building — partial arrangement scenario requires Round 3 announcement by ~May 20 to remain executable within the window | Probability held; rolling window May 9–Jun 8; passive calendar erosion of partial arrangement scenario is the key structural watch item — not yet treated as explicit signal per methodology, but each day without a Round 3 date is quietly compressing the feasible execution window |
+| May 10 | Day 33; P(reopen) = ~15% unchanged — 12 consecutive days static (Apr 28–May 10); fire-silence Day 29 (longest of the conflict); 18 days since IRGC seizures; reconstitution plateau watch: ~200 launchers reported by ISW Apr 19 has held for 17 days with no new authoritative revision in either direction; no Round 3 date; 10 days to the May 20 partial arrangement threshold | Probability held; rolling window May 10–Jun 9; the launcher reconstitution plateau (~200 for 17 days) is the under-analyzed structural ambiguity — its three plausible explanations (underground reserve tapped / deliberate pacing / reporting plateau) carry materially different implications for both the rupture risk profile and Iran's reservation point in any partial arrangement |
 
 ## Methodology Note
 
@@ -74,10 +75,10 @@ This tracker uses a **subjective Bayesian** approach — not a model output. Key
 
 1. **Scenarios are exhaustive and mutually exclusive** (sum to 100%).
 2. **P(open|scenario)** is set based on whether that scenario's resolution removes both the US blockade AND IRGC interference to ~pre-war commercial traffic levels.
-3. **30-day window** runs from today's date (2026-05-09).
+3. **30-day window** runs from today's date (2026-05-10).
 4. **Estimate updates when new signal arrives** — it does not automatically decay. Absence of news is weak evidence of stalemate (slightly bearish for reopening). Calendar compression of scenario feasibility is treated as a passive structural factor, not an explicit signal, until a threshold is crossed (est. ~May 20 for partial arrangement scenario).
 5. **Confidence in the point estimate is low** — the range is roughly ±8 percentage points given scenario probability uncertainty.
 
 ## One-Line Summary
 
-Day 32 ceasefire, Day 28 fire-silence: P(Hormuz reopen 30d) = ~15%, static for 11 consecutive days. Blockade decoupled from ceasefire; no Round 3 date; IRGC ship seizures 17 days old with no diplomatic deployment; China non-engagement structural; stalemate scenario (55%) is Iran's revealed strategic preference. Calendar erosion of partial arrangement scenario is the key passive watch item: Round 3 must be announced by ~May 20 for the scenario to remain executable in the window. Rolling window May 9–Jun 8.
+Day 33 ceasefire, Day 29 fire-silence (longest of the conflict): P(Hormuz reopen 30d) = ~15%, static for 12 consecutive days. Blockade decoupled from ceasefire; no Round 3 date; IRGC ship seizures 18 days old with no diplomatic deployment; reconstitution plateau watch — Iran's launcher count steady at ~200 for 17 days with no new authoritative revision; stalemate scenario (55%) remains Iran's revealed strategic preference. Calendar erosion of partial arrangement scenario continues: Round 3 must be announced by ~May 20 (10 days away) for the scenario to remain executable in the window. Rolling window May 10–Jun 9.
