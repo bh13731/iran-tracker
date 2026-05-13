@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Silent Watch-List: Pricing the Last Week Before the May 20 Cliff &mdash; Iran Tracker</title>
+<link rel="stylesheet" href="story.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <a class="nav-brand" href="../index.html">Iran Tracker</a>
+    <a href="../index.html">Dashboard</a>
+    <a href="index.html">Analysis</a>
+    <a href="../methodology.html">Methodology</a>
+  </nav>
+</header>
+
+<h1>The Silent Watch-List: Pricing the Last Week Before the May 20 Cliff</h1>
+<div class="meta">May 13, 2026 &mdash; Day 36 <span class="tag tag-analysis">Analysis</span> <span class="tag tag-ceasefire">Cease-fire</span> <span class="tag" style="background:rgba(57,197,207,0.12);color:#39c5cf">Hormuz</span></div>
+
+<div class="lede">
+Day 36 of cease-fire. P(Hormuz reopens within 30 days) = ~15%, static for 15 consecutive days. Exactly seven days remain to the May 20 partial-arrangement cliff &mdash; the methodology-defined date beyond which the partial arrangement scenario&rsquo;s 9 pp contribution to P(reopen) becomes mechanically infeasible to execute within the rolling 30-day window. Yesterday&rsquo;s analysis priced the cliff itself. Today&rsquo;s prices the <em>last week before it</em>. The eight indicators on the watch list are the only mechanism by which P(reopen) can move before May 20. Zero of them have fired in the 15 days of probability stasis. The data lets us turn that silence into an explicit expected-value estimate for the final week &mdash; and the answer is uncomfortable: the next move on the dial, in expectation, is negative.
+</div>
+
+<h2>Eight Indicators, Fifteen Days, Zero Movements</h2>
+
+<p>The Hormuz tracker maintains a fixed watch list of eight indicators whose firing would shift P(reopen) by a specified amount. The list is published with the source file and has been unchanged through May. Across the 15 days of probability stasis (Apr 28&nbsp;&ndash;&nbsp;May&nbsp;13), the count of watch-list events that have actually fired is zero.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Watch-list indicator</th>
+      <th>Direction</th>
+      <th>Magnitude (pp)</th>
+      <th>Days since last fire</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Islamabad Round 3 date announced (credible)</td>
+      <td class="center">+</td>
+      <td class="num">+5 to +10</td>
+      <td class="num">21 (since Apr 22 Round 2 postponement)</td>
+    </tr>
+    <tr>
+      <td>US/Iran back-channel confirmed active</td>
+      <td class="center">+</td>
+      <td class="num">+4 to +6</td>
+      <td class="num">never confirmed</td>
+    </tr>
+    <tr>
+      <td>Chinese or Omani direct mediation</td>
+      <td class="center">+</td>
+      <td class="num">+4 to +7</td>
+      <td class="num">36 (since Apr 7 ceasefire mediation)</td>
+    </tr>
+    <tr>
+      <td>Saudi/UAE support for partial arrangement</td>
+      <td class="center">+</td>
+      <td class="num">+3 to +5</td>
+      <td class="num">never</td>
+    </tr>
+    <tr>
+      <td>US carrier withdrawal / visible drawdown</td>
+      <td class="center">+</td>
+      <td class="num">+3 to +5</td>
+      <td class="num">never (3rd carrier still in theater)</td>
+    </tr>
+    <tr>
+      <td>Commercial vessel transits w/o IRGC interference</td>
+      <td class="center">+</td>
+      <td class="num">+2 to +3</td>
+      <td class="num">no cluster observed</td>
+    </tr>
+    <tr>
+      <td>New IRGC ship seizures / naval incidents</td>
+      <td class="center">&minus;</td>
+      <td class="num">&minus;5 to &minus;8 per incident</td>
+      <td class="num">21 (since Apr 22 cluster)</td>
+    </tr>
+    <tr>
+      <td>Ceasefire rupture / Iran resumes direct fire</td>
+      <td class="center">&minus;</td>
+      <td class="num">&minus;13 to &minus;15</td>
+      <td class="num">32 (since Apr 11 last direct fire)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Five of the eight indicators have <em>never</em> fired during the ceasefire window. Three carry quantifiable elapsed-time counters &mdash; Round 3 (21 days), Chinese mediation absent since Apr 7 (36 days), and the last naval incident (Apr 22, 21 days ago). Zero events fired in the 15-day stasis. That is the data the next-week pricing has to start from.</p>
+
+<h2>Implied Per-Indicator Daily Trigger Rate</h2>
+
+<p>If we treat the 15&times;8 = 120 indicator-days of zero events as a Poisson process, the maximum-likelihood point estimate of the per-indicator per-day trigger rate is zero. That is not analytically useful. A weakly-informative Bayesian update with a small uniform prior gives a more honest read: with 120 indicator-days observed and zero fires, the posterior median per-indicator daily trigger rate is roughly <strong>0.6%</strong>, with a 95% upper bound near 2.5%. The point estimate matters less than the order of magnitude: <em>indicator activity is currently running well below 1% per indicator per day</em>.</p>
+
+<div class="stat-row">
+  <div class="stat-box">
+    <div class="stat-value" style="color:var(--accent);">120</div>
+    <div class="stat-label">Indicator-days observed</div>
+    <div class="stat-sub">8 indicators &times; 15 days probability stasis</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-value" style="color:var(--orange);">0</div>
+    <div class="stat-label">Watch-list fires</div>
+    <div class="stat-sub">Across the entire stasis window</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-value" style="color:var(--green);">~0.6%</div>
+    <div class="stat-label">Implied daily trigger rate</div>
+    <div class="stat-sub">Per indicator, per day; weakly-informed posterior median</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-value" style="color:var(--red);">7</div>
+    <div class="stat-label">Days until May 20 cliff</div>
+    <div class="stat-sub">Final week of partial-arrangement-scenario viability</div>
+  </div>
+</div>
+
+<h2>Probability That <em>Any</em> Indicator Fires in the Next 7 Days</h2>
+
+<p>Compound that ~0.6% daily rate across 8 indicators over 7 days under independence, and the probability that at least one watch-list event fires is roughly:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Per-indicator daily rate assumption</th>
+      <th>P(any fire over 7 days &times; 8 indicators)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Posterior point: ~0.6%/day</td>
+      <td class="num"><strong>~28%</strong></td>
+    </tr>
+    <tr>
+      <td>Central case: ~1%/day</td>
+      <td class="num"><strong>~43%</strong></td>
+    </tr>
+    <tr>
+      <td>Pre-stasis base rate (Apr 22 cluster era): ~2%/day</td>
+      <td class="num">~67%</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The honest central read is <strong>roughly 30&ndash;50%</strong> probability that at least one indicator fires before May 20. That is a non-trivial mass &mdash; the cliff is not a foregone conclusion. But the headline P(reopen) movement question is not <em>whether</em> an indicator fires; it is <em>which direction</em> and <em>how much</em>.</p>
+
+<h2>The Magnitude-Weighted Direction Problem</h2>
+
+<p>Two of the eight indicators carry the largest absolute magnitude on the watch list, and both are negative. The two negative indicators contribute &minus;5 to &minus;15 pp in expectation per fire; the six positive indicators average about +4 pp per fire and several have effectively never fired despite multiple weeks of opportunity. Apply rough probability weights &mdash; positive indicators have weak prior support given 15 days of zero diplomatic motion; negative indicators have stronger latent pressure given Iran&rsquo;s held-but-unused leverage instruments &mdash; and the magnitude-weighted expected value of the 30&ndash;50% fire probability is materially negative.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Bucket</th>
+      <th>Indicators</th>
+      <th>Avg magnitude (pp)</th>
+      <th>Conditional weight</th>
+      <th>EV contribution (pp)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Positive triggers</td>
+      <td class="num">6</td>
+      <td class="num">+4.5</td>
+      <td class="num">~40% of fires</td>
+      <td class="num">+1.8 per fire</td>
+    </tr>
+    <tr>
+      <td>Negative triggers (naval / rupture)</td>
+      <td class="num">2</td>
+      <td class="num">&minus;9.5</td>
+      <td class="num">~60% of fires</td>
+      <td class="num">&minus;5.7 per fire</td>
+    </tr>
+    <tr>
+      <td><strong>Weighted expected move per fire</strong></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td class="num"><strong>&minus;3.0 to &minus;4.5</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Multiply that &minus;3 to &minus;4.5 pp expected-move-per-fire by the ~30&ndash;50% probability that any fire occurs, and the magnitude-weighted expected value of indicator activity over the next 7 days is roughly <strong>&minus;1 to &minus;2 pp</strong>, conditional on no May 20 cliff revision.</p>
+
+<div class="callout warn">
+  <strong>Why the &ldquo;conditional weight&rdquo; column is asymmetric:</strong> The positive triggers require active diplomatic effort that has demonstrably not materialized in 21 days since Round 2 postponement. The negative triggers (naval seizure, rupture) require Iran to lower a threshold it has held but actively maintained leverage on &mdash; the two seized vessels still in IRGC custody at Day 21 are a standing reminder that the naval-coercion instrument is loaded but not fired. Latent escalation pressure is structurally higher than latent diplomatic-breakthrough pressure given the current posture stack.
+</div>
+
+<h2>Stacking the Cliff and the Watch-List EV Together</h2>
+
+<p>Two probability movements compete in the next 7 days. The first is the watch-list expected value above. The second is the mechanical May 20 cliff, which fires deterministically if no Round 3 announcement lands before May 20. Combining them:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Branch</th>
+      <th>Probability</th>
+      <th>Expected P(reopen) on May 20</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Round 3 date announced this week (forestalls cliff)</td>
+      <td class="num">~8&ndash;15%</td>
+      <td class="num">~22&ndash;25% (+5 to +10 pp from announcement)</td>
+    </tr>
+    <tr>
+      <td>Negative watch-list fire (naval or rupture)</td>
+      <td class="num">~15&ndash;25%</td>
+      <td class="num">~7&ndash;10% (cliff still mechanically fires)</td>
+    </tr>
+    <tr>
+      <td>Watch-list silent all 7 days; cliff fires on May 20</td>
+      <td class="num">~55&ndash;70%</td>
+      <td class="num">~9% (central recalibration; partial scenario evicted from window)</td>
+    </tr>
+    <tr>
+      <td>Other positive watch-list event without Round 3 date</td>
+      <td class="num">~5&ndash;10%</td>
+      <td class="num">~12&ndash;15% (forestalls cliff partially or briefly)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The probability-weighted expected P(reopen) at the close of May 20 is approximately <strong>~10&ndash;11%</strong>, down from today&rsquo;s ~15%. The dominant single branch &mdash; ~55&ndash;70% of probability mass &mdash; is the &ldquo;watch-list silent / cliff fires&rdquo; path that yesterday&rsquo;s story analyzed. Today&rsquo;s addition: the second-most-probable branch is the negative watch-list fire, not the positive one. The cliff is not the only downward path open this week.</p>
+
+<h2>Where the Critique Lands</h2>
+
+<p>Three honest objections to this pricing, each addressed:</p>
+
+<ul>
+  <li><strong>Indicator independence is wrong.</strong> Correct &mdash; many of these indicators are correlated (a Round 3 announcement and a back-channel confirmation are not independent draws). The compound-probability arithmetic above slightly overstates the probability of any single fire and slightly understates the conditional clustering of related fires. Net direction on the headline number: small.</li>
+  <li><strong>Diplomatic surprise is fat-tailed.</strong> Also correct &mdash; the ~0.6% posterior daily rate may under-price a regime change in diplomatic tempo (e.g., a Trump-Araghchi direct exchange would announce in one news cycle and dominate the dial). The 30&ndash;50% fire-probability range deliberately includes a moderately fat tail (the 2%/day &ldquo;pre-stasis base rate&rdquo; row reflects exactly this).</li>
+  <li><strong>Naval/rupture triggers also have correlated structure.</strong> The two negative indicators are not independent &mdash; an IRGC naval cluster and a full rupture share many of the same underlying drivers (Iran&rsquo;s domestic political pressure, US carrier-rotation cycle, Iraq-launched proxy escalation). This argues for treating them as one bucket with ~10&ndash;15% combined fire probability over the next 7 days, which is what the table above does.</li>
+</ul>
+
+<h2>What Would Actually Move the Headline This Week</h2>
+
+<p>Reading the analysis the other way around &mdash; from positive direction &mdash; produces a short list of events that could prevent the &minus;4 to &minus;6 pp move the data is currently pricing for May 20:</p>
+
+<ul>
+  <li><strong>Round 3 date announced by Pakistan, Oman, or Switzerland</strong> &mdash; the single highest-value forestall event. Even a date set for late May with no agenda commitment would re-open the partial-arrangement execution window via a credible &ldquo;negotiations in progress&rdquo; framing.</li>
+  <li><strong>Unilateral IRGC release of one or both seized vessels</strong> &mdash; reversible Iranian leverage Apr 22 cluster generated, never deployed. Releasing without quid pro quo would be a deliberate diplomatic signal large enough to drive +3 to +5 pp directly and credibly reopen the back-channel inference.</li>
+  <li><strong>Trump or Araghchi public direct exchange</strong> &mdash; not on the watch list as a formal indicator, but functionally equivalent to back-channel confirmation. +4 to +6 pp.</li>
+  <li><strong>Confirmed Chinese or Omani direct mediation push</strong> &mdash; this trigger has been latent since the May 2 China analysis; structural obstacles to Beijing engagement remain but a single public statement would clear them.</li>
+</ul>
+
+<p>The non-actionable but informational reads: continued commercial vessel transits without IRGC interference (cumulative observable, not single-event); US carrier-rotation hint (the third carrier is approaching the cycle window that would normally trigger drawdown discussion). Neither alone meets the threshold for headline movement, but a cluster of soft positives in a single week would.</p>
+
+<h2>The Frozen-Depletion Cross-Check</h2>
+
+<p>This is the kind of analysis that is only possible on Tracker B. Tracker A &mdash; the missile and drone depletion tracker &mdash; remains frozen at the Apr 26 data anchor and has not received an authoritative posture update since ISW Apr 19 (anchor-data lag now 24 days). The depletion tracker has no probabilistic dial to price; it is a snapshot. The Hormuz tracker, by contrast, has eight indicators and a methodology-encoded mechanism for moving the dial on both signals and calendars. That difference is the dual-tracker design: under a ceasefire, depletion is observation and Hormuz is inference. The eight silent indicators are the only thing standing between today&rsquo;s ~15% and the May 21 ~9% expected value.</p>
+
+<h2>Bottom Line</h2>
+
+<p>P(Hormuz reopens within 30 days) = <strong>~15%</strong>, unchanged for 15 consecutive days. The watch list has produced zero events across 120 indicator-days. The implied per-indicator daily trigger rate is below 1%, and the magnitude-weighted expected value of next-week indicator activity is negative-skewed because the rupture and naval-incident triggers carry larger absolute magnitude than the positive triggers. Combining the cliff and the watch-list EV: the probability-weighted expected P(reopen) at the close of May 20 is approximately <strong>~10&ndash;11%</strong>, a 4&ndash;5 pp drop from today with no single external event required.</p>
+
+<p>The actionable read for the final week before the cliff: <em>watch for a Round 3 date, an IRGC ship release, or a public Trump-Araghchi exchange</em>. Each individually forestalls the cliff. Their cumulative probability is non-trivial but smaller than the silent-week-and-cliff branch. The dominant outcome on May 20 is still the cliff itself; the second-most-likely outcome is a negative watch-list fire that <em>also</em> precedes the cliff.</p>
+
+<div class="callout">
+  <strong>Methodology note:</strong> The ~0.6%/day per-indicator trigger rate is derived from 120 observed indicator-days with zero fires, using a Beta(1,1) prior on the per-day Bernoulli rate and computing the posterior median. The 30&ndash;50% &ldquo;any-fire&rdquo; band is computed as 1 &minus; (1 &minus; rate)^(8 &times; 7) across rate assumptions of 0.6%, 1%, and 2%. The magnitude-weighted EV uses the watch-list magnitudes published in <code>source/hormuz-state.md</code>. Branch probabilities in the &ldquo;Stacking&rdquo; table are illustrative ranges, not committed values. Cliff recalibration (~9% under central case) is from yesterday&rsquo;s methodology analysis. Source: <code>source/hormuz-state.md</code> as of 2026-05-13; scenario ladder unchanged at 7%/15%/55%/23% with 90%/60%/0%/0% conditional reopening probabilities.
+</div>
+
+<footer>
+  <a href="../index.html">Dashboard</a> &middot; <a href="../methodology.html">Methodology</a> &middot; <a href="index.html">All Analysis</a> &middot; <a href="https://github.com/bh13731/iran-tracker">GitHub</a>
+</footer>
+
+</body>
+</html>
