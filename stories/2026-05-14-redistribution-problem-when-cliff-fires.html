@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Redistribution Problem: Where the 15% Partial-Arrangement Mass Goes When the May 20 Cliff Fires &mdash; Iran Tracker</title>
+<link rel="stylesheet" href="story.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <a class="nav-brand" href="../index.html">Iran Tracker</a>
+    <a href="../index.html">Dashboard</a>
+    <a href="index.html">Analysis</a>
+    <a href="../methodology.html">Methodology</a>
+  </nav>
+</header>
+
+<h1>The Redistribution Problem: Where the 15% Partial-Arrangement Mass Goes When the May 20 Cliff Fires</h1>
+<div class="meta">May 14, 2026 &mdash; Day 37 <span class="tag tag-analysis">Analysis</span> <span class="tag tag-ceasefire">Cease-fire</span> <span class="tag" style="background:rgba(57,197,207,0.12);color:#39c5cf">Hormuz</span></div>
+
+<div class="lede">
+Day 37 of cease-fire. P(Hormuz reopens within 30 days) = ~15%, static for 16 consecutive days. Six days remain to the May 20 partial-arrangement cliff &mdash; the methodology-defined date at which the partial Hormuz traffic arrangement scenario becomes mechanically infeasible to execute inside the rolling 30-day window absent a credible Round 3 announcement. Yesterday&rsquo;s story priced the <em>path to</em> the cliff. Today&rsquo;s prices what happens <em>at</em> it. The partial scenario does not just contribute zero to P(reopen) post-eviction; the methodology requires that its 15 percentage points of scenario probability mass go somewhere &mdash; the four scenarios must continue to sum to 100%. Where that mass lands determines what the May 21 scenario ladder looks like, and the choice between three defensible redistribution rules has more analytical signal than the headline change in P(reopen).
+</div>
+
+<h2>The Mechanical Problem the Methodology Has Not Yet Solved</h2>
+
+<p>The scenario ladder published in <code>source/hormuz-state.md</code> is exhaustive and mutually exclusive: comprehensive deal (7%), partial arrangement (15%), stalemate (55%), and rupture (23%). The methodology has a published rule for when the partial scenario stops contributing to P(reopen) &mdash; the May 20 calendar threshold. It does not have a published rule for where the partial scenario&rsquo;s 15% of <em>scenario probability</em> goes when that contribution evicts. Yet the methodology also requires that the four scenarios always sum to 100%. Therefore on May 21, in the no-Round-3 base case, some redistribution rule must fire. Three are defensible.</p>
+
+<h2>Redistribution Rule A: Proportional Reweighting</h2>
+
+<p>The agnostic case: when the partial scenario evicts, its 15% redistributes across the remaining three scenarios in proportion to their existing weights. The remaining scenarios sum to 85% (7 + 55 + 23), so each is scaled up by a factor of <code>100 / 85 = 1.176</code>:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Scenario</th>
+      <th>Pre-cliff P(scenario)</th>
+      <th>Post-cliff P(scenario) (proportional)</th>
+      <th>P(open&nbsp;|&nbsp;scenario)</th>
+      <th>Contribution (pp)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Comprehensive deal</td>
+      <td class="num">7%</td>
+      <td class="num">8.2%</td>
+      <td class="num">90%</td>
+      <td class="num">7.4</td>
+    </tr>
+    <tr>
+      <td>Partial arrangement</td>
+      <td class="num">15%</td>
+      <td class="num">0%</td>
+      <td class="num">60% (n/a)</td>
+      <td class="num">0</td>
+    </tr>
+    <tr>
+      <td>Stalemate</td>
+      <td class="num">55%</td>
+      <td class="num">64.7%</td>
+      <td class="num">0%</td>
+      <td class="num">0</td>
+    </tr>
+    <tr>
+      <td>Rupture</td>
+      <td class="num">23%</td>
+      <td class="num">27.1%</td>
+      <td class="num">0%</td>
+      <td class="num">0</td>
+    </tr>
+    <tr>
+      <td><strong>Total</strong></td>
+      <td class="num"><strong>100%</strong></td>
+      <td class="num"><strong>100%</strong></td>
+      <td>&nbsp;</td>
+      <td class="num"><strong>~7.4%</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Headline result:</strong> Post-cliff P(reopen) &asymp; <strong>7.4%</strong>, down 7.6 pp from today. The comprehensive deal scenario carries the entire reopening probability. Rupture rises by 4 pp, stalemate by 10 pp.</p>
+
+<p>This is the methodologically cleanest rule &mdash; it treats the partial-scenario eviction as removing a single option without otherwise updating the relative likelihood of the survivors. It is also the most analytically lazy: it implicitly assumes the partial-arrangement scenario&rsquo;s 15% was unrelated to why the remaining scenarios sit where they do.</p>
+
+<h2>Redistribution Rule B: All Mass Into Stalemate</h2>
+
+<p>The pure-default case: if the partial arrangement is infeasible, the equilibrium it would have departed from absorbs all its probability mass. The remaining scenarios shift only by absorbing the partial scenario&rsquo;s 15% into stalemate alone:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Scenario</th>
+      <th>Pre-cliff</th>
+      <th>Post-cliff (into-stalemate)</th>
+      <th>P(open&nbsp;|&nbsp;scenario)</th>
+      <th>Contribution (pp)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Comprehensive deal</td><td class="num">7%</td><td class="num">7%</td><td class="num">90%</td><td class="num">6.3</td></tr>
+    <tr><td>Partial arrangement</td><td class="num">15%</td><td class="num">0%</td><td class="num">&mdash;</td><td class="num">0</td></tr>
+    <tr><td>Stalemate</td><td class="num">55%</td><td class="num">70%</td><td class="num">0%</td><td class="num">0</td></tr>
+    <tr><td>Rupture</td><td class="num">23%</td><td class="num">23%</td><td class="num">0%</td><td class="num">0</td></tr>
+    <tr><td><strong>Total</strong></td><td class="num"><strong>100%</strong></td><td class="num"><strong>100%</strong></td><td>&nbsp;</td><td class="num"><strong>~6.3%</strong></td></tr>
+  </tbody>
+</table>
+
+<p><strong>Headline result:</strong> Post-cliff P(reopen) &asymp; <strong>6.3%</strong>, down 8.7 pp from today. Rupture is held flat at 23%; stalemate absorbs the full 15 pp and rises to 70%.</p>
+
+<p>The case for this rule is structural: the partial scenario was always &ldquo;stalemate plus a face-saving exit&rdquo; from Iran&rsquo;s perspective. When the calendar evicts the face-saving exit, the underlying equilibrium &mdash; ceasefire holds, blockade holds, no movement &mdash; is what remains. The case against: it treats the diplomatic-path closure as having no implication for rupture risk, which is structurally unlikely. Iran&rsquo;s domestic political constraints have been satisfied during May by the visible existence of a negotiating track, even a stalled one. Removing the track entirely shifts the cost-benefit of an escalation move that breaks the stalemate by force.</p>
+
+<h2>Redistribution Rule C: Diplomatic Closure Raises Rupture Risk</h2>
+
+<p>The asymmetric case: the partial scenario&rsquo;s 15% was the visible &ldquo;there is a way out&rdquo; probability mass. Removing it without a substitute raises the marginal attractiveness to Iran of breaking stalemate by escalation, on the logic that a stalemate scenario with <em>no visible exit</em> on the horizon is materially less stable than one with a 15% scenario probability of partial accommodation on the table. Under this rule the eviction splits roughly two-thirds into rupture and one-third into stalemate:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Scenario</th>
+      <th>Pre-cliff</th>
+      <th>Post-cliff (asymmetric)</th>
+      <th>P(open&nbsp;|&nbsp;scenario)</th>
+      <th>Contribution (pp)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Comprehensive deal</td><td class="num">7%</td><td class="num">7%</td><td class="num">90%</td><td class="num">6.3</td></tr>
+    <tr><td>Partial arrangement</td><td class="num">15%</td><td class="num">0%</td><td class="num">&mdash;</td><td class="num">0</td></tr>
+    <tr><td>Stalemate</td><td class="num">55%</td><td class="num">60%</td><td class="num">0%</td><td class="num">0</td></tr>
+    <tr><td>Rupture</td><td class="num">23%</td><td class="num">33%</td><td class="num">0%</td><td class="num">0</td></tr>
+    <tr><td><strong>Total</strong></td><td class="num"><strong>100%</strong></td><td class="num"><strong>100%</strong></td><td>&nbsp;</td><td class="num"><strong>~6.3%</strong></td></tr>
+  </tbody>
+</table>
+
+<p><strong>Headline result:</strong> Post-cliff P(reopen) &asymp; <strong>6.3%</strong>, identical to Rule B. But P(rupture) rises 10 pp to 33%, and stalemate rises only 5 pp to 60%.</p>
+
+<p>A more aggressive variant of this rule &mdash; pure substitution, where every percentage point of evicted partial-scenario mass becomes rupture-scenario mass &mdash; pushes P(rupture) to 38% and leaves stalemate at 55%. That variant rests on the strong assumption that the partial scenario was the <em>only</em> equilibrium absorber for &ldquo;diplomatic path possible&rdquo; mass and that its eviction directly enables rupture, with no path through continued stalemate. Probably too sharp. The 60/33/7 split is the more defensible asymmetric reweight.</p>
+
+<div class="callout warn">
+  <strong>Why the headline P(reopen) barely moves between Rules B and C:</strong> Both rule B and rule C leave P(open|scenario) = 0% for stalemate and rupture, so reallocating mass between them does not change the contribution arithmetic. The headline P(reopen) is set almost entirely by the 7% comprehensive-deal scenario contribution (~6 pp) plus whatever proportional uplift the deal scenario gets from the rule (~0 to 1 pp). The choice among redistribution rules is therefore <em>almost invisible</em> in the headline number but <em>highly visible</em> in the implied rupture probability beneath the headline. That asymmetry is the entire structural pivot of today&rsquo;s analysis.
+</div>
+
+<h2>The Three Headlines, Compared</h2>
+
+<div class="stat-row">
+  <div class="stat-box">
+    <div class="stat-value" style="color:var(--accent);">7.4%</div>
+    <div class="stat-label">Post-cliff P(reopen) &mdash; Rule A</div>
+    <div class="stat-sub">Proportional reweight; P(rupture) 27%</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-value" style="color:var(--accent);">6.3%</div>
+    <div class="stat-label">Post-cliff P(reopen) &mdash; Rule B</div>
+    <div class="stat-sub">All-into-stalemate; P(rupture) 23%</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-value" style="color:var(--accent);">6.3%</div>
+    <div class="stat-label">Post-cliff P(reopen) &mdash; Rule C</div>
+    <div class="stat-sub">Asymmetric; P(rupture) 33% (or 38% in sharp variant)</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-value" style="color:var(--orange);">6.3&ndash;7.4%</div>
+    <div class="stat-label">Likely post-cliff range</div>
+    <div class="stat-sub">~8 pp drop from today regardless of rule</div>
+  </div>
+</div>
+
+<p>The right way to read the table: the headline P(reopen) on May 21 is robust across redistribution rules &mdash; it lands in a 6.3&ndash;7.4% band regardless of methodology choice. The composition of the rupture and stalemate scenarios beneath that headline, however, ranges from 23% to 38% on rupture. That 15-pp range in rupture probability dwarfs the 1.1-pp range in the headline P(reopen).</p>
+
+<h2>The Right Rule Probably Looks Like C, But Smoothed</h2>
+
+<p>Three structural signals make the asymmetric reweight (Rule C) more analytically defensible than the agnostic (A) or default (B) cases:</p>
+
+<ul>
+  <li><strong>The IRGC ship seizures are still in custody at Day 22.</strong> Iran has held a kinetic-escalation instrument loaded but unfired for 22 days. The latent-rupture pressure has been suppressed in part by the visible existence of the partial-arrangement diplomatic path. Removing the path raises the marginal attractiveness of <em>using</em> the loaded instrument as the only remaining lever to break stalemate.</li>
+  <li><strong>The 23% rupture scenario already prices a non-trivial latent escalation risk.</strong> The base rate is already weighted toward escalation as a method of breaking stalemate, not as a method of starting a new war. The mechanism Rule C invokes is consistent with the existing 23% &mdash; it amplifies rather than introduces.</li>
+  <li><strong>Iran&rsquo;s revealed strategic preference during the ceasefire is for the partial-arrangement option, not the comprehensive-deal option.</strong> Removing the only operational version of the preferred path shifts the choice set in a way that is not symmetric across remaining options. The asymmetry runs toward rupture for the same reason Iran has preferred the partial path: it is the one that preserves the most ambiguity about Iran&rsquo;s reservation point.</li>
+</ul>
+
+<p>A &ldquo;smoothed Rule C&rdquo; that splits the evicted 15 pp roughly 60/30/10 between rupture, stalemate, and deal (rather than the cleaner 67/33 split) is probably the most analytically honest read. That gives P(rupture) &asymp; 32%, P(stalemate) &asymp; 60%, P(deal) &asymp; 8.5% &mdash; and a headline P(reopen) of ~7.7%. Close enough to the Rule-A number that the headline reads as Rule A, but with a meaningfully higher rupture probability underneath.</p>
+
+<h2>What the Higher Rupture Probability Buys</h2>
+
+<p>If the smoothed Rule C is right, then the May 21 ladder carries roughly a 30&ndash;33% probability of rupture against a 60% probability of stalemate &mdash; a ~10-pp shift in the rupture/stalemate balance compared to today. That shift has three concrete operational implications for the rest of May and into June:</p>
+
+<ul>
+  <li><strong>The watch list&rsquo;s rupture-side indicators carry more headline weight after May 20.</strong> Today, a naval escalation event moves P(reopen) by &minus;5 to &minus;8 pp, but the rupture-scenario probability it would push toward is 23%. Post-cliff under smoothed Rule C, the same event moves rupture-scenario probability toward 38&ndash;43% &mdash; closer to the threshold at which the headline P(reopen) starts moving from the rupture side rather than the partial-arrangement side. The watch-list calibration drifts.</li>
+  <li><strong>The 22-day-held IRGC vessels become a more analytically loaded variable.</strong> If rupture is 33% on May 21 instead of 23%, the diplomatic option-value of holding those vessels without articulating a quid pro quo declines further &mdash; either they get released as a costly de-escalation signal (raising deal scenario) or they get joined by additional seizures (raising rupture). The passive equilibrium of &ldquo;hold them but don&rsquo;t use them&rdquo; is harder to sustain into June under the higher rupture base rate.</li>
+  <li><strong>The third US carrier&rsquo;s political function changes.</strong> Today, three US carriers are coercive posture against a 23% rupture scenario. Post-cliff under Rule C, the same posture is operating against a 33% rupture scenario &mdash; which changes the calculus on carrier rotation: keeping three carriers in theater no longer just deters rupture, it costs more (politically and operationally) to maintain because the deterrent target probability has risen.</li>
+</ul>
+
+<h2>The Bound on the Eviction: When Does Partial Come Back?</h2>
+
+<p>The partial scenario is not gone forever on May 20; it is mechanically infeasible <em>within the May 14&ndash;Jun 13 rolling window</em>. On May 21 the rolling window shifts to May 21&ndash;Jun 20, and the partial-arrangement scenario re-enters as a candidate scenario for any post-Jun 20 resolution &mdash; <em>at a different scenario probability</em>. The natural re-entry probability is meaningfully lower than the May 14 starting 15%, because every day without a Round 3 date is also evidence that the partial-arrangement coalition (Pakistan, Oman, or a Chinese mediator initiating in late May) is not assembling. A reasonable re-entry probability on May 21 is roughly 6&ndash;10% &mdash; the partial path remains a possibility but its scenario weight has been re-priced downward by the empirical fact that no Round 3 emerged in May.</p>
+
+<p>That re-entry is the soft floor under the cliff. The expected P(reopen) on May 21 is not 6.3% asymptoting to zero over June; it&rsquo;s roughly 6&ndash;8% asymptoting toward 8&ndash;11% if June produces credible diplomatic motion (Round 3 announcement, China mediation push, Trump-Araghchi direct exchange). The cliff is a discontinuous downward move; the recovery is gradual and conditional on signals that have not been emerging.</p>
+
+<h2>What the Methodology Should Probably Pre-Commit Before May 20</h2>
+
+<p>The redistribution rule should be published before May 20 fires, not back-fit afterward. The honest options are:</p>
+
+<ul>
+  <li><strong>Pre-commit Rule A (proportional)</strong> as the default, with a published exception: if a watch-list naval-incident event or a fire-silence break occurs between May 14 and May 20, switch to Rule C. This makes the methodology mechanical but responsive.</li>
+  <li><strong>Pre-commit smoothed Rule C</strong> directly, on the grounds articulated above. This makes the methodology more interpreted but more analytically honest.</li>
+  <li><strong>Pre-commit both, publish both numbers.</strong> Headline P(reopen) post-cliff = 7%, with footnote that the rupture-scenario probability underneath ranges 27&ndash;33% depending on redistribution interpretation. This is the most transparent option and the one that loses the least information.</li>
+</ul>
+
+<p>The default if no rule is published is Rule A, by methodological inertia. That is the worst outcome from an analytical-transparency standpoint, because it understates the rupture-scenario probability that the structural conditions actually justify.</p>
+
+<h2>The Frozen-Depletion Cross-Check</h2>
+
+<p>The depletion tracker (Tracker A) does not face this problem. It has no scenario decomposition; it is observational, frozen at the Apr 26 anchor with a 25-day-old authoritative posture revision. The Hormuz tracker (Tracker B) has eight watch-list indicators and a four-scenario decomposition, and the redistribution rule is the kind of methodological commitment that only exists because Tracker B is a probabilistic framework rather than a snapshot. That difference &mdash; the frozen tracker reports facts, the live tracker prices futures &mdash; is the entire structural point of the dual-tracker design under the ceasefire. The fire-silence at Day 33 means the depletion tracker has nothing to do today; the Hormuz tracker has six days to decide what its May 21 ladder will look like.</p>
+
+<h2>Bottom Line</h2>
+
+<p>P(Hormuz reopens within 30 days) = <strong>~15%</strong>, unchanged for 16 consecutive days. Six days remain to the methodology-defined May 20 partial-arrangement cliff. When the cliff fires (most-likely outcome: no Round 3 by May 20 &mdash; ~85%), the partial scenario&rsquo;s 15 pp of probability mass must redistribute. The three defensible redistribution rules &mdash; proportional, all-into-stalemate, and asymmetric &mdash; produce post-cliff headline P(reopen) of 6.3% to 7.4%, a narrow band. They produce post-cliff rupture-scenario probability of 23% to 38%, a wide band.</p>
+
+<p>The most analytically honest redistribution is a smoothed asymmetric reweight that pushes rupture to ~32% and stalemate to ~60%. The headline P(reopen) under that rule lands at ~7.7%, similar to the proportional case &mdash; but the rupture-scenario probability beneath the headline is ~9 pp higher. That under-the-headline change is what determines whether the watch-list&rsquo;s rupture-side indicators carry more analytical weight starting May 21, whether the 22-day-held IRGC vessels become a sustainability problem in June, and whether the third US carrier&rsquo;s deterrent posture is operating against a 23% or a 33% target probability.</p>
+
+<p>The dial moves ~8 pp on May 20 regardless of redistribution rule. What changes underneath the dial is the harder analytical question, and it has six days to resolve.</p>
+
+<div class="callout">
+  <strong>Methodology note:</strong> Pre-cliff scenario probabilities and conditional reopening probabilities are taken directly from <code>source/hormuz-state.md</code> as of 2026-05-13 (carried forward to 2026-05-14 because no signal moved overnight). Rule A (proportional) computes <code>P_new(scenario) = P_old(scenario) &times; (100 / 85)</code> for the three surviving scenarios. Rule B adds the full 15 pp of evicted partial-scenario mass to stalemate. Rule C splits the evicted 15 pp at 67/33 between rupture and stalemate; the smoothed variant uses ~60/30/10 across rupture/stalemate/deal. The May 21 re-entry probability for the partial scenario is a judgment range based on the absence of a Round 3 date for 21 days as of writing. None of the rules currently has a formal published commitment in the source/ files; this story is an explicit prompt to the tracker&rsquo;s methodology to make that commitment before May 20.
+</div>
+
+<footer>
+  <a href="../index.html">Dashboard</a> &middot; <a href="../methodology.html">Methodology</a> &middot; <a href="index.html">All Analysis</a> &middot; <a href="https://github.com/bh13731/iran-tracker">GitHub</a>
+</footer>
+
+</body>
+</html>
