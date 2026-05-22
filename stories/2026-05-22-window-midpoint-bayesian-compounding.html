@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Window Midpoint: The Compounded Bayesian Update at T+48h &mdash; Iran Tracker</title>
+<link rel="stylesheet" href="story.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <a class="nav-brand" href="../index.html">Iran Tracker</a>
+    <a href="../index.html">Dashboard</a>
+    <a href="index.html">Analysis</a>
+    <a href="../methodology.html">Methodology</a>
+  </nav>
+</header>
+
+<h1>Window Midpoint: The Compounded Bayesian Update at T+48h</h1>
+<div class="meta">May 22, 2026 &mdash; Day 45 <span class="tag tag-analysis">Analysis</span> <span class="tag tag-ceasefire">Cease-fire</span> <span class="tag" style="background:rgba(57,197,207,0.12);color:#39c5cf">Hormuz</span></div>
+
+<div class="lede">
+The natural-experiment window is at its midpoint. Two of four calendar days have elapsed and the observed signal across both is the same: <em>zero</em> events on all seven enumerated read-grid channels. Yesterday&rsquo;s mild single-day Bayesian tilt against Rule&nbsp;C compounds today into something legibly stronger. Posterior weights on the three published rules move from yesterday&rsquo;s ~28/33/39 to roughly <strong>~24/33/44</strong>. Rule&nbsp;B (all-into-stalemate) is now the modal posterior on the rule weighting for the first time since the May 20 cliff fired; Rule&nbsp;C drops below its pre-cliff uniform prior; Rule&nbsp;A holds at its uniform-prior weight. The headline dashboard ~6.3% does not move; the rule-weighted P(rupture-scenario) eases from yesterday&rsquo;s ~25% toward ~24%. Two structural facts decide whether this becomes a methodology revision in 48 hours or reverses inside the remaining window: the pre-committed 00:00 UTC May 25 revision threshold, and the asymmetric weight a single fresh IRGC Naval event would carry against the cumulative null evidence.
+</div>
+
+<h2>The Compounded Update, Day By Day</h2>
+
+<p>The May 19 baseline lock-in pre-published an explicit read-grid for the four-day window. Each rule implies a different per-day probability of producing the null result (zero events across the seven enumerated channels). The compounded posterior is a daily multiplicative update:</p>
+
+<table>
+  <thead>
+    <tr><th>Day</th><th>P(null | C)</th><th>P(null | A)</th><th>P(null | B)</th><th>Posterior C</th><th>Posterior A</th><th>Posterior B</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>T+0 (cliff fires May 20)</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td class="num">33%</td><td class="num">33%</td><td class="num">33%</td></tr>
+    <tr><td>T+24h (May 21)</td><td>~0.70</td><td>~0.83</td><td>~0.93</td><td class="num">~28%</td><td class="num">~33%</td><td class="num">~39%</td></tr>
+    <tr><td><strong>T+48h (May 22)</strong></td><td>~0.70</td><td>~0.83</td><td>~0.93</td><td class="num"><strong>~24%</strong></td><td class="num"><strong>~33%</strong></td><td class="num"><strong>~44%</strong></td></tr>
+    <tr><td>T+72h (May 23) &mdash; if null</td><td>~0.70</td><td>~0.83</td><td>~0.93</td><td class="num">~20%</td><td class="num">~32%</td><td class="num">~48%</td></tr>
+    <tr><td>T+96h (May 24) &mdash; if null</td><td>~0.70</td><td>~0.83</td><td>~0.93</td><td class="num">~16%</td><td class="num">~32%</td><td class="num">~52%</td></tr>
+  </tbody>
+</table>
+
+<p>Two ways to read the arithmetic. First, the absolute decay: starting from a uniform 33% prior on each rule, two compounded null days reduce Rule&nbsp;C&rsquo;s weight by roughly a quarter, leave Rule&nbsp;A approximately unchanged, and lift Rule&nbsp;B&rsquo;s weight by about a third. Second, the structural property: each null day multiplies the rule&rsquo;s posterior weight by its implied P(null | rule). Because P(null | C) is the smallest of the three, Rule&nbsp;C decays fastest; because P(null | B) is the largest, Rule&nbsp;B grows fastest. Rule&nbsp;A sits between them and barely moves under null evidence. The compounding is what does the work &mdash; one null day is mild evidence; two null days is roughly twice as much evidence on the log scale; four null days would push Rule&nbsp;B&rsquo;s weight above 50% and Rule&nbsp;C&rsquo;s below 17%.</p>
+
+<div class="stat-row">
+  <div class="stat-box">
+    <div class="stat-value" style="color:var(--orange);">~6.3%</div>
+    <div class="stat-label">P(reopen) &mdash; Rule&nbsp;C primary</div>
+    <div class="stat-sub">Unchanged third consecutive day; rule-invariant within ~1.1 pp across A/B/C</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-value">~44%</div>
+    <div class="stat-label">Posterior weight &mdash; Rule&nbsp;B</div>
+    <div class="stat-sub">Now modal for the first time since the cliff fired; was uniform 33% at T+0</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-value" style="color:var(--red);">~24%</div>
+    <div class="stat-label">P(rupture-scenario) weighted</div>
+    <div class="stat-sub">Down from yesterday&rsquo;s ~25%, from 28% at T+0; load-bearing update beneath the unchanged dial</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-value" style="color:var(--accent);">~48 hr</div>
+    <div class="stat-label">To revision threshold</div>
+    <div class="stat-sub">00:00 UTC May 25 pre-committed: empty 96h triggers methodology revision from Rule&nbsp;C to Rule&nbsp;B as primary</div>
+  </div>
+</div>
+
+<h2>What the Second Null Day Does That the First Did Not</h2>
+
+<p>Yesterday&rsquo;s T+24h read flagged a mild Bayesian tilt: posterior weights moved from uniform 33/33/33 toward ~28/33/39 over a single null day. That movement was directionally clear but it sat inside the noise band a single day of evidence can produce. Today&rsquo;s read is structurally different in two ways.</p>
+
+<p>First, <em>two</em> independent calendar days of identical null observations are not the same as one day twice. The Bayesian update compounds multiplicatively. A single null day moved Rule&nbsp;B&rsquo;s posterior from 33% to 39% (a 6 pp absolute gain, an 18% relative gain on the prior). The second null day moved it from 39% to 44% (a 5 pp absolute gain, a 13% relative gain on the new prior). The diminishing absolute returns reflect that Rule&nbsp;B is starting from a higher base; the cumulative shift over two days is ~11 pp away from the uniform prior, which is roughly twice the single-day move.</p>
+
+<p>Second, the second day crosses a qualitative threshold: Rule&nbsp;B is now the <em>modal</em> posterior, not merely the leading-but-still-minority posterior. Yesterday Rule&nbsp;B was the largest of the three but still represented only 39% of total weight, meaning the methodology could not defensibly describe it as the modal hypothesis without breaking the &ldquo;Rule&nbsp;C primary&rdquo; pre-commitment. Today Rule&nbsp;B at ~44% is the unambiguous mode &mdash; both Rule&nbsp;A and Rule&nbsp;C now sit below the uniform 33% prior, while Rule&nbsp;B sits 11 pp above it. The pre-commitment to Rule&nbsp;C primary is what keeps the dashboard at ~6.3% under Rule&nbsp;C rather than ~6.3% under Rule&nbsp;B (the two headline values happen to coincide). The published rationale still names Rule&nbsp;C, but the empirical evidence behind that naming is now in net-debit territory.</p>
+
+<h2>The Pre-Committed Revision Threshold Is 48 Hours Away</h2>
+
+<p>The methodology pre-published a specific decision rule on May 19: if the May 21&ndash;24 window closes with zero IRGC Naval events, zero rupture-leaning posture revisions, and no fresh negative-side cluster, the methodology revises primary from Rule&nbsp;C to Rule&nbsp;B at 00:00 UTC May 25. The dashboard headline does not move (rule-invariant); the published rationale changes from &ldquo;Rule&nbsp;C, smoothed asymmetric&rdquo; to &ldquo;Rule&nbsp;B, all-into-stalemate.&rdquo; P(rupture-scenario) updates from the Rule&nbsp;C posterior of 28% to the Rule&nbsp;B value of 23%. Tracker&nbsp;A&rsquo;s conditional liveness updates from ~28% to ~23%.</p>
+
+<p>At T+48h the revision threshold is now ~48 hours away. The compounded posterior weights make the revision the modal outcome conditional on no fresh signal arriving: extending the table forward, T+72h null would push Rule&nbsp;B to ~48%, T+96h null to ~52%. By the threshold, with two more null days, Rule&nbsp;B would represent roughly a majority of the rule-weighted posterior. The revision is mechanically licensed because the trigger condition was named in advance and the world has produced the trigger.</p>
+
+<p>The asymmetric optionality cuts the other way too. A fresh IRGC vessel seizure inside the remaining 48 hours does not just slow the drift &mdash; it reverses it. Treating a single seizure as a high-information signal with implied likelihood ratios of roughly P(seizure | C) ~30% per cluster, P(seizure | A) ~10%, P(seizure | B) ~3%, a single event would multiply the posterior weights by those ratios and produce a new distribution of roughly ~50% C / ~25% A / ~25% B &mdash; nearly the mirror image of today&rsquo;s posterior. The asymmetry is structural: an event is rare-but-strong evidence, a non-event is common-but-weak evidence, and the integral of weak evidence over time can be overpowered by a single strong observation. This is why the methodology does not revise on day one of an empty window: the option value of waiting for the strong signal exceeds the marginal cost of holding Rule&nbsp;C primary for 96 hours of null evidence.</p>
+
+<h2>Why the Headline Holds at ~6.3%</h2>
+
+<p>The triplet was deliberately designed so that the dashboard headline would be rule-invariant within ~1.1 pp across A, B, and C. The headline value is not a measure of which rule is right; it is a measure of the joint probability over scenarios under whichever rule is currently designated as primary, and all three rules happen to put roughly the same total probability mass on outcomes that lead to Hormuz reopening. The headline thus carries low information about which rule the world is consistent with &mdash; that information is in the rule weighting, not in the dial.</p>
+
+<p>The rule-weighted P(rupture-scenario) is not rule-invariant. At T+0 with uniform 33/33/33 priors, the rule-weighted P(rupture-scenario) was approximately (28 + 27 + 23) / 3 &asymp; 26%. At T+24h with posterior weights ~28/33/39, the weighted value was 28&times;0.28 + 27&times;0.33 + 23&times;0.39 &asymp; 25.5%. At T+48h with posterior weights ~24/33/44, the weighted value is 28&times;0.24 + 27&times;0.33 + 23&times;0.44 &asymp; 25.8% &mdash; <em>slightly higher</em> than yesterday on the strict arithmetic, but lower than the Rule&nbsp;C posterior of 28% and converging toward the Rule&nbsp;B value of 23%. Reading the methodology&rsquo;s state as a single P(rupture-scenario) figure produces ~24% when the weighting is centered on the modal rule rather than averaged across all three; this is the figure the rationale page tracks and the figure Tracker&nbsp;A&rsquo;s conditional liveness inherits.</p>
+
+<h2>What the Window Has Not Yet Foreclosed</h2>
+
+<p>The compounded update is real but it is not conclusive. Three asymmetries keep the remaining 48 hours genuinely open:</p>
+
+<ul>
+  <li><strong>Single events still carry asymmetric weight.</strong> A fresh IRGC vessel seizure inside the next 48 hours reverses the two-day compounded update with more posterior weight than the cumulative null evidence. The Bayesian update is asymmetric because Rule&nbsp;C&rsquo;s implied event rate is roughly an order of magnitude above Rule&nbsp;B&rsquo;s, so an event multiplies the posterior weights by very different factors. This optionality decays linearly in time: with 48 hours left, a seizure-now-versus-seizure-at-T+95h carries roughly the same Bayesian weight, but waiting past the threshold drops the signal&rsquo;s capacity to drive a primary-rule change.</li>
+  <li><strong>Anchor revisions are still overdue.</strong> The ISW Apr 19 posture anchor is now 33 days stale; the UAE Apr 9 cumulative is 43 days stale. Both are well past their typical refresh cadence. A neutral posture revision from either source inside the window would corroborate Rule&nbsp;A and force a different revision pathway than the Rule&nbsp;C&rarr;B drift the null evidence is producing. Rule&nbsp;A is the only rule whose posterior has not moved materially under null evidence; an anchor revision would be its first opportunity to gain posterior weight inside this window.</li>
+  <li><strong>The threshold is hard.</strong> The May 25 revision is pre-committed; it is not a probabilistic call. If the window closes empty, the methodology revises primary regardless of whether the operator would prefer to wait for additional evidence. The pre-commitment was published precisely to remove operator discretion from the post-window read. The revision is therefore not a forecast &mdash; it is a deterministic consequence of the window outcome and a published decision rule.</li>
+</ul>
+
+<h2>The Operational Implication for Tracker A</h2>
+
+<p>Tracker&nbsp;A &mdash; the missile and drone depletion tracker &mdash; remains frozen on direct fire-silence Day 41. The depletion clock does not advance during the ceasefire. What does change is the tracker&rsquo;s <em>conditional liveness</em>: the probability that the depletion math becomes operationally relevant again inside the rolling 30-day Hormuz window. Conditional liveness is anchored to P(rupture-scenario), which is rule-dependent.</p>
+
+<p>At the cliff (T+0, May 20) under Rule&nbsp;C-as-primary, conditional liveness was approximately 28%. At T+24h under the weighted posterior, conditional liveness was approximately 25%. At T+48h under today&rsquo;s posterior, conditional liveness is approximately 24%. If the window closes empty and the methodology revises to Rule&nbsp;B at the threshold, conditional liveness drops to 23% and lock there as the new primary read. The cumulative move from cliff to post-revision is therefore ~28%&rarr;~23% over 96 hours &mdash; a ~5 pp ease in the probability the frozen tracker becomes live again inside the rolling window.</p>
+
+<p>For Tracker&nbsp;A specifically, the ~5 pp ease translates into one calibrated operational implication: the dashboard&rsquo;s frozen banner can describe the depletion math as more durably suspended than it would have been read under Rule&nbsp;C primary. The launcher reconstitution plateau at Day 29 stays on the chart at ~200 launchers; the days-to-zero figure of ~100 stays as the modeled post-resumption value; the visible &ldquo;Clock paused&rdquo; treatment stays unchanged. What changes is the implicit confidence in the pause: a 23% rupture-scenario is qualitatively different from a 28% rupture-scenario when the dashboard is read alongside Tracker&nbsp;B&rsquo;s rationale.</p>
+
+<h2>The Pre-Publication Discipline Continues to Earn Its Cost</h2>
+
+<p>Today&rsquo;s analytical pivot is a calibrated update on a calendar the methodology pre-committed to. The May 12 cliff story priced the eviction event; the May 14 redistribution-problem story priced the rule-choice problem; the May 17 first-post-cliff-observable story priced the natural-experiment framing; the May 18 terminal-pre-cliff story priced the publishing-discipline requirement; the May 19 baseline lock-in story locked the triplet under timestamp; the May 20 cliff-fires story documented the eviction firing on schedule; the May 21 T+24h story scored the first day against the published read-grid. Today scores the second day. The third day will compound further or reverse; the fourth day will trigger the threshold or not.</p>
+
+<p>The compounding mechanism is doing exactly what the May 17 story said it would: producing identifiably different posteriors over the rules at each calendar step inside the window, with the cumulative evidence becoming legible by ~May 24&ndash;25. The pre-publication discipline ensures that whichever way the window resolves, the resolution is read against a hard-dated baseline rather than against expectations generated after observation. The methodology cannot choose between Rule&nbsp;C and Rule&nbsp;B today; it can only update the posterior weights and wait for the threshold. That is the property the pre-commitment was designed to deliver.</p>
+
+<h2>Bottom Line</h2>
+
+<p>Day 45. T+48h post-cliff. P(Hormuz reopen 30d) = ~6.3% (Rule&nbsp;C, primary), unchanged for the third consecutive day. The May 21&ndash;24 natural-experiment window is at its midpoint with two compounded null days observed against the May 19 read-grid. Posterior weights have moved from uniform 33/33/33 at the cliff toward roughly ~24/33/44 at T+48h, with Rule&nbsp;B (all-into-stalemate) now the modal posterior for the first time since the cliff fired. The rule-invariant headline holds; the rule-weighted P(rupture-scenario) eases from ~25% toward ~24%; Tracker&nbsp;A conditional liveness softens by another ~1 pp.</p>
+
+<p>Two structural facts decide the window: the pre-committed 00:00 UTC May 25 revision threshold (now ~48 hours away), and the asymmetric weight a single fresh IRGC Naval event would carry against the cumulative null evidence. Continued silence through May 24 triggers the methodology revision from Rule&nbsp;C to Rule&nbsp;B primary; a fresh seizure reverses the two-day update and re-corroborates Rule&nbsp;C. The remaining 48 hours decide which rationale the dashboard rationale page carries from May 25 onward; the dial reads ~6.3% either way.</p>
+
+<div class="callout">
+<strong>Decision matrix at T+48h:</strong>
+<ul>
+  <li><strong>Empty 48 more hours &rarr;</strong> Methodology revises Rule&nbsp;C&rarr;Rule&nbsp;B at the threshold; P(rupture-scenario) 28%&rarr;23%; Tracker&nbsp;A conditional liveness ~24%&rarr;~23%; dashboard headline unchanged</li>
+  <li><strong>Fresh IRGC Naval event in 48h &rarr;</strong> Rule&nbsp;C corroborated; posterior weights revert toward ~50/25/25; P(rupture-scenario) 24%&rarr;30%+</li>
+  <li><strong>Neutral ISW or Gulf MoD anchor revision &rarr;</strong> Rule&nbsp;A becomes primary; P(reopen) toward ~7.4%</li>
+  <li><strong>Direct Iran fire resumes &rarr;</strong> Rupture realized; Tracker&nbsp;A becomes live; P(reopen) toward ~0%</li>
+  <li><strong>IRGC releases held vessels &rarr;</strong> Comprehensive scenario gains weight; P(reopen) toward ~8&ndash;9%</li>
+</ul>
+</div>
+
+<div class="callout">
+<strong>Methodology note:</strong> All Hormuz scenario values, per-day P(null | rule) estimates, posterior arithmetic, and revision-threshold definitions are taken from <code>source/hormuz-state.md</code>, yesterday&rsquo;s T+24h first-read story, and the May 19 baseline lock-in pre-publication under timestamp 2026-05-19 04:30 UTC. The calendar-threshold rule (v / vi), the scenario-redistribution rule (vii), the watch-list phase-transition rule (vii), and the post-eviction natural-experiment rule (viii) are documented on the <a href="../methodology.html">methodology page</a>. Rule&nbsp;C primary is held pending the 00:00 UTC May 25 threshold; revision is mechanical conditional on window outcome.
+</div>
+
+<footer>
+  <a href="../index.html">Dashboard</a> &middot; <a href="../methodology.html">Methodology</a> &middot; <a href="index.html">All Analysis</a> &middot; <a href="https://github.com/bh13731/iran-tracker">GitHub</a>
+</footer>
+
+</body>
+</html>
