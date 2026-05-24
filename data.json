@@ -2,8 +2,8 @@
   "meta": {
     "title": "Iran Missile & Drone Tracker",
     "warStart": "2026-02-28",
-    "lastUpdated": "2026-05-23T05:00:00Z",
-    "lastDay": 87,
+    "lastUpdated": "2026-05-24T05:00:00Z",
+    "lastDay": 88,
     "methodology": "UAE MoD figures are official cumulative intercepts (highest confidence). Other Gulf state figures are working estimates from official MoD reports, ISW, and Wikipedia cross-referencing. Best-estimate totals include underreporting adjustments for Israel theater and other targets. Launcher estimates derived from IDF/ISW structured reporting. Pre-war stockpile estimates from Atlantic, NYT, IDF, and former US/Israeli officials.",
     "caveats": [
       "Pre-Mar 19 data uses a different methodology (less structured, wider ranges)",
@@ -26,15 +26,15 @@
     "launchers": [410, 440]
   },
   "currentSnapshot": {
-    "date": "2026-05-23",
-    "day": 87,
+    "date": "2026-05-24",
+    "day": 88,
     "categories": [
       {
         "name": "MRBMs (Israel-range)",
         "preWar": [2000, 3000],
         "fired": [820, 1000],
         "remaining": [500, 1880],
-        "status": "CEASE-FIRE Day 46, indefinite (depletion clock frozen). US officials to NYT (Apr 19): Iran retains ~70% of pre-war missile stockpile. Fire-silence Day 42 (98% of pre-silence duration). 2 IRGC-seized vessels still held near Hormuz (Day 31). T+72h post-cliff: compounded Bayesian update across three null days shifts posterior weights to ~20/32/48 with Rule B now within ~2 pp of majority; conditional-liveness of this tracker eases from ~24% toward ~23%. Methodology-revision threshold ~24h away (00:00 UTC May 25).",
+        "status": "CEASE-FIRE Day 47, indefinite (depletion clock frozen). US officials to NYT (Apr 19): Iran retains ~70% of pre-war missile stockpile. Fire-silence Day 43 (crosses 100% of the war's 43-day pre-silence direct-fire interval today; tomorrow the silence is for the first time longer than the active-fire phase). 2 IRGC-seized vessels still held near Hormuz (Day 32). T+96h post-cliff: window closes 23:59 UTC; four compounded null days shift posterior weights to ~16/32/52 with Rule B now the majority hypothesis; conditional-liveness of this tracker converging on Rule B's value of ~23%. Mechanical methodology revision fires at 00:00 UTC May 25 (<60 min away) — Rule C → Rule B primary; conditional liveness locks at ~23%.",
         "confidence": "Medium"
       },
       {
@@ -42,7 +42,7 @@
         "preWar": [6000, 8000],
         "fired": [2100, 2500],
         "remaining": [3500, 5900],
-        "status": "Large paper inventory; production halted; post-ceasefire salvos Apr 8 then quiet. Cease-fire indefinite Day 46. Fire-silence Day 42. US officials: ~70% of total BM stockpile retained. Coalition Patriot resupply window Day 46.",
+        "status": "Large paper inventory; production halted; post-ceasefire salvos Apr 8 then quiet. Cease-fire indefinite Day 47. Fire-silence Day 43 (crosses 100% of pre-silence interval today). US officials: ~70% of total BM stockpile retained. Coalition Patriot resupply window Day 47.",
         "confidence": "Medium-Low"
       },
       {
@@ -50,7 +50,7 @@
         "preWar": [8000, 11000],
         "fired": [2950, 3500],
         "remaining": [4050, 7750],
-        "status": "CEASE-FIRE DAY 46, INDEFINITE (depletion clock frozen). Fire-silence Day 42 (98% of the war's 43-day pre-silence direct-fire interval; crosses pre-silence-duration boundary tomorrow). 2 IRGC-seized vessels near Hormuz still held (Day 31 since Apr 22). Third US carrier in theater. Launcher reconstitution plateau Day 30 (~200). BM production still halted. T+72h post-cliff: the May 21–24 natural-experiment window is in its terminal 24-hour quarter (75% elapsed). Three consecutive null days against the May 19 read-grid; compounded Bayesian update shifts posterior weights to ~20/32/48 — Rule B within ~2 pp of majority. Anchor-data lag: 34 days (ISW Apr 19) / 44 days (UAE Apr 9).",
+        "status": "CEASE-FIRE DAY 47, INDEFINITE (depletion clock frozen). Fire-silence Day 43 — crosses 100% of the war's 43-day pre-silence direct-fire interval today; tomorrow the silence is for the first time longer than the active-fire phase that preceded it. 2 IRGC-seized vessels near Hormuz still held (Day 32 since Apr 22). Third US carrier in theater. Launcher reconstitution plateau Day 31 (~200). BM production still halted. T+96h post-cliff: the May 21–24 natural-experiment window closes at 23:59 UTC today. Four consecutive null days against the May 19 read-grid; compounded Bayesian update shifts posterior weights to ~16/32/52 — Rule B becomes the majority hypothesis at the rule weighting for the first time in the window. Mechanical revision fires at 00:00 UTC May 25 (<60 min away): Rule C → Rule B primary; ladder 65/28/7/0 → 70/23/7/0; P(rupture-scenario) 28% → 23%; conditional-liveness ~28% → ~23%; headline P(reopen) rule-invariant at ~6.3%. Anchor-data lag: 35 days (ISW Apr 19) / 45 days (UAE Apr 9).",
         "confidence": "Medium-Low"
       },
       {
@@ -58,7 +58,7 @@
         "preWar": [35000, 55000],
         "fired": [8500, 9500],
         "remaining": [25500, 46500],
-        "status": "US officials to NYT (Apr 19): Iran retains ~40% of attack drones — heavier proportional hit than BMs. FDD/LWJ Apr 19: Kuwait took 852 drones; Saudi ~612. Apr 24 Iraq-launched proxy drones hit Kuwait — militia network operational during ceasefire. China fuel chemicals sustaining some production. Fire-silence Day 42 (direct Iran). 2 IRGC vessels still held near Hormuz (Day 31).",
+        "status": "US officials to NYT (Apr 19): Iran retains ~40% of attack drones — heavier proportional hit than BMs. FDD/LWJ Apr 19: Kuwait took 852 drones; Saudi ~612. Apr 24 Iraq-launched proxy drones hit Kuwait — militia network operational during ceasefire. China fuel chemicals sustaining some production. Fire-silence Day 43 (direct Iran; crosses 100% of pre-silence interval today). 2 IRGC vessels still held near Hormuz (Day 32).",
         "confidence": "Low"
       },
       {
@@ -66,7 +66,7 @@
         "preWar": [200, 500],
         "fired": [100, 150],
         "remaining": [50, 400],
-        "status": "UAE CMs at 26 (official, Apr 9 update); 50+ CMs in Gulf theater total. No CM reports since Apr 8 post-ceasefire pipeline salvos. Cease-fire indefinite Day 46. Fire-silence Day 42 (direct Iran).",
+        "status": "UAE CMs at 26 (official, Apr 9 update); 50+ CMs in Gulf theater total. No CM reports since Apr 8 post-ceasefire pipeline salvos. Cease-fire indefinite Day 47. Fire-silence Day 43 (direct Iran; crosses pre-silence interval today).",
         "confidence": "Low"
       },
       {
@@ -76,7 +76,7 @@
         "remaining": [170, 235],
         "midpoint": 200,
         "daysToZero": 100,
-        "status": "CEASE-FIRE DAY 46, INDEFINITE (frozen). ISW Apr 19 / US officials to NYT: ~200 effective launchers (60% of pre-war), holding for Day 30 with no new authoritative revision. Days to BM functional zero from resumption: ~100 days. The 300-340 destroyed remain destroyed. BM production still halted. Reconstitution plateau Day 30. T+72h post-cliff: posterior weights have shifted to ~20/32/48 with Rule B now within ~2 pp of majority; conditional liveness of this tracker eases from ~24% toward ~23%. 2 IRGC vessels still held near Hormuz (Day 31). Methodology-revision threshold ~24h away.",
+        "status": "CEASE-FIRE DAY 47, INDEFINITE (frozen). ISW Apr 19 / US officials to NYT: ~200 effective launchers (60% of pre-war), holding for Day 31 with no new authoritative revision. Days to BM functional zero from resumption: ~100 days. The 300-340 destroyed remain destroyed. BM production still halted. Reconstitution plateau Day 31. T+96h post-cliff: window closes 23:59 UTC; four compounded null days shift posterior weights to ~16/32/52 with Rule B now the majority hypothesis at the rule weighting; conditional liveness of this tracker converging on Rule B's value of ~23%. 2 IRGC vessels still held near Hormuz (Day 32). Mechanical methodology revision fires at 00:00 UTC May 25 (<60 min away); conditional liveness locks at ~23% at the threshold.",
         "confidence": "High"
       }
     ]
