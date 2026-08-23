@@ -2,8 +2,8 @@
   "meta": {
     "title": "Iran Missile & Drone Tracker",
     "warStart": "2026-02-28",
-    "lastUpdated": "2026-06-26T05:00:00Z",
-    "lastDay": 121,
+    "lastUpdated": "2026-08-23T05:00:00Z",
+    "lastDay": 179,
     "methodology": "UAE MoD figures are official cumulative intercepts (highest confidence). Other Gulf state figures are working estimates from official MoD reports, ISW, and Wikipedia cross-referencing. Best-estimate totals include underreporting adjustments for Israel theater and other targets. Launcher estimates derived from IDF/ISW structured reporting. Pre-war stockpile estimates from Atlantic, NYT, IDF, and former US/Israeli officials.",
     "caveats": [
       "Pre-Mar 19 data uses a different methodology (less structured, wider ranges)",
@@ -44,8 +44,8 @@
     ]
   },
   "currentSnapshot": {
-    "date": "2026-06-26",
-    "day": 121,
+    "date": "2026-08-23",
+    "day": 179,
     "categories": [
       {
         "name": "MRBMs (Israel-range)",
@@ -61,7 +61,7 @@
           500,
           1880
         ],
-        "status": "CEASE-FIRE Day 80, indefinite (depletion clock frozen). US officials to NYT (Apr 19): Iran retains ~70% of pre-war missile stockpile. **POST-HORIZON DAY 30 — ONE CALENDAR MONTH OF THE SINGLE-RULE REGIME (June 26).** At 00:00 UTC the post-horizon clock reaches Day 30 — thirty consecutive null calendar days since the May 28 reconvergence horizon, a full calendar month under Rule B as the single live ladder, with zero watch-list events, zero rule reversals and zero methodology-quality transitions. The only figure that moved across the month is the calibration baseline, now 0.93^30 ≈ 11% — compounded from 93% at the May 28 open through four completed weekly cycles (each ×0.93^7 ≈ 0.60: 60% Jun 3 → 37% Jun 10 → 22% Jun 17 → 13% Jun 24) into the fifth cycle's Day 2, the twenty-first day of the asymmetric surprise budget. A calibration-quality landmark: it deepens the regime's self-reported surprise budget without moving the dial. On this frozen depletion side the reading has published through every one of the thirty null days unchanged: the ~200-launcher floor (plateau Day 64, ISW Apr 19 anchor 68d stale but floor-robust) holds, and conditional liveness stays locked at Rule B's 23%. None of it moves the dial: P(Hormuz reopen 30d) holds at 7% × 90% = 6.3% (Rule B, single live ladder) — unchanged for the thirty-eighth consecutive day. Calibration baseline crosses single digits ~June 28–29 (Day 32–33). IRGC Naval channel silent Day 65 (~9.3 weeks). Charts show last live state; all data intact and resumes if hostilities restart.",
+        "status": "CEASE-FIRE Day 138, indefinite (depletion clock frozen). US officials to NYT (Apr 19): Iran retains ~70% of pre-war missile stockpile. **FIRE-SILENCE DAY 134 — THIRTEEN WEEKS OF OVERRUN (August 23).** At 00:00 UTC the overrun — direct Iran fire-silence measured against the war's own 43-day pre-silence active-fire interval — reaches exactly 91 days = 13 x 7, a full quarter on the asymmetric side of the boundary. Total silence is 311.6% of the interval it is measured against, and the overrun alone (91d) now exceeds twice that interval (86d), a threshold crossed Aug 18 when total silence hit 3x. The overrun is the tracker's only fully self-normalizing clock: it measures Iran's posture against the war's own tempo rather than against the calendar. Compositional-quality landmark on the floor side, and one-directional — thirteen weeks of overrun harden the floor under Rule B's 70% Stalemate weight and cap the ceiling under its 23% Rupture weight, and both scenarios carry P(open|scenario)=0, so the read cannot reach the dial on the positive side. P(Hormuz reopen 30d) = ~6.3% (Rule B, single live ladder) unchanged for the ninety-sixth consecutive day; ninety-fifth null day since the May 20 cliff; eighty-eighth under the post-horizon single-rule regime (thirteenth weekly cycle Day 4; calibration baseline 0.93^88 ≈ 0.17%, ~1-in-590). War Day 179. IRGC Naval channel silent Day 123 (~17.6 weeks, past lunar-month +85). Reconstitution plateau Day 122 — flat since Apr 23 against a single authoritative launcher read (ISW Apr 19) now 126 days stale; plateau and staleness are the same flat line, but the confound is one-sided and the ~200 floor is robust. Anchor lag 126d (ISW Apr 19) / 136d (UAE Apr 9), both past 50d for the seventy-seventh consecutive day. Conditional liveness of this frozen tracker locked at ~23% = Rule B's P(rupture-scenario). Rolling window Aug 23–Sep 22.",
         "confidence": "Medium"
       },
       {
@@ -2191,6 +2191,51 @@
       "date": "2026-06-26",
       "day": 121,
       "text": "DAY 80 — **POST-HORIZON DAY 30 — ONE CALENDAR MONTH OF THE SINGLE-RULE REGIME**. Post-horizon Day 30 / T+888h post-cliff / T+792h post-revision / T+720h post-horizon; fifth weekly cycle Day 2. At 00:00 UTC the post-horizon clock reaches Day 30 — thirty consecutive null calendar days since the May 28 reconvergence horizon, a full calendar month under Rule B as the single live ladder, with zero watch-list events, zero rule reversals and zero methodology-quality transitions. The only figure that moved across the month is the calibration baseline, now 0.93^30 ≈ 11% — compounded from 93% at the open through four completed weekly cycles (each ×0.93^7 ≈ 0.60: 60% Jun 3 → 37% Jun 10 → 22% Jun 17 → 13% Jun 24) into the fifth cycle's Day 2, the twenty-first day of the asymmetric surprise budget. A calibration-quality landmark: it deepens the regime's self-reported surprise budget without moving the dial. A thirty-null month is weak evidence the per-day null rate was set too high a fire-rate, but a single ceasefire confounds streak-length with the parameter, so 0.93 stays fixed and the methodology does not re-estimate. None of it moves the dial: P(reopen) holds at 7% × 90% = 6.3%, unchanged for the thirty-eighth consecutive day. On the frozen depletion side: reconstitution plateau Day 64, ISW Apr 19 anchor 68d stale but floor-robust, conditional liveness locked at Rule B's 23%. Fire-silence Day 76 (176.7%; fifth asymmetric-side week Day 4); IRGC Naval silent Day 65 (~9.3 weeks). Single digits ~June 28–29 (Day 32–33)."
+    },
+    {
+      "date": "2026-06-28",
+      "day": 123,
+      "text": "DAY 82 — **FIRST SINGLE-DIGIT CALIBRATION READ: 0.93^32 ≈ 9.8%**. Post-horizon Day 32. The regime's published surprise budget crosses into single digits for the first time — the fourth calibration-quality crossing after sub-50% (Jun 6), sub-30% (Jun 13) and sub-25% (Jun 15). P(Hormuz reopen 30d) = ~6.3% unchanged for the fortieth consecutive day. No watch-list event; no rule reversal."
+    },
+    {
+      "date": "2026-07-01",
+      "day": 126,
+      "text": "DAY 85 — **FIFTH POST-HORIZON WEEKLY CYCLE CLOSES AT 0.93^35 ≈ 7.9%**, the first cycle close in single digits, co-located with the second calendar-month rollover of the regime. Cycle-close series: 60% → 37% → 22% → 13% → 7.9%, each ~0.60x the prior. P(reopen) = ~6.3% unchanged for the forty-third consecutive day."
+    },
+    {
+      "date": "2026-07-16",
+      "day": 141,
+      "text": "DAY 100 — **CEASE-FIRE DAY 100 CO-LOCATED WITH POST-HORIZON DAY 50**. Double round-number crossing at 00:00 UTC: the truce reaches three digits on the same day the single-rule regime reaches its fiftieth null day (0.93^50 ≈ 2.7%). The longest sustained pause of the conflict passes one hundred days with the US blockade fully intact — the clearest published demonstration to date of the ceasefire/blockade decoupling. Dial unchanged for the fifty-eighth consecutive day."
+    },
+    {
+      "date": "2026-07-20",
+      "day": 145,
+      "text": "DAY 104 — **FIRE-SILENCE DAY 100**. Three-digit silence: one hundred days since Iran last fired directly (Apr 11), 232.6% of the war's 43-day pre-silence active-fire interval; fifty-seventh asymmetric-side day. First three-digit read on the indicator carrying the most compositional weight in the ladder. Post-horizon Day 54, 0.93^54 ≈ 2.0%. P(reopen) unchanged for the sixty-second consecutive day."
+    },
+    {
+      "date": "2026-07-30",
+      "day": 155,
+      "text": "DAY 114 — **CALIBRATION BASELINE CROSSES SUB-1%: 0.93^64 ≈ 0.96%**. Post-horizon Day 64. The regime's self-report of surprise passes one-in-a-hundred; the methodology still declines to re-estimate the 0.93 per-day null parameter, because a single uninterrupted ceasefire confounds streak length with the parameter that generated it. Calibration-quality landmark; dial unchanged for the seventy-second consecutive day."
+    },
+    {
+      "date": "2026-08-01",
+      "day": 157,
+      "text": "DAY 116 — **RECONSTITUTION PLATEAU DAY 100 — THE FROZEN TRACKER'S FIRST THREE-DIGIT LANDMARK**, co-located with the second calendar-month rollover and one day after the IRGC naval falsification channel passed Day 100 of silence (Jul 31). Three-day century stack: sub-1% calibration (Jul 30) → naval Day 100 (Jul 31) → plateau Day 100 (Aug 1). None moves the dial; all three deepen the same one-sided staleness confound on the frozen side. P(reopen) unchanged for the seventy-fourth consecutive day."
+    },
+    {
+      "date": "2026-08-18",
+      "day": 174,
+      "text": "DAY 133 — **FIRE-SILENCE CROSSES 3x THE WAR'S OWN FIRE INTERVAL**. At 00:00 UTC the silence reaches Day 129 = 3 x 43 — exactly three times the pre-silence active-fire campaign — which is the same moment the overrun (129 − 43 = 86) crosses twice the reference interval. First triple-multiple landmark on the tracker's most load-bearing indicator. Post-horizon Day 83, 0.93^83 ≈ 0.24%. Dial unchanged for the ninety-first consecutive day."
+    },
+    {
+      "date": "2026-08-19",
+      "day": 175,
+      "text": "DAY 134 — **TWELFTH POST-HORIZON WEEKLY CYCLE CLOSES AT 0.93^84 ≈ 0.22%**. Post-horizon Day 84 / T+2184h post-cliff / T+2016h post-horizon. Twelve full pure-null weekly cycles complete, the geometric ~0.60-per-week law unbroken across every close. Fire-silence Day 130 (302.3%); IRGC Naval Day 119; plateau Day 118; anchors 122d / 132d. P(reopen) unchanged for the ninety-second consecutive day."
+    },
+    {
+      "date": "2026-08-23",
+      "day": 179,
+      "text": "DAY 138 — **FIRE-SILENCE DAY 134: THIRTEEN WEEKS OF OVERRUN**. Post-horizon Day 88 / T+2280h post-cliff / T+2184h post-revision / T+2112h post-horizon; thirteenth weekly cycle Day 4. At 00:00 UTC the overrun — direct Iran fire-silence measured against the war's own 43-day pre-silence active-fire interval — reaches exactly 91 days, thirteen seven-day blocks, a full quarter on the asymmetric side of the boundary. Total silence 134 days = 311.6% of the interval it is measured against; the overrun by itself now exceeds twice that interval (91 > 86, crossed Aug 18). The overrun is the tracker's only fully self-normalizing clock — every other counter measures against the calendar, this one measures Iran's posture against the war's own tempo, so its scale does not drift as the ceasefire lengthens. Compositional-quality landmark on the floor side, of the same class as the May 31 half-century and Jun 23 asymmetric-month marks, and one-directional: thirteen weeks of overrun harden the floor under Rule B's 70% Stalemate weight and cap the ceiling under its 23% Rupture weight, and both carry P(open|scenario)=0 — a posture read that makes rupture less likely makes the blockade more durable. P(Hormuz reopen 30d) = ~6.3% holds at 7% x 90% through the lone Comprehensive channel, unchanged for the ninety-sixth consecutive day; ninety-fifth null calendar day since the cliff; eighty-eighth under the post-horizon single-rule regime. Calibration baseline 0.93^88 ≈ 0.17% (~1-in-590), seventy-ninth day of the asymmetric surprise budget. War Day 179; IRGC Naval Day 123 (~17.6 weeks, past lunar-month +85 — beyond every historical IRGC seizure resolution band); reconstitution plateau Day 122; anchor lag 126 / 136 days, both past half-quarter freshness for the eighty-seventh consecutive day and past 50d for the seventy-seventh. Zero events across all seven enumerated read-grid channels. Rolling window Aug 23–Sep 22."
     }
   ]
 }
